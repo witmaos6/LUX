@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Door : InteractionObject
 {
+    [Header("Camera")]
+    public Transform nextWallpaper;
     public GameObject moveTarget;
     public CameraFader cameraFader;
+    private CameraController2D cameraController;
     public Vector3 movePosition;
 
     [Header("Fade Durations")]
@@ -19,6 +22,7 @@ public class Door : InteractionObject
         if (cameraFader == null)
         {
             cameraFader = GameObject.Find("Main Camera").GetComponent<CameraFader>();
+            cameraController = GameObject.Find("Main Camera").GetComponent<CameraController2D>();
         }
     }
 
@@ -50,6 +54,11 @@ public class Door : InteractionObject
             else
             {
                 m_tryObject.transform.position = movePosition;
+            }
+
+            if(cameraController != null && nextWallpaper != null)
+            {
+                cameraController.SetWallpaper(nextWallpaper);
             }
 
             if (DevilDispatcher.Instance != null)
