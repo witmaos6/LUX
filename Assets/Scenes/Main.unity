@@ -3470,12 +3470,11 @@ MonoBehaviour:
   interactionType: 0
   unlockFailed: {fileID: 0}
   unlockComplete: {fileID: 11400000, guid: 990de40f794f3ca4294e0b465fd9d5f1, type: 2}
-  spawnRaise: {fileID: 11400000, guid: 0ad547f938c4cf34899036f203209007, type: 2}
+  spawnRaise: {fileID: 11400000, guid: 3447fd737e0ca7144b26fd1b0c3bc9d9, type: 2}
   uiPrefab: {fileID: 3712294895868110959, guid: d4fedf2a6e2c7704da0c809402d79abd, type: 3}
   canvasTransform: {fileID: 0}
   itemCode: 1
   postUnlockDestroy: 1
-  m_spawnPrefab: {fileID: 2539108918412815643, guid: 581477c6ce1c64943b74bb1f9d19e969, type: 3}
 --- !u!61 &1166278256
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4578,9 +4577,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EventToSpawnRelay
   receiveEvent: {fileID: 11400000, guid: 0483eb03f125ea74f88a25621db723e8, type: 2}
-  startEvent: {fileID: 11400000, guid: 3321e0fc09653d5498a2c97f12665c41, type: 2}
-  spawnGameObject: {fileID: 6479274483293716718, guid: 92d3332ca44632349a41ee86b6b8a5bd, type: 3}
-  destoryAfterEventCall: 1
+  raiseEvent: {fileID: 11400000, guid: 821e99a3a194cfb4ea7384ffb5b648b8, type: 2}
+  destroyAfterEventCall: 1
 --- !u!1 &1498069822
 GameObject:
   m_ObjectHideFlags: 0
@@ -5476,6 +5474,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 767945738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1768316737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1768316739}
+  - component: {fileID: 1768316738}
+  m_Layer: 0
+  m_Name: TransformProvider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1768316738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768316737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f01b20085549d046a61196d8be8b6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransformProvider
+  entries:
+  - requestEvent: {fileID: 11400000, guid: 425c73adc049134468a5b1ec7bf56ed6, type: 2}
+    value: {fileID: 1298709488}
+--- !u!4 &1768316739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768316737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1768377351
 GameObject:
   m_ObjectHideFlags: 0
@@ -6059,10 +6104,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63f262132fcbe614cb27abc5a607e8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnEventManager
-  spawnEvents:
-  - {fileID: 11400000, guid: 0ad547f938c4cf34899036f203209007, type: 2}
-  - {fileID: 11400000, guid: 3321e0fc09653d5498a2c97f12665c41, type: 2}
-  - {fileID: 11400000, guid: 6fb00ed7370286d439f6d9609607defd, type: 2}
+  entries:
+  - onEvent: {fileID: 11400000, guid: 821e99a3a194cfb4ea7384ffb5b648b8, type: 2}
+    prefab: {fileID: 6479274483293716718, guid: 92d3332ca44632349a41ee86b6b8a5bd, type: 3}
+    spawnPoint: {fileID: 1497320840}
+    positionOffset: {x: 0, y: 0, z: 0}
+    eulerRotation: {x: 0, y: 0, z: 0}
+  - onEvent: {fileID: 11400000, guid: 8d250e57f4a566543b63eac1aefa8881, type: 2}
+    prefab: {fileID: 4239272544144539349, guid: d4f1c029ccaf1e545bcf69f3ccb3b6b8, type: 3}
+    spawnPoint: {fileID: 0}
+    positionOffset: {x: 145, y: 1, z: 0}
+    eulerRotation: {x: 0, y: 0, z: 0}
+  - onEvent: {fileID: 11400000, guid: 3447fd737e0ca7144b26fd1b0c3bc9d9, type: 2}
+    prefab: {fileID: 2539108918412815643, guid: 581477c6ce1c64943b74bb1f9d19e969, type: 3}
+    spawnPoint: {fileID: 1166278254}
+    positionOffset: {x: 0, y: 0, z: 0}
+    eulerRotation: {x: 0, y: 0, z: 0}
 --- !u!4 &1946330126
 Transform:
   m_ObjectHideFlags: 0
@@ -7317,3 +7374,4 @@ SceneRoots:
   - {fileID: 407340039}
   - {fileID: 1612310535}
   - {fileID: 264475352}
+  - {fileID: 1768316739}

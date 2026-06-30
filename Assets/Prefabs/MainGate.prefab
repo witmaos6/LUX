@@ -108,12 +108,11 @@ MonoBehaviour:
   interactionType: 0
   unlockFailed: {fileID: 11400000, guid: 751964d13e60baa4fbc0faa1c3c9b759, type: 2}
   unlockComplete: {fileID: 0}
-  spawnRaise: {fileID: 11400000, guid: 6fb00ed7370286d439f6d9609607defd, type: 2}
+  spawnRaise: {fileID: 11400000, guid: 8d250e57f4a566543b63eac1aefa8881, type: 2}
   uiPrefab: {fileID: 1962757527568594360, guid: 5dff67cadc694ef448b63eb0e953962a, type: 3}
   canvasTransform: {fileID: 0}
   itemCode: 3
   postUnlockDestroy: 1
-  m_spawnPrefab: {fileID: 4239272544144539349, guid: d4f1c029ccaf1e545bcf69f3ccb3b6b8, type: 3}
 --- !u!61 &7166049112610287785
 BoxCollider2D:
   m_ObjectHideFlags: 0

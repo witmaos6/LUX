@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: MainGate_SpawnEvent
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnEvent
+  m_Script: {fileID: 11500000, guid: 141092c3f863c9849885fb38f22b2262, type: 3}
+  m_Name: ToOutside_TransformProvider
+  m_EditorClassIdentifier: Assembly-CSharp::GameEvent

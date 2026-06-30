@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   interactionType: 0
+  nextWallpaper: {fileID: 0}
+  wallpaperRequestEvent: {fileID: 11400000, guid: 425c73adc049134468a5b1ec7bf56ed6, type: 2}
   moveTarget: {fileID: 0}
   cameraFader: {fileID: 0}
   movePosition: {x: 205, y: 1, z: 0}

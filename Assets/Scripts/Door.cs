@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 
 public class Door : InteractionObject
 {
     [Header("Camera")]
     public Transform nextWallpaper;
+    public GameEvent wallpaperRequestEvent;
     public GameObject moveTarget;
     public CameraFader cameraFader;
     private CameraController2D cameraController;
@@ -24,6 +26,12 @@ public class Door : InteractionObject
             cameraFader = GameObject.Find("Main Camera").GetComponent<CameraFader>();
             cameraController = GameObject.Find("Main Camera").GetComponent<CameraController2D>();
         }
+    }
+
+    private void Start()
+    {
+        if (nextWallpaper == null && wallpaperRequestEvent != null)
+            GameEventManager.Raise<Action<Transform>>(wallpaperRequestEvent, t => nextWallpaper = t);
     }
 
     public override void ActivateInteraction(GameObject tryObject)
