@@ -7,6 +7,7 @@ public class Door : InteractionObject
     public Transform nextWallpaper;
     public GameEvent wallpaperRequestEvent;
     public GameObject moveTarget;
+    public GameEvent moveTargetRequestEvent;
     public CameraFader cameraFader;
     private CameraController2D cameraController;
     public Vector3 movePosition;
@@ -32,6 +33,9 @@ public class Door : InteractionObject
     {
         if (nextWallpaper == null && wallpaperRequestEvent != null)
             GameEventManager.Raise<Action<Transform>>(wallpaperRequestEvent, t => nextWallpaper = t);
+
+        if (moveTargetRequestEvent != null)
+            GameEventManager.Raise<Action<Transform>>(moveTargetRequestEvent, t => moveTarget = t.gameObject);
     }
 
     public override void ActivateInteraction(GameObject tryObject)

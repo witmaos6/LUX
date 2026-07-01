@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     {
         Normal,
         Hide,
+        Dead,
     }
 
     private PlayerState playerState = PlayerState.Normal;
@@ -33,6 +34,10 @@ public class PlayerController : MonoBehaviour
     public GameObject flashlightPrefab;
     private GameObject flashlightInstance;
 
+    [Header("Sound")]
+    private AudioSource audioSource;
+    public AudioClip deadSound;
+
     private List<ItemCode> inventory = new List<ItemCode>();
 
     private void Awake()
@@ -42,6 +47,8 @@ public class PlayerController : MonoBehaviour
         controls = new InputSystem_Actions();
 
         moveSpeed = normalSpeed;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -77,26 +84,29 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        Vector2 inputVec = controls.Player.Move.ReadValue<Vector2>();
-        float hx = inputVec.x;
+        if(playerState == PlayerState.Normal)
+        {
+            Vector2 inputVec = controls.Player.Move.ReadValue<Vector2>();
+            float hx = inputVec.x;
 
 
-        if (Mathf.Abs(hx) <= inputDeadZone)
-        {
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
-            return;
-        }
-        rb.linearVelocity = new Vector2(hx * moveSpeed, rb.linearVelocity.y);
+            if (Mathf.Abs(hx) <= inputDeadZone)
+            {
+                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+                return;
+            }
+            rb.linearVelocity = new Vector2(hx * moveSpeed, rb.linearVelocity.y);
 
-        if (hx > 0f)
-        {
-            dirRight = true;
-            gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-        }
-        else if (hx < 0f)
-        {
-            dirRight = false;
-            gameObject.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            if (hx > 0f)
+            {
+                dirRight = true;
+                gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+            else if (hx < 0f)
+            {
+                dirRight = false;
+                gameObject.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
         }
     }
 
@@ -140,19 +150,22 @@ public class PlayerController : MonoBehaviour
 
     void Interaction(InputAction.CallbackContext context)
     {
-        while (interactionObjects.Count > 0)
+        if (playerState == PlayerState.Normal)
         {
-            InteractionObject interact = interactionObjects[0];
-            if (interact == null)
+            while (interactionObjects.Count > 0)
             {
-                interactionObjects.RemoveAt(0);
-                continue;
-            }
+                InteractionObject interact = interactionObjects[0];
+                if (interact == null)
+                {
+                    interactionObjects.RemoveAt(0);
+                    continue;
+                }
 
-            dontMove = true;
-            interact.interactionComplete += AllowInteraction;
-            interact.Interaction(gameObject);
-            break;
+                dontMove = true;
+                interact.interactionComplete += AllowInteraction;
+                interact.Interaction(gameObject);
+                break;
+            }
         }
     }
 
@@ -161,19 +174,22 @@ public class PlayerController : MonoBehaviour
         if (blockInteraction == true)
             return;
 
-        while (arrowKeyInteractionObjects.Count > 0)
+        if (playerState == PlayerState.Normal || playerState == PlayerState.Hide)
         {
-            InteractionObject interact = arrowKeyInteractionObjects[0];
-            if (interact == null)
+            while (arrowKeyInteractionObjects.Count > 0)
             {
-                arrowKeyInteractionObjects.RemoveAt(0);
-                continue;
-            }
+                InteractionObject interact = arrowKeyInteractionObjects[0];
+                if (interact == null)
+                {
+                    arrowKeyInteractionObjects.RemoveAt(0);
+                    continue;
+                }
 
-            dontMove = true;
-            interact.interactionComplete += AllowInteraction;
-            interact.Interaction(gameObject);
-            break;
+                dontMove = true;
+                interact.interactionComplete += AllowInteraction;
+                interact.Interaction(gameObject);
+                break;
+            }
         }
     }
 
@@ -193,29 +209,38 @@ public class PlayerController : MonoBehaviour
         if (!inventory.Contains(ItemCode.Flashlight))
             return;
 
-        if (flashlightInstance != null)
+        if(playerState == PlayerState.Normal || playerState == PlayerState.Normal)
         {
-            bool postState = !flashlightInstance.activeSelf;
-            flashlightInstance.SetActive(postState);
-        }
-        else
-        {
-            flashlightInstance = Instantiate(flashlightPrefab);
-            flashlightInstance.SetActive(true);
-            flashlightInstance.transform.SetParent(transform, false);
+            if (flashlightInstance != null)
+            {
+                bool postState = !flashlightInstance.activeSelf;
+                flashlightInstance.SetActive(postState);
+            }
+            else
+            {
+                flashlightInstance = Instantiate(flashlightPrefab);
+                flashlightInstance.SetActive(true);
+                flashlightInstance.transform.SetParent(transform, false);
 
-            DevilDispatcher.Instance.TriggerLight(flashlightInstance);
+                DevilDispatcher.Instance.TriggerLight(flashlightInstance);
+            }
         }
     }
 
     void PressSprint(InputAction.CallbackContext context)
     {
-        moveSpeed = sprintSpeed;
+        if(playerState == PlayerState.Normal)
+        {
+            moveSpeed = sprintSpeed;
+        }
     }
 
     void ReleasedSprint(InputAction.CallbackContext context)
     {
-        moveSpeed = normalSpeed;
+        if (playerState == PlayerState.Normal)
+        {
+            moveSpeed = normalSpeed;
+        }
     }
 
     public void AddItem(ItemCode itemCode)
@@ -239,5 +264,13 @@ public class PlayerController : MonoBehaviour
     public PlayerState GetState()
     {
         return playerState;
+    }
+
+    public void Dead()
+    {
+        playerState = PlayerState.Dead;
+
+        audioSource.clip = deadSound;
+        audioSource.Play();
     }
 }

@@ -163,11 +163,13 @@ public class Devil : MonoBehaviour
         {
             PlayerController controller = other.GetComponent<PlayerController>();
             PlayerController.PlayerState playerState = controller.GetState();
-            if ((playerState == PlayerController.PlayerState.Hide && suspicion >= maxSuspicion) || playerState == PlayerController.PlayerState.Normal)
+            if (playerState == PlayerController.PlayerState.Normal || (playerState == PlayerController.PlayerState.Hide && suspicion >= maxSuspicion))
             {
+                Debug.Log("Player Die");
+
                 isCollidingWithPlayer = true;
 
-                // To do: 플레이어 사망 이벤트 발생
+                controller.Dead();
             }
         }
     }
