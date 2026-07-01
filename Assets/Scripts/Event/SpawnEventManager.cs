@@ -42,10 +42,6 @@ public class SpawnEventManager : MonoBehaviour
         var pos = (entry.spawnPoint != null ? entry.spawnPoint.position : transform.position)
                   + entry.positionOffset;
 
-        if(entry.spawnPoint == null)
-        {
-            Debug.Log("spawnPoint is null");
-        }
         Instantiate(entry.prefab, pos, Quaternion.Euler(entry.eulerRotation));
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 752062753458960092}
   - component: {fileID: 2791873596670179481}
   m_Layer: 0
-  m_Name: ToOutside
+  m_Name: To2-3Door
   m_TagString: Interaction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,9 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Door
   interactionType: 0
   nextWallpaper: {fileID: 0}
-  wallpaperRequestEvent: {fileID: 11400000, guid: 425c73adc049134468a5b1ec7bf56ed6, type: 2}
+  wallpaperRequestEvent: {fileID: 11400000, guid: 1208e7f397b65154f86fce01bf584daa, type: 2}
   moveTarget: {fileID: 0}
-  moveTargetRequestEvent: {fileID: 11400000, guid: c9aeea5bc02875249b65ff47c2e18b40, type: 2}
+  moveTargetRequestEvent: {fileID: 11400000, guid: 0a2dc2e8754be424d9a7d721b8ed5e47, type: 2}
   cameraFader: {fileID: 0}
   movePosition: {x: 205, y: 1, z: 0}
   fadeInDuration: 1
