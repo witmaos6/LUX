@@ -248,12 +248,19 @@ public class PlayerController : MonoBehaviour
         if (!inventory.Contains(itemCode))
         {
             inventory.Add(itemCode);
+            SaveManager.SetInventory(inventory);
         }
     }
 
     public bool ExistItem(ItemCode itemCode)
     {
         return inventory.Contains(itemCode);
+    }
+
+    public void RestoreInventory(IReadOnlyList<ItemCode> items)
+    {
+        inventory.Clear();
+        inventory.AddRange(items);
     }
 
     public void SetState(PlayerState inState)
@@ -272,5 +279,8 @@ public class PlayerController : MonoBehaviour
 
         audioSource.clip = deadSound;
         audioSource.Play();
+
+        if (DeathScreenController.Instance != null)
+            DeathScreenController.Instance.Show();
     }
 }

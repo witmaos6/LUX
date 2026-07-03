@@ -73,6 +73,8 @@ public class Door : InteractionObject
                 cameraController.SetWallpaper(nextWallpaper);
             }
 
+            SaveManager.SetRespawnPoint(m_tryObject.transform.position, nextWallpaper != null ? nextWallpaper.name : null);
+
             if (DevilDispatcher.Instance != null)
             {
                 DevilDispatcher.Instance.NotifyZoneChange(gameObject);
