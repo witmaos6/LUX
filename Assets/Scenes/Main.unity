@@ -3863,6 +3863,7 @@ MonoBehaviour:
   soundPosition: {x: 0, y: 0, z: 0}
   soundStrength: 70
   soundRange: 30
+  sound: {fileID: 8300000, guid: 217ca1e57378ffb4cbddb3226d10884f, type: 3}
 --- !u!1 &864169284
 GameObject:
   m_ObjectHideFlags: 0

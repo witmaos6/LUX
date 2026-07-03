@@ -8,11 +8,18 @@ public class UnlockedDestroy : MonoBehaviour
     public float soundStrength = 1f;
     public float soundRange = 5f;
 
+    public AudioClip sound;
+
     private void OnEnable() => GameEventManager.Subscribe(unlockEvent, Unlocked);
     private void OnDisable() => GameEventManager.Unsubscribe(unlockEvent, Unlocked);
 
     void Unlocked()
     {
+        if (sound != null)
+        {
+            AudioSource.PlayClipAtPoint(sound, transform.position);
+        }
+
         DevilDispatcher.Instance.NotifySuspicionSource(transform.position, soundRange, soundStrength);
 
         Destroy(gameObject, 0.1f);
