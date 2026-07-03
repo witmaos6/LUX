@@ -209,7 +209,7 @@ public class PlayerController : MonoBehaviour
         if (!inventory.Contains(ItemCode.Flashlight))
             return;
 
-        if(playerState == PlayerState.Normal || playerState == PlayerState.Normal)
+        if(playerState == PlayerState.Normal || playerState == PlayerState.Hide)
         {
             if (flashlightInstance != null)
             {

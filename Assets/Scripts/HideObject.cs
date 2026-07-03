@@ -1,12 +1,21 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class HideObject : InteractionObject
 {
     private SpriteRenderer objectRenderer;
     PlayerController controller;
+    private Light2D hideLight;
+
     private void Awake()
     {
         interactionType = InteractionType.ArrowKey;
+
+        hideLight = GetComponentInChildren<Light2D>(true);
+        if (hideLight != null)
+        {
+            hideLight.enabled = false;
+        }
     }
     public override void ActivateInteraction(GameObject tryObject)
     {
@@ -16,7 +25,12 @@ public class HideObject : InteractionObject
             objectRenderer.sortingOrder = 7;
         }
         controller = tryObject.GetComponent<PlayerController>();
-        if(controller != null)
+
+        if (hideLight != null)
+        {
+            hideLight.enabled = true;
+        }
+        if (controller != null)
         {
             controller.SetState(PlayerController.PlayerState.Hide);
 
@@ -29,6 +43,11 @@ public class HideObject : InteractionObject
         if (objectRenderer != null)
         {
             objectRenderer.sortingOrder = 10;
+        }
+
+        if (hideLight != null)
+        {
+            hideLight.enabled = false;
         }
 
         if (controller != null)
