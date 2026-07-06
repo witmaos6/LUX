@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using static DropItem;
 
 public class GaugeMashObject : InteractionObject
 {
@@ -18,6 +19,12 @@ public class GaugeMashObject : InteractionObject
     private Image gaugeFillImage;
     private float currentGauge = 0f;
 
+    public ItemCode itemCode = ItemCode.None;
+    public GameEvent unlockEvent;
+    public GameEvent failedEvent;
+    public GameObject failedUIPrefab;
+    private GameObject failedUIInstance;
+
     private void Awake()
     {
         interactionType = InteractionType.InteractionKey;
@@ -28,6 +35,19 @@ public class GaugeMashObject : InteractionObject
 
     public override void ActivateInteraction(GameObject tryObject)
     {
+        PlayerController playerController = tryObject.GetComponent<PlayerController>();
+        if(itemCode != ItemCode.None && !playerController.ExistItem(itemCode))
+        {
+            GameEventManager.Raise(failedEvent);
+            failedUIInstance = Instantiate(failedUIPrefab, canvasTransform);
+            return;
+        }
+
+        if (itemCode != ItemCode.None && playerController.ExistItem(itemCode) && unlockEvent != null)
+        {
+            GameEventManager.Raise(unlockEvent);
+        }
+
         currentGauge = 0f;
 
         if (gaugeUIPrefab != null)
@@ -44,6 +64,12 @@ public class GaugeMashObject : InteractionObject
 
     public override void InputPressed()
     {
+        if(failedUIInstance != null)
+        {
+            Destroy(failedUIInstance);
+            EndInteraction();
+            return;
+        }
         currentGauge += gaugePerPress;
 
         if (currentGauge >= maxGauge)

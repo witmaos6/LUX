@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7054638593893474234}
   - component: {fileID: 1057336640630187481}
-  - component: {fileID: 4690796780091341959}
+  - component: {fileID: 3445468635355807303}
   - component: {fileID: 7166049112610287785}
+  - component: {fileID: -8949072034412220580}
+  - component: {fileID: 6349174285544539976}
   m_Layer: 0
   m_Name: MainGate
   m_TagString: Interaction
@@ -93,7 +95,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4690796780091341959
+--- !u!114 &3445468635355807303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,17 +104,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 6479274483293716718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f43fd9ea9446ecf449394f2e2180f6e7, type: 3}
+  m_Script: {fileID: 11500000, guid: c1f8885b96125db42ae4f9afc58671e2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnlockObject
+  m_EditorClassIdentifier: Assembly-CSharp::GaugeMashObject
   interactionType: 0
-  unlockFailed: {fileID: 11400000, guid: 751964d13e60baa4fbc0faa1c3c9b759, type: 2}
-  unlockComplete: {fileID: 0}
-  spawnRaise: {fileID: 11400000, guid: 8d250e57f4a566543b63eac1aefa8881, type: 2}
-  uiPrefab: {fileID: 1962757527568594360, guid: 5dff67cadc694ef448b63eb0e953962a, type: 3}
+  gaugeUIPrefab: {fileID: 1962757527568594360, guid: 5a0781ee7e9e23940b0f13ecd8eedfc9, type: 3}
   canvasTransform: {fileID: 0}
+  fillImageName: Fill
+  maxGauge: 100
+  gaugePerPress: 10
+  gaugeCompleteEvent: {fileID: 11400000, guid: c257e8123ab374242836d4e14c9b2d12, type: 2}
   itemCode: 3
-  postUnlockDestroy: 1
+  unlockEvent: {fileID: 11400000, guid: a819803cfed3ca74db2432d110d25db9, type: 2}
+  failedEvent: {fileID: 11400000, guid: 751964d13e60baa4fbc0faa1c3c9b759, type: 2}
+  failedUIPrefab: {fileID: 1962757527568594360, guid: 5dff67cadc694ef448b63eb0e953962a, type: 3}
 --- !u!61 &7166049112610287785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,3 +164,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-8949072034412220580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479274483293716718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b758a883a1cd9419ffe8a2e42eb399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveableId
+  id: 280aa829-cf32-4923-b359-acfa18a678cb
+--- !u!114 &6349174285544539976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479274483293716718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad93a2114c1b84478ae58b239624a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventToSpawnRelay
+  receiveEvent: {fileID: 11400000, guid: c257e8123ab374242836d4e14c9b2d12, type: 2}
+  raiseEvent: {fileID: 11400000, guid: 8d250e57f4a566543b63eac1aefa8881, type: 2}
+  destroyAfterEventCall: 1

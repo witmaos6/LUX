@@ -165,8 +165,6 @@ public class Devil : MonoBehaviour
             PlayerController.PlayerState playerState = controller.GetState();
             if (playerState == PlayerController.PlayerState.Normal || (playerState == PlayerController.PlayerState.Hide && suspicion >= maxSuspicion))
             {
-                Debug.Log("Player Die");
-
                 isCollidingWithPlayer = true;
 
                 controller.Dead();

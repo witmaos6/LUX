@@ -8,7 +8,8 @@ public class DropItem : InteractionObject
         Flashlight,
         BoltCutter,
         Password,
-        Stick
+        Stick,
+        None,
     }
 
     public GameObject uiPrefab;
