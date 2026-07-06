@@ -157,6 +157,9 @@ MonoBehaviour:
   passwordKeypad: {fileID: 5200237468158644041, guid: 2617e327b57fe4a4fac99567893af55e, type: 3}
   canvasTransform: {fileID: 0}
   passwordSuccessEvent: {fileID: 11400000, guid: 0483eb03f125ea74f88a25621db723e8, type: 2}
+  dispatchSoundStrength: 70
+  dispatchSoundRange: 30
+  audioClip: {fileID: 8300000, guid: 2efe7015c39f81b4b96f7c8fad4aa05b, type: 3}
 --- !u!1 &4392496210548394295
 GameObject:
   m_ObjectHideFlags: 0

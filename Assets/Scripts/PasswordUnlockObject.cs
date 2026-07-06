@@ -11,6 +11,10 @@ public class PasswordUnlockObject : InteractionObject
 
     public GameEvent passwordSuccessEvent;
 
+    public float dispatchSoundStrength = 70f;
+    public float dispatchSoundRange = 30f;
+    public AudioClip audioClip;
+
     private void Awake()
     {
         interactionType = InteractionType.InteractionKey;
@@ -63,6 +67,14 @@ public class PasswordUnlockObject : InteractionObject
         {
             GameEventManager.Raise(passwordSuccessEvent);
         }
+
+        if(audioClip != null)
+        {
+            AudioSource.PlayClipAtPoint(audioClip, transform.position);
+        }
+
+        DevilDispatcher.Instance.NotifySuspicionSource(transform.position, dispatchSoundRange, dispatchSoundStrength);
+
         EndInteraction();
     }
 

@@ -38,6 +38,10 @@ public class PlayerController : MonoBehaviour
     [Header("Sound")]
     private AudioSource audioSource;
     public AudioClip deadSound;
+    public AudioClip moveSound;
+
+    public float moveSoundRangeWeight = 2f;
+    public float moveSoundStrength = 30f;
 
     private List<ItemCode> inventory = new List<ItemCode>();
 
@@ -109,6 +113,13 @@ public class PlayerController : MonoBehaviour
                 gameObject.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
             }
         }
+    }
+
+    public void MoveSound()
+    {
+        DevilDispatcher.Instance.NotifySuspicionSource(transform.position, moveSpeed * moveSoundRangeWeight, moveSoundStrength);
+
+        AudioSource.PlayClipAtPoint(moveSound, transform.position);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2050782884436184447}
   - component: {fileID: 4081167117958414717}
   - component: {fileID: 4252073229222619490}
+  - component: {fileID: 3516225878430049674}
+  - component: {fileID: 4597272901025436448}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -113,6 +115,9 @@ MonoBehaviour:
   dirRight: 1
   flashlightPrefab: {fileID: 223673838234225482, guid: 86fb4bb16bdbbb94c968a31822a5360f, type: 3}
   deadSound: {fileID: 8300000, guid: 2e001df00aec33d459d42bc2465581b6, type: 3}
+  moveSound: {fileID: 8300000, guid: 491db964e2bb55f459ac41a50db0ca0c, type: 3}
+  moveSoundRangeWeight: 2
+  moveSoundStrength: 20
 --- !u!50 &2050782884436184447
 Rigidbody2D:
   serializedVersion: 5
@@ -136,7 +141,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -283,3 +288,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3516225878430049674
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120054277494988050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da81abc8f50f41f4a8814b138ac81a91, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4597272901025436448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120054277494988050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d281cb07fd2412345a1474e9c0944570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationComponent
+  dirRight: 1
+  idle: 1
+  speed: 0

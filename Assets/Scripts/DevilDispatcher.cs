@@ -2,7 +2,6 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-/// <summary>�ǽɵ��� �����ϴ� �ҽ��� ���� (����� ǥ�ÿ� ����)</summary>
 public enum SuspicionSourceType
 {
     Sound,
@@ -24,8 +23,8 @@ public class DevilDispatcher : MonoBehaviour
     [Header("Suspicion Source Debug")]
     public bool showSuspicionRangeDebug = true;
     public float debugDisplayDuration = 0.5f;
-    public Color soundRangeColor = new Color(1f, 0.6f, 0.1f); // ��Ȳ��: �Ҹ�
-    public Color lightRangeColor = new Color(1f, 1f, 0.4f);   // ���� �����: ��
+    public Color soundRangeColor = new Color(1f, 0.6f, 0.1f);
+    public Color lightRangeColor = new Color(1f, 1f, 0.4f);
     private const int debugCircleSegments = 24;
 
     private Light2D flashlight;
@@ -51,11 +50,6 @@ public class DevilDispatcher : MonoBehaviour
         }
     }
 
-    // ============================================================
-    // ��/�Ҹ��� ���� ������Ʈ -> Dispatcher -> Devil
-    // (gameObject, distance, strength)
-    // ============================================================
-
     public void NotifySuspicionSource(Vector3 sourcePosition, float range, float strength, SuspicionSourceType type = SuspicionSourceType.Sound)
     {
         if (showSuspicionRangeDebug)
@@ -68,17 +62,13 @@ public class DevilDispatcher : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// �ǽɵ� �߰� ���ο� �����ϰ�, ��/�Ҹ��� �߻��� ������ ���� ������ ǥ���Ѵ�.
-    /// ���� ���� �ִ� ���� �� ������, �Ҹ��� �߻��� ������ ȣ���ϸ� �ȴ�.
-    /// </summary>
+
     public void ShowSuspicionRangeDebug(Vector3 position, float range, SuspicionSourceType type)
     {
         Color color = (type == SuspicionSourceType.Sound) ? soundRangeColor : lightRangeColor;
         DrawDebugCircle(position, range, color, debugDisplayDuration);
     }
 
-    /// <summary>�־��� ��ġ�� �߽����� range �ݰ��� ���� ����׷� �׸��� (Scene �信�� Ȯ�� ����).</summary>
     private void DrawDebugCircle(Vector3 center, float radius, Color color, float duration)
     {
         if (radius <= 0f) return;
@@ -93,10 +83,6 @@ public class DevilDispatcher : MonoBehaviour
         }
     }
 
-    // ============================================================
-    // PlayerController -> Dispatcher -> Devil (Door ������Ʈ)
-    // ============================================================
-
     public void NotifyZoneChange(GameObject doorObject)
     {
         foreach (Devil devil in devils)
@@ -106,10 +92,6 @@ public class DevilDispatcher : MonoBehaviour
         }
     }
 
-    // ============================================================
-    // ���� �ý��� -> Dispatcher -> Devil
-    // ============================================================
-
     public void NotifyPlayerHidden(bool hidden, Vector3 lastPositionBeforeHide)
     {
         foreach (Devil devil in devils)
@@ -118,10 +100,6 @@ public class DevilDispatcher : MonoBehaviour
                 devil.SetPlayerHidden(hidden, lastPositionBeforeHide);
         }
     }
-
-    // ============================================================
-    // ������ ���� �߰� -> �ǽɵ� �ý������� ����
-    // ============================================================
 
     public void TriggerLight(GameObject inFlashlight)
     {
@@ -161,10 +139,6 @@ public class DevilDispatcher : MonoBehaviour
         }
 
     }
-
-    // ============================================================
-    // ����� ǥ��
-    // ============================================================
 
     private void OnDrawGizmosSelected()
     {
