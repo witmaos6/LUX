@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private List<InteractionObject> arrowKeyInteractionObjects = new List<InteractionObject>();
     private List<InteractionObject> interactionObjects = new List<InteractionObject>();
+    private InteractionObject currentInteraction;
 
     public GameObject flashlightPrefab;
     private GameObject flashlightInstance;
@@ -162,6 +163,7 @@ public class PlayerController : MonoBehaviour
                 }
 
                 dontMove = true;
+                currentInteraction = interact;
                 interact.interactionComplete += AllowInteraction;
                 interact.Interaction(gameObject);
                 break;
@@ -186,6 +188,7 @@ public class PlayerController : MonoBehaviour
                 }
 
                 dontMove = true;
+                currentInteraction = interact;
                 interact.interactionComplete += AllowInteraction;
                 interact.Interaction(gameObject);
                 break;
@@ -202,6 +205,7 @@ public class PlayerController : MonoBehaviour
     {
         blockInteraction = false;
         dontMove = false;
+        currentInteraction = null;
     }
 
     void OnFlashlight(InputAction.CallbackContext context)
@@ -276,6 +280,11 @@ public class PlayerController : MonoBehaviour
     public void Dead()
     {
         playerState = PlayerState.Dead;
+
+        if (currentInteraction != null)
+        {
+            currentInteraction.CancelInteraction();
+        }
 
         audioSource.clip = deadSound;
         audioSource.Play();

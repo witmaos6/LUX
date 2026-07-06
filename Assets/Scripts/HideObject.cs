@@ -59,4 +59,26 @@ public class HideObject : InteractionObject
 
         EndInteraction();
     }
+
+    public override void CancelInteraction()
+    {
+        if (objectRenderer != null)
+        {
+            objectRenderer.sortingOrder = 10;
+        }
+
+        if (hideLight != null)
+        {
+            hideLight.enabled = false;
+        }
+
+        if (controller != null)
+        {
+            controller.SetState(PlayerController.PlayerState.Normal);
+
+            DevilDispatcher.Instance.NotifyPlayerHidden(false, controller.transform.position);
+        }
+
+        base.CancelInteraction();
+    }
 }

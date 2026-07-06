@@ -37,4 +37,9 @@ public abstract class InteractionObject : MonoBehaviour
         interactionComplete = null;
         isActivate = false;
     }
+
+    public virtual void CancelInteraction()
+    {
+        EndInteraction();
+    }
 }

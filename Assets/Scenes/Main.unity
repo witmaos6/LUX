@@ -2310,6 +2310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivateOnEvent
   activateEvent: {fileID: 11400000, guid: 751964d13e60baa4fbc0faa1c3c9b759, type: 2}
+  savedEvent: 1
 --- !u!114 &407340038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6669,6 +6670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivateOnEvent
   activateEvent: {fileID: 11400000, guid: 89f5cb21b91673c42ab90ab0e77895fa, type: 2}
+  savedEvent: 1
 --- !u!4 &1439227149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4179727042667755131, guid: 487e76137e223184f9b8fa4b6f5d6088, type: 3}
@@ -7802,6 +7804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivateOnEvent
   activateEvent: {fileID: 11400000, guid: 751964d13e60baa4fbc0faa1c3c9b759, type: 2}
+  savedEvent: 1
 --- !u!114 &1664333413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8422,7 +8425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786030719071124333, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 168.1
+      value: 170.94
       objectReference: {fileID: 0}
     - target: {fileID: 3786030719071124333, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8494,6 +8497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivateOnEvent
   activateEvent: {fileID: 11400000, guid: a819803cfed3ca74db2432d110d25db9, type: 2}
+  savedEvent: 0
 --- !u!1 &1768316737
 GameObject:
   m_ObjectHideFlags: 0

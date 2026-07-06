@@ -74,4 +74,12 @@ public class DropItem : InteractionObject
         }
         EndInteraction();
     }
+
+    public override void CancelInteraction()
+    {
+        if (uiInstance != null)
+            Destroy(uiInstance);
+
+        base.CancelInteraction();
+    }
 }

@@ -68,6 +68,14 @@ public class PasswordUnlockObject : InteractionObject
 
     private void OnUnlockFailed()
     {
-        
+
+    }
+
+    public override void CancelInteraction()
+    {
+        if (uiInstance != null)
+            Destroy(uiInstance);
+
+        base.CancelInteraction();
     }
 }

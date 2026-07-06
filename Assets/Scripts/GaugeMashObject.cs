@@ -100,4 +100,15 @@ public class GaugeMashObject : InteractionObject
         if (gaugeFillImage != null)
             gaugeFillImage.fillAmount = currentGauge / maxGauge;
     }
+
+    public override void CancelInteraction()
+    {
+        if (gaugeUIInstance != null)
+            Destroy(gaugeUIInstance);
+
+        if (failedUIInstance != null)
+            Destroy(failedUIInstance);
+
+        base.CancelInteraction();
+    }
 }

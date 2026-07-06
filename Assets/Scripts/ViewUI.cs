@@ -34,4 +34,12 @@ public class ViewUI : InteractionObject
             Destroy(uiInstance);
         }
     }
+
+    public override void CancelInteraction()
+    {
+        if (uiInstance != null)
+            Destroy(uiInstance);
+
+        base.CancelInteraction();
+    }
 }

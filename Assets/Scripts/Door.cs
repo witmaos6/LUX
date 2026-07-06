@@ -81,4 +81,15 @@ public class Door : InteractionObject
             }
         }
     }
+
+    public override void CancelInteraction()
+    {
+        if (cameraFader != null)
+        {
+            cameraFader.cameraFadeInComplete -= MoveToPosition;
+            cameraFader.cameraFadeOutComplete -= EndInteraction;
+        }
+
+        base.CancelInteraction();
+    }
 }
