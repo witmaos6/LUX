@@ -25,7 +25,7 @@ public class SaveableId : MonoBehaviour
     private void OnDestroy()
     {
         if (string.IsNullOrEmpty(id)) return;
-        if (SaveManager.IsQuitting) return;
+        if (SaveManager.IsQuitting || SaveManager.IsTransitioningScene) return;
 
         SaveManager.MarkDestroyed(id);
     }

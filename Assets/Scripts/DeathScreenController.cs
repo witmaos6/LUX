@@ -64,6 +64,7 @@ public class DeathScreenController : MonoBehaviour
 
     public void Restart()
     {
+        SaveManager.BeginSceneTransition();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -30,12 +30,14 @@ public class LobbyController : MonoBehaviour
     private void StartNewGame()
     {
         SaveManager.ResetSave();
+        SaveManager.BeginSceneTransition();
         SceneManager.LoadScene(mainSceneName);
     }
 
     private void ContinueGame()
     {
         if (!SaveManager.HasSave) return;
+        SaveManager.BeginSceneTransition();
         SceneManager.LoadScene(mainSceneName);
     }
 

@@ -24,12 +24,16 @@ public class CheckpointApplier : MonoBehaviour
 
     private void Start()
     {
+        if (player != null)
+        {
+            player.RestoreInventory(SaveManager.Inventory);
+        }
+
         if (!SaveManager.HasSave) return;
 
         if (player != null)
         {
             player.transform.position = SaveManager.RespawnPosition;
-            player.RestoreInventory(SaveManager.Inventory);
         }
 
         if (cameraController != null && !string.IsNullOrEmpty(SaveManager.RespawnWallpaperId))

@@ -24,7 +24,7 @@ public class DropItem : InteractionObject
     {
         interactionType = InteractionType.InteractionKey;
 
-        if (SaveManager.HasItem(itemCode))
+        if ((objectDestroy || inputObjectDestroy) && SaveManager.HasItem(itemCode))
         {
             Destroy(gameObject);
             return;

@@ -7,10 +7,18 @@ public class ActivateOnEvent : MonoBehaviour
     private void Awake()
     {
         GameEventManager.Subscribe(activateEvent, Activate);
-        gameObject.SetActive(false);
+
+        bool alreadyFired = activateEvent != null && SaveManager.HasEventFired(activateEvent.name);
+        gameObject.SetActive(alreadyFired);
     }
 
     private void OnDestroy() => GameEventManager.Unsubscribe(activateEvent, Activate);
 
-    private void Activate() => gameObject.SetActive(true);
+    private void Activate()
+    {
+        if (activateEvent != null)
+            SaveManager.MarkEventFired(activateEvent.name);
+
+        gameObject.SetActive(true);
+    }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class SpawnedRecord
@@ -21,6 +22,7 @@ public class CheckpointData
     public List<DropItem.ItemCode> inventory = new List<DropItem.ItemCode>();
     public List<string> destroyedObjectIds = new List<string>();
     public List<SpawnedRecord> spawnedObjects = new List<SpawnedRecord>();
+    public List<string> firedEventIds = new List<string>();
 }
 
 public static class SaveManager
@@ -30,10 +32,13 @@ public static class SaveManager
 
     private static CheckpointData data = new CheckpointData();
     private static readonly HashSet<string> destroyedLookup = new HashSet<string>();
+    private static readonly HashSet<string> firedEventLookup = new HashSet<string>();
     private static bool isQuitting = false;
+    private static bool isTransitioningScene = false;
 
     public static bool HasSave { get; private set; }
     public static bool IsQuitting => isQuitting;
+    public static bool IsTransitioningScene => isTransitioningScene;
 
     public static Vector3 RespawnPosition => data.respawnPosition;
     public static string RespawnWallpaperId => data.respawnWallpaperId;
@@ -44,7 +49,9 @@ public static class SaveManager
     private static void Load()
     {
         isQuitting = false;
+        isTransitioningScene = false;
         Application.quitting += () => isQuitting = true;
+        SceneManager.sceneLoaded += (scene, mode) => isTransitioningScene = false;
 
         if (File.Exists(SavePath))
         {
@@ -67,13 +74,23 @@ public static class SaveManager
         foreach (var id in data.destroyedObjectIds)
             destroyedLookup.Add(id);
 
+        firedEventLookup.Clear();
+        foreach (var id in data.firedEventIds)
+            firedEventLookup.Add(id);
+
         HasSave = data.hasRespawnPoint;
+    }
+
+    public static void BeginSceneTransition()
+    {
+        isTransitioningScene = true;
     }
 
     public static void ResetSave()
     {
         data = new CheckpointData();
         destroyedLookup.Clear();
+        firedEventLookup.Clear();
         HasSave = false;
         Flush();
     }
@@ -133,6 +150,20 @@ public static class SaveManager
     public static SpawnedRecord FindSpawnedRecord(string id)
     {
         return data.spawnedObjects.Find(r => r.id == id);
+    }
+
+    public static bool HasEventFired(string eventId)
+    {
+        return !string.IsNullOrEmpty(eventId) && firedEventLookup.Contains(eventId);
+    }
+
+    public static void MarkEventFired(string eventId)
+    {
+        if (string.IsNullOrEmpty(eventId)) return;
+        if (!firedEventLookup.Add(eventId)) return;
+
+        data.firedEventIds.Add(eventId);
+        Flush();
     }
 
     private static void Flush()

@@ -318,10 +318,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 494831515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1514, y: 612}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &49976388
 CanvasGroup:
@@ -1139,6 +1139,7 @@ GameObject:
   - component: {fileID: 298659673}
   - component: {fileID: 298659670}
   - component: {fileID: 298659674}
+  - component: {fileID: 298659675}
   m_Layer: 0
   m_Name: Locker
   m_TagString: Interaction
@@ -1301,6 +1302,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &298659675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298659669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b758a883a1cd9419ffe8a2e42eb399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveableId
+  id: bc7925b7-ee1e-42a2-a4ef-a6afb1d0ea43
 --- !u!1 &302356192
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,10 +2441,10 @@ RectTransform:
   - {fileID: 772573098}
   m_Father: {fileID: 302356193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1514, y: 612}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494831516
 MonoBehaviour:
@@ -4029,6 +4043,7 @@ GameObject:
   - component: {fileID: 801013573}
   - component: {fileID: 801013572}
   - component: {fileID: 801013574}
+  - component: {fileID: 801013575}
   m_Layer: 0
   m_Name: Chain
   m_TagString: Untagged
@@ -4127,6 +4142,19 @@ MonoBehaviour:
   soundStrength: 70
   soundRange: 30
   sound: {fileID: 8300000, guid: 217ca1e57378ffb4cbddb3226d10884f, type: 3}
+--- !u!114 &801013575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801013571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b758a883a1cd9419ffe8a2e42eb399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveableId
+  id: 14e4b925-bef5-435c-b00e-386792236350
 --- !u!1 &847394445
 GameObject:
   m_ObjectHideFlags: 0
@@ -5504,6 +5532,7 @@ GameObject:
   - component: {fileID: 1166278253}
   - component: {fileID: 1166278255}
   - component: {fileID: 1166278256}
+  - component: {fileID: 1166278257}
   m_Layer: 0
   m_Name: Switchboard
   m_TagString: Interaction
@@ -5651,6 +5680,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1166278257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166278252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b758a883a1cd9419ffe8a2e42eb399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveableId
+  id: 6a423a97-570c-4c90-8a6f-02c120da3c60
 --- !u!1 &1174469138
 GameObject:
   m_ObjectHideFlags: 0
@@ -7104,6 +7146,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &1547337087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547337089}
+  - component: {fileID: 1547337088}
+  m_Layer: 0
+  m_Name: SaveSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1547337088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547337087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eedcbd0581ee384193a53f162ab69c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointApplier
+  player: {fileID: 0}
+  cameraController: {fileID: 0}
+--- !u!4 &1547337089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547337087}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1556308101
 GameObject:
   m_ObjectHideFlags: 0
@@ -10775,3 +10863,4 @@ SceneRoots:
   - {fileID: 1612310535}
   - {fileID: 1768316739}
   - {fileID: 298659672}
+  - {fileID: 1547337089}

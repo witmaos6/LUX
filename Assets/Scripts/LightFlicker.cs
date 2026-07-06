@@ -48,7 +48,7 @@ public class LightFlicker : MonoBehaviour
         if (startEvent != null)
         {
             GameEventManager.Subscribe(startEvent, StartFlicker);
-            isActive = false;
+            isActive = SaveManager.HasEventFired(startEvent.name);
         }
     }
 
@@ -60,6 +60,9 @@ public class LightFlicker : MonoBehaviour
 
     private void StartFlicker()
     {
+        if (startEvent != null)
+            SaveManager.MarkEventFired(startEvent.name);
+
         isActive = true;
     }
 
