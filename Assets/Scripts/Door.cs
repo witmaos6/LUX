@@ -68,6 +68,12 @@ public class Door : InteractionObject
                 m_tryObject.transform.position = movePosition;
             }
 
+            AnimationComponent tryObjectAnimation = m_tryObject.GetComponent<AnimationComponent>();
+            if (tryObjectAnimation != null)
+            {
+                tryObjectAnimation.ResyncPosition();
+            }
+
             if(cameraController != null && nextWallpaper != null)
             {
                 cameraController.SetWallpaper(nextWallpaper);

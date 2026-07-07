@@ -112,7 +112,7 @@ MonoBehaviour:
   canvasTransform: {fileID: 0}
   fillImageName: Fill
   maxGauge: 100
-  gaugePerPress: 10
+  gaugePerPress: 5
   gaugeCompleteEvent: {fileID: 11400000, guid: c257e8123ab374242836d4e14c9b2d12, type: 2}
   itemCode: 3
   unlockEvent: {fileID: 11400000, guid: a819803cfed3ca74db2432d110d25db9, type: 2}

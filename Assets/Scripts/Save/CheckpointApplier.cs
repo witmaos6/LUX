@@ -34,6 +34,12 @@ public class CheckpointApplier : MonoBehaviour
         if (player != null)
         {
             player.transform.position = SaveManager.RespawnPosition;
+
+            AnimationComponent playerAnimation = player.GetComponent<AnimationComponent>();
+            if (playerAnimation != null)
+            {
+                playerAnimation.ResyncPosition();
+            }
         }
 
         if (cameraController != null && !string.IsNullOrEmpty(SaveManager.RespawnWallpaperId))

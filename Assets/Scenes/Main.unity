@@ -5443,7 +5443,7 @@ GameObject:
   - component: {fileID: 1158539736}
   - component: {fileID: 1158539735}
   m_Layer: 0
-  m_Name: Note (1)
+  m_Name: DevilWarningNote
   m_TagString: Interaction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7687,7 +7687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DevilNoiseDispatcher
   devils: []
-  flashlightDetectStrength: 1
+  flashlightDetectStrength: 5
   flashlightRangeWeitght: 1.3
   obstacleLayer:
     serializedVersion: 2
@@ -8469,7 +8469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4730392957597914943, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: MinDistance
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

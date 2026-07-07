@@ -135,7 +135,7 @@ public class DevilDispatcher : MonoBehaviour
             RaycastHit2D hitObstacle = Physics2D.Raycast(flashlightPosition, dirToDevil, distToDevil, obstacleLayer);
             if (hitObstacle.collider != null) continue;
 
-            devil.AddSuspicion(flashlightPosition, detectDistance, flashlightDetectStrength);
+            devil.AddSuspicion(flashlightPosition, detectDistance, flashlightDetectStrength * Time.deltaTime);
         }
 
     }

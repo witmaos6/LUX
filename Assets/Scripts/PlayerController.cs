@@ -244,7 +244,7 @@ public class PlayerController : MonoBehaviour
 
     void PressSprint(InputAction.CallbackContext context)
     {
-        if(playerState == PlayerState.Normal)
+        if(playerState == PlayerState.Normal || playerState == PlayerState.Hide)
         {
             moveSpeed = sprintSpeed;
         }
@@ -252,7 +252,7 @@ public class PlayerController : MonoBehaviour
 
     void ReleasedSprint(InputAction.CallbackContext context)
     {
-        if (playerState == PlayerState.Normal)
+        if (playerState == PlayerState.Normal || playerState == PlayerState.Hide)
         {
             moveSpeed = normalSpeed;
         }

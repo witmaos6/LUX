@@ -56,6 +56,7 @@ public class Devil : MonoBehaviour
     public AudioClip loopSound;
 
     private AudioSource audioSource;
+    private AnimationComponent animationComponent;
 
     public System.Action OnPlayerExecuted;
 
@@ -93,6 +94,7 @@ public class Devil : MonoBehaviour
         ChangeState(DevilState.Patrol);
 
         audioSource = GetComponent<AudioSource>();
+        animationComponent = GetComponent<AnimationComponent>();
         audioSource.clip = loopSound;
         audioSource.loop = true;
         audioSource.playOnAwake = false;
@@ -443,6 +445,11 @@ public class Devil : MonoBehaviour
         if (teleport)
         {
             transform.position = new Vector3(movePosition.x, movePosition.y, transform.position.z);
+
+            if (animationComponent != null)
+            {
+                animationComponent.ResyncPosition();
+            }
         }
 
         zoneChangeDoor = null;

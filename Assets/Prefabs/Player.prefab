@@ -203,7 +203,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -322,6 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d281cb07fd2412345a1474e9c0944570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationComponent
+  idleSpeedThreshold: 0.05
   dirRight: 1
   idle: 1
   speed: 0
