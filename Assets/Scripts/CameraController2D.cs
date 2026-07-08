@@ -73,7 +73,7 @@ public class CameraController2D : MonoBehaviour
     }
 
     // FixedUpdate: 플레이어가 Rigidbody2D로 움직이므로 물리 타이밍에 맞춤
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         if (target == null) return;
 
