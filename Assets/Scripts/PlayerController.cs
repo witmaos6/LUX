@@ -38,7 +38,6 @@ public class PlayerController : MonoBehaviour
     [Header("Sound")]
     private AudioSource audioSource;
     public AudioClip deadSound;
-    public AudioClip moveSound;
 
     public float moveSoundRangeWeight = 2f;
     public float moveSoundStrength = 30f;
@@ -115,11 +114,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void MoveSound()
+    public void NotifySound()
     {
         DevilDispatcher.Instance.NotifySuspicionSource(transform.position, moveSpeed * moveSoundRangeWeight, moveSoundStrength);
-
-        AudioSource.PlayClipAtPoint(moveSound, transform.position);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

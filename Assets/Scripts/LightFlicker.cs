@@ -28,6 +28,10 @@ public class LightFlicker : MonoBehaviour
     [Header("Event")]
     public GameEvent startEvent;
 
+    [Header("Sound")]
+    public AudioClip lightOnSound;
+    [SerializeField] private AudioSource audioSource;
+
     private Light2D light2D;
     public float maxNoiseOffset = 100f;
     public float minNoiseOffset = 0f;
@@ -35,12 +39,16 @@ public class LightFlicker : MonoBehaviour
     private float spikeTimer = 0f;
     private bool isSpiking = false;
     private bool isActive = true;
+    private bool wasLightOn = false;
 
     private void Awake()
     {
         light2D = GetComponent<Light2D>();
         noiseOffset = Random.Range(minNoiseOffset, maxNoiseOffset);
         light2D.intensity = 0f;
+
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -68,7 +76,11 @@ public class LightFlicker : MonoBehaviour
 
     private void Update()
     {
-        if (!isActive) return;
+        if (!isActive)
+        {
+            wasLightOn = false;
+            return;
+        }
 
         if (isSpiking)
         {
@@ -77,6 +89,7 @@ public class LightFlicker : MonoBehaviour
                 isSpiking = false;
 
             light2D.intensity = 0f;
+            wasLightOn = false;
             return;
         }
 
@@ -84,18 +97,33 @@ public class LightFlicker : MonoBehaviour
         {
             isSpiking = true;
             spikeTimer = spikeDuration;
+            wasLightOn = false;
             return;
         }
 
+        bool isOnNow = false;
         if(mode == FlickerMode.Natural)
         {
             float noise = Mathf.PerlinNoise(noiseOffset + Time.time * flickerSpeed, 0f);
             light2D.intensity = Mathf.Lerp(minIntensity, maxIntensity, noise);
+            isOnNow = true;
         }
         else if(mode == FlickerMode.WarningLight)
         {
             float sinValue = Mathf.Sin(Time.time * flickerSpeed) > 0 ? 1f : 0f;
             light2D.intensity = Mathf.Lerp(minIntensity, maxIntensity, sinValue);
+            isOnNow = sinValue > 0.5f;
         }
+
+        if (isOnNow && !wasLightOn)
+            PlayLightOnSound();
+
+        wasLightOn = isOnNow;
+    }
+
+    private void PlayLightOnSound()
+    {
+        if (audioSource != null && lightOnSound != null)
+            audioSource.PlayOneShot(lightOnSound);
     }
 }
