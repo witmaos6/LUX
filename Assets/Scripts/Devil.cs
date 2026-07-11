@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -162,14 +163,23 @@ public class Devil : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-        {
-            PlayerController controller = other.GetComponent<PlayerController>();
-            PlayerController.PlayerState playerState = controller.GetState();
-            if (playerState == PlayerController.PlayerState.Normal || (playerState == PlayerController.PlayerState.Hide && suspicion >= maxSuspicion))
-            {
-                isCollidingWithPlayer = true;
+            isCollidingWithPlayer = true;
+    }
 
-                controller.Dead();
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isCollidingWithPlayer = true;
+
+            PlayerController controller = other.GetComponent<PlayerController>();
+            if (controller != null)
+            {
+                PlayerController.PlayerState playerState = controller.GetState();
+                if (playerState == PlayerController.PlayerState.Normal || (playerState == PlayerController.PlayerState.Hide && suspicion >= executeSuspicionThreshold))
+                {
+                    controller.Dead();
+                }
             }
         }
     }
@@ -288,8 +298,6 @@ public class Devil : MonoBehaviour
         }
     }
 
-    // ------------------ Patrol ------------------
-
     private void UpdatePatrolMovement()
     {
         if (patrolWaypoints == null || patrolWaypoints.Length == 0)
@@ -375,8 +383,6 @@ public class Devil : MonoBehaviour
         hasDestination = true;
     }
 
-    // ------------------ Chase ------------------
-
     private void UpdateChaseDestination()
     {
         if (zoneChangeDoor != null)
@@ -431,7 +437,6 @@ public class Devil : MonoBehaviour
 
         isInDoorTransition = false;
 
-        // ��� �� ó���Ǿ��ų�, �ǽɵ��� ������ �� �̻� �� Door�� ���� �ʿ䰡 ������ ��� �ߴ�
         if (hasExecuted || zoneChangeDoor != doorObject)
             yield break;
 
