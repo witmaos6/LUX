@@ -12,6 +12,7 @@ public class AnimationComponent : MonoBehaviour
     public bool dirRight = true;
     public bool idle = true;
     public float speed = 0f;
+    public bool hide = false;
 
     private void Start()
     {
@@ -64,5 +65,12 @@ public class AnimationComponent : MonoBehaviour
             return Vector2.zero;
 
         return (transform.position - prevPosition) / Time.deltaTime;
+    }
+
+    public void SetHide(bool inHide)
+    {
+        hide = inHide;
+
+        animator.SetBool("Hide", hide);
     }
 }

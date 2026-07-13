@@ -7,6 +7,8 @@ public class HideObject : InteractionObject
     PlayerController controller;
     private Light2D hideLight;
 
+    AnimationComponent animationComponent;
+
     private void Awake()
     {
         interactionType = InteractionType.ArrowKey;
@@ -36,6 +38,15 @@ public class HideObject : InteractionObject
 
             DevilDispatcher.Instance.NotifyPlayerHidden(true, controller.transform.position);
         }
+
+        if(controller != null)
+        {
+            animationComponent = controller.GetComponent<AnimationComponent>();
+            if(animationComponent != null)
+            {
+                animationComponent.SetHide(true);
+            }
+        }
     }
 
     public override void InputPressed()
@@ -55,6 +66,11 @@ public class HideObject : InteractionObject
             controller.SetState(PlayerController.PlayerState.Normal);
 
             DevilDispatcher.Instance.NotifyPlayerHidden(false, controller.transform.position);
+        }
+
+        if (animationComponent != null)
+        {
+            animationComponent.SetHide(false);
         }
 
         EndInteraction();

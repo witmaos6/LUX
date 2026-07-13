@@ -115,7 +115,7 @@ MonoBehaviour:
   inputDeadZone: 0.01
   dirRight: 1
   flashlightPrefab: {fileID: 223673838234225482, guid: 86fb4bb16bdbbb94c968a31822a5360f, type: 3}
-  deadSound: {fileID: 8300000, guid: 2e001df00aec33d459d42bc2465581b6, type: 3}
+  deadSound: {fileID: 8300000, guid: 2481c76c7b5b66a4594b4b73fa2c46f4, type: 3}
   moveSoundRangeWeight: 2
   moveSoundStrength: 20
 --- !u!50 &2050782884436184447
