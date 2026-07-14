@@ -35,6 +35,8 @@ public class CameraController2D : MonoBehaviour
 
     private PlayerController _playerController;
 
+    public Transform CurrentWallpaper => wallpaper;
+
     private void Awake()
     {
         _cam = GetComponent<Camera>();

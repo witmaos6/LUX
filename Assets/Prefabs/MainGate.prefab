@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7166049112610287785}
   - component: {fileID: -8949072034412220580}
   - component: {fileID: 6349174285544539976}
+  - component: {fileID: -1453881764204461398}
   m_Layer: 0
   m_Name: MainGate
   m_TagString: Interaction
@@ -192,3 +193,18 @@ MonoBehaviour:
   receiveEvent: {fileID: 11400000, guid: c257e8123ab374242836d4e14c9b2d12, type: 2}
   raiseEvent: {fileID: 11400000, guid: 8d250e57f4a566543b63eac1aefa8881, type: 2}
   destroyAfterEventCall: 1
+--- !u!114 &-1453881764204461398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479274483293716718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff703a4c550c554429dc74cd2a7b9b78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EventToSaveRelay
+  receiveEvent: {fileID: 11400000, guid: 751964d13e60baa4fbc0faa1c3c9b759, type: 2}
+  player: {fileID: 0}
+  cameraController: {fileID: 0}
