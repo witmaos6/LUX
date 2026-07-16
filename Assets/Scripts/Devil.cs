@@ -55,6 +55,7 @@ public class Devil : MonoBehaviour
 
     [Header("Sound")]
     public AudioClip loopSound;
+    public AudioClip investigateSound;
 
     private AudioSource audioSource;
     private AnimationComponent animationComponent;
@@ -236,7 +237,7 @@ public class Devil : MonoBehaviour
             case DevilState.Patrol:
                 currentSpeed = patrolSpeed;
                 zoneChangeDoor = null;
-
+                
                 investigatePoints.Clear();
                 investigatePointIndex = -1;
 
@@ -252,6 +253,9 @@ public class Devil : MonoBehaviour
                 break;
 
             case DevilState.Investigate:
+
+                StartCoroutine(InvestigateSoundPlay());
+
                 currentSpeed = investigateSpeed;
                 zoneChangeDoor = null;
 
@@ -279,6 +283,25 @@ public class Devil : MonoBehaviour
         }
     }
 
+    IEnumerator InvestigateSoundPlay()
+    {
+        yield return new WaitForSeconds(1);
+
+        if (investigateSound != null)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(investigateSound);
+
+            StartCoroutine(LoopSoundVolumeReset(investigateSound.length));
+        }
+    }
+
+    IEnumerator LoopSoundVolumeReset(float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        audioSource.Play();
+    }
+
     private void RunStateMovement()
     {
         switch (currentState)
@@ -293,7 +316,6 @@ public class Devil : MonoBehaviour
                 UpdateChaseMovement();
                 break;
             case DevilState.Execute:
-                // �̵� ����
                 break;
         }
     }
