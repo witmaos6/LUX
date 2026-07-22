@@ -35,6 +35,8 @@ public class CheckpointApplier : MonoBehaviour
         {
             player.transform.position = SaveManager.RespawnPosition;
 
+            player.ResurrectionEvent();
+
             AnimationComponent playerAnimation = player.GetComponent<AnimationComponent>();
             if (playerAnimation != null)
             {

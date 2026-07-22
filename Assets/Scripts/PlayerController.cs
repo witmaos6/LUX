@@ -55,6 +55,20 @@ public class PlayerController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    private void Start()
+    {
+        CameraFader cameraFader = GameObject.Find("Main Camera").GetComponent<CameraFader>();
+        if(cameraFader != null)
+        {
+            cameraFader.StartFade(0f, 1f);
+        }
+    }
+
+    public void ResurrectionEvent()
+    {
+        // To do: 부활하는 경우 이벤트 실행
+    }
+
     private void OnEnable()
     {
         controls.Enable();

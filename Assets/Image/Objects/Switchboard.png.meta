@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd3d2cacea51e4c4d92d2c78f01d638c
+guid: 1de087b4794de784c9c1c760f66cb7bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2296908492946758698
-    second: 1FWallpaper_0
+      213: -7165291350744950483
+    second: Switchboard_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,18 +40,18 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1FWallpaper_0
+      name: Switchboard_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1536
-        height: 1024
+        width: 1250
+        height: 1090
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d3a45c25edbf10e0800000000000000
-      internalID: -2296908492946758698
+      spriteID: d291ba6da75cf8c90800000000000000
+      internalID: -7165291350744950483
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1FWallpaper_0: -2296908492946758698
+      Switchboard_0: -7165291350744950483
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
