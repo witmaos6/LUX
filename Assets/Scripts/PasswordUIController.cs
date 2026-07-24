@@ -97,7 +97,8 @@ public class PasswordUIController : MonoBehaviour
 
     private void UpdateDisplay()
     {
-        displayText.text = string.IsNullOrEmpty(currentInput) ? "----" : currentInput;
+        string space = new string('-', maxDisplayLength);
+        displayText.text = string.IsNullOrEmpty(currentInput) ? space : currentInput;
     }
 
     private void ExecuteVerification()

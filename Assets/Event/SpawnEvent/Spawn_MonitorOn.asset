@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 141092c3f863c9849885fb38f22b2262, type: 3}
-  m_Name: PrevTo2-3Gate
+  m_Name: Spawn_MonitorOn
   m_EditorClassIdentifier: Assembly-CSharp::GameEvent

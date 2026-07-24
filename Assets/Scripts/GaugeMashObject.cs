@@ -48,6 +48,12 @@ public class GaugeMashObject : InteractionObject
             GameEventManager.Raise(unlockEvent);
         }
 
+        if(currentGauge >= maxGauge)
+        {
+            EndInteraction();
+            return;
+        }
+
         currentGauge = 0f;
 
         if (gaugeUIPrefab != null)
