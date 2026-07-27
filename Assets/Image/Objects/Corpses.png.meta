@@ -5,6 +5,84 @@ TextureImporter:
   - first:
       213: -2034080820746542599
     second: Corpses_0
+  - first:
+      213: -1809698617895421864
+    second: Corpses_1
+  - first:
+      213: -4062847125068911706
+    second: Corpses_2
+  - first:
+      213: -1039713789599404321
+    second: Corpses_3
+  - first:
+      213: 2678279332410826130
+    second: Corpses_4
+  - first:
+      213: -2482531744657948715
+    second: Corpses_5
+  - first:
+      213: 4151082743709104806
+    second: Corpses_6
+  - first:
+      213: 7884631537584324895
+    second: Corpses_7
+  - first:
+      213: 5502525395797458959
+    second: Corpses_8
+  - first:
+      213: 8541043036340193320
+    second: Corpses_9
+  - first:
+      213: 7627523199720280596
+    second: Corpses_10
+  - first:
+      213: 1845723927357265655
+    second: Corpses_11
+  - first:
+      213: -5318442226527701372
+    second: Corpses_12
+  - first:
+      213: 6716146789712950814
+    second: Corpses_13
+  - first:
+      213: 2352449446217959301
+    second: Corpses_14
+  - first:
+      213: -2614945591935152188
+    second: Corpses_15
+  - first:
+      213: 6270228714493575316
+    second: Corpses_16
+  - first:
+      213: -8008220459990994582
+    second: Corpses_17
+  - first:
+      213: 2271933400657497424
+    second: Corpses_18
+  - first:
+      213: -8339260632111239032
+    second: Corpses_19
+  - first:
+      213: 7012719293886584966
+    second: Corpses_20
+  - first:
+      213: 2094252856850437746
+    second: Corpses_21
+  - first:
+      213: -4896098916993804674
+    second: Corpses_22
+  - first:
+      213: 7524290920483983892
+    second: Corpses_23
+  - first:
+      213: 8245832419240555923
+    second: Corpses_24
+  - first:
+      213: -5837922421842775672
+    second: Corpses_25
+  - first:
+      213: 678534165140832252
+    second: Corpses_26
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,11 +182,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        y: 701
+        width: 384
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -121,11 +199,341 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Corpses_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 703
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858f3d9f1b8a2e6e0800000000000000
+      internalID: -1809698617895421864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_2
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 698
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6abec8dc01edd97c0800000000000000
+      internalID: -4062847125068911706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_3
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 692
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde2ad621d13291f0800000000000000
+      internalID: -1039713789599404321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 461
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d1e99dcd82b2520800000000000000
+      internalID: 2678279332410826130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 449
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df380008864c8dd0800000000000000
+      internalID: -2482531744657948715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_6
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 445
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aaf80413cb9b9930800000000000000
+      internalID: 4151082743709104806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_7
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 443
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f114e8edb96db6d60800000000000000
+      internalID: 7884631537584324895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00c210a1b5ec5c40800000000000000
+      internalID: 5502525395797458959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_9
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 171
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8288160a361e78670800000000000000
+      internalID: 8541043036340193320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_10
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 171
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412d06310f76ad960800000000000000
+      internalID: 7627523199720280596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_11
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 175
+        width: 384
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6919302245d9910800000000000000
+      internalID: 1845723927357265655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486f06929f81136b0800000000000000
+      internalID: -5318442226527701372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 367
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16783cebeb843d50800000000000000
+      internalID: 6716146789712950814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_14
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 0
+        width: 346
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587c2e9be4495a020800000000000000
+      internalID: 2352449446217959301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corpses_15
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 0
+        width: 384
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf4bb5b6d8d5bbd0800000000000000
+      internalID: -2614945591935152188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d6e1de23f16e2b548aa7596491f6d188
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +541,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":384.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Corpses_0: -2034080820746542599
+      Corpses_1: -1809698617895421864
+      Corpses_10: 7627523199720280596
+      Corpses_11: 1845723927357265655
+      Corpses_12: -5318442226527701372
+      Corpses_13: 6716146789712950814
+      Corpses_14: 2352449446217959301
+      Corpses_15: -2614945591935152188
+      Corpses_2: -4062847125068911706
+      Corpses_3: -1039713789599404321
+      Corpses_4: 2678279332410826130
+      Corpses_5: -2482531744657948715
+      Corpses_6: 4151082743709104806
+      Corpses_7: 7884631537584324895
+      Corpses_8: 5502525395797458959
+      Corpses_9: 8541043036340193320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
