@@ -100,6 +100,7 @@ public class Devil : MonoBehaviour
         audioSource.clip = loopSound;
         audioSource.loop = true;
         audioSource.playOnAwake = false;
+        audioSource.spatialBlend = 1;
         audioSource.Play();
     }
 

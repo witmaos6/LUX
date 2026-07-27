@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: b205125d0acfc274b855c6e216e904f3
+guid: d403399696097c74a87d3b326b3418fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9125362146775631697
-    second: BreakGlass_0
+      213: 5369567069543523995
+    second: PlayerRun2_0
   - first:
-      213: 1293242492124063855
-    second: BreakGlass_1
+      213: -8152966678267803390
+    second: PlayerRun2_1
   - first:
-      213: -5017431255819043361
-    second: BreakGlass_2
+      213: -5734038159746907088
+    second: PlayerRun2_2
+  - first:
+      213: -2529332366942308561
+    second: PlayerRun2_3
+  - first:
+      213: -8552424960830501506
+    second: PlayerRun2_4
+  - first:
+      213: 8162244042353386894
+    second: PlayerRun2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 145
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BreakGlass_0
+      name: PlayerRun2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 1024
+        x: 29
+        y: 131
+        width: 278
+        height: 771
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa874aac9733c5180800000000000000
-      internalID: -9125362146775631697
+      spriteID: b96e6c1fcc8848a40800000000000000
+      internalID: 5369567069543523995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BreakGlass_1
+      name: PlayerRun2_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 1024
+        x: 330
+        y: 129
+        width: 278
+        height: 763
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f68ee77d13582f110800000000000000
-      internalID: 1293242492124063855
+      spriteID: 209404c9008dade80800000000000000
+      internalID: -8152966678267803390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BreakGlass_2
+      name: PlayerRun2_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 512
-        height: 1024
+        x: 615
+        y: 133
+        width: 278
+        height: 752
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fddb6f73bd08e5ab0800000000000000
-      internalID: -5017431255819043361
+      spriteID: 03440c78caa9c60b0800000000000000
+      internalID: -5734038159746907088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRun2_3
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 131
+        width: 278
+        height: 746
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27718dfc9106ecd0800000000000000
+      internalID: -2529332366942308561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRun2_4
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 129
+        width: 278
+        height: 759
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d83819fceaf4980800000000000000
+      internalID: -8552424960830501506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerRun2_5
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 131
+        width: 233
+        height: 744
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85a58a06bd164170800000000000000
+      internalID: 8162244042353386894
       vertices: []
       indices: 
       edges: []
@@ -175,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f5984236d7a57f742b3f23c4ad8a38a1
+    spriteID: d888bb453f8beda43859c662bc30b921
     internalID: 0
     vertices: []
     indices: 
@@ -185,11 +260,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":1024.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":278.0,"y":941.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BreakGlass_0: -9125362146775631697
-      BreakGlass_1: 1293242492124063855
-      BreakGlass_2: -5017431255819043361
+      PlayerRun2_0: 5369567069543523995
+      PlayerRun2_1: -8152966678267803390
+      PlayerRun2_2: -5734038159746907088
+      PlayerRun2_3: -2529332366942308561
+      PlayerRun2_4: -8552424960830501506
+      PlayerRun2_5: 8162244042353386894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
