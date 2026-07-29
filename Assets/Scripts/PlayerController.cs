@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private bool blockInteraction = false;
     private bool dontMove = false;
     private InputSystem_Actions controls;
+    private InputAction inventoryAction;
     private Rigidbody2D rb;
 
     private List<InteractionObject> arrowKeyInteractionObjects = new List<InteractionObject>();
@@ -46,21 +47,41 @@ public class PlayerController : MonoBehaviour
     public Transform canvasTransform;
     public GameObject resurrectionUI;
 
+    [Header("Inventory")]
+    [SerializeField] private InventoryItemDatabase inventoryItemDatabase;
+
     private List<ItemCode> inventory = new List<ItemCode>();
+    private InventoryUI inventoryUI;
+
+    public IReadOnlyList<ItemCode> Inventory => inventory;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
 
         controls = new InputSystem_Actions();
+        inventoryAction = new InputAction("Inventory", InputActionType.Button, "<Keyboard>/i");
 
         moveSpeed = normalSpeed;
 
         audioSource = GetComponent<AudioSource>();
+
+        inventoryUI = GetComponent<InventoryUI>();
+        if (inventoryUI == null)
+            inventoryUI = gameObject.AddComponent<InventoryUI>();
     }
 
     private void Start()
     {
+        if (canvasTransform == null)
+        {
+            GameObject canvasObject = GameObject.Find("Canvas");
+            if (canvasObject != null)
+                canvasTransform = canvasObject.transform;
+        }
+
+        inventoryUI.Initialize(this, inventoryItemDatabase, canvasTransform);
+
         CameraFader cameraFader = GameObject.Find("Main Camera").GetComponent<CameraFader>();
         if(cameraFader != null)
         {
@@ -88,6 +109,8 @@ public class PlayerController : MonoBehaviour
         controls.Player.Flashlight.started += OnFlashlight;
         controls.Player.Sprint.started += PressSprint;
         controls.Player.Sprint.canceled += ReleasedSprint;
+        inventoryAction.performed += ToggleInventory;
+        inventoryAction.Enable();
     }
 
     private void OnDisable()
@@ -98,10 +121,17 @@ public class PlayerController : MonoBehaviour
         controls.Player.Flashlight.started -= OnFlashlight;
         controls.Player.Sprint.started -= PressSprint;
         controls.Player.Sprint.canceled -= ReleasedSprint;
+        inventoryAction.performed -= ToggleInventory;
+        inventoryAction.Disable();
 
         ClearInteractionHighlights(arrowKeyInteractionObjects);
         ClearInteractionHighlights(interactionObjects);
         interactionContactCounts.Clear();
+    }
+
+    private void OnDestroy()
+    {
+        inventoryAction?.Dispose();
     }
 
     void FixedUpdate()
@@ -306,6 +336,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void ToggleInventory(InputAction.CallbackContext context)
+    {
+        if (playerState != PlayerState.Dead)
+            inventoryUI.Toggle();
+    }
+
     void PressSprint(InputAction.CallbackContext context)
     {
         if(playerState == PlayerState.Normal || playerState == PlayerState.Hide)
@@ -328,6 +364,7 @@ public class PlayerController : MonoBehaviour
         {
             inventory.Add(itemCode);
             SaveManager.SetInventory(inventory);
+            inventoryUI.Refresh();
         }
     }
 
@@ -340,6 +377,7 @@ public class PlayerController : MonoBehaviour
     {
         inventory.Clear();
         inventory.AddRange(items);
+        inventoryUI.Refresh();
     }
 
     public void SetState(PlayerState inState)
@@ -355,6 +393,7 @@ public class PlayerController : MonoBehaviour
     public void Dead()
     {
         playerState = PlayerState.Dead;
+        inventoryUI.Close();
 
         if (currentInteraction != null)
         {

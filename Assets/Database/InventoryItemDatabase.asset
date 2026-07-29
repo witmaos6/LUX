@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73d44ea371d4a3ab27f79bc19adf901, type: 3}
+  m_Name: InventoryItemDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDatabase
+  items:
+  - itemCode: 0
+    displayName: Flashlight
+    icon: {fileID: -2638390803197812687, guid: 916c406344a1b5145941e545c9405b77, type: 3}
+  - itemCode: 1
+    displayName: Bolt Cutter
+    icon: {fileID: 4251333813383773966, guid: 395d663e7fca8c146a107084d68a64d0, type: 3}
+  - itemCode: 2
+    displayName: 'Switchboard: 1318'
+    icon: {fileID: 0}
+  - itemCode: 4
+    displayName: Door Opener
+    icon: {fileID: 5236804859230564228, guid: e5c92eba8b49f5e40ab191bc0b7579ba, type: 3}

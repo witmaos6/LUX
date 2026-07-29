@@ -92,8 +92,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18104b4cbdb37a54fba303d6fd4cf781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasswordUnlockObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
-  correctAnswer: 5843
+  correctAnswer: 1318
   passwordKeypad: {fileID: 5200237468158644041, guid: 2617e327b57fe4a4fac99567893af55e, type: 3}
   canvasTransform: {fileID: 0}
   passwordSuccessEvent: {fileID: 11400000, guid: 0483eb03f125ea74f88a25621db723e8, type: 2}

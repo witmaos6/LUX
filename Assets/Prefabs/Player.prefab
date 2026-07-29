@@ -120,6 +120,7 @@ MonoBehaviour:
   moveSoundStrength: 20
   canvasTransform: {fileID: 0}
   resurrectionUI: {fileID: 1962757527568594360, guid: 7b4d2e87a64607744b1abef852a1dca5, type: 3}
+  inventoryItemDatabase: {fileID: 11400000, guid: e1280d5bb1324f2cb9ca2a1a21be0134, type: 2}
 --- !u!50 &2050782884436184447
 Rigidbody2D:
   serializedVersion: 5
