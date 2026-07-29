@@ -8,7 +8,8 @@ public class DropItem : InteractionObject
         Flashlight,
         BoltCutter,
         Password,
-        Stick,
+        Stick, // 기존에 사용하던 Stick은 DoorOpener로 기획 변경, Stick은 현재 사용하지 않는다.
+        DoorOpener,
         None,
     }
 

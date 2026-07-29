@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 
     private List<InteractionObject> arrowKeyInteractionObjects = new List<InteractionObject>();
     private List<InteractionObject> interactionObjects = new List<InteractionObject>();
+    private readonly Dictionary<InteractionObject, int> interactionContactCounts = new();
     private InteractionObject currentInteraction;
 
     public GameObject flashlightPrefab;
@@ -41,6 +42,9 @@ public class PlayerController : MonoBehaviour
 
     public float moveSoundRangeWeight = 2f;
     public float moveSoundStrength = 30f;
+
+    public Transform canvasTransform;
+    public GameObject resurrectionUI;
 
     private List<ItemCode> inventory = new List<ItemCode>();
 
@@ -66,7 +70,14 @@ public class PlayerController : MonoBehaviour
 
     public void ResurrectionEvent()
     {
-        // To do: 부활하는 경우 이벤트 실행
+        if (canvasTransform == null)
+            canvasTransform = GameObject.Find("Canvas").transform;
+
+        if(canvasTransform != null && resurrectionUI != null)
+        {
+            resurrectionUI = Instantiate(resurrectionUI, canvasTransform);
+            Destroy(resurrectionUI, 3f);
+        }
     }
 
     private void OnEnable()
@@ -87,6 +98,10 @@ public class PlayerController : MonoBehaviour
         controls.Player.Flashlight.started -= OnFlashlight;
         controls.Player.Sprint.started -= PressSprint;
         controls.Player.Sprint.canceled -= ReleasedSprint;
+
+        ClearInteractionHighlights(arrowKeyInteractionObjects);
+        ClearInteractionHighlights(interactionObjects);
+        interactionContactCounts.Clear();
     }
 
     void FixedUpdate()
@@ -137,16 +152,26 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Interaction"))
         {
-            InteractionObject interact = collision.GetComponent<InteractionObject>();
+            InteractionObject interact = collision.GetComponentInParent<InteractionObject>();
             if (interact != null)
             {
+                if (interactionContactCounts.TryGetValue(interact, out int contactCount))
+                {
+                    interactionContactCounts[interact] = contactCount + 1;
+                    return;
+                }
+
+                interactionContactCounts.Add(interact, 1);
+
                 if (interact.interactionType == InteractionObject.InteractionType.ArrowKey && !arrowKeyInteractionObjects.Contains(interact))
                 {
                     arrowKeyInteractionObjects.Add(interact);
+                    interact.SetHighlighted(true);
                 }
                 else if (interact.interactionType == InteractionObject.InteractionType.InteractionKey && !interactionObjects.Contains(interact))
                 {
                     interactionObjects.Add(interact);
+                    interact.SetHighlighted(true);
                 }
             }
         }
@@ -156,19 +181,47 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Interaction"))
         {
-            InteractionObject interact = collision.GetComponent<InteractionObject>();
+            InteractionObject interact = collision.GetComponentInParent<InteractionObject>();
             if (interact != null)
             {
+                if (!interactionContactCounts.TryGetValue(interact, out int contactCount))
+                {
+                    return;
+                }
+
+                if (contactCount > 1)
+                {
+                    interactionContactCounts[interact] = contactCount - 1;
+                    return;
+                }
+
+                interactionContactCounts.Remove(interact);
+
                 if (interact.interactionType == InteractionObject.InteractionType.ArrowKey && arrowKeyInteractionObjects.Contains(interact))
                 {
                     arrowKeyInteractionObjects.Remove(interact);
+                    interact.SetHighlighted(false);
                 }
                 else if (interact.interactionType == InteractionObject.InteractionType.InteractionKey && interactionObjects.Contains(interact))
                 {
                     interactionObjects.Remove(interact);
+                    interact.SetHighlighted(false);
                 }
             }
         }
+    }
+
+    private static void ClearInteractionHighlights(List<InteractionObject> interactions)
+    {
+        foreach (InteractionObject interact in interactions)
+        {
+            if (interact != null)
+            {
+                interact.SetHighlighted(false);
+            }
+        }
+
+        interactions.Clear();
     }
 
     void Interaction(InputAction.CallbackContext context)

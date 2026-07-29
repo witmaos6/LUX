@@ -450,6 +450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39978c34cbb38954e98a3d19456570db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HideObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
 --- !u!212 &64966568
 SpriteRenderer:
@@ -697,6 +700,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1cd003b7939024d8fe0b7a0596ad15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropItem
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   uiPrefab: {fileID: 1962757527568594360, guid: 17966a77fa5f09642a2e7e4b969bf5bc, type: 3}
   itemCode: 1
@@ -1311,7 +1317,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7523720840720100793, guid: 12785a8741c31ae4f96ba2082e19009d, type: 3}
+  m_Sprite: {fileID: -2296261850589437173, guid: 44c0057b1cc84bd4f9bebd0f893d1c9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1330,7 +1336,7 @@ Transform:
   m_GameObject: {fileID: 298659669}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 295, y: 20.81, z: 0}
+  m_LocalPosition: {x: 295, y: 20.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1348,6 +1354,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1f8885b96125db42ae4f9afc58671e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GaugeMashObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   gaugeUIPrefab: {fileID: 1962757527568594360, guid: 628e8e9921d7f82478b3c79a8793ed8f, type: 3}
   canvasTransform: {fileID: 0}
@@ -1355,13 +1364,17 @@ MonoBehaviour:
   fillImageName: Fill
   progressSprites:
   - {fileID: 3258276386590239147, guid: 67981a8bec331ec4b91dbb47993009fb, type: 3}
-  - {fileID: -1995193624, guid: 67981a8bec331ec4b91dbb47993009fb, type: 3}
-  - {fileID: -2018086703, guid: 67981a8bec331ec4b91dbb47993009fb, type: 3}
-  - {fileID: -605716663, guid: 67981a8bec331ec4b91dbb47993009fb, type: 3}
+  - {fileID: -1304497776, guid: 67981a8bec331ec4b91dbb47993009fb, type: 3}
+  - {fileID: -268866918, guid: 67981a8bec331ec4b91dbb47993009fb, type: 3}
+  - {fileID: -1750176295, guid: 67981a8bec331ec4b91dbb47993009fb, type: 3}
+  switchImageName: Switch
+  switchReleasedSprite: {fileID: 7660022499367291700, guid: c345a73ce299d11498baf8715a1f5d92, type: 3}
+  switchPressedSprite: {fileID: 3394188370226867035, guid: 127446b1175b72a4a99f42197c367f86, type: 3}
+  switchPressedDuration: 0.1
   maxGauge: 100
   gaugePerPress: 5
   gaugeCompleteEvent: {fileID: 11400000, guid: ce4a0debb24e36d45b5c1b2ff94ee5f1, type: 2}
-  itemCode: 4
+  itemCode: 5
   unlockEvent: {fileID: 0}
   failedEvent: {fileID: 0}
   failedUIPrefab: {fileID: 0}
@@ -1403,7 +1416,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.82166666, y: 1.6533333}
+    oldSize: {x: 2.2933333, y: 1.0633334}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1742,12 +1755,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2389967618956343512, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389967618956343512, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.2
+      value: 3.8866668
       objectReference: {fileID: 0}
     - target: {fileID: 2389967618956343512, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.1866667
+      value: 3.1066666
       objectReference: {fileID: 0}
     - target: {fileID: 4905003561764011515, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -1982,6 +1999,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 1
   uiPrefab: {fileID: 1962757527568594360, guid: 131ece183894f9e469ad8ea3c194fdd5, type: 3}
   canvasTransform: {fileID: 0}
@@ -2590,7 +2610,7 @@ Transform:
   m_GameObject: {fileID: 407340036}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146, y: 2, z: 0}
+  m_LocalPosition: {x: 147.07, y: 3.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2866,6 +2886,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18104b4cbdb37a54fba303d6fd4cf781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasswordUnlockObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   correctAnswer: 613
   passwordKeypad: {fileID: 5200237468158644041, guid: adad13e60f71d9146b9c21165f224bf1, type: 3}
@@ -3675,7 +3698,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &691980678
 MonoBehaviour:
@@ -3689,6 +3712,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39978c34cbb38954e98a3d19456570db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HideObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
 --- !u!4 &691980679
 Transform:
@@ -4665,6 +4691,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39978c34cbb38954e98a3d19456570db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HideObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
 --- !u!212 &786108546
 SpriteRenderer:
@@ -5343,6 +5372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39978c34cbb38954e98a3d19456570db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HideObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
 --- !u!212 &864169287
 SpriteRenderer:
@@ -6506,6 +6538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   uiPrefab: {fileID: 1962757527568594360, guid: 87258143e4fca8a428fb5bbf8c7b5ac6, type: 3}
   canvasTransform: {fileID: 302356193}
@@ -6689,6 +6724,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43fd9ea9446ecf449394f2e2180f6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnlockObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   unlockFailed: {fileID: 0}
   unlockComplete: {fileID: 11400000, guid: 990de40f794f3ca4294e0b465fd9d5f1, type: 2}
@@ -6997,6 +7035,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1cd003b7939024d8fe0b7a0596ad15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropItem
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 1
   uiPrefab: {fileID: 1454139080010486973, guid: 9a767d3e98dc294488aee62c3eb997c4, type: 3}
   itemCode: 2
@@ -7451,6 +7492,7 @@ GameObject:
   - component: {fileID: 1289907446}
   - component: {fileID: 1289907445}
   - component: {fileID: 1289907444}
+  - component: {fileID: 1289907449}
   m_Layer: 0
   m_Name: MonitorOff
   m_TagString: Interaction
@@ -7498,6 +7540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   uiPrefab: {fileID: 1962757527568594360, guid: 184970fbb2628ae4cb71e80791f362cb, type: 3}
   canvasTransform: {fileID: 0}
@@ -7575,6 +7620,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1289907449
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289907443}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.46, y: 1.32}
+    newSize: {x: 7.3, y: 6.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.46, y: 1.32}
+  m_EdgeRadius: 0
 --- !u!1 &1294278833
 GameObject:
   m_ObjectHideFlags: 0
@@ -8128,6 +8219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 1
   uiPrefab: {fileID: 1962757527568594360, guid: 131ece183894f9e469ad8ea3c194fdd5, type: 3}
   canvasTransform: {fileID: 0}
@@ -8385,6 +8479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 1
   uiPrefab: {fileID: 1962757527568594360, guid: 184970fbb2628ae4cb71e80791f362cb, type: 3}
   canvasTransform: {fileID: 0}
@@ -9599,6 +9696,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 4
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   uiPrefab: {fileID: 1962757527568594360, guid: 61c73b24dcd67b8489542fd1630a09f7, type: 3}
   canvasTransform: {fileID: 302356193}
@@ -10035,12 +10135,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2389967618956343512, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389967618956343512, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.2
+      value: 3.8866668
       objectReference: {fileID: 0}
     - target: {fileID: 2389967618956343512, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.1866667
+      value: 3.1066666
       objectReference: {fileID: 0}
     - target: {fileID: 4905003561764011515, guid: 8ab24ee818d808444a1488bcfa6debbc, type: 3}
       propertyPath: m_LocalScale.x
@@ -10281,7 +10385,7 @@ MonoBehaviour:
   - requestEvent: {fileID: 11400000, guid: 425c73adc049134468a5b1ec7bf56ed6, type: 2}
     value: {fileID: 1298709488}
   - requestEvent: {fileID: 11400000, guid: c9aeea5bc02875249b65ff47c2e18b40, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1968415561}
   - requestEvent: {fileID: 11400000, guid: 1208e7f397b65154f86fce01bf584daa, type: 2}
     value: {fileID: 390492086}
   - requestEvent: {fileID: 11400000, guid: 0a2dc2e8754be424d9a7d721b8ed5e47, type: 2}
@@ -10429,6 +10533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39978c34cbb38954e98a3d19456570db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HideObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
 --- !u!212 &1796712073
 SpriteRenderer:
@@ -10737,6 +10844,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   uiPrefab: {fileID: 1962757527568594360, guid: eecdb434c26aeac47ac016f345c9bf2a, type: 3}
   canvasTransform: {fileID: 302356193}
@@ -11213,7 +11323,7 @@ MonoBehaviour:
     eulerRotation: {x: 0, y: 0, z: 0}
   - onEvent: {fileID: 11400000, guid: 8d250e57f4a566543b63eac1aefa8881, type: 2}
     prefab: {fileID: 4239272544144539349, guid: d4f1c029ccaf1e545bcf69f3ccb3b6b8, type: 3}
-    spawnPoint: {fileID: 0}
+    spawnPoint: {fileID: 1946330126}
     positionOffset: {x: 145, y: 1, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
   - onEvent: {fileID: 11400000, guid: 3447fd737e0ca7144b26fd1b0c3bc9d9, type: 2}
@@ -11239,7 +11349,7 @@ MonoBehaviour:
   - onEvent: {fileID: 11400000, guid: 87d08e5f10a1b99458a412e21cd9032f, type: 2}
     prefab: {fileID: 2568681360550704273, guid: 70a7179010a49db41bae2b475e43d3fe, type: 3}
     spawnPoint: {fileID: 298659672}
-    positionOffset: {x: 1, y: -0.71, z: 0}
+    positionOffset: {x: 1, y: -0.4, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
   - onEvent: {fileID: 11400000, guid: 9cbafb7e3b6d30049b4f2869df77e4c2, type: 2}
     prefab: {fileID: 1565737801093887686, guid: 41702d0dcef7437409cef3de8fbd1a17, type: 3}
@@ -11523,6 +11633,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &1968415561 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6464845550760542896, guid: 7c9d64ae03928f043ab170fed9730d00, type: 3}
+  m_PrefabInstance: {fileID: 8888950333652295093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1993833501
 GameObject:
   m_ObjectHideFlags: 0
@@ -12575,6 +12690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39978c34cbb38954e98a3d19456570db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HideObject
+  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
 --- !u!212 &2141129666
 SpriteRenderer:
@@ -12790,18 +12908,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4081167117958414717, guid: c985a9edc515b3544a04e40213e1d310, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.240909
-      objectReference: {fileID: 0}
     - target: {fileID: 6120054277494988050, guid: c985a9edc515b3544a04e40213e1d310, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8830529828603088921, guid: c985a9edc515b3544a04e40213e1d310, type: 3}
-      propertyPath: m_Sprite
+    - target: {fileID: 6798579516191790441, guid: c985a9edc515b3544a04e40213e1d310, type: 3}
+      propertyPath: canvasTransform
       value: 
-      objectReference: {fileID: 3445674281854026479, guid: fc46de6359ab5ea44857c8f5680970d1, type: 3}
+      objectReference: {fileID: 302356193}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13145,7 +13259,6 @@ SceneRoots:
   - {fileID: 1213853192}
   - {fileID: 407340039}
   - {fileID: 1612310535}
-  - {fileID: 298659672}
   - {fileID: 1166278254}
   - {fileID: 278944867}
   - {fileID: 653874714}
@@ -13157,3 +13270,4 @@ SceneRoots:
   - {fileID: 1289907448}
   - {fileID: 1497320840}
   - {fileID: 8888950333652295093}
+  - {fileID: 298659672}

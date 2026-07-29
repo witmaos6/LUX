@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 3445674281854026479, guid: fc46de6359ab5ea44857c8f5680970d1, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,6 +118,8 @@ MonoBehaviour:
   deadSound: {fileID: 8300000, guid: 2481c76c7b5b66a4594b4b73fa2c46f4, type: 3}
   moveSoundRangeWeight: 2
   moveSoundStrength: 20
+  canvasTransform: {fileID: 0}
+  resurrectionUI: {fileID: 1962757527568594360, guid: 7b4d2e87a64607744b1abef852a1dca5, type: 3}
 --- !u!50 &2050782884436184447
 Rigidbody2D:
   serializedVersion: 5
@@ -183,7 +185,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 1, y: 2.240909}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -326,6 +328,7 @@ MonoBehaviour:
   dirRight: 1
   idle: 1
   speed: 0
+  hide: 0
 --- !u!114 &5497753555107271374
 MonoBehaviour:
   m_ObjectHideFlags: 0

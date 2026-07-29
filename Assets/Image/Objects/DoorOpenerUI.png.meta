@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 67981a8bec331ec4b91dbb47993009fb
+guid: 80d5c3d9ae6643c45b2265cf9a526e86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3258276386590239147
-    second: BreakingGlass_0
+      213: -2669507020746940487
+    second: DoorOpenerUI_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BreakingGlass_0
+      name: DoorOpenerUI_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1579
-        width: 724
-        height: 543
+        x: 45
+        y: 540
+        width: 670
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +115,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba921ca4c19b73d20800000000000000
-      internalID: 3258276386590239147
+      spriteID: 9bf97fe128104fad0800000000000000
+      internalID: -2669507020746940487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BreakingGlass_1
+      name: DoorOpenerUI_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1049
-        width: 724
-        height: 543
+        x: 718
+        y: 540
+        width: 700
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f433e8ecf6c7d5a4da7016bbd0bc5549
-      internalID: -1304497776
+      spriteID: 8b653073c097bcb419d091bb87c864ee
+      internalID: 1932307241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BreakingGlass_2
+      name: DoorOpenerUI_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 559
-        width: 724
-        height: 543
+        x: 41
+        y: 110
+        width: 670
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 748ff5c348a6eb642991784771a97b9b
-      internalID: -268866918
+      spriteID: bc786002d7162324fab39ce34379bf97
+      internalID: -740331051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BreakingGlass_3
+      name: DoorOpenerUI_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 47
-        width: 724
-        height: 543
+        x: 720
+        y: 110
+        width: 700
+        height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a3788f3958ed1546abaa69653549790
-      internalID: -1750176295
+      spriteID: e707aa9ba0f2f654db23bdbc320fa11f
+      internalID: -339318674
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0077c0dad5f418044a3ee4fd4083a1af
+    spriteID: 57da7a1ab1856fa4bbf56d071a9bea8b
     internalID: 0
     vertices: []
     indices: 
@@ -201,12 +201,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":724.0,"y":543.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":724.0,"y":543.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      BreakingGlass_0: 3258276386590239147
-      BreakingGlass_1: -1304497776
-      BreakingGlass_2: -268866918
-      BreakingGlass_3: -1750176295
+      DoorOpenerUI_0: -2669507020746940487
+      DoorOpenerUI_1: 1932307241
+      DoorOpenerUI_2: -740331051
+      DoorOpenerUI_3: -339318674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
