@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd3d2cacea51e4c4d92d2c78f01d638c
+guid: db622661aed21fb4d9bac0d26e8872e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2296908492946758698
-    second: 1FWallpaper_0
+      213: -3402313312390716041
+    second: 2FLabWallpaper_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1FWallpaper_0
+      name: 2FLabWallpaper_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 819
+        width: 1672
+        height: 941
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d3a45c25edbf10e0800000000000000
-      internalID: -2296908492946758698
+      spriteID: 7756e50911e88c0d0800000000000000
+      internalID: -3402313312390716041
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1FWallpaper_0: -2296908492946758698
+      2FLabWallpaper_0: -3402313312390716041
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
