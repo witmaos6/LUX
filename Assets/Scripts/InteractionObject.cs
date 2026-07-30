@@ -11,7 +11,8 @@ public abstract class InteractionObject : MonoBehaviour
     private static readonly int OutlinePixelStepId = Shader.PropertyToID("_OutlinePixelStep");
 
     [Header("Interaction Highlight")]
-    [SerializeField] private Color outlineColor = new Color(1f, 0.8f, 0.15f, 1f);
+    [SerializeField] private Color arrowKeyOutlineColor = Color.white;
+    [SerializeField] private Color interactionKeyOutlineColor = Color.yellow;
     [SerializeField, Range(1f, 4f)] private float outlineWidth = 4f;
     [SerializeField, Range(0f, 1f)] private float outlineAlphaThreshold = 0.05f;
 
@@ -104,7 +105,7 @@ public abstract class InteractionObject : MonoBehaviour
         }
 
         outlineProperties.Clear();
-        outlineProperties.SetColor(OutlineColorId, outlineColor);
+        outlineProperties.SetColor(OutlineColorId, GetOutlineColor());
         outlineProperties.SetFloat(OutlineWidthId, outlineWidth);
         outlineProperties.SetFloat(AlphaThresholdId, outlineAlphaThreshold);
 
@@ -141,6 +142,16 @@ public abstract class InteractionObject : MonoBehaviour
             pair.outline.SetPropertyBlock(outlineProperties);
             pair.outline.enabled = isHighlighted && pair.source.enabled;
         }
+    }
+
+    private Color GetOutlineColor()
+    {
+        return interactionType switch
+        {
+            InteractionType.ArrowKey => arrowKeyOutlineColor,
+            InteractionType.InteractionKey => interactionKeyOutlineColor,
+            _ => interactionKeyOutlineColor
+        };
     }
 
     private static void CopyRendererState(SpriteRenderer source, SpriteRenderer outline)

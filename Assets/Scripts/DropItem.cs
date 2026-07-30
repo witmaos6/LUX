@@ -5,12 +5,13 @@ public class DropItem : InteractionObject
 {
     public enum ItemCode
     { 
-        Flashlight,
-        BoltCutter,
-        Password,
-        Stick, // 기존에 사용하던 Stick은 DoorOpener로 기획 변경, Stick은 현재 사용하지 않는다.
-        DoorOpener,
-        None,
+        Flashlight = 0,
+        BoltCutter = 1,
+        Password = 2,
+        Stick = 3, // 기존에 사용하던 Stick은 DoorOpener로 기획 변경, Stick은 현재 사용하지 않는다.
+        DoorOpener = 4,
+        USB = 5,
+        None = 6,
     }
 
     public GameObject uiPrefab;

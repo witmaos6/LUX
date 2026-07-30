@@ -130,8 +130,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.48, y: 2.814}
+    pivot: {x: 0.5, y: 0.4}
+    oldSize: {x: 1.48, y: 2.948}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -151,6 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de365084d3011e9489f610a9bfd7ea17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   nextWallpaper: {fileID: 0}
   wallpaperRequestEvent: {fileID: 0}

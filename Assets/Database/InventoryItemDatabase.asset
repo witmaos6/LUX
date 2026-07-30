@@ -12,16 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73d44ea371d4a3ab27f79bc19adf901, type: 3}
   m_Name: InventoryItemDatabase
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDatabase
+  uiFont: {fileID: 11400000, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
   items:
   - itemCode: 0
     displayName: Flashlight
+    description: "\uC190\uC804\uB4F1\uC774\uB2E4. \uC774\uAC8C \uC5C6\uC73C\uBA74
+      \uC544\uBB34\uAC83\uB3C4 \uBCFC \uC218 \uC5C6\uB2E4."
     icon: {fileID: -2638390803197812687, guid: 916c406344a1b5145941e545c9405b77, type: 3}
   - itemCode: 1
     displayName: Bolt Cutter
+    description: "\uC0AC\uC2AC\uC744 \uB04A\uC744 \uC218 \uC788\uB294 \uBCFC\uD2B8
+      \uCEE4\uD130\uB2E4."
     icon: {fileID: 4251333813383773966, guid: 395d663e7fca8c146a107084d68a64d0, type: 3}
   - itemCode: 2
     displayName: 'Switchboard: 1318'
-    icon: {fileID: 0}
+    description: "\uBE44\uBC00\uBC88\uD638\uAC00 \uC801\uD600\uC788\uB2E4. 1318"
+    icon: {fileID: 8455153745976563607, guid: bf4bd3c89ca7d434b9ba6a858cc2e809, type: 3}
   - itemCode: 4
     displayName: Door Opener
+    description: "\uBB38\uC744 \uAC15\uC81C\uB85C \uAC1C\uBC29\uD560 \uC218 \uC788\uB294
+      \uB3C4\uAD6C\uB2E4."
     icon: {fileID: 5236804859230564228, guid: e5c92eba8b49f5e40ab191bc0b7579ba, type: 3}
+  - itemCode: 5
+    displayName: USB
+    description: "\uC2E4\uD5D8\uB0B4\uC6A9\uC774 \uB2F4\uACA8\uC788\uB2E4\uB294 USB\uB2E4.
+      \uC804\uB825\uC774 \uBCF5\uAD6C\uB418\uBA74 \uCEF4\uD4E8\uD130\uC5D0 \uC5F0\uACB0\uD574\uBCF4\uC790."
+    icon: {fileID: 8909960197485554810, guid: 186295b39f54a5744a135b8d0dddcd5b, type: 3}

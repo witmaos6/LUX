@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static DropItem;
@@ -7,7 +8,7 @@ public sealed class InventoryUI : MonoBehaviour
 {
     private GameObject panel;
     private RectTransform itemContainer;
-    private Text emptyText;
+    private TMP_Text emptyText;
     private PlayerController player;
     private InventoryItemDatabase itemDatabase;
     private readonly List<GameObject> itemRows = new();
@@ -89,7 +90,7 @@ public sealed class InventoryUI : MonoBehaviour
         panelRect.anchorMin = new Vector2(0.5f, 0.5f);
         panelRect.anchorMax = new Vector2(0.5f, 0.5f);
         panelRect.pivot = new Vector2(0.5f, 0.5f);
-        panelRect.sizeDelta = new Vector2(420f, 360f);
+        panelRect.sizeDelta = new Vector2(900f, 700f);
 
         Image background = panel.GetComponent<Image>();
         background.color = new Color(0.04f, 0.04f, 0.05f, 0.94f);
@@ -98,11 +99,11 @@ public sealed class InventoryUI : MonoBehaviour
             "Title",
             panel.transform,
             "INVENTORY",
-            30,
-            FontStyle.Bold,
-            TextAnchor.MiddleCenter,
-            new Vector2(0f, 115f),
-            new Vector2(360f, 60f));
+            38,
+            FontStyles.Bold,
+            TextAlignmentOptions.Center,
+            new Vector2(0f, 290f),
+            new Vector2(820f, 70f));
 
         GameObject containerObject = new GameObject("Item List", typeof(RectTransform));
         containerObject.transform.SetParent(panel.transform, false);
@@ -110,16 +111,16 @@ public sealed class InventoryUI : MonoBehaviour
         itemContainer.anchorMin = new Vector2(0.5f, 0.5f);
         itemContainer.anchorMax = new Vector2(0.5f, 0.5f);
         itemContainer.pivot = new Vector2(0.5f, 0.5f);
-        itemContainer.anchoredPosition = new Vector2(0f, -15f);
-        itemContainer.sizeDelta = new Vector2(330f, 210f);
+        itemContainer.anchoredPosition = new Vector2(0f, 0f);
+        itemContainer.sizeDelta = new Vector2(800f, 500f);
 
         emptyText = CreateText(
             "Empty",
             itemContainer,
             "No items",
-            23,
-            FontStyle.Normal,
-            TextAnchor.MiddleCenter,
+            28,
+            FontStyles.Normal,
+            TextAlignmentOptions.Center,
             Vector2.zero,
             itemContainer.sizeDelta);
 
@@ -127,11 +128,11 @@ public sealed class InventoryUI : MonoBehaviour
             "Close Hint",
             panel.transform,
             "Press I to close",
-            17,
-            FontStyle.Normal,
-            TextAnchor.MiddleCenter,
-            new Vector2(0f, -145f),
-            new Vector2(360f, 35f));
+            21,
+            FontStyles.Normal,
+            TextAlignmentOptions.Center,
+            new Vector2(0f, -315f),
+            new Vector2(820f, 40f));
     }
 
     private void CreateItemRow(ItemCode item, int index)
@@ -144,8 +145,8 @@ public sealed class InventoryUI : MonoBehaviour
         rowRect.anchorMin = new Vector2(0f, 1f);
         rowRect.anchorMax = new Vector2(1f, 1f);
         rowRect.pivot = new Vector2(0.5f, 1f);
-        rowRect.anchoredPosition = new Vector2(0f, -index * 54f);
-        rowRect.sizeDelta = new Vector2(0f, 50f);
+        rowRect.anchoredPosition = new Vector2(0f, -index * 96f);
+        rowRect.sizeDelta = new Vector2(0f, 88f);
 
         GameObject iconObject = new GameObject(
             "Icon",
@@ -159,7 +160,7 @@ public sealed class InventoryUI : MonoBehaviour
         iconRect.anchorMax = new Vector2(0f, 0.5f);
         iconRect.pivot = new Vector2(0f, 0.5f);
         iconRect.anchoredPosition = Vector2.zero;
-        iconRect.sizeDelta = new Vector2(48f, 48f);
+        iconRect.sizeDelta = new Vector2(82f, 82f);
 
         Image iconImage = iconObject.GetComponent<Image>();
         iconImage.sprite = itemDatabase != null ? itemDatabase.GetIcon(item) : null;
@@ -167,23 +168,42 @@ public sealed class InventoryUI : MonoBehaviour
         iconImage.raycastTarget = false;
         iconImage.enabled = iconImage.sprite != null;
 
-        Text nameText = CreateText(
+        TMP_Text nameText = CreateText(
             "Name",
-            panel.transform,
+            row.transform,
             itemDatabase != null ? itemDatabase.GetDisplayName(item) : item.ToString(),
-            23,
-            FontStyle.Normal,
-            TextAnchor.MiddleLeft,
+            27,
+            FontStyles.Bold,
+            TextAlignmentOptions.Left,
             Vector2.zero,
             Vector2.zero);
-        nameText.transform.SetParent(row.transform, false);
 
         RectTransform nameRect = nameText.rectTransform;
-        nameRect.anchorMin = new Vector2(0f, 0f);
+        nameRect.anchorMin = new Vector2(0f, 0.5f);
         nameRect.anchorMax = new Vector2(1f, 1f);
         nameRect.pivot = new Vector2(0.5f, 0.5f);
-        nameRect.offsetMin = new Vector2(62f, 0f);
+        nameRect.offsetMin = new Vector2(100f, 0f);
         nameRect.offsetMax = Vector2.zero;
+
+        TMP_Text descriptionText = CreateText(
+            "Description",
+            row.transform,
+            itemDatabase != null ? itemDatabase.GetDescription(item) : string.Empty,
+            18,
+            FontStyles.Normal,
+            TextAlignmentOptions.Left,
+            Vector2.zero,
+            Vector2.zero);
+        descriptionText.color = new Color(0.78f, 0.78f, 0.78f, 1f);
+        descriptionText.textWrappingMode = TextWrappingModes.Normal;
+        descriptionText.overflowMode = TextOverflowModes.Ellipsis;
+
+        RectTransform descriptionRect = descriptionText.rectTransform;
+        descriptionRect.anchorMin = new Vector2(0f, 0f);
+        descriptionRect.anchorMax = new Vector2(1f, 0.55f);
+        descriptionRect.pivot = new Vector2(0.5f, 0.5f);
+        descriptionRect.offsetMin = new Vector2(100f, 0f);
+        descriptionRect.offsetMax = Vector2.zero;
     }
 
     private void ClearItemRows()
@@ -200,13 +220,13 @@ public sealed class InventoryUI : MonoBehaviour
         itemRows.Clear();
     }
 
-    private static Text CreateText(
+    private TMP_Text CreateText(
         string objectName,
         Transform parent,
         string content,
         int fontSize,
-        FontStyle fontStyle,
-        TextAnchor alignment,
+        FontStyles fontStyle,
+        TextAlignmentOptions alignment,
         Vector2 anchoredPosition,
         Vector2 size)
     {
@@ -214,7 +234,7 @@ public sealed class InventoryUI : MonoBehaviour
             objectName,
             typeof(RectTransform),
             typeof(CanvasRenderer),
-            typeof(Text));
+            typeof(TextMeshProUGUI));
         textObject.transform.SetParent(parent, false);
 
         RectTransform rect = textObject.GetComponent<RectTransform>();
@@ -224,15 +244,16 @@ public sealed class InventoryUI : MonoBehaviour
         rect.anchoredPosition = anchoredPosition;
         rect.sizeDelta = size;
 
-        Text text = textObject.GetComponent<Text>();
-        text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        TMP_Text text = textObject.GetComponent<TMP_Text>();
+        if (itemDatabase != null && itemDatabase.UIFont != null)
+            text.font = itemDatabase.UIFont;
         text.text = content;
         text.fontSize = fontSize;
         text.fontStyle = fontStyle;
         text.alignment = alignment;
         text.color = Color.white;
-        text.horizontalOverflow = HorizontalWrapMode.Wrap;
-        text.verticalOverflow = VerticalWrapMode.Overflow;
+        text.textWrappingMode = TextWrappingModes.Normal;
+        text.raycastTarget = false;
 
         return text;
     }
