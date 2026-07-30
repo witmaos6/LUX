@@ -50,6 +50,9 @@ public class PlayerController : MonoBehaviour
     [Header("Inventory")]
     [SerializeField] private InventoryItemDatabase inventoryItemDatabase;
 
+    [Header("Intro Script")]
+    [SerializeField] private GameEvent introScriptEvent;
+
     private List<ItemCode> inventory = new List<ItemCode>();
     private InventoryUI inventoryUI;
 
@@ -87,6 +90,20 @@ public class PlayerController : MonoBehaviour
         {
             cameraFader.StartFade(0f, 1f);
         }
+
+        PlayIntroScriptIfNeeded();
+    }
+
+    private void PlayIntroScriptIfNeeded()
+    {
+        if (introScriptEvent == null)
+            return;
+
+        if (SaveManager.HasEventFired(introScriptEvent.name))
+            return;
+
+        GameEventManager.Raise(introScriptEvent);
+        SaveManager.MarkEventFired(introScriptEvent.name);
     }
 
     public void ResurrectionEvent()

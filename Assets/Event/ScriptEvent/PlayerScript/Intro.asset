@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6aa1a8be6203524ab563f9f26b76f87, type: 3}
-  m_Name: PlayerScriptSequence
+  m_Name: Intro
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScriptSequence
   lines:
   - text: "\uC73C... \uBA38\uB9AC\uAC00..."
   - text: "...\uC5EC\uAE34 \uC5B4\uB514\uC9C0?"
   - text: "\uC65C... \uC544\uBB34 \uAE30\uC5B5\uB3C4 \uC548\uB098\uC9C0?..."
+  - text: "\uC6B0\uC120 \uC8FC\uBCC0\uC744 \uB458\uB7EC\uBCF4\uC790"

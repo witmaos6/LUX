@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -5,11 +7,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerScriptUI : MonoBehaviour
 {
-    [Header("Event")]
-    [SerializeField] private GameEvent showScriptEvent;
+    [Serializable]
+    private struct ScriptEntry
+    {
+        public GameEvent showEvent;
+        public PlayerScriptSequence sequence;
+    }
 
-    [Header("Script")]
-    [SerializeField] private PlayerScriptSequence scriptSequence;
+    [Header("Scripts")]
+    [SerializeField] private ScriptEntry[] scriptEntries = Array.Empty<ScriptEntry>();
 
     [Header("UI")]
     [SerializeField] private GameObject scriptUI;
@@ -19,6 +25,8 @@ public class PlayerScriptUI : MonoBehaviour
     [SerializeField] private UnityEvent onScriptCompleted;
 
     private InputAction nextLineAction;
+    private readonly List<(GameEvent gameEvent, Action handler)> subscriptions = new();
+    private PlayerScriptSequence activeSequence;
     private int currentLineIndex;
     private bool isShowing;
 
@@ -37,15 +45,25 @@ public class PlayerScriptUI : MonoBehaviour
 
     private void OnEnable()
     {
-        if (showScriptEvent != null)
-            GameEventManager.Subscribe(showScriptEvent, Show);
+        foreach (ScriptEntry entry in scriptEntries)
+        {
+            if (entry.showEvent == null)
+                continue;
+
+            PlayerScriptSequence sequence = entry.sequence;
+            Action handler = () => Show(sequence);
+
+            GameEventManager.Subscribe(entry.showEvent, handler);
+            subscriptions.Add((entry.showEvent, handler));
+        }
     }
 
     private void OnDisable()
     {
-        if (showScriptEvent != null)
-            GameEventManager.Unsubscribe(showScriptEvent, Show);
+        foreach ((GameEvent gameEvent, Action handler) in subscriptions)
+            GameEventManager.Unsubscribe(gameEvent, handler);
 
+        subscriptions.Clear();
         Hide();
     }
 
@@ -55,9 +73,9 @@ public class PlayerScriptUI : MonoBehaviour
         nextLineAction.Dispose();
     }
 
-    public void Show()
+    public void Show(PlayerScriptSequence sequence)
     {
-        if (scriptSequence == null || scriptSequence.LineCount == 0)
+        if (sequence == null || sequence.LineCount == 0)
         {
             Debug.LogWarning("표시할 플레이어 스크립트가 없습니다.", this);
             return;
@@ -69,16 +87,18 @@ public class PlayerScriptUI : MonoBehaviour
             return;
         }
 
+        activeSequence = sequence;
         currentLineIndex = 0;
         isShowing = true;
         scriptUI.SetActive(true);
-        scriptText.text = scriptSequence.GetLine(currentLineIndex);
+        scriptText.text = activeSequence.GetLine(currentLineIndex);
         nextLineAction.Enable();
     }
 
     public void Hide()
     {
         isShowing = false;
+        activeSequence = null;
         nextLineAction.Disable();
 
         if (scriptUI != null)
@@ -92,13 +112,13 @@ public class PlayerScriptUI : MonoBehaviour
 
         currentLineIndex++;
 
-        if (currentLineIndex >= scriptSequence.LineCount)
+        if (activeSequence == null || currentLineIndex >= activeSequence.LineCount)
         {
             Complete();
             return;
         }
 
-        scriptText.text = scriptSequence.GetLine(currentLineIndex);
+        scriptText.text = activeSequence.GetLine(currentLineIndex);
     }
 
     private void Complete()
