@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4496531397110835379}
   - component: {fileID: 5042853285295556648}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpotLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 319c04ab21a5002400000000
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5015451161428956049}
   - component: {fileID: 7940926039313856919}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6107378710566090911}
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -2638390803197812687, guid: 916c406344a1b5145941e545c9405b77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 6107378710566090911}
   - component: {fileID: 7445126366913036576}
   - component: {fileID: 5584606643782847688}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FlashlightDropItem
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -222,11 +222,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1cd003b7939024d8fe0b7a0596ad15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropItem
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  outlineWidth: 4
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   uiPrefab: {fileID: 0}
   itemCode: 0
   objectDestroy: 1
   inputObjectDestroy: 1
+  gameEvent: {fileID: 0}
   canvasTransform: {fileID: 0}
 --- !u!61 &5584606643782847688
 BoxCollider2D:

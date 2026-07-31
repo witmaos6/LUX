@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3777630800664423676}
   - component: {fileID: 752062753458960092}
   - component: {fileID: 2791873596670179481}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: To2-4Door
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -130,8 +130,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.7761905, y: 1.9952381}
+    pivot: {x: 0.5, y: 0.45}
+    oldSize: {x: 3.8866668, y: 3.1066666}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -151,6 +151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de365084d3011e9489f610a9bfd7ea17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  outlineWidth: 4
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   nextWallpaper: {fileID: 0}
   wallpaperRequestEvent: {fileID: 11400000, guid: c85b6548fcec21c41abd36b63d676fa5, type: 2}

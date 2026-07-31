@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8112718521195679761}
   - component: {fileID: 2473804736042413971}
   - component: {fileID: 3962958547615618651}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Stairs
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -106,7 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de365084d3011e9489f610a9bfd7ea17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   outlineWidth: 2
   outlineAlphaThreshold: 0.05
   interactionType: 0
@@ -173,7 +174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9152631118506233711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MoveTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2326790755262068307}
   - component: {fileID: 6746951943079162599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PostMainGate_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 8482008734631651909}
   - component: {fileID: 752062753458960092}
   - component: {fileID: 2791873596670179481}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ToOutside
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -183,6 +183,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de365084d3011e9489f610a9bfd7ea17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  outlineWidth: 4
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   nextWallpaper: {fileID: 0}
   wallpaperRequestEvent: {fileID: 11400000, guid: 425c73adc049134468a5b1ec7bf56ed6, type: 2}

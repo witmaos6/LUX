@@ -44,9 +44,9 @@ public abstract class InteractionObject : MonoBehaviour
     /// </summary>
     public virtual void SetHighlighted(bool highlighted)
     {
-        if (highlighted && outlineRendererPairs.Count == 0)
+        if (highlighted)
         {
-            CreateOutlineRenderers();
+            EnsureOutlineRenderers();
         }
 
         isHighlighted = highlighted;
@@ -66,7 +66,7 @@ public abstract class InteractionObject : MonoBehaviour
         SetHighlighted(false);
     }
 
-    private void CreateOutlineRenderers()
+    private void EnsureOutlineRenderers()
     {
         Material outlineMaterial = Resources.Load<Material>(OutlineMaterialResourcePath);
         if (outlineMaterial == null)
@@ -80,6 +80,11 @@ public abstract class InteractionObject : MonoBehaviour
         SpriteRenderer[] sourceRenderers = GetComponentsInChildren<SpriteRenderer>(true);
         foreach (SpriteRenderer sourceRenderer in sourceRenderers)
         {
+            if (IsRegisteredRenderer(sourceRenderer))
+            {
+                continue;
+            }
+
             GameObject outlineObject = new GameObject($"{sourceRenderer.gameObject.name} (Interaction Outline)");
             outlineObject.layer = sourceRenderer.gameObject.layer;
             outlineObject.transform.SetParent(sourceRenderer.transform, false);
@@ -94,7 +99,20 @@ public abstract class InteractionObject : MonoBehaviour
             });
         }
 
-        outlineProperties = new MaterialPropertyBlock();
+        outlineProperties ??= new MaterialPropertyBlock();
+    }
+
+    private bool IsRegisteredRenderer(SpriteRenderer renderer)
+    {
+        foreach (OutlineRendererPair pair in outlineRendererPairs)
+        {
+            if (pair.source == renderer || pair.outline == renderer)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private void UpdateOutlineRenderers()

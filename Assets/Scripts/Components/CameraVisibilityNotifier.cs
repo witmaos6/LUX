@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -24,6 +25,8 @@ public class CameraVisibilityNotifier : MonoBehaviour
     private bool initialized;
 
     public bool IsVisible { get; private set; }
+    public event Action EnteredCamera;
+    public event Action ExitedCamera;
 
     private void Awake()
     {
@@ -105,6 +108,7 @@ public class CameraVisibilityNotifier : MonoBehaviour
         if (enteredCameraEvent != null)
             GameEventManager.Raise(enteredCameraEvent);
 
+        EnteredCamera?.Invoke();
         onEnteredCamera?.Invoke();
     }
 
@@ -116,6 +120,7 @@ public class CameraVisibilityNotifier : MonoBehaviour
         if (exitedCameraEvent != null)
             GameEventManager.Raise(exitedCameraEvent);
 
+        ExitedCamera?.Invoke();
         onExitedCamera?.Invoke();
     }
 }

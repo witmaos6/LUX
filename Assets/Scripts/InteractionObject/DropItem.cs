@@ -12,6 +12,9 @@ public class DropItem : InteractionObject
         DoorOpener = 4,
         USB = 5,
         None = 6,
+        PasswordHint1 = 7,
+        PasswordHint2 = 8,
+        PasswordHint3 = 9,
     }
 
     public GameObject uiPrefab;

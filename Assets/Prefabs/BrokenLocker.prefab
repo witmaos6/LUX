@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5829065266716329315}
   - component: {fileID: 5560822917079720063}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrokenLocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}

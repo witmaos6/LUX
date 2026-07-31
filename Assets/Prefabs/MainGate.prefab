@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8949072034412220580}
   - component: {fileID: 6349174285544539976}
   - component: {fileID: -1453881764204461398}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MainGate
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -108,6 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1f8885b96125db42ae4f9afc58671e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GaugeMashObject
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  outlineWidth: 4
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   gaugeUIPrefab: {fileID: 1962757527568594360, guid: 5a0781ee7e9e23940b0f13ecd8eedfc9, type: 3}
   canvasTransform: {fileID: 0}

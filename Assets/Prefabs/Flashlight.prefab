@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3258486861888818594}
   - component: {fileID: 3626757737753767017}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6786423714227579717}
   - component: {fileID: 4460692440806123782}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Flashlight_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8750943582794962574}
   - component: {fileID: 2389967618956343512}
   - component: {fileID: 9031553507529842962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Door
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -151,7 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de365084d3011e9489f610a9bfd7ea17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   outlineWidth: 2
   outlineAlphaThreshold: 0.05
   interactionType: 0

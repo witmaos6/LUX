@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7963341109519714504}
   - component: {fileID: 6775060298560684784}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sprite Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8353353854958788952}
   - component: {fileID: -5642903103357504387}
   - component: {fileID: -1026773074481317564}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MonitorOn
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -192,7 +192,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewImage
-  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   outlineWidth: 2
   outlineAlphaThreshold: 0.05
   interactionType: 0

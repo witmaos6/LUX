@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4279143788876547273}
   - component: {fileID: 4060155401025824849}
   - component: {fileID: -3789224707526568078}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OpenSwitchboard
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -92,7 +92,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18104b4cbdb37a54fba303d6fd4cf781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PasswordUnlockObject
-  outlineColor: {r: 1, g: 0.8, b: 0.15, a: 1}
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   outlineWidth: 2
   outlineAlphaThreshold: 0.05
   interactionType: 0
@@ -113,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8771009184325240652}
   - component: {fileID: 6290102076889134376}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OpenSwitchboard_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -197,63 +197,57 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Interaction"))
+        InteractionObject interact = collision.GetComponentInParent<InteractionObject>();
+        if (interact != null && interact.CompareTag("Interaction"))
         {
-            InteractionObject interact = collision.GetComponentInParent<InteractionObject>();
-            if (interact != null)
+            if (interactionContactCounts.TryGetValue(interact, out int contactCount))
             {
-                if (interactionContactCounts.TryGetValue(interact, out int contactCount))
-                {
-                    interactionContactCounts[interact] = contactCount + 1;
-                    return;
-                }
+                interactionContactCounts[interact] = contactCount + 1;
+                return;
+            }
 
-                interactionContactCounts.Add(interact, 1);
+            interactionContactCounts.Add(interact, 1);
 
-                if (interact.interactionType == InteractionObject.InteractionType.ArrowKey && !arrowKeyInteractionObjects.Contains(interact))
-                {
-                    arrowKeyInteractionObjects.Add(interact);
-                    interact.SetHighlighted(true);
-                }
-                else if (interact.interactionType == InteractionObject.InteractionType.InteractionKey && !interactionObjects.Contains(interact))
-                {
-                    interactionObjects.Add(interact);
-                    interact.SetHighlighted(true);
-                }
+            if (interact.interactionType == InteractionObject.InteractionType.ArrowKey && !arrowKeyInteractionObjects.Contains(interact))
+            {
+                arrowKeyInteractionObjects.Add(interact);
+                interact.SetHighlighted(true);
+            }
+            else if (interact.interactionType == InteractionObject.InteractionType.InteractionKey && !interactionObjects.Contains(interact))
+            {
+                interactionObjects.Add(interact);
+                interact.SetHighlighted(true);
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Interaction"))
+        InteractionObject interact = collision.GetComponentInParent<InteractionObject>();
+        if (interact != null && interact.CompareTag("Interaction"))
         {
-            InteractionObject interact = collision.GetComponentInParent<InteractionObject>();
-            if (interact != null)
+            if (!interactionContactCounts.TryGetValue(interact, out int contactCount))
             {
-                if (!interactionContactCounts.TryGetValue(interact, out int contactCount))
-                {
-                    return;
-                }
+                return;
+            }
 
-                if (contactCount > 1)
-                {
-                    interactionContactCounts[interact] = contactCount - 1;
-                    return;
-                }
+            if (contactCount > 1)
+            {
+                interactionContactCounts[interact] = contactCount - 1;
+                return;
+            }
 
-                interactionContactCounts.Remove(interact);
+            interactionContactCounts.Remove(interact);
 
-                if (interact.interactionType == InteractionObject.InteractionType.ArrowKey && arrowKeyInteractionObjects.Contains(interact))
-                {
-                    arrowKeyInteractionObjects.Remove(interact);
-                    interact.SetHighlighted(false);
-                }
-                else if (interact.interactionType == InteractionObject.InteractionType.InteractionKey && interactionObjects.Contains(interact))
-                {
-                    interactionObjects.Remove(interact);
-                    interact.SetHighlighted(false);
-                }
+            if (interact.interactionType == InteractionObject.InteractionType.ArrowKey && arrowKeyInteractionObjects.Contains(interact))
+            {
+                arrowKeyInteractionObjects.Remove(interact);
+                interact.SetHighlighted(false);
+            }
+            else if (interact.interactionType == InteractionObject.InteractionType.InteractionKey && interactionObjects.Contains(interact))
+            {
+                interactionObjects.Remove(interact);
+                interact.SetHighlighted(false);
             }
         }
     }

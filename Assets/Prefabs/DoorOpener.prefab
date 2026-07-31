@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1926840748934877833}
   - component: {fileID: 3472179923888815098}
   - component: {fileID: 8787111552570954827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DoorOpener
   m_TagString: Interaction
   m_Icon: {fileID: 0}
@@ -105,6 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1cd003b7939024d8fe0b7a0596ad15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropItem
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  outlineWidth: 4
+  outlineAlphaThreshold: 0.05
   interactionType: 0
   uiPrefab: {fileID: 1962757527568594360, guid: 1831dbc5442b81f44913d41603374012, type: 3}
   itemCode: 4
