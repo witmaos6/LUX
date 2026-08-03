@@ -19,6 +19,7 @@ public class LobbyController : MonoBehaviour
 
         if (quitButton != null)
             quitButton.onClick.AddListener(QuitGame);
+
     }
 
     private void Start()

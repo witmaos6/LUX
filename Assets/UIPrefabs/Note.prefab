@@ -144,8 +144,8 @@ MonoBehaviour:
   m_text: "\uC804\uB825\uC774 \uBD88\uC548\uC815\uD558\uBA74 \uC9C0\uD558\uC2E4\uB85C
     \uAC00 \uBC30\uC804\uBC18\uC744 \uD655\uC778\uD558\uC2ED\uC2DC\uC694."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
-  m_sharedMaterial: {fileID: 6697693728139046526, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

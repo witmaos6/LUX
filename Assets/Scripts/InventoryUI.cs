@@ -196,7 +196,9 @@ public sealed class InventoryUI : MonoBehaviour
             Vector2.zero);
         descriptionText.color = new Color(0.78f, 0.78f, 0.78f, 1f);
         descriptionText.textWrappingMode = TextWrappingModes.Normal;
-        descriptionText.overflowMode = TextOverflowModes.Ellipsis;
+        // DOSGothic SDF does not contain U+2026 (ellipsis). Using Ellipsis here
+        // makes TMP emit a warning and fall back to Truncate every time it renders.
+        descriptionText.overflowMode = TextOverflowModes.Truncate;
 
         RectTransform descriptionRect = descriptionText.rectTransform;
         descriptionRect.anchorMin = new Vector2(0f, 0f);

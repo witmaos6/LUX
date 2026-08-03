@@ -22,7 +22,7 @@ public class PasswordUIController : MonoBehaviour
         currentInput = "";
         displayText.color = Color.black;
 
-        if (blurredHintObject != null)
+        if (blurredHintObject != null && showHint == true)
         {
             blurredHintObject.text = correctAnswer;
         }

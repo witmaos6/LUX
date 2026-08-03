@@ -143,8 +143,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uBCFC\uD2B8 \uCEE4\uD130 \uD68D\uB4DD!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
-  m_sharedMaterial: {fileID: 6697693728139046526, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

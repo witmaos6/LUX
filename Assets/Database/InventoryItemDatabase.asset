@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73d44ea371d4a3ab27f79bc19adf901, type: 3}
   m_Name: InventoryItemDatabase
   m_EditorClassIdentifier: Assembly-CSharp::InventoryItemDatabase
-  uiFont: {fileID: 11400000, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
+  uiFont: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
   items:
   - itemCode: 0
     displayName: Flashlight

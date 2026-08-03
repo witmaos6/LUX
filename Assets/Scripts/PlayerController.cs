@@ -63,7 +63,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         controls = new InputSystem_Actions();
-        inventoryAction = new InputAction("Inventory", InputActionType.Button, "<Keyboard>/i");
+        KeyBindingSettings.Apply(controls);
+        inventoryAction = new InputAction("Inventory", InputActionType.Button, KeyBindingSettings.GetPath(GameBinding.Inventory));
 
         moveSpeed = normalSpeed;
 
@@ -120,6 +121,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        KeyBindingSettings.Changed += RefreshInputBindings;
         controls.Enable();
         controls.Player.Interaction.canceled += Interaction;
         controls.Player.ArrowInteraction.started += ArrowInteraction;
@@ -132,6 +134,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        KeyBindingSettings.Changed -= RefreshInputBindings;
         controls.Disable();
         controls.Player.Interaction.canceled -= Interaction;
         controls.Player.ArrowInteraction.started -= ArrowInteraction;
@@ -151,6 +154,28 @@ public class PlayerController : MonoBehaviour
         inventoryAction?.Dispose();
     }
 
+    private void RefreshInputBindings()
+    {
+        bool controlsWereEnabled = controls.Player.enabled;
+        bool inventoryWasEnabled = inventoryAction.enabled;
+
+        // Input System bindings cannot be modified while their actions are enabled.
+        if (controlsWereEnabled)
+            controls.Disable();
+
+        if (inventoryWasEnabled)
+            inventoryAction.Disable();
+
+        KeyBindingSettings.Apply(controls);
+        inventoryAction.ApplyBindingOverride(0, KeyBindingSettings.GetPath(GameBinding.Inventory));
+
+        if (controlsWereEnabled)
+            controls.Enable();
+
+        if (inventoryWasEnabled)
+            inventoryAction.Enable();
+    }
+
     void FixedUpdate()
     {
         Move();
@@ -158,6 +183,12 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
+        if (ShouldIgnoreGameplayInput())
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            return;
+        }
+
         if (dontMove == true)
         {
             rb.linearVelocity = new Vector2(0f, 0f);
@@ -267,6 +298,9 @@ public class PlayerController : MonoBehaviour
 
     void Interaction(InputAction.CallbackContext context)
     {
+        if (ShouldIgnoreGameplayInput())
+            return;
+
         if (playerState == PlayerState.Normal)
         {
             while (interactionObjects.Count > 0)
@@ -289,6 +323,9 @@ public class PlayerController : MonoBehaviour
 
     void ArrowInteraction(InputAction.CallbackContext context)
     {
+        if (ShouldIgnoreGameplayInput())
+            return;
+
         if (blockInteraction == true)
             return;
 
@@ -326,6 +363,9 @@ public class PlayerController : MonoBehaviour
 
     void OnFlashlight(InputAction.CallbackContext context)
     {
+        if (ShouldIgnoreGameplayInput())
+            return;
+
         if (!inventory.Contains(ItemCode.Flashlight))
             return;
 
@@ -349,12 +389,18 @@ public class PlayerController : MonoBehaviour
 
     private void ToggleInventory(InputAction.CallbackContext context)
     {
+        if (ShouldIgnoreGameplayInput())
+            return;
+
         if (playerState != PlayerState.Dead)
             inventoryUI.Toggle();
     }
 
     void PressSprint(InputAction.CallbackContext context)
     {
+        if (ShouldIgnoreGameplayInput())
+            return;
+
         if(playerState == PlayerState.Normal || playerState == PlayerState.Hide)
         {
             moveSpeed = sprintSpeed;
@@ -367,6 +413,12 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = normalSpeed;
         }
+    }
+
+    private static bool ShouldIgnoreGameplayInput()
+    {
+        return KeyBindingSettingsUI.IsCapturingInput ||
+               KeyBindingSettingsUI.ConsumedGameplayInputThisFrame;
     }
 
     public void AddItem(ItemCode itemCode)

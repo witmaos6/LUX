@@ -296,8 +296,8 @@ MonoBehaviour:
   m_text: "\uC0C1\uD638\uC791\uC6A9 \uD0A4\uB97C \uC5F0\uD0C0\uD574 \uC720\uB9AC\uB97C
     \uAE68\uC138\uC694."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
-  m_sharedMaterial: {fileID: 6697693728139046526, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

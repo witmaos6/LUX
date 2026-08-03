@@ -227,8 +227,8 @@ MonoBehaviour:
     \uD604\uC0C1\uC740 \uC0AC\uC2E4\uC774\uB77C \uAC00\uC815\uD558\uACE0 \uC2E4\uD5D8\uC744
     \uC9C4\uD589\uD55C\uB2E4."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
-  m_sharedMaterial: {fileID: 6697693728139046526, guid: 55005e72f2a23cb4ea7bb5386aa3123a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
