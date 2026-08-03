@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd3d2cacea51e4c4d92d2c78f01d638c
+guid: 11c9142604844fd46b50149aaefe7c9a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2296908492946758698
-    second: 1FWallpaper_0
+      213: 716922850263219122
+    second: OutSide_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1FWallpaper_0
+      name: OutSide_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 819
+        y: 167
+        width: 1672
+        height: 774
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d3a45c25edbf10e0800000000000000
-      internalID: -2296908492946758698
+      spriteID: 2bbbc4da88503f900800000000000000
+      internalID: 716922850263219122
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6b0402a165c260d44a4e1e6b2c0d0071
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1FWallpaper_0: -2296908492946758698
+      OutSide_0: 716922850263219122
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

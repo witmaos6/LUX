@@ -38,3 +38,17 @@ MonoBehaviour:
     description: "\uC2E4\uD5D8\uB0B4\uC6A9\uC774 \uB2F4\uACA8\uC788\uB2E4\uB294 USB\uB2E4.
       \uC804\uB825\uC774 \uBCF5\uAD6C\uB418\uBA74 \uCEF4\uD4E8\uD130\uC5D0 \uC5F0\uACB0\uD574\uBCF4\uC790."
     icon: {fileID: 8909960197485554810, guid: 186295b39f54a5744a135b8d0dddcd5b, type: 3}
+  - itemCode: 7
+    displayName: 6
+    description: "6\uC774\uB77C \uC368\uC838\uC788\uB2E4. \uBB34\uC2A8 \uC758\uBBF8\uC77C\uAE4C?"
+    icon: {fileID: 3678135739489218654, guid: e20e87b66809f944298677ddffd97b7d, type: 3}
+  - itemCode: 8
+    displayName: 1
+    description: "1\uC774\uB77C \uC368\uC838\uC788\uB2E4. \uB610 \uB2E4\uB978 \uC22B\uC790\uAC00
+      \uC788\uB098?"
+    icon: {fileID: 9064671870575914613, guid: e20e87b66809f944298677ddffd97b7d, type: 3}
+  - itemCode: 9
+    displayName: 3
+    description: "3\uC774\uB77C \uC368\uC838\uC788\uB2E4. \uBA87 \uC790\uB9AC\uAC00
+      \uC788\uB294 \uAC70\uC9C0?"
+    icon: {fileID: 7261727512486393734, guid: e20e87b66809f944298677ddffd97b7d, type: 3}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 46c24b5545d56f941bbb08d3ef9a822b
+guid: 04c795dfec1e80e40b5c8ce03416c235
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5282729018780118906
-    second: OutsideWallpaper_0
+      213: -3037301120742869193
+    second: RoomSign_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OutsideWallpaper_0
+      name: RoomSign_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2508
-        height: 627
+        width: 1448
+        height: 1086
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a7f6901bd06005940800000000000000
-      internalID: 5282729018780118906
+      spriteID: 737b93619b659d5d0800000000000000
+      internalID: -3037301120742869193
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OutsideWallpaper_0: 5282729018780118906
+      RoomSign_0: -3037301120742869193
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

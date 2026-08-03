@@ -8,15 +8,24 @@ public class PasswordUIController : MonoBehaviour
     public TextMeshProUGUI displayText;
     public int maxDisplayLength = 4;
 
+    [Header("Hint")]
+    [Tooltip("Assign the blurred hint text object added to this UI prefab.")]
+    [SerializeField] private TextMeshProUGUI blurredHintObject;
+
     private string currentInput = "";
 
     private PasswordUnlockObject currentActiveLock;
 
-    public void Init(PasswordUnlockObject targetLock)
+    public void Init(PasswordUnlockObject targetLock, bool showHint, string correctAnswer)
     {
         currentActiveLock = targetLock;
         currentInput = "";
         displayText.color = Color.black;
+
+        if (blurredHintObject != null)
+        {
+            blurredHintObject.text = correctAnswer;
+        }
 
         UpdateDisplay();
     }
@@ -76,6 +85,7 @@ public class PasswordUIController : MonoBehaviour
                 if (currentInput.Length < maxDisplayLength)
                 {
                     currentInput += value;
+
                     UpdateDisplay();
                 }
                 break;
@@ -97,8 +107,16 @@ public class PasswordUIController : MonoBehaviour
 
     private void UpdateDisplay()
     {
-        string space = new string('-', maxDisplayLength);
-        displayText.text = string.IsNullOrEmpty(currentInput) ? space : currentInput;
+        if(string.IsNullOrEmpty(currentInput))
+        {
+            string space = new string('_', maxDisplayLength);
+            displayText.text = space;
+        }
+        else
+        {
+            string space = new string('_', maxDisplayLength - currentInput.Length);
+            displayText.text = currentInput + space;
+        }
     }
 
     private void ExecuteVerification()
@@ -121,6 +139,7 @@ public class PasswordUIController : MonoBehaviour
     {
         displayText.color = Color.green;
         displayText.text = "OPEN";
+        blurredHintObject.text = "";
 
         Invoke(nameof(CloseAndDestroyUI), 1.0f);
     }
@@ -130,6 +149,7 @@ public class PasswordUIController : MonoBehaviour
         currentInput = "";
         displayText.color = Color.red;
         displayText.text = "WRONG";
+        blurredHintObject.text = "";
 
         StartCoroutine(ResetDisplayAfterDelay(0.8f));
     }

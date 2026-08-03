@@ -100,6 +100,7 @@ MonoBehaviour:
   correctAnswer: 1318
   passwordKeypad: {fileID: 5200237468158644041, guid: 2617e327b57fe4a4fac99567893af55e, type: 3}
   canvasTransform: {fileID: 0}
+  hintItemCodes: 02000000
   passwordSuccessEvent: {fileID: 11400000, guid: 0483eb03f125ea74f88a25621db723e8, type: 2}
   dispatchSoundStrength: 70
   dispatchSoundRange: 30

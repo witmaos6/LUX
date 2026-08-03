@@ -1,11 +1,17 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using static DropItem;
 
 public class PasswordUnlockObject : InteractionObject
 {
     public string correctAnswer;
     public GameObject passwordKeypad;
     public Transform canvasTransform;
+
+    [Header("Hint")]
+    [Tooltip("The hint is shown when the player owns at least one of these items.")]
+    [SerializeField] private List<ItemCode> hintItemCodes = new();
 
     private GameObject uiInstance;
 
@@ -33,9 +39,24 @@ public class PasswordUnlockObject : InteractionObject
             PasswordUIController uiController = uiInstance.GetComponent<PasswordUIController>();
             if (uiController != null)
             {
-                uiController.Init(this);
+                PlayerController playerController = tryObject.GetComponent<PlayerController>();
+                uiController.Init(this, HasHintItem(playerController), correctAnswer);
             }
         }
+    }
+
+    private bool HasHintItem(PlayerController playerController)
+    {
+        if (playerController == null || hintItemCodes.Count == 0)
+            return false;
+
+        foreach (ItemCode itemCode in hintItemCodes)
+        {
+            if (itemCode != ItemCode.None && !playerController.ExistItem(itemCode))
+                return false;
+        }
+
+        return true;
     }
 
     public override void InputPressed()
