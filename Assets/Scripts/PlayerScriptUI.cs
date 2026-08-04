@@ -20,6 +20,7 @@ public class PlayerScriptUI : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject scriptUI;
     [SerializeField] private TMP_Text scriptText;
+    [SerializeField] private PlayerController playerController;
 
     [Header("Completion")]
     [SerializeField] private UnityEvent onScriptCompleted;
@@ -32,6 +33,9 @@ public class PlayerScriptUI : MonoBehaviour
 
     private void Awake()
     {
+        if (playerController == null)
+            playerController = FindFirstObjectByType<PlayerController>();
+
         nextLineAction = new InputAction(
             name: "Next Script",
             type: InputActionType.Button,
@@ -87,9 +91,14 @@ public class PlayerScriptUI : MonoBehaviour
             return;
         }
 
+        bool wasShowing = isShowing;
         activeSequence = sequence;
         currentLineIndex = 0;
         isShowing = true;
+
+        if (!wasShowing)
+            playerController?.EnterScriptMode();
+
         scriptUI.SetActive(true);
         scriptText.text = activeSequence.GetLine(currentLineIndex);
         nextLineAction.Enable();
@@ -97,12 +106,16 @@ public class PlayerScriptUI : MonoBehaviour
 
     public void Hide()
     {
+        bool wasShowing = isShowing;
         isShowing = false;
         activeSequence = null;
         nextLineAction.Disable();
 
         if (scriptUI != null)
             scriptUI.SetActive(false);
+
+        if (wasShowing)
+            playerController?.ExitScriptMode();
     }
 
     private void OnNextLine(InputAction.CallbackContext context)

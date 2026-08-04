@@ -9,6 +9,16 @@ public enum GaugeVisualMode
     SpriteSwap
 }
 
+[System.Serializable]
+public sealed class GaugeSpriteSoundStep
+{
+    [Tooltip("이 단계에서 표시할 스프라이트")]
+    public Sprite sprite;
+
+    [Tooltip("이 단계로 변경될 때 재생할 효과음. 비어 있으면 재생하지 않습니다.")]
+    public AudioClip sound;
+}
+
 internal interface IGaugeVisualStrategy
 {
     void SetProgress(float normalizedProgress);
@@ -33,24 +43,63 @@ internal sealed class FillGaugeVisualStrategy : IGaugeVisualStrategy
 internal sealed class SpriteSwapGaugeVisualStrategy : IGaugeVisualStrategy
 {
     private readonly Image image;
-    private readonly Sprite[] progressSprites;
+    private readonly GaugeSpriteSoundStep[] progressSteps;
+    private readonly Sprite[] legacyProgressSprites;
+    private readonly AudioSource audioSource;
+    private readonly float soundVolume;
+    private int currentSpriteIndex = -1;
 
-    public SpriteSwapGaugeVisualStrategy(Image image, Sprite[] progressSprites)
+    public SpriteSwapGaugeVisualStrategy(
+        Image image,
+        GaugeSpriteSoundStep[] progressSteps,
+        Sprite[] legacyProgressSprites,
+        AudioSource audioSource,
+        float soundVolume)
     {
         this.image = image;
-        this.progressSprites = progressSprites;
+        this.progressSteps = progressSteps;
+        this.legacyProgressSprites = legacyProgressSprites;
+        this.audioSource = audioSource;
+        this.soundVolume = soundVolume;
     }
 
     public void SetProgress(float normalizedProgress)
     {
-        if (image == null || progressSprites == null || progressSprites.Length == 0)
+        int stepCount = GetStepCount();
+        if (image == null || stepCount == 0)
             return;
 
         // A prefab configured for Filled images could otherwise hide swapped sprites.
         image.fillAmount = 1f;
         int spriteIndex = Mathf.RoundToInt(
-            Mathf.Clamp01(normalizedProgress) * (progressSprites.Length - 1));
-        image.sprite = progressSprites[spriteIndex];
+            Mathf.Clamp01(normalizedProgress) * (stepCount - 1));
+
+        bool shouldPlaySound = currentSpriteIndex >= 0 && currentSpriteIndex != spriteIndex;
+        AudioClip stepSound = null;
+
+        if (progressSteps != null && progressSteps.Length > 0)
+        {
+            GaugeSpriteSoundStep step = progressSteps[spriteIndex];
+            image.sprite = step != null ? step.sprite : null;
+            stepSound = step != null ? step.sound : null;
+        }
+        else
+        {
+            image.sprite = legacyProgressSprites[spriteIndex];
+        }
+
+        currentSpriteIndex = spriteIndex;
+
+        if (shouldPlaySound && audioSource != null && stepSound != null)
+            audioSource.PlayOneShot(stepSound, soundVolume);
+    }
+
+    private int GetStepCount()
+    {
+        if (progressSteps != null && progressSteps.Length > 0)
+            return progressSteps.Length;
+
+        return legacyProgressSprites != null ? legacyProgressSprites.Length : 0;
     }
 }
 
@@ -66,8 +115,17 @@ public class GaugeMashObject : InteractionObject
     [Tooltip("gaugeUIPrefab 안에서 게이지 Fill Image를 담고 있는 자식 오브젝트 이름")]
     public string fillImageName = "Fill";
 
-    [Tooltip("SpriteSwap 모드에서 0%부터 100% 순서로 사용할 스프라이트")]
+    [Tooltip("SpriteSwap 모드에서 0%부터 100% 순서로 사용할 스프라이트와 효과음 세트")]
+    public GaugeSpriteSoundStep[] progressSteps;
+
+    [HideInInspector]
     public Sprite[] progressSprites;
+
+    [Tooltip("스프라이트가 변경될 때 효과음을 재생할 AudioSource. 비어 있으면 현재 오브젝트에서 찾습니다.")]
+    public AudioSource spriteSwapAudioSource;
+
+    [Range(0f, 1f)]
+    public float spriteSwapSoundVolume = 1f;
 
     [Header("Switch Visual")]
     [Tooltip("gaugeUIPrefab 안에서 스위치 Image를 가진 자식 오브젝트 이름")]
@@ -104,6 +162,9 @@ public class GaugeMashObject : InteractionObject
     private void Awake()
     {
         interactionType = InteractionType.InteractionKey;
+
+        if (spriteSwapAudioSource == null)
+            spriteSwapAudioSource = GetComponent<AudioSource>();
 
         if (canvasTransform == null)
             canvasTransform = GameObject.Find("Canvas").transform;
@@ -247,7 +308,12 @@ public class GaugeMashObject : InteractionObject
         switch (visualMode)
         {
             case GaugeVisualMode.SpriteSwap:
-                return new SpriteSwapGaugeVisualStrategy(targetImage, progressSprites);
+                return new SpriteSwapGaugeVisualStrategy(
+                    targetImage,
+                    progressSteps,
+                    progressSprites,
+                    spriteSwapAudioSource,
+                    spriteSwapSoundVolume);
             case GaugeVisualMode.Fill:
             default:
                 return new FillGaugeVisualStrategy(targetImage);

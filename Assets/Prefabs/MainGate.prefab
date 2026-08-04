@@ -117,11 +117,22 @@ MonoBehaviour:
   canvasTransform: {fileID: 0}
   visualMode: 1
   fillImageName: Fill
+  progressSteps:
+  - sprite: {fileID: -2669507020746940487, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
+    sound: {fileID: 8300000, guid: d030261a4f1b6cc4c888b852f5f40d66, type: 3}
+  - sprite: {fileID: 1932307241, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
+    sound: {fileID: 8300000, guid: 9d8234b9e5425f54c9ccbabdfa039efe, type: 3}
+  - sprite: {fileID: -740331051, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
+    sound: {fileID: 8300000, guid: c462b8d41bd384f408d03e82c8727315, type: 3}
+  - sprite: {fileID: -339318674, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
+    sound: {fileID: 8300000, guid: 4e1fd7d165eb8de4da91fedf5c5a163b, type: 3}
   progressSprites:
   - {fileID: -2669507020746940487, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
   - {fileID: 1932307241, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
   - {fileID: -740331051, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
   - {fileID: -339318674, guid: 80d5c3d9ae6643c45b2265cf9a526e86, type: 3}
+  spriteSwapAudioSource: {fileID: 0}
+  spriteSwapSoundVolume: 1
   switchImageName: Switch
   switchReleasedSprite: {fileID: 7660022499367291700, guid: c345a73ce299d11498baf8715a1f5d92, type: 3}
   switchPressedSprite: {fileID: 3394188370226867035, guid: 127446b1175b72a4a99f42197c367f86, type: 3}

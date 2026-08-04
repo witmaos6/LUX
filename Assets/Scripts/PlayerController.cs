@@ -9,10 +9,12 @@ public class PlayerController : MonoBehaviour
     {
         Normal,
         Hide,
+        Script,
         Dead,
     }
 
     private PlayerState playerState = PlayerState.Normal;
+    private PlayerState stateBeforeScript = PlayerState.Normal;
     public float normalSpeed = 5f;
     private float moveSpeed = 5.0f;
     public float sprintSpeed = 8f;
@@ -183,7 +185,7 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        if (ShouldIgnoreGameplayInput())
+        if (playerState == PlayerState.Script || ShouldIgnoreGameplayInput())
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             return;
@@ -392,7 +394,7 @@ public class PlayerController : MonoBehaviour
         if (ShouldIgnoreGameplayInput())
             return;
 
-        if (playerState != PlayerState.Dead)
+        if (playerState == PlayerState.Normal || playerState == PlayerState.Hide)
             inventoryUI.Toggle();
     }
 
@@ -446,6 +448,27 @@ public class PlayerController : MonoBehaviour
     public void SetState(PlayerState inState)
     {
         playerState = inState;
+    }
+
+    public void EnterScriptMode()
+    {
+        if (playerState == PlayerState.Script || playerState == PlayerState.Dead)
+            return;
+
+        stateBeforeScript = playerState;
+        playerState = PlayerState.Script;
+        moveSpeed = normalSpeed;
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        inventoryUI.Close();
+    }
+
+    public void ExitScriptMode()
+    {
+        if (playerState != PlayerState.Script)
+            return;
+
+        playerState = stateBeforeScript;
+        moveSpeed = normalSpeed;
     }
 
     public PlayerState GetState()
