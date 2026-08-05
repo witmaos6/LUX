@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScriptSequence
   lines:
   - text: "\uADF8\uAC74 \uB3C4\uB300\uCCB4 \uBB50\uC600\uC744\uAE4C?"
-  - text: "\uC800 \uACF3\uC740 \uBB58\uD558\uB294 \uACF3\uC774\uC5C8\uC744\uAE4C?"
+  - text: "\uC800\uACF3\uC740 \uBB58 \uD558\uB294 \uACF3\uC774\uC5C8\uC744\uAE4C?"
   - text: "\uB098\uB294 \uC65C \uC800\uAE30 \uC788\uC5C8\uB358 \uAC70\uC9C0?"

@@ -7,6 +7,7 @@ public class ViewImage : InteractionObject
     public Transform canvasTransform;
 
     private GameObject uiInstance;
+    public GameEvent viewEvent;
 
     private void Awake()
     {
@@ -22,6 +23,10 @@ public class ViewImage : InteractionObject
         if(uiPrefab)
         {
             uiInstance = Instantiate(uiPrefab, canvasTransform);
+            if(viewEvent)
+            {
+                GameEventManager.Raise(viewEvent);
+            }
         }
     }
 

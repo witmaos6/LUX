@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6aa1a8be6203524ab563f9f26b76f87, type: 3}
-  m_Name: Intro
+  m_Name: Monitor1CheckScript
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScriptSequence
   lines:
-  - text: "\uC73C... \uBA38\uB9AC\uAC00..."
-  - text: "...\uC5EC\uAE34 \uC5B4\uB514\uC9C0?"
-  - text: "\uC544\uBB34\uAC83\uB3C4 \uAE30\uC5B5\uB098\uC9C0 \uC54A\uC544..."
-  - text: "\uC6B0\uC120... \uC8FC\uBCC0\uC744 \uB458\uB7EC\uBCF4\uC790."
+  - text: "\uD55C \uAC00\uC9C0 \uCC1D\uCC1D\uD55C \uAC83\uC774 \uC788\uB2E4."
+  - text: "\uADF8 \uAD34\uBB3C\uC740 \uD615\uCCB4\uB97C \uC54C\uC544\uBCFC \uC218
+      \uC5C6\uC744\uC815 \uB3C4\uB85C \uC9D3\uC774\uAE34\uB2E4\uB294\uB370"
+  - text: "\uADF8\uB807\uB2E4\uBA74 \uADF8 \uB9CE\uC740 \uC2DC\uCCB4\uB294 \uBB50\uC9C0?"

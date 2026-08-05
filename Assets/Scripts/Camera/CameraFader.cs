@@ -69,6 +69,32 @@ public class CameraFader : MonoBehaviour
         SetAlpha(alpha);
     }
 
+    public void StartFade(float fadeInDuration)
+    {
+        if (fadeInDuration < 0f)
+        {
+            Debug.Log($"fade in duration is {fadeInDuration}");
+            fadeInDuration = defaultFadeInDuration;
+        }
+
+        if (currentFade != null)
+        {
+            StopCoroutine(currentFade);
+        }
+
+        currentFade = StartCoroutine(FadeSequence(fadeInDuration));
+    }
+
+    IEnumerator FadeSequence(float fadeInDuration)
+    {
+        yield return FadeTo(targetAlpha, fadeInDuration);
+
+        cameraFadeInComplete?.Invoke();
+        cameraFadeInComplete = null;
+
+        currentFade = null;
+    }
+
     void SetAlpha(float alpha)
     {
         Color c = overlay.color;
@@ -81,7 +107,7 @@ public class CameraFader : MonoBehaviour
         var go = new GameObject("CameraFadeOverlay");
         var canvas = go.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = 32767; // 최상위로 설정
+        canvas.sortingOrder = 100;
 
         go.AddComponent<CanvasScaler>();
         go.AddComponent<GraphicRaycaster>();

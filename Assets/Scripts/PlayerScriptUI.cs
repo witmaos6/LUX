@@ -28,8 +28,11 @@ public class PlayerScriptUI : MonoBehaviour
     private InputAction nextLineAction;
     private readonly List<(GameEvent gameEvent, Action handler)> subscriptions = new();
     private PlayerScriptSequence activeSequence;
+    private Action activeCompletion;
     private int currentLineIndex;
     private bool isShowing;
+
+    public bool IsShowing => isShowing;
 
     private void Awake()
     {
@@ -79,29 +82,39 @@ public class PlayerScriptUI : MonoBehaviour
 
     public void Show(PlayerScriptSequence sequence)
     {
+        TryPlay(sequence, null);
+    }
+
+    public bool TryPlay(PlayerScriptSequence sequence, Action onCompleted)
+    {
+        if (isShowing)
+        {
+            Debug.LogWarning("A player script is already being displayed.", this);
+            return false;
+        }
+
         if (sequence == null || sequence.LineCount == 0)
         {
-            Debug.LogWarning("표시할 플레이어 스크립트가 없습니다.", this);
-            return;
+            Debug.LogWarning("The player script sequence is empty.", this);
+            return false;
         }
 
         if (scriptUI == null || scriptText == null)
         {
-            Debug.LogError("플레이어 스크립트 UI 참조가 설정되지 않았습니다.", this);
-            return;
+            Debug.LogError("The player script UI references are not configured.", this);
+            return false;
         }
 
-        bool wasShowing = isShowing;
         activeSequence = sequence;
+        activeCompletion = onCompleted;
         currentLineIndex = 0;
         isShowing = true;
 
-        if (!wasShowing)
-            playerController?.EnterScriptMode();
-
+        playerController?.EnterScriptMode();
         scriptUI.SetActive(true);
         scriptText.text = activeSequence.GetLine(currentLineIndex);
         nextLineAction.Enable();
+        return true;
     }
 
     public void Hide()
@@ -109,6 +122,7 @@ public class PlayerScriptUI : MonoBehaviour
         bool wasShowing = isShowing;
         isShowing = false;
         activeSequence = null;
+        activeCompletion = null;
         nextLineAction.Disable();
 
         if (scriptUI != null)
@@ -136,7 +150,9 @@ public class PlayerScriptUI : MonoBehaviour
 
     private void Complete()
     {
+        Action completion = activeCompletion;
         Hide();
         onScriptCompleted?.Invoke();
+        completion?.Invoke();
     }
 }

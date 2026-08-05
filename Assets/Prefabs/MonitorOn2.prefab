@@ -199,6 +199,7 @@ MonoBehaviour:
   interactionType: 0
   uiPrefab: {fileID: 1962757527568594360, guid: 698b8013aad2aec4ca3541d4b3fc367e, type: 3}
   canvasTransform: {fileID: 0}
+  viewEvent: {fileID: 0}
 --- !u!82 &8353353854958788952
 AudioSource:
   m_ObjectHideFlags: 0
@@ -256,7 +257,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

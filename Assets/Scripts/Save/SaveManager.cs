@@ -23,6 +23,7 @@ public class CheckpointData
     public List<string> destroyedObjectIds = new List<string>();
     public List<SpawnedRecord> spawnedObjects = new List<SpawnedRecord>();
     public List<string> firedEventIds = new List<string>();
+    public List<string> endingFactIds = new List<string>();
 }
 
 public static class SaveManager
@@ -33,6 +34,7 @@ public static class SaveManager
     private static CheckpointData data = new CheckpointData();
     private static readonly HashSet<string> destroyedLookup = new HashSet<string>();
     private static readonly HashSet<string> firedEventLookup = new HashSet<string>();
+    private static readonly HashSet<string> endingFactLookup = new HashSet<string>();
     private static bool isQuitting = false;
     private static bool isTransitioningScene = false;
 
@@ -70,6 +72,12 @@ public static class SaveManager
             data = new CheckpointData();
         }
 
+        data.inventory ??= new List<DropItem.ItemCode>();
+        data.destroyedObjectIds ??= new List<string>();
+        data.spawnedObjects ??= new List<SpawnedRecord>();
+        data.firedEventIds ??= new List<string>();
+        data.endingFactIds ??= new List<string>();
+
         destroyedLookup.Clear();
         foreach (var id in data.destroyedObjectIds)
             destroyedLookup.Add(id);
@@ -77,6 +85,10 @@ public static class SaveManager
         firedEventLookup.Clear();
         foreach (var id in data.firedEventIds)
             firedEventLookup.Add(id);
+
+        endingFactLookup.Clear();
+        foreach (var id in data.endingFactIds)
+            endingFactLookup.Add(id);
 
         HasSave = data.hasRespawnPoint;
     }
@@ -91,6 +103,7 @@ public static class SaveManager
         data = new CheckpointData();
         destroyedLookup.Clear();
         firedEventLookup.Clear();
+        endingFactLookup.Clear();
         HasSave = false;
         Flush();
     }
@@ -164,6 +177,25 @@ public static class SaveManager
 
         data.firedEventIds.Add(eventId);
         Flush();
+    }
+
+    public static bool HasEndingFact(string factId)
+    {
+        return !string.IsNullOrEmpty(factId) && endingFactLookup.Contains(factId);
+    }
+
+    public static void RecordEndingFact(string factId)
+    {
+        if (string.IsNullOrEmpty(factId)) return;
+        if (!endingFactLookup.Add(factId)) return;
+
+        data.endingFactIds.Add(factId);
+        Flush();
+    }
+
+    public static HashSet<string> CreateEndingFactSnapshot()
+    {
+        return new HashSet<string>(endingFactLookup);
     }
 
     private static void Flush()

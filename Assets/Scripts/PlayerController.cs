@@ -315,6 +315,7 @@ public class PlayerController : MonoBehaviour
                 }
 
                 dontMove = true;
+                BlockInteraction();
                 currentInteraction = interact;
                 interact.interactionComplete += AllowInteraction;
                 interact.Interaction(gameObject);
@@ -384,7 +385,7 @@ public class PlayerController : MonoBehaviour
                 flashlightInstance.SetActive(true);
                 flashlightInstance.transform.SetParent(transform, false);
 
-                DevilDispatcher.Instance.TriggerLight(flashlightInstance);
+                FlashlightVisibilityService.Register(flashlightInstance);
             }
         }
     }

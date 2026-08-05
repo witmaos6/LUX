@@ -30,8 +30,7 @@ MonoBehaviour:
     icon: {fileID: 8455153745976563607, guid: bf4bd3c89ca7d434b9ba6a858cc2e809, type: 3}
   - itemCode: 4
     displayName: Door Opener
-    description: "\uBB38\uC744 \uAC15\uC81C\uB85C \uAC1C\uBC29\uD560 \uC218 \uC788\uB294
-      \uB3C4\uAD6C\uB2E4."
+    description: "\uBB38\uC744 \uAC1C\uBC29\uD560 \uC218 \uC788\uB294 \uB3C4\uAD6C\uB2E4."
     icon: {fileID: 5236804859230564228, guid: e5c92eba8b49f5e40ab191bc0b7579ba, type: 3}
   - itemCode: 5
     displayName: USB

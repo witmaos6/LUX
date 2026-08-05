@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4558131741427198186}
   - component: {fileID: 3374555616373802750}
   - component: {fileID: 4730392957597914943}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Devil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,6 +131,7 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   doorArriveDistance: 0.5
   loopSound: {fileID: 8300000, guid: d390bb45f24d2de40b526d4c1eda3e3e, type: 3}
+  investigateSound: {fileID: 0}
 --- !u!61 &3280357710943042616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -211,9 +212,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d281cb07fd2412345a1474e9c0944570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimationComponent
+  idleSpeedThreshold: 0.05
   dirRight: 1
   idle: 1
   speed: 0
+  hide: 0
 --- !u!82 &4730392957597914943
 AudioSource:
   m_ObjectHideFlags: 0

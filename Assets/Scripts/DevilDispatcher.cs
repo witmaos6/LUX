@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
+using UnityEngine.Serialization;
 
 public enum SuspicionSourceType
 {
@@ -17,8 +17,8 @@ public class DevilDispatcher : MonoBehaviour
 
     [Header("Flashlight Detection")]
     public float flashlightDetectStrength = 10f;
-    public float flashlightRangeWeitght = 1.5f;
-    public LayerMask obstacleLayer;
+    [FormerlySerializedAs("flashlightRangeWeitght")]
+    public float flashlightRangeWeight = 1.5f;
 
     [Header("Suspicion Source Debug")]
     public bool showSuspicionRangeDebug = true;
@@ -27,8 +27,6 @@ public class DevilDispatcher : MonoBehaviour
     public Color lightRangeColor = new Color(1f, 1f, 0.4f);
     private const int debugCircleSegments = 24;
 
-    private Light2D flashlight;
-
     private void Awake()
     {
         Instance = this;
@@ -36,7 +34,7 @@ public class DevilDispatcher : MonoBehaviour
 
     private void Update()
     {
-        if (flashlight != null && flashlight.gameObject.activeSelf && devils.Count > 0)
+        if (FlashlightVisibilityService.HasActiveFlashlight && devils.Count > 0)
         {
             DetectDevilsWithFlashlight();
         }
@@ -101,77 +99,45 @@ public class DevilDispatcher : MonoBehaviour
         }
     }
 
-    public void TriggerLight(GameObject inFlashlight)
-    {
-        if (inFlashlight == null) return;
-        flashlight = inFlashlight.GetComponent<Light2D>();
-    }
-
     private void DetectDevilsWithFlashlight()
     {
-        Vector3 flashlightPosition = flashlight.transform.position;
-        float detectDistance = flashlight.pointLightOuterRadius * flashlightRangeWeitght;
+        FlashlightDetectionResult lightInfo =
+            FlashlightVisibilityService.Evaluate(Vector3.zero, flashlightRangeWeight);
 
         if (showSuspicionRangeDebug)
-            ShowSuspicionRangeDebug(flashlightPosition, detectDistance, SuspicionSourceType.Light);
-
-        Vector3 forwardDir = flashlight.transform.up;
-        float halfSpotAngle = flashlight.pointLightOuterAngle / 2f;
+            ShowSuspicionRangeDebug(
+                lightInfo.LightPosition,
+                lightInfo.DetectionRange,
+                SuspicionSourceType.Light);
 
         foreach (Devil devil in devils)
         {
             if (devil == null) continue;
 
-            Vector3 devilPosition = devil.transform.position;
-            float distToDevil = Vector3.Distance(flashlightPosition, devilPosition);
+            FlashlightDetectionResult result =
+                FlashlightVisibilityService.Evaluate(
+                    devil.transform.position,
+                    flashlightRangeWeight);
 
-            if (distToDevil > detectDistance) continue;
-
-            Vector3 dirToDevil = (devilPosition - flashlightPosition).normalized;
-
-            float angleToDevil = Vector3.Angle(forwardDir, dirToDevil);
-            if (angleToDevil > halfSpotAngle) continue;
-
-            RaycastHit2D hitObstacle = Physics2D.Raycast(flashlightPosition, dirToDevil, distToDevil, obstacleLayer);
-            if (hitObstacle.collider != null) continue;
-
-            devil.AddSuspicion(flashlightPosition, detectDistance, flashlightDetectStrength);
+            if (result.IsIlluminated)
+            {
+                devil.AddSuspicion(
+                    result.LightPosition,
+                    result.DetectionRange,
+                    flashlightDetectStrength);
+            }
         }
-
     }
 
     private void OnDrawGizmosSelected()
     {
-        if (flashlight == null)
-        {
-            var foundLight = FindFirstObjectByType<Light2D>();
-            if (foundLight != null) flashlight = foundLight;
-            else return;
-        }
+        if (!FlashlightVisibilityService.HasActiveFlashlight)
+            return;
+
+        FlashlightDetectionResult lightInfo =
+            FlashlightVisibilityService.Evaluate(Vector3.zero, flashlightRangeWeight);
 
         Gizmos.color = Color.yellow;
-        float radius = flashlight.pointLightOuterRadius * 1.5f;
-        float halfAngle = flashlight.pointLightOuterAngle / 2f;
-
-        Vector3 forward = flashlight.transform.up;
-        Vector3 leftBoundary = Quaternion.Euler(0, 0, halfAngle) * forward;
-        Vector3 rightBoundary = Quaternion.Euler(0, 0, -halfAngle) * forward;
-
-        Vector3 flashlightPosition = flashlight.transform.position;
-
-        Gizmos.DrawLine(flashlightPosition, flashlightPosition + leftBoundary * radius);
-        Gizmos.DrawLine(flashlightPosition, flashlightPosition + rightBoundary * radius);
-
-        int segments = 16;
-        Vector3 prevPoint = flashlightPosition + leftBoundary * radius;
-        for (int i = 1; i <= segments; i++)
-        {
-            float currAngle = halfAngle - (flashlight.pointLightOuterAngle / segments) * i;
-            Vector3 currDir = Quaternion.Euler(0, 0, currAngle) * forward;
-            Vector3 currPoint = flashlightPosition + currDir * radius;
-
-            Gizmos.DrawLine(prevPoint, currPoint);
-            prevPoint = currPoint;
-        }
+        Gizmos.DrawWireSphere(lightInfo.LightPosition, lightInfo.DetectionRange);
     }
 }
