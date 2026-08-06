@@ -126,6 +126,5 @@ public class CameraFader : MonoBehaviour
         rt.offsetMax = Vector2.zero;
 
         overlay = img;
-        DontDestroyOnLoad(go);
     }
 }

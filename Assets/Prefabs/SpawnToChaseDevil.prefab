@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 4558131741427198186}
   - component: {fileID: 3374555616373802750}
   - component: {fileID: 4730392957597914943}
-  - component: {fileID: -1376679037154716780}
+  - component: {fileID: 942872472276088897}
   m_Layer: 10
-  m_Name: Devil
+  m_Name: SpawnToChaseDevil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,9 +113,7 @@ MonoBehaviour:
   patrolSpeed: 2
   investigateSpeed: 3
   chaseSpeed: 5
-  patrolWaypoints:
-  - {fileID: 0}
-  - {fileID: 0}
+  patrolWaypoints: []
   targetWaitTime: 1
   investigateMinPoints: 1
   investigateMaxPoints: 3
@@ -125,7 +123,7 @@ MonoBehaviour:
   executeSuspicionThreshold: 100
   suspicionDecayDelay: 3
   suspicionDecayRate: 5
-  suspicion: 0
+  suspicion: 100
   distanceToPlayer: 0
   isCollidingWithPlayer: 0
   isPlayerHidden: 0
@@ -315,7 +313,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-1376679037154716780
+--- !u!114 &942872472276088897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
