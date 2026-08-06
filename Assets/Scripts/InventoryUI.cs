@@ -1,13 +1,18 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using static DropItem;
 
 public sealed class InventoryUI : MonoBehaviour
 {
+    private const float KeyboardScrollSpeed = 420f;
+
     private GameObject panel;
     private RectTransform itemContainer;
+    private ScrollRect itemScrollRect;
+    private Scrollbar itemScrollbar;
     private TMP_Text emptyText;
     private PlayerController player;
     private InventoryItemDatabase itemDatabase;
@@ -73,12 +78,51 @@ public sealed class InventoryUI : MonoBehaviour
         }
 
         emptyText.gameObject.SetActive(visibleItemCount == 0);
+
+        float contentHeight = Mathf.Max(500f, visibleItemCount * 96f);
+        itemContainer.sizeDelta = new Vector2(0f, contentHeight);
+
+        if (itemScrollRect != null)
+        {
+            Canvas.ForceUpdateCanvases();
+            itemScrollRect.verticalNormalizedPosition = 1f;
+        }
+
+        if (itemScrollbar != null)
+            itemScrollbar.gameObject.SetActive(contentHeight > 500f);
     }
 
     public void Close()
     {
         if (panel != null)
             panel.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (!IsOpen || itemScrollRect == null || Keyboard.current == null)
+            return;
+
+        float direction = 0f;
+        if (Keyboard.current.upArrowKey.isPressed)
+            direction += 1f;
+        if (Keyboard.current.downArrowKey.isPressed)
+            direction -= 1f;
+
+        if (!Mathf.Approximately(direction, 0f))
+            ScrollByPixels(direction * KeyboardScrollSpeed * Time.unscaledDeltaTime);
+    }
+
+    private void ScrollByPixels(float pixelDelta)
+    {
+        float viewportHeight = itemScrollRect.viewport.rect.height;
+        float contentHeight = itemScrollRect.content.rect.height;
+        float scrollableHeight = contentHeight - viewportHeight;
+        if (scrollableHeight <= 0f)
+            return;
+
+        itemScrollRect.verticalNormalizedPosition = Mathf.Clamp01(
+            itemScrollRect.verticalNormalizedPosition + pixelDelta / scrollableHeight);
     }
 
     private void CreatePanel(Transform canvasTransform)
@@ -105,14 +149,7 @@ public sealed class InventoryUI : MonoBehaviour
             new Vector2(0f, 290f),
             new Vector2(820f, 70f));
 
-        GameObject containerObject = new GameObject("Item List", typeof(RectTransform));
-        containerObject.transform.SetParent(panel.transform, false);
-        itemContainer = containerObject.GetComponent<RectTransform>();
-        itemContainer.anchorMin = new Vector2(0.5f, 0.5f);
-        itemContainer.anchorMax = new Vector2(0.5f, 0.5f);
-        itemContainer.pivot = new Vector2(0.5f, 0.5f);
-        itemContainer.anchoredPosition = new Vector2(0f, 0f);
-        itemContainer.sizeDelta = new Vector2(800f, 500f);
+        CreateItemScrollView(panel.transform);
 
         emptyText = CreateText(
             "Empty",
@@ -133,6 +170,96 @@ public sealed class InventoryUI : MonoBehaviour
             TextAlignmentOptions.Center,
             new Vector2(0f, -315f),
             new Vector2(820f, 40f));
+    }
+
+    private void CreateItemScrollView(Transform parent)
+    {
+        GameObject scrollView = new GameObject("Item Scroll View", typeof(RectTransform), typeof(ScrollRect));
+        scrollView.transform.SetParent(parent, false);
+
+        RectTransform scrollRect = scrollView.GetComponent<RectTransform>();
+        scrollRect.anchorMin = new Vector2(0.5f, 0.5f);
+        scrollRect.anchorMax = new Vector2(0.5f, 0.5f);
+        scrollRect.pivot = new Vector2(0.5f, 0.5f);
+        scrollRect.anchoredPosition = Vector2.zero;
+        scrollRect.sizeDelta = new Vector2(800f, 500f);
+
+        GameObject viewportObject = new GameObject(
+            "Viewport",
+            typeof(RectTransform),
+            typeof(Image),
+            typeof(RectMask2D));
+        viewportObject.transform.SetParent(scrollView.transform, false);
+
+        RectTransform viewport = viewportObject.GetComponent<RectTransform>();
+        viewport.anchorMin = Vector2.zero;
+        viewport.anchorMax = Vector2.one;
+        viewport.offsetMin = Vector2.zero;
+        viewport.offsetMax = new Vector2(-24f, 0f);
+
+        // ScrollRect needs a raycast target inside its bounds to receive wheel events.
+        Image viewportInputSurface = viewportObject.GetComponent<Image>();
+        viewportInputSurface.color = Color.clear;
+        viewportInputSurface.raycastTarget = true;
+
+        GameObject containerObject = new GameObject("Item List", typeof(RectTransform));
+        containerObject.transform.SetParent(viewportObject.transform, false);
+        itemContainer = containerObject.GetComponent<RectTransform>();
+        itemContainer.anchorMin = new Vector2(0f, 1f);
+        itemContainer.anchorMax = new Vector2(1f, 1f);
+        itemContainer.pivot = new Vector2(0.5f, 1f);
+        itemContainer.anchoredPosition = Vector2.zero;
+        itemContainer.sizeDelta = new Vector2(0f, 500f);
+
+        itemScrollRect = scrollView.GetComponent<ScrollRect>();
+        itemScrollRect.viewport = viewport;
+        itemScrollRect.content = itemContainer;
+        itemScrollRect.horizontal = false;
+        itemScrollRect.vertical = true;
+        itemScrollRect.scrollSensitivity = 32f;
+        itemScrollRect.movementType = ScrollRect.MovementType.Clamped;
+
+        itemScrollbar = CreateScrollbar(scrollView.transform);
+        itemScrollRect.verticalScrollbar = itemScrollbar;
+        itemScrollRect.verticalScrollbarVisibility = ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport;
+    }
+
+    private Scrollbar CreateScrollbar(Transform parent)
+    {
+        GameObject scrollbarObject = new GameObject(
+            "Scrollbar",
+            typeof(RectTransform),
+            typeof(Image),
+            typeof(Scrollbar));
+        scrollbarObject.transform.SetParent(parent, false);
+
+        RectTransform scrollbarRect = scrollbarObject.GetComponent<RectTransform>();
+        scrollbarRect.anchorMin = new Vector2(1f, 0f);
+        scrollbarRect.anchorMax = new Vector2(1f, 1f);
+        scrollbarRect.pivot = new Vector2(1f, 0.5f);
+        scrollbarRect.anchoredPosition = Vector2.zero;
+        scrollbarRect.sizeDelta = new Vector2(16f, 0f);
+
+        Image background = scrollbarObject.GetComponent<Image>();
+        background.color = new Color(1f, 1f, 1f, 0.15f);
+
+        GameObject handleObject = new GameObject("Handle", typeof(RectTransform), typeof(Image));
+        handleObject.transform.SetParent(scrollbarObject.transform, false);
+
+        RectTransform handleRect = handleObject.GetComponent<RectTransform>();
+        handleRect.anchorMin = Vector2.zero;
+        handleRect.anchorMax = Vector2.one;
+        handleRect.offsetMin = new Vector2(2f, 2f);
+        handleRect.offsetMax = new Vector2(-2f, -2f);
+
+        Image handleImage = handleObject.GetComponent<Image>();
+        handleImage.color = new Color(0.85f, 0.85f, 0.85f, 0.9f);
+
+        Scrollbar scrollbar = scrollbarObject.GetComponent<Scrollbar>();
+        scrollbar.direction = Scrollbar.Direction.BottomToTop;
+        scrollbar.targetGraphic = handleImage;
+        scrollbar.handleRect = handleRect;
+        return scrollbar;
     }
 
     private void CreateItemRow(ItemCode item, int index)

@@ -15,6 +15,12 @@ public class PasswordUIController : MonoBehaviour
     private string currentInput = "";
 
     private PasswordUnlockObject currentActiveLock;
+    private PasswordKeypadButton[] keypadButtons;
+
+    private void Awake()
+    {
+        keypadButtons = GetComponentsInChildren<PasswordKeypadButton>(true);
+    }
 
     public void Init(PasswordUnlockObject targetLock, bool showHint, string correctAnswer)
     {
@@ -40,23 +46,44 @@ public class PasswordUIController : MonoBehaviour
         {
             if (IsNumberKeyPressed(keyboard, number))
             {
-                ReceiveButtonInput(KeypadButtonType.Number, number.ToString());
+                ReceiveKeyboardInput(KeypadButtonType.Number, number.ToString());
                 return;
             }
         }
 
         if (keyboard.backspaceKey.wasPressedThisFrame || keyboard.deleteKey.wasPressedThisFrame)
         {
-            ReceiveButtonInput(KeypadButtonType.Clear, string.Empty);
+            ReceiveKeyboardInput(KeypadButtonType.Clear, string.Empty);
         }
         else if (keyboard.enterKey.wasPressedThisFrame || keyboard.numpadEnterKey.wasPressedThisFrame)
         {
-            ReceiveButtonInput(KeypadButtonType.Confirm, string.Empty);
+            ReceiveKeyboardInput(KeypadButtonType.Confirm, string.Empty);
         }
         else if (keyboard.escapeKey.wasPressedThisFrame)
         {
-            ReceiveButtonInput(KeypadButtonType.Cancel, string.Empty);
+            ReceiveKeyboardInput(KeypadButtonType.Cancel, string.Empty);
         }
+    }
+
+    private void ReceiveKeyboardInput(KeypadButtonType type, string value)
+    {
+        foreach (PasswordKeypadButton keypadButton in keypadButtons)
+        {
+            bool isMatchingType = keypadButton.buttonType == type;
+            bool isMatchingValue = type != KeypadButtonType.Number || keypadButton.numberValue == value;
+
+            if (!isMatchingType || !isMatchingValue)
+                continue;
+
+            UnityEngine.UI.Button button = keypadButton.GetComponent<UnityEngine.UI.Button>();
+            if (button != null && button.interactable)
+            {
+                button.onClick.Invoke();
+                return;
+            }
+        }
+
+        ReceiveButtonInput(type, value);
     }
 
     private static bool IsNumberKeyPressed(Keyboard keyboard, int number)

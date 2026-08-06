@@ -153,8 +153,8 @@ MonoBehaviour:
     \uC54C\uC544\uB0B4\uB294 \uAC83\uC774 \uC5F0\uAD6C \uBAA9\uC801\uC77C\uC218\uB3C4
     \uC788\uACE0."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

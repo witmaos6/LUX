@@ -7119,8 +7119,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8868,8 +8868,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uD648\uC73C\uB85C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9781,6 +9781,7 @@ MonoBehaviour:
   blockEvent: {fileID: 11400000, guid: f0ab13ea11efafc438b7e9c85dfe12c6, type: 2}
   requiredTag: Player
   triggerOnce: 1
+  savedEvent: 0
 --- !u!61 &700905156
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12629,8 +12630,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC7AC\uC2DC\uC791"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13105,8 +13106,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uD0A4 \uC124\uC815"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14663,8 +14664,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Space
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16073,8 +16074,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Space
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -24747,7 +24748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 20299826049589847, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: patrolWaypoints.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 20299826049589847, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: 'patrolWaypoints.Array.data[0]'
@@ -24756,7 +24757,7 @@ PrefabInstance:
     - target: {fileID: 20299826049589847, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: 'patrolWaypoints.Array.data[1]'
       value: 
-      objectReference: {fileID: 1717047575}
+      objectReference: {fileID: 141191850}
     - target: {fileID: 3174033232232634941, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: m_Name
       value: ChaseDevil4
@@ -26957,8 +26958,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uACC4\uC18D\uD558\uAE30"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
-  m_sharedMaterial: {fileID: 3226570373901332899, guid: ab4068bf3b9f9074c8dd8058ad624638, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
+  m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
