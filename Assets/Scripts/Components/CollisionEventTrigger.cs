@@ -19,6 +19,17 @@ public class CollisionEventTrigger : MonoBehaviour
     private bool hasTriggered;
     private Coroutine beginEventCoroutine;
 
+    [Tooltip("Save the event as fired so one-time triggers remain completed after loading.")]
+    public bool savedEvent = true;
+
+    private void Awake()
+    {
+        if (savedEvent && beginEvent)
+        {
+            hasTriggered = SaveManager.HasEventFired(beginEvent.name);
+        }
+    }
+
     private void OnEnable()
     {
         if (blockEvent)
@@ -77,6 +88,11 @@ public class CollisionEventTrigger : MonoBehaviour
         {
             GameEventManager.Raise(beginEvent);
             hasTriggered = true;
+
+            if (savedEvent)
+            {
+                SaveManager.MarkEventFired(beginEvent.name);
+            }
         }
 
         isWaiting = false;
