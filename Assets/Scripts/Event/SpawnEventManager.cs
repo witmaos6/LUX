@@ -10,6 +10,8 @@ public class SpawnEntry
     public Transform spawnPoint;
     public Vector3 positionOffset;
     public Vector3 eulerRotation;
+    [Tooltip("When disabled, this spawned object is removed on reload and is spawned again only when its event is raised.")]
+    public bool persistBetweenLoads = true;
 }
 
 public class SpawnEventManager : MonoBehaviour
@@ -45,7 +47,7 @@ public class SpawnEventManager : MonoBehaviour
         for (int i = 0; i < entries.Length; i++)
         {
             var entry = entries[i];
-            if (entry.onEvent == null || entry.prefab == null) continue;
+            if (!entry.persistBetweenLoads || entry.onEvent == null || entry.prefab == null) continue;
 
             string id = GetSaveId(entry, i);
             if (SaveManager.IsDestroyed(id)) continue;
@@ -68,9 +70,11 @@ public class SpawnEventManager : MonoBehaviour
 
         int index = Array.IndexOf(entries, entry);
         string id = GetSaveId(entry, index);
-        AttachSaveableId(instance, id);
-
-        SaveManager.MarkSpawned(id, entry.onEvent.name, index, pos);
+        if (entry.persistBetweenLoads)
+        {
+            AttachSaveableId(instance, id);
+            SaveManager.MarkSpawned(id, entry.onEvent.name, index, pos);
+        }
     }
 
     private void AttachSaveableId(GameObject instance, string id)
