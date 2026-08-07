@@ -36,7 +36,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 450}
+  m_SizeDelta: {x: 600, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &30452956277805064
 CanvasRenderer:
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.36862746, g: 0.36862746, b: 0.36862746, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -112,7 +112,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 800}
+  m_SizeDelta: {x: 700, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8545242747515926686
 CanvasRenderer:
@@ -187,7 +187,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -16.6964}
-  m_SizeDelta: {x: 400, y: 380}
+  m_SizeDelta: {x: 550, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1661100160338814209
 CanvasRenderer:
@@ -223,7 +223,7 @@ MonoBehaviour:
     \uC2E4\uD5D8\uCCB4\uB294 CCTV\uC5D0 \uCC0D\uD788\uC9C0 \uC54A\uAE30 \uB54C\uBB38\uC5D0
     \uC99D\uAC70\uB97C \uD655\uBCF4\uD560 \uC218\uB294 \uC5C6\uC5C8\uC73C\uB098 \uC774\uD6C4\uC5D0
     \uAD50\uB300\uB85C \uC2E4\uD5D8\uCCB4\uB97C \uAC10\uC2DC\uD588\uACE0 \uC5F0\uAD6C\uC6D0B\uB3C4
-    \uBD84\uC5F4\uD558\uB294 \uBAA8\uC2B5\uC744 \uD655\uC778\uD588\uB2E4. \uBD84\uC5F4\uB418\uB294
+    \uBD84\uC5F4\uD558\uB294 \uBAA8\uC2B5\uC744 \uD655\uC778\uD588\uB2E4.\n\uBD84\uC5F4\uB418\uB294
     \uD604\uC0C1\uC740 \uC0AC\uC2E4\uC774\uB77C \uAC00\uC815\uD558\uACE0 \uC2E4\uD5D8\uC744
     \uC9C4\uD589\uD55C\uB2E4."
   m_isRightToLeft: 0
@@ -234,8 +234,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -252,8 +252,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

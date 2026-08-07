@@ -5343,7 +5343,7 @@ MonoBehaviour:
   outlineWidth: 2
   outlineAlphaThreshold: 0.05
   interactionType: 1
-  uiPrefab: {fileID: 1962757527568594360, guid: 131ece183894f9e469ad8ea3c194fdd5, type: 3}
+  uiPrefab: {fileID: 1962757527568594360, guid: 184970fbb2628ae4cb71e80791f362cb, type: 3}
   canvasTransform: {fileID: 0}
   viewEvent: {fileID: 0}
 --- !u!61 &364909762
@@ -7186,7 +7186,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &453003389
@@ -19974,7 +19974,7 @@ MonoBehaviour:
   outlineWidth: 2
   outlineAlphaThreshold: 0.05
   interactionType: 1
-  uiPrefab: {fileID: 1962757527568594360, guid: 131ece183894f9e469ad8ea3c194fdd5, type: 3}
+  uiPrefab: {fileID: 1962757527568594360, guid: 184970fbb2628ae4cb71e80791f362cb, type: 3}
   canvasTransform: {fileID: 0}
   viewEvent: {fileID: 0}
 --- !u!61 &1449903000
@@ -27399,61 +27399,73 @@ MonoBehaviour:
     spawnPoint: {fileID: 1497320840}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 8d250e57f4a566543b63eac1aefa8881, type: 2}
     prefab: {fileID: 4239272544144539349, guid: d4f1c029ccaf1e545bcf69f3ccb3b6b8, type: 3}
     spawnPoint: {fileID: 1946330126}
     positionOffset: {x: 145, y: 1, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 3447fd737e0ca7144b26fd1b0c3bc9d9, type: 2}
     prefab: {fileID: 2539108918412815643, guid: 581477c6ce1c64943b74bb1f9d19e969, type: 3}
     spawnPoint: {fileID: 1166278254}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 51f6929a8c8acee4899ae9c6dfdc64e2, type: 2}
     prefab: {fileID: 4239272544144539349, guid: f847e8accd9ab274e92bd1c8f794a441, type: 3}
     spawnPoint: {fileID: 1449903002}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 441a892384a1772458eb77f63e6a5964, type: 2}
     prefab: {fileID: 4239272544144539349, guid: 349229d7c64f7fe49898f7e6a8e18f9a, type: 3}
     spawnPoint: {fileID: 364909764}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 87d08e5f10a1b99458a412e21cd9032f, type: 2}
     prefab: {fileID: 2374481140656572127, guid: 5adbd588ac0f03a40b72f3a6c1a66908, type: 3}
     spawnPoint: {fileID: 298659672}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 87d08e5f10a1b99458a412e21cd9032f, type: 2}
     prefab: {fileID: 2568681360550704273, guid: 70a7179010a49db41bae2b475e43d3fe, type: 3}
     spawnPoint: {fileID: 298659672}
     positionOffset: {x: 1, y: -0.4, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 9cbafb7e3b6d30049b4f2869df77e4c2, type: 2}
     prefab: {fileID: 1565737801093887686, guid: 41702d0dcef7437409cef3de8fbd1a17, type: 3}
     spawnPoint: {fileID: 450513704}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 342291afd96c43d4cb1da17981a20135, type: 2}
     prefab: {fileID: 4887395356549757138, guid: a82068a8c04a8614cb91a29c462750e7, type: 3}
     spawnPoint: {fileID: 1289907448}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 4dd328c688ea9bd46ba548c2aaaa2a10, type: 2}
     prefab: {fileID: 4887395356549757138, guid: 91a09fbeaf9208b4f8cd40606c1d79fb, type: 3}
     spawnPoint: {fileID: 1499883006}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 170db4dd9e6bfb64b9624e08cd460ea9, type: 2}
     prefab: {fileID: 4887395356549757138, guid: 2074e4d2b2b79df43a446e95b1b8046a, type: 3}
     spawnPoint: {fileID: 1027291385}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 1
   - onEvent: {fileID: 11400000, guid: 0671dbda784cd224e8998f41422857f9, type: 2}
     prefab: {fileID: 3174033232232634941, guid: f41b0e81288ebbb4eb94f3abd847cba5, type: 3}
     spawnPoint: {fileID: 700905157}
     positionOffset: {x: 0, y: 0, z: 0}
     eulerRotation: {x: 0, y: 0, z: 0}
+    persistBetweenLoads: 0
 --- !u!4 &1946330126
 Transform:
   m_ObjectHideFlags: 0
