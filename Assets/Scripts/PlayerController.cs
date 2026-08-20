@@ -439,6 +439,19 @@ public class PlayerController : MonoBehaviour
         return inventory.Contains(itemCode);
     }
 
+    /// <summary>
+    /// Removes one owned item and persists the updated inventory.
+    /// </summary>
+    public bool TryRemoveItem(ItemCode itemCode)
+    {
+        if (!inventory.Remove(itemCode))
+            return false;
+
+        SaveManager.SetInventory(inventory);
+        inventoryUI.Refresh();
+        return true;
+    }
+
     public void RestoreInventory(IReadOnlyList<ItemCode> items)
     {
         inventory.Clear();

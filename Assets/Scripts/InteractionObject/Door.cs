@@ -16,6 +16,10 @@ public class Door : InteractionObject
     public float fadeInDuration = 1f;
     public float fadeOutDuration = 1f;
 
+    [Header("Checkpoint")]
+    [Tooltip("When enabled, moving through this door updates the saved respawn location and wallpaper.")]
+    [SerializeField] private bool saveCheckpoint = true;
+
     private GameObject m_tryObject;
 
     private void Awake()
@@ -79,7 +83,12 @@ public class Door : InteractionObject
                 cameraController.SetWallpaper(nextWallpaper);
             }
 
-            SaveManager.SetRespawnPoint(m_tryObject.transform.position, nextWallpaper != null ? nextWallpaper.name : null);
+            if (saveCheckpoint)
+            {
+                SaveManager.SetRespawnPoint(
+                    m_tryObject.transform.position,
+                    nextWallpaper != null ? nextWallpaper.name : null);
+            }
 
             if (DevilDispatcher.Instance != null)
             {

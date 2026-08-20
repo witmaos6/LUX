@@ -15,6 +15,8 @@ public class DropItem : InteractionObject
         PasswordHint1 = 7,
         PasswordHint2 = 8,
         PasswordHint3 = 9,
+        Ladder = 10,
+        CardKey = 11,
     }
 
     public GameObject uiPrefab;
