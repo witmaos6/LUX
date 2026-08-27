@@ -20,3 +20,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d325403b5944a9d4cb65ddf99f6aa824, type: 2}
     excludedFacts: []
     step: {fileID: 11400000, guid: 71e12e0e792966c40854baa21b4d87c0, type: 2}
+  - requiredFacts:
+    - {fileID: 11400000, guid: f01e248fb93ced445a114dec35bf7e34, type: 2}
+    - {fileID: 11400000, guid: ba096855cd11beb44b1730bd8d86deb3, type: 2}
+    - {fileID: 11400000, guid: ce2ef41f212836c48862a2a2e8eecbdf, type: 2}
+    excludedFacts: []
+    step: {fileID: 11400000, guid: 89042564a90089d43825799110295d79, type: 2}

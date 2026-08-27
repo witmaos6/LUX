@@ -14,6 +14,7 @@ public class DevilDispatcher : MonoBehaviour
 
     [Tooltip("씬에 배치된 모든 Devil. 비워두면 자동으로 탐색해서 채운다.")]
     public List<Devil> devils = new List<Devil>();
+    private readonly List<ISuspicionReceiver> suspicionReceivers = new List<ISuspicionReceiver>();
 
     [Header("Flashlight Detection")]
     public float flashlightDetectStrength = 10f;
@@ -42,10 +43,32 @@ public class DevilDispatcher : MonoBehaviour
 
     public void AddDevil(Devil inDevil)
     {
+        if (inDevil == null)
+            return;
+
         if(!devils.Contains(inDevil))
         {
             devils.Add(inDevil);
         }
+    }
+
+    public void AddSuspicionReceiver(ISuspicionReceiver receiver)
+    {
+        if (receiver == null)
+            return;
+
+        if (!suspicionReceivers.Contains(receiver))
+        {
+            suspicionReceivers.Add(receiver);
+        }
+    }
+
+    public void RemoveSuspicionReceiver(ISuspicionReceiver receiver)
+    {
+        if (receiver == null)
+            return;
+
+        suspicionReceivers.Remove(receiver);
     }
 
     public void NotifySuspicionSource(Vector3 sourcePosition, float range, float strength, SuspicionSourceType type = SuspicionSourceType.Sound)
@@ -57,6 +80,18 @@ public class DevilDispatcher : MonoBehaviour
         {
             if (devil != null)
                 devil.AddSuspicion(sourcePosition, range, strength);
+        }
+
+        for (int i = suspicionReceivers.Count - 1; i >= 0; i--)
+        {
+            ISuspicionReceiver receiver = suspicionReceivers[i];
+            if (receiver == null)
+            {
+                suspicionReceivers.RemoveAt(i);
+                continue;
+            }
+
+            receiver.AddSuspicion(sourcePosition, range, strength);
         }
     }
 

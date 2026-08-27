@@ -51,3 +51,13 @@ MonoBehaviour:
     description: "3\uC774\uB77C \uC368\uC838\uC788\uB2E4. \uBA87 \uC790\uB9AC\uAC00
       \uC788\uB294 \uAC70\uC9C0?"
     icon: {fileID: 7261727512486393734, guid: e20e87b66809f944298677ddffd97b7d, type: 3}
+  - itemCode: 10
+    displayName: "\uC0AC\uB2E4\uB9AC"
+    description: "\uC774\uAC83\uC774\uB77C\uBA74 \uD658\uD48D\uAD6C\uC5D0 \uC62C\uB77C\uAC08
+      \uC218 \uC788\uACA0\uC9C0."
+    icon: {fileID: 1833247098351559992, guid: b2622e8ba2c70e543b39b87da43e1b8c, type: 3}
+  - itemCode: 11
+    displayName: "\uCE74\uB4DC\uD0A4"
+    description: "\uCE74\uB4DC\uD0A4\uB85C \uC5F4 \uC218 \uC788\uB294 \uBB38\uB4E4\uC774
+      \uC788\uC744 \uAC83 \uAC19\uB2E4."
+    icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}

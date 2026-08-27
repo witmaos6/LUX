@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: -5642903103357504387}
   - component: {fileID: -1026773074481317564}
   m_Layer: 7
-  m_Name: MonitorOn2
+  m_Name: 2-1MonitorOn
   m_TagString: Interaction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

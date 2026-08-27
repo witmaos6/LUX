@@ -12,6 +12,8 @@ public class UnlockObject : InteractionObject
 
     private GameObject uiInstance;
 
+    public AudioClip sound;
+
     public ItemCode itemCode;
     public bool postUnlockDestroy = false;
 
@@ -33,6 +35,11 @@ public class UnlockObject : InteractionObject
             if (unlockComplete != null)
                 GameEventManager.Raise(unlockComplete);
 
+            if (sound != null)
+            {
+                AudioSource.PlayClipAtPoint(sound, transform.position);
+            }
+
             if (spawnRaise != null)
                 GameEventManager.Raise(spawnRaise);
 
@@ -43,10 +50,17 @@ public class UnlockObject : InteractionObject
         }
         else
         {
-            uiInstance = Instantiate(uiPrefab, canvasTransform);
-
             if (unlockFailed != null)
                 GameEventManager.Raise(unlockFailed);
+
+            if (uiPrefab)
+            {
+                uiInstance = Instantiate(uiPrefab, canvasTransform);
+            }
+            else
+            {
+                EndInteraction();
+            }
         }
     }
 
