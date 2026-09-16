@@ -34,7 +34,7 @@ public class AnimationComponent : MonoBehaviour
     {
         Vector2 velocity = rb != null ? rb.linearVelocity : GetVelocityFromPositionDelta();
 
-        speed = velocity.magnitude;
+        speed = Mathf.Abs(velocity.x);
 
         bool wasIdle = idle;
         idle = speed <= idleSpeedThreshold;

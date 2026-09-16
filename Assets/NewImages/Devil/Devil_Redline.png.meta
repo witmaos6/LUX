@@ -1,0 +1,847 @@
+fileFormatVersion: 2
+guid: 49754084a5ce0c84b8fbf086740daa01
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2479170225709156326
+    second: Devil_Redline_0
+  - first:
+      213: 21827935074666016
+    second: Devil_Redline_1
+  - first:
+      213: -5346871209654445063
+    second: Devil_Redline_2
+  - first:
+      213: 9149822195922171359
+    second: Devil_Redline_3
+  - first:
+      213: -2052682912647790320
+    second: Devil_Redline_4
+  - first:
+      213: 4590359442198582728
+    second: Devil_Redline_5
+  - first:
+      213: 2922252682061087131
+    second: Devil_Redline_6
+  - first:
+      213: -2637220646248051682
+    second: Devil_Redline_7
+  - first:
+      213: -1951613590213277576
+    second: Devil_Redline_8
+  - first:
+      213: -2517277235026836575
+    second: Devil_Redline_9
+  - first:
+      213: -1028605972063425984
+    second: Devil_Redline_10
+  - first:
+      213: -3005436250647189723
+    second: Devil_Redline_11
+  - first:
+      213: 3083625589409491649
+    second: Devil_Redline_12
+  - first:
+      213: -3967506245975941477
+    second: Devil_Redline_13
+  - first:
+      213: -7834311536455955199
+    second: Devil_Redline_14
+  - first:
+      213: 2693652541729314296
+    second: Devil_Redline_15
+  - first:
+      213: -7038057695617827306
+    second: Devil_Redline_16
+  - first:
+      213: -5518928623462140722
+    second: Devil_Redline_17
+  - first:
+      213: -4171226563617861546
+    second: Devil_Redline_18
+  - first:
+      213: 3004709047091328465
+    second: Devil_Redline_19
+  - first:
+      213: -2036102183260754027
+    second: Devil_Redline_20
+  - first:
+      213: 7950729011241991048
+    second: Devil_Redline_21
+  - first:
+      213: 538715379416507348
+    second: Devil_Redline_22
+  - first:
+      213: -7870863405170504140
+    second: Devil_Redline_23
+  - first:
+      213: -2931796392804186768
+    second: Devil_Redline_24
+  - first:
+      213: 1532654464204466852
+    second: Devil_Redline_25
+  - first:
+      213: -1836210565723841916
+    second: Devil_Redline_26
+  - first:
+      213: 5220882385146082884
+    second: Devil_Redline_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Devil_Redline_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 743
+        width: 206
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e78e116f28c76220800000000000000
+      internalID: 2479170225709156326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 752
+        width: 44
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0264e4c246c8d4000800000000000000
+      internalID: 21827935074666016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 753
+        width: 193
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb98c8b6f81cc5b0800000000000000
+      internalID: -5346871209654445063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 765
+        width: 139
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd5fce13fc2bafe70800000000000000
+      internalID: 9149822195922171359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 745
+        width: 45
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0114d1b34c76383e0800000000000000
+      internalID: -2052682912647790320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_5
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 760
+        width: 198
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c55b97879b34bf30800000000000000
+      internalID: 4590359442198582728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_6
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 746
+        width: 127
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b910f22e45ded8820800000000000000
+      internalID: 2922252682061087131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_7
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 562
+        width: 197
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c0f0a7bc5b66bd0800000000000000
+      internalID: -2637220646248051682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 521
+        width: 165
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8784380a7c97ae4e0800000000000000
+      internalID: -1951613590213277576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_9
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 513
+        width: 62
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a34c0d11b5d01dd0800000000000000
+      internalID: -2517277235026836575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 506
+        width: 152
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a60557158a9b1f0800000000000000
+      internalID: -1028605972063425984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_11
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 549
+        width: 206
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527a71d47ab8a46d0800000000000000
+      internalID: -3005436250647189723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_12
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 508
+        width: 193
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1caae05c22d3bca20800000000000000
+      internalID: 3083625589409491649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_13
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 503
+        width: 84
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ed57c071690f8c0800000000000000
+      internalID: -3967506245975941477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 266
+        width: 170
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d4cc16a2fe64390800000000000000
+      internalID: -7834311536455955199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_15
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 252
+        width: 57
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f59a1217b6c16520800000000000000
+      internalID: 2693652541729314296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_16
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 263
+        width: 119
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ebef7a0dbc35e90800000000000000
+      internalID: -7038057695617827306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_17
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 253
+        width: 28
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4bdc158a3d863b0800000000000000
+      internalID: -5518928623462140722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_18
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 253
+        width: 106
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65052ed5a83dc16c0800000000000000
+      internalID: -4171226563617861546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_19
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 319
+        width: 198
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5f74d65fed2b920800000000000000
+      internalID: 3004709047091328465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_20
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 277
+        width: 79
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f68502adf4eb3e0800000000000000
+      internalID: -2036102183260754027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 186
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88bb87439e9a65e60800000000000000
+      internalID: 7950729011241991048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_22
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 87
+        width: 203
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3292988c6e97700800000000000000
+      internalID: 538715379416507348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_23
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 17
+        width: 136
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ec0334f6315c290800000000000000
+      internalID: -7870863405170504140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_24
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 57
+        width: 180
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075822dc6ba2057d0800000000000000
+      internalID: -2931796392804186768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_25
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 17
+        width: 54
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aae2566d15154510800000000000000
+      internalID: 1532654464204466852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_26
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 21
+        width: 183
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a163918387486e0800000000000000
+      internalID: -1836210565723841916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Redline_27
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 14
+        width: 107
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446f9bc2edc447840800000000000000
+      internalID: 5220882385146082884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7fc4a03235fd01c41ae12aaa0b7e7466
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":4.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Devil_Redline_0: 2479170225709156326
+      Devil_Redline_1: 21827935074666016
+      Devil_Redline_10: -1028605972063425984
+      Devil_Redline_11: -3005436250647189723
+      Devil_Redline_12: 3083625589409491649
+      Devil_Redline_13: -3967506245975941477
+      Devil_Redline_14: -7834311536455955199
+      Devil_Redline_15: 2693652541729314296
+      Devil_Redline_16: -7038057695617827306
+      Devil_Redline_17: -5518928623462140722
+      Devil_Redline_18: -4171226563617861546
+      Devil_Redline_19: 3004709047091328465
+      Devil_Redline_2: -5346871209654445063
+      Devil_Redline_20: -2036102183260754027
+      Devil_Redline_21: 7950729011241991048
+      Devil_Redline_22: 538715379416507348
+      Devil_Redline_23: -7870863405170504140
+      Devil_Redline_24: -2931796392804186768
+      Devil_Redline_25: 1532654464204466852
+      Devil_Redline_26: -1836210565723841916
+      Devil_Redline_27: 5220882385146082884
+      Devil_Redline_3: 9149822195922171359
+      Devil_Redline_4: -2052682912647790320
+      Devil_Redline_5: 4590359442198582728
+      Devil_Redline_6: 2922252682061087131
+      Devil_Redline_7: -2637220646248051682
+      Devil_Redline_8: -1951613590213277576
+      Devil_Redline_9: -2517277235026836575
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
