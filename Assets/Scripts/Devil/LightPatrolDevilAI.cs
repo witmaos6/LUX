@@ -105,6 +105,11 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver
     void Update()
     {
         UpdateSuspicionDecay();
+
+        if(currentState == State.Investigate && FlashlightVisibilityService.HasActiveFlashlight)
+        {
+            currentState = State.Chase;
+        }
     }
 
     private void UpdateSuspicionDecay()
@@ -128,7 +133,6 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver
     {
         if(currentState != State.Chase)
             currentState = State.Investigate;
-        
     }
 
     private void FixedUpdate()
@@ -219,7 +223,7 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver
             {
                 controller.Dead();
             }
-        }        
+        }
     }
 
     private void Stop()
