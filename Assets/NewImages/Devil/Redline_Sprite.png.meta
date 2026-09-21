@@ -1,0 +1,985 @@
+fileFormatVersion: 2
+guid: 0adb440c70c622140861f8faedf3c118
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9174979649708878314
+    second: Redline_Sprite_0
+  - first:
+      213: 2261654163740085131
+    second: Redline_Sprite_1
+  - first:
+      213: -2714620800566236581
+    second: Redline_Sprite_2
+  - first:
+      213: 1376960479932447224
+    second: Redline_Sprite_3
+  - first:
+      213: -3583405931094844921
+    second: Redline_Sprite_4
+  - first:
+      213: -4593553242424898977
+    second: Redline_Sprite_5
+  - first:
+      213: -7332234410137417859
+    second: Redline_Sprite_6
+  - first:
+      213: -6339751038007768795
+    second: Redline_Sprite_7
+  - first:
+      213: -3022346764751383448
+    second: Redline_Sprite_8
+  - first:
+      213: -4183700549223551474
+    second: Redline_Sprite_9
+  - first:
+      213: -292249431203572
+    second: Redline_Sprite_10
+  - first:
+      213: -8969887421644287194
+    second: Redline_Sprite_11
+  - first:
+      213: 5641409512818736997
+    second: Redline_Sprite_12
+  - first:
+      213: 8440881809384045891
+    second: Redline_Sprite_13
+  - first:
+      213: 7471627900974330011
+    second: Redline_Sprite_14
+  - first:
+      213: 6227683852313879884
+    second: Redline_Sprite_15
+  - first:
+      213: 5584789399087738117
+    second: Redline_Sprite_16
+  - first:
+      213: -2118994081730002794
+    second: Redline_Sprite_17
+  - first:
+      213: -5662758080081311156
+    second: Redline_Sprite_18
+  - first:
+      213: 1182748607806520505
+    second: Redline_Sprite_19
+  - first:
+      213: -5873288459727955847
+    second: Redline_Sprite_20
+  - first:
+      213: -6006756885221312245
+    second: Redline_Sprite_21
+  - first:
+      213: 8404410129684634078
+    second: Redline_Sprite_22
+  - first:
+      213: -2953315009785220250
+    second: Redline_Sprite_23
+  - first:
+      213: 2480161789848688204
+    second: Redline_Sprite_24
+  - first:
+      213: -2252578206169967243
+    second: Redline_Sprite_25
+  - first:
+      213: 2023481194072996483
+    second: Redline_Sprite_26
+  - first:
+      213: 5385436440022451016
+    second: Redline_Sprite_27
+  - first:
+      213: 2598132630137035701
+    second: Redline_Sprite_28
+  - first:
+      213: -6358105726175019418
+    second: Redline_Sprite_29
+  - first:
+      213: 7150335150837516786
+    second: Redline_Sprite_30
+  - first:
+      213: -1947745134048524841
+    second: Redline_Sprite_31
+  - first:
+      213: 6962034318412541276
+    second: Redline_Sprite_32
+  - first:
+      213: -1264073369672490851
+    second: Redline_Sprite_33
+  - first:
+      213: 2063987323323319348
+    second: Redline_Sprite_34
+  - first:
+      213: 3302843452472535221
+    second: Redline_Sprite_35
+  - first:
+      213: -2441634566144611741
+    second: Redline_Sprite_36
+  - first:
+      213: 5033643332156982437
+    second: Redline_Sprite_37
+  - first:
+      213: -1979632047372460314
+    second: Redline_Sprite_38
+  - first:
+      213: -2652993071768528423
+    second: Redline_Sprite_39
+  - first:
+      213: -8171750679489109962
+    second: Redline_Sprite_40
+  - first:
+      213: -6058917838633949747
+    second: Redline_Sprite_41
+  - first:
+      213: -8632021043320365648
+    second: Redline_Sprite_42
+  - first:
+      213: 8489691585014617107
+    second: Redline_Sprite_43
+  - first:
+      213: 5476783016306799175
+    second: Redline_Sprite_44
+  - first:
+      213: 7836772172453406154
+    second: Redline_Sprite_45
+  - first:
+      213: 1966793201708122103
+    second: Redline_Sprite_46
+  - first:
+      213: 395410106330136212
+    second: Redline_Sprite_47
+  - first:
+      213: 6033964880040641065
+    second: Redline_Sprite_48
+  - first:
+      213: -3606700231812260745
+    second: Redline_Sprite_49
+  - first:
+      213: -3900989492363447256
+    second: Redline_Sprite_50
+  - first:
+      213: 1359400482814972040
+    second: Redline_Sprite_51
+  - first:
+      213: 6327648663184707096
+    second: Redline_Sprite_52
+  - first:
+      213: 3806569305084153989
+    second: Redline_Sprite_53
+  - first:
+      213: -3261414563641180986
+    second: Redline_Sprite_54
+  - first:
+      213: -8100702873479022667
+    second: Redline_Sprite_55
+  - first:
+      213: -2062820568336670830
+    second: Redline_Sprite_56
+  - first:
+      213: -5271630020183761495
+    second: Redline_Sprite_57
+  - first:
+      213: 5604566555044037771
+    second: Redline_Sprite_58
+  - first:
+      213: 5458390633581848650
+    second: Redline_Sprite_59
+  - first:
+      213: 4688044844103386995
+    second: Redline_Sprite_60
+  - first:
+      213: -3509943427717027647
+    second: Redline_Sprite_61
+  - first:
+      213: 2742152164614078285
+    second: Redline_Sprite_62
+  - first:
+      213: -4309145272516780519
+    second: Redline_Sprite_63
+  - first:
+      213: -4231909722155309695
+    second: Redline_Sprite_64
+  - first:
+      213: 661469815296243065
+    second: Redline_Sprite_65
+  - first:
+      213: 7080592910797888339
+    second: Redline_Sprite_66
+  - first:
+      213: -7351250849054267270
+    second: Redline_Sprite_67
+  - first:
+      213: -6612564660441270372
+    second: Redline_Sprite_68
+  - first:
+      213: -5662467941526700580
+    second: Redline_Sprite_69
+  - first:
+      213: 4626336663466673076
+    second: Redline_Sprite_70
+  - first:
+      213: -4050193858984712384
+    second: Redline_Sprite_71
+  - first:
+      213: -9179764898070249864
+    second: Redline_Sprite_72
+  - first:
+      213: -6508875123448053269
+    second: Redline_Sprite_73
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Redline_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 219
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9e55a5163145f70800000000000000
+      internalID: 9174979649708878314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 768
+        width: 219
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bc28aaa72036f10800000000000000
+      internalID: 2261654163740085131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 768
+        width: 219
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5aec5ab3cab35ad0800000000000000
+      internalID: -2714620800566236581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 768
+        width: 219
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9ff14d242fb1310800000000000000
+      internalID: 1376960479932447224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 768
+        width: 219
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a50179a4f254ec0800000000000000
+      internalID: -3583405931094844921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 768
+        width: 219
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a8b68e9ab6040c0800000000000000
+      internalID: -4593553242424898977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 768
+        width: 219
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d770dddd6abae3a90800000000000000
+      internalID: -7332234410137417859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5290227350ea408a0800000000000000
+      internalID: -6339751038007768795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86451fa61a77e06d0800000000000000
+      internalID: -3022346764751383448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e6ce4448280f5c0800000000000000
+      internalID: -4183700549223551474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01a7706336fefff0800000000000000
+      internalID: -292249431203572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623d5ad1aee848380800000000000000
+      internalID: -8969887421644287194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ff11cff005a4e40800000000000000
+      internalID: 5641409512818736997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 512
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d746fa849042570800000000000000
+      internalID: 8440881809384045891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90f8735dfd80b760800000000000000
+      internalID: 7471627900974330011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 256
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45ea9ec77d2d6650800000000000000
+      internalID: 6227683852313879884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 256
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50dedf57e58218d40800000000000000
+      internalID: 5584789399087738117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 256
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690045d0c12d792e0800000000000000
+      internalID: -2118994081730002794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 256
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ac7cb5787d961b0800000000000000
+      internalID: -5662758080081311156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 256
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc35e2a797f96010800000000000000
+      internalID: 1182748607806520505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 256
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978938e8343ed7ea0800000000000000
+      internalID: -5873288459727955847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0970442076b3aca0800000000000000
+      internalID: -6006756885221312245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed91c860c7672a470800000000000000
+      internalID: 8404410129684634078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6633ceb55a7b307d0800000000000000
+      internalID: -2953315009785220250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 0
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c469d65e10e4b6220800000000000000
+      internalID: 2480161789848688204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 0
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575d3706e0c3db0e0800000000000000
+      internalID: -2252578206169967243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 0
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a7766dc69d41c10800000000000000
+      internalID: 2023481194072996483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Redline_Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 0
+        width: 219
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8438bffa8e9ecba40800000000000000
+      internalID: 5385436440022451016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f0d912f8b5accea4b9133e31a7b62acd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":4.0},"gridSpriteSize":{"x":219.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Redline_Sprite_0: 9174979649708878314
+      Redline_Sprite_1: 2261654163740085131
+      Redline_Sprite_10: -292249431203572
+      Redline_Sprite_11: -8969887421644287194
+      Redline_Sprite_12: 5641409512818736997
+      Redline_Sprite_13: 8440881809384045891
+      Redline_Sprite_14: 7471627900974330011
+      Redline_Sprite_15: 6227683852313879884
+      Redline_Sprite_16: 5584789399087738117
+      Redline_Sprite_17: -2118994081730002794
+      Redline_Sprite_18: -5662758080081311156
+      Redline_Sprite_19: 1182748607806520505
+      Redline_Sprite_2: -2714620800566236581
+      Redline_Sprite_20: -5873288459727955847
+      Redline_Sprite_21: -6006756885221312245
+      Redline_Sprite_22: 8404410129684634078
+      Redline_Sprite_23: -2953315009785220250
+      Redline_Sprite_24: 2480161789848688204
+      Redline_Sprite_25: -2252578206169967243
+      Redline_Sprite_26: 2023481194072996483
+      Redline_Sprite_27: 5385436440022451016
+      Redline_Sprite_3: 1376960479932447224
+      Redline_Sprite_4: -3583405931094844921
+      Redline_Sprite_5: -4593553242424898977
+      Redline_Sprite_6: -7332234410137417859
+      Redline_Sprite_7: -6339751038007768795
+      Redline_Sprite_8: -3022346764751383448
+      Redline_Sprite_9: -4183700549223551474
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

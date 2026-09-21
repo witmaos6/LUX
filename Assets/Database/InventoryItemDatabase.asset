@@ -39,17 +39,18 @@ MonoBehaviour:
     icon: {fileID: 8909960197485554810, guid: 186295b39f54a5744a135b8d0dddcd5b, type: 3}
   - itemCode: 7
     displayName: 6
-    description: "6\uC774\uB77C \uC368\uC838\uC788\uB2E4. \uBB34\uC2A8 \uC758\uBBF8\uC77C\uAE4C?"
+    description: "\uC804\uB825 \uAD00\uB9AC\uC2E4\uC5D0\uC11C \uBCF8 \uC22B\uC790
+      6\uC774\uB2E4. \uC5B4\uB5A4 \uC758\uBBF8\uC77C\uAE4C?"
     icon: {fileID: 3678135739489218654, guid: e20e87b66809f944298677ddffd97b7d, type: 3}
   - itemCode: 8
     displayName: 1
-    description: "1\uC774\uB77C \uC368\uC838\uC788\uB2E4. \uB610 \uB2E4\uB978 \uC22B\uC790\uAC00
-      \uC788\uB098?"
+    description: "\uB09C\uBC29 \uAD00\uB9AC\uC2E4\uC5D0\uC11C \uBCF8 \uC22B\uC790
+      1\uC774\uB2E4. \uB354 \uC788\uC744\uAE4C?"
     icon: {fileID: 9064671870575914613, guid: e20e87b66809f944298677ddffd97b7d, type: 3}
   - itemCode: 9
     displayName: 3
-    description: "3\uC774\uB77C \uC368\uC838\uC788\uB2E4. \uBA87 \uC790\uB9AC\uAC00
-      \uC788\uB294 \uAC70\uC9C0?"
+    description: "\uAE30\uC219\uC0AC \uBB38 \uB108\uBA38\uB85C \uBCF8 \uC22B\uC790
+      3\uC774\uB2E4. \uBB34\uC2A8 \uB73B\uC77C\uAE4C? "
     icon: {fileID: 7261727512486393734, guid: e20e87b66809f944298677ddffd97b7d, type: 3}
   - itemCode: 10
     displayName: "\uC0AC\uB2E4\uB9AC"
