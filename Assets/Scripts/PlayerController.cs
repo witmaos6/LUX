@@ -58,6 +58,8 @@ public class PlayerController : MonoBehaviour
     private List<ItemCode> inventory = new List<ItemCode>();
     private InventoryUI inventoryUI;
 
+    private ClueInventory clueInventory;
+
     public IReadOnlyList<ItemCode> Inventory => inventory;
 
     private void Awake()
@@ -71,6 +73,8 @@ public class PlayerController : MonoBehaviour
         moveSpeed = normalSpeed;
 
         audioSource = GetComponent<AudioSource>();
+
+        clueInventory = GetComponent<ClueInventory>();
 
         inventoryUI = GetComponent<InventoryUI>();
         if (inventoryUI == null)
@@ -130,6 +134,7 @@ public class PlayerController : MonoBehaviour
         controls.Player.Flashlight.started += OnFlashlight;
         controls.Player.Sprint.started += PressSprint;
         controls.Player.Sprint.canceled += ReleasedSprint;
+        controls.Player.ClueInventory.started += ToggleClueInventory;
         inventoryAction.performed += ToggleInventory;
         inventoryAction.Enable();
     }
@@ -144,6 +149,7 @@ public class PlayerController : MonoBehaviour
         controls.Player.Sprint.started -= PressSprint;
         controls.Player.Sprint.canceled -= ReleasedSprint;
         inventoryAction.performed -= ToggleInventory;
+        controls.Player.ClueInventory.started -= ToggleClueInventory;
         inventoryAction.Disable();
 
         ClearInteractionHighlights(arrowKeyInteractionObjects);
@@ -397,6 +403,17 @@ public class PlayerController : MonoBehaviour
 
         if (playerState == PlayerState.Normal || playerState == PlayerState.Hide)
             inventoryUI.Toggle();
+    }
+
+    private void ToggleClueInventory(InputAction.CallbackContext context)
+    {
+        if (ShouldIgnoreGameplayInput())
+            return;
+
+        if (playerState == PlayerState.Normal || playerState == PlayerState.Hide)
+        {
+            clueInventory.Toggle(canvasTransform);
+        }
     }
 
     void PressSprint(InputAction.CallbackContext context)

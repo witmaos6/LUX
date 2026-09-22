@@ -1,4 +1,3 @@
-using System.Numerics;
 using UnityEngine;
 
 public class DropItem : InteractionObject

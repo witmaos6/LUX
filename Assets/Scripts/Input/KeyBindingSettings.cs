@@ -12,7 +12,8 @@ public enum GameBinding
     ArrowInteraction,
     Flashlight,
     Inventory,
-    EscapeMenu
+    EscapeMenu,
+    ClueInventory
 }
 
 public static class KeyBindingSettings
@@ -28,7 +29,8 @@ public static class KeyBindingSettings
         { GameBinding.ArrowInteraction, "<Keyboard>/downArrow" },
         { GameBinding.Flashlight, "<Keyboard>/v" },
         { GameBinding.Inventory, "<Keyboard>/c" },
-        { GameBinding.EscapeMenu, "<Keyboard>/f" }
+        { GameBinding.EscapeMenu, "<Keyboard>/f" },
+        { GameBinding.ClueInventory, "<Keyboard>/x" }
     };
 
     public static event Action Changed;

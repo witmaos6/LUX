@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5497753555107271374}
   - component: {fileID: 1999739815725725516}
   - component: {fileID: 3090410864335420082}
+  - component: {fileID: -2899049893904200602}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -377,3 +378,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryUI
   panelPrefab: {fileID: 8691528913755930898, guid: 12a01eac2c7cf6748b22d8ddba899c38, type: 3}
+--- !u!114 &-2899049893904200602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120054277494988050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ec62e2f1d5f1f45bf99fed4f7bb353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClueInventory
+  inventoryPanelUI: {fileID: 3602082374272755785, guid: 77a7051eaebd303418407b4161a35805, type: 3}
+  DestroyTime: 5

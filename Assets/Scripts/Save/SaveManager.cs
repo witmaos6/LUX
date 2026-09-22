@@ -20,6 +20,7 @@ public class CheckpointData
     public Vector3 respawnPosition;
     public string respawnWallpaperId;
     public List<DropItem.ItemCode> inventory = new List<DropItem.ItemCode>();
+    public List<ClueItemCode> clueInventory = new List<ClueItemCode>();
     public List<string> destroyedObjectIds = new List<string>();
     public List<SpawnedRecord> spawnedObjects = new List<SpawnedRecord>();
     public List<string> firedEventIds = new List<string>();
@@ -45,6 +46,8 @@ public static class SaveManager
     public static Vector3 RespawnPosition => data.respawnPosition;
     public static string RespawnWallpaperId => data.respawnWallpaperId;
     public static IReadOnlyList<DropItem.ItemCode> Inventory => data.inventory;
+
+    public static IReadOnlyList<ClueItemCode> clueInventory = data.clueInventory;
     public static IReadOnlyList<SpawnedRecord> SpawnedObjects => data.spawnedObjects;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
@@ -73,6 +76,7 @@ public static class SaveManager
         }
 
         data.inventory ??= new List<DropItem.ItemCode>();
+        data.clueInventory ??= new List<ClueItemCode>();
         data.destroyedObjectIds ??= new List<string>();
         data.spawnedObjects ??= new List<SpawnedRecord>();
         data.firedEventIds ??= new List<string>();
@@ -122,6 +126,12 @@ public static class SaveManager
     public static void SetInventory(IEnumerable<DropItem.ItemCode> items)
     {
         data.inventory = new List<DropItem.ItemCode>(items);
+        Flush();
+    }
+
+    public static void SetClueInventory(IEnumerable<ClueItemCode> items)
+    {
+        data.clueInventory = new List<ClueItemCode>(items);
         Flush();
     }
 

@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using static DropItem;
 
-/// <summary>References authored on one reusable inventory-item row prefab.</summary>
 public sealed class InventoryItemRowView : MonoBehaviour
 {
     [SerializeField] private Image iconImage;

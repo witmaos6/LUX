@@ -232,7 +232,7 @@ public class Devil : MonoBehaviour
         isWaiting = false;
         waitTimer = 0f;
 
-        switch (newState)
+        switch (currentState)
         {
             case DevilState.Patrol:
                 currentSpeed = patrolSpeed;

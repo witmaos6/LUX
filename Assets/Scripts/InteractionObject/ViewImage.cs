@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class ViewImage : InteractionObject
@@ -8,6 +7,8 @@ public class ViewImage : InteractionObject
 
     private GameObject uiInstance;
     public GameEvent viewEvent;
+
+    [SerializeField] private ClueItemCode itemCode = ClueItemCode.None;
 
     private void Awake()
     {
@@ -26,6 +27,15 @@ public class ViewImage : InteractionObject
             if(viewEvent)
             {
                 GameEventManager.Raise(viewEvent);
+            }
+
+            if(itemCode != ClueItemCode.None)
+            {
+                ClueInventory clueInventory = tryObject.GetComponent<ClueInventory>();
+                if(clueInventory != null)
+                {
+                    clueInventory.AddItem(itemCode);
+                }
             }
         }
     }

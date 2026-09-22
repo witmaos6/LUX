@@ -27,6 +27,12 @@ public class CheckpointApplier : MonoBehaviour
         if (player != null)
         {
             player.RestoreInventory(SaveManager.Inventory);
+
+            ClueInventory clueInventory = player.GetComponent<ClueInventory>();
+            if(clueInventory != null)
+            {
+                clueInventory.RestoreInventory(SaveManager.clueInventory);
+            }
         }
 
         if (!SaveManager.HasSave) return;
