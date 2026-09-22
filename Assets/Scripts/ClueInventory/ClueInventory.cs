@@ -30,13 +30,15 @@ public class ClueInventory : MonoBehaviour
 
     public void Toggle(Transform canvasTransform)
     {
-        if (inventoryPanel != null)
+        if (inventoryPanel != null && inventoryPanel.gameObject.activeSelf == true)
         {
             ClosePanel();
         }
         else
         {
             OpenPanel(canvasTransform);
+
+            // To do: Clue Inventory 조작 시스템 추가
         }
     }
 
@@ -77,15 +79,21 @@ public class ClueInventory : MonoBehaviour
     {
         yield return new WaitForSeconds(DestroyTime);
 
-        Destroy(inventoryPanel.gameObject);
+        if(inventoryPanel != null)
+        {
+            Destroy(inventoryPanel.gameObject);
+        }
     }
 
     private void OnDisable()
     {
         if (inventoryCloseCoroutine != null)
         {
-            Destroy(inventoryPanel.gameObject);
             StopCoroutine(inventoryCloseCoroutine);
+            if (inventoryPanel != null)
+            {
+                Destroy(inventoryPanel.gameObject);
+            }
         }
     }
 }

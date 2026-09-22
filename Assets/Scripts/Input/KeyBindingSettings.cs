@@ -97,5 +97,6 @@ public static class KeyBindingSettings
         controls.Player.Interaction.ApplyBindingOverride(0, GetPath(GameBinding.Interaction));
         controls.Player.ArrowInteraction.ApplyBindingOverride(0, GetPath(GameBinding.ArrowInteraction));
         controls.Player.Flashlight.ApplyBindingOverride(0, GetPath(GameBinding.Flashlight));
+        controls.Player.ClueInventory.ApplyBindingOverride(0, GetPath(GameBinding.ClueInventory));
     }
 }

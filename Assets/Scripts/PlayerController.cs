@@ -77,8 +77,6 @@ public class PlayerController : MonoBehaviour
         clueInventory = GetComponent<ClueInventory>();
 
         inventoryUI = GetComponent<InventoryUI>();
-        if (inventoryUI == null)
-            inventoryUI = gameObject.AddComponent<InventoryUI>();
     }
 
     private void Start()
@@ -207,7 +205,6 @@ public class PlayerController : MonoBehaviour
         {
             Vector2 inputVec = controls.Player.Move.ReadValue<Vector2>();
             float hx = inputVec.x;
-
 
             if (Mathf.Abs(hx) <= inputDeadZone)
             {

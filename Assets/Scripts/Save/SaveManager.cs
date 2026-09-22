@@ -47,7 +47,7 @@ public static class SaveManager
     public static string RespawnWallpaperId => data.respawnWallpaperId;
     public static IReadOnlyList<DropItem.ItemCode> Inventory => data.inventory;
 
-    public static IReadOnlyList<ClueItemCode> clueInventory = data.clueInventory;
+    public static IReadOnlyList<ClueItemCode> ClueInventory => data.clueInventory;
     public static IReadOnlyList<SpawnedRecord> SpawnedObjects => data.spawnedObjects;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
