@@ -5,14 +5,13 @@ using UnityEngine;
 public enum ClueItemCode
 {
     None = 0,
-    ObservationExperimentLog = 1,
-    AnimalResponseExperimentLog = 2,
-    WitnessedTheDivision = 3,
-    FissionPhenomenonHypothesis = 4,
-    ReportForExperiment15 = 5,
-    ReportForExperiment13 = 6,
-    MentemExperimentReport = 7,
-    ServusExperimentReport = 8,
+    InitialExperimentLog = 1,
+    WitnessedTheDivision = 2,
+    FissionPhenomenonHypothesis = 3,
+    ReportForExperiment15 = 4,
+    ReportForExperiment13 = 5,
+    MentemExperimentReport = 6,
+    ServusExperimentReport = 7,
 }
 
 [CreateAssetMenu(
@@ -25,6 +24,7 @@ public sealed class ClueInventoryItemDatabase : ScriptableObject
     {
         public ClueItemCode clueItemCode;
         public string displayName;
+        public GameObject uiPrefab;
     }
 
     [SerializeField] private List<ClueItemDefinition> items = new();
@@ -37,5 +37,12 @@ public sealed class ClueInventoryItemDatabase : ScriptableObject
             return clueItemDefinition.displayName;
         }
         return clueItemDefinition != null ? clueItemDefinition.displayName : clueItemDefinition.clueItemCode.ToString();
+    }
+
+    public GameObject GetUI(ClueItemCode clueItemCode)
+    {
+        ClueItemDefinition clueItemDefinition = items.Find(definition => definition.clueItemCode == clueItemCode);
+
+        return clueItemDefinition != null ? clueItemDefinition.uiPrefab : null;
     }
 }

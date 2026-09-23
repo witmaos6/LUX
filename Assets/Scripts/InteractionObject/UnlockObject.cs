@@ -40,6 +40,8 @@ public class UnlockObject : InteractionObject
                 AudioSource.PlayClipAtPoint(sound, transform.position);
             }
 
+            // To do : 성공 시 UI 출력 추가
+
             if (spawnRaise != null)
                 GameEventManager.Raise(spawnRaise);
 

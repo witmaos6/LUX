@@ -7,21 +7,47 @@ public class ClueInventoryPanel : MonoBehaviour
     [SerializeField] List<ClueInventoryIcon> itemIcon = new List<ClueInventoryIcon>();
     [SerializeField] ClueInventoryItemDatabase clueInventoryItemDatabase;
 
+    private List<bool> existClueItems = new List<bool>();
+
     [Header("FocusOutline")]
     [SerializeField] private GameObject outline;
-    [SerializeField] private float yOffset = 0f;
+    [SerializeField] private int numberOfX = 2;
+    [SerializeField] private int numberOfY = 4;
 
     private int xCoord = 0;
     private int yCoord = 0;
+    private int currentIndex = 0;
+
+    private InputSystem_Actions controls;
+
+    private bool isOpen = false;
+    private GameObject uiInstance;
+
+    private int numberOfClue = 0;
+
+    private void Awake()
+    {
+        controls = new InputSystem_Actions();
+        numberOfClue = System.Enum.GetValues(typeof(ClueItemCode)).Length - 1;
+
+        for (int i = 0; i < numberOfClue; i++)
+        {
+            existClueItems.Add(false);
+        }
+    }
 
     private void OnEnable()
     {
-        
+        controls.ClueInventory.Navigate.performed += Navigate;
+        controls.ClueInventory.OpenUI.started += ToggleUI;
+        controls.ClueInventory.Enable();
     }
 
     private void OnDisable()
     {
-        
+        controls.ClueInventory.Navigate.performed -= Navigate;
+        controls.ClueInventory.OpenUI.started -= ToggleUI;
+        controls.ClueInventory.Disable();
     }
 
     public void Initialize(List<ClueItemCode> clueItemList)
@@ -37,7 +63,8 @@ public class ClueInventoryPanel : MonoBehaviour
 
             if(index < itemIcon.Count)
             {
-                itemIcon[index].IsExist(clueInventoryItemDatabase.GetDisplayName(clueItemCode));
+                itemIcon[index].SetExist(clueInventoryItemDatabase.GetDisplayName(clueItemCode));
+                existClueItems[index] = true;
             }
         }
         FocusIcon(itemIcon[0].gameObject.transform);
@@ -48,31 +75,74 @@ public class ClueInventoryPanel : MonoBehaviour
         if(outline != null)
         {
             Vector3 focusedPosition = focusedIcon.position;
-            outline.transform.position = new Vector3(focusedPosition.x, focusedPosition.y + yOffset, focusedPosition.z);
+            outline.transform.position = new Vector3(focusedPosition.x, focusedPosition.y, focusedPosition.z);
         }
     }
 
-    private void Update()
+    void Navigate(InputAction.CallbackContext context)
     {
-        // To do: 입력 방식 수정 필요
-        if (Keyboard.current.upArrowKey.isPressed)
+        if (isOpen)
+            return;
+
+        Vector2 direction = context.ReadValue<Vector2>();
+
+        if (direction.y > 0)
         {
-            xCoord = Mathf.Clamp(xCoord - 1, 0, 1);
+            yCoord--;
         }
-        else if (Keyboard.current.downArrowKey.isPressed)
+        else if (direction.y < 0)
         {
-            xCoord = Mathf.Clamp(xCoord + 1, 0, 1);
+            yCoord++; 
         }
-        else if (Keyboard.current.rightArrowKey.isPressed)
+        else if (direction.x > 0)
         {
-            yCoord = Mathf.Clamp(yCoord + 1, 0, 3);
+            xCoord++;
         }
-        else if (Keyboard.current.leftArrowKey.isPressed)
+        else if (direction.x < 0)
         {
-            yCoord = Mathf.Clamp(yCoord - 1, 0, 3);
+            xCoord--;
         }
 
-        int index = xCoord * 4 + yCoord;
-        FocusIcon(itemIcon[index].gameObject.transform);
+        xCoord = Mathf.Clamp(xCoord, 0, numberOfX - 1);
+        yCoord = Mathf.Clamp(yCoord, 0, numberOfY - 1);
+
+        currentIndex = Mathf.Clamp(yCoord * numberOfX + xCoord, 0, numberOfClue - 1);
+        FocusIcon(itemIcon[currentIndex].gameObject.transform);
+    }
+
+    void ToggleUI(InputAction.CallbackContext context)
+    {
+        if (isOpen)
+        {
+            CloseUI();
+        }
+        else
+        {
+            OpenUI();
+        }
+    }
+
+    void OpenUI()
+    {
+        if (existClueItems[currentIndex])
+        {
+            GameObject uiPrefab = clueInventoryItemDatabase.GetUI((ClueItemCode)currentIndex + 1);
+
+            uiInstance = Instantiate(uiPrefab, transform);
+            isOpen = true;
+        }
+        else
+        {
+            // To do: 사운드 재생 등 효과 추가
+        }
+    }
+
+    void CloseUI()
+    {
+        if (uiInstance)
+        {
+            Destroy(uiInstance);
+            isOpen = false;
+        }
     }
 }

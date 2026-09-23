@@ -31714,7 +31714,7 @@ MonoBehaviour:
   uiPrefab: {fileID: 1962757527568594360, guid: 35bf688a40a850b49aea5feeda2a4dd4, type: 3}
   canvasTransform: {fileID: 0}
   viewEvent: {fileID: 0}
-  itemCode: 3
+  itemCode: 2
 --- !u!61 &2026112859
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -15,17 +15,22 @@ MonoBehaviour:
   items:
   - clueItemCode: 1
     displayName: "\uAD00\uCC30 \uC2E4\uD5D8 \uC77C\uC9C0"
+    uiPrefab: {fileID: 1962757527568594360, guid: c858e7e8f3a57564d8c98d95bfcbb229, type: 3}
   - clueItemCode: 2
-    displayName: "\uB3D9\uBB3C \uBC18\uC751 \uC2E4\uD5D8 \uC77C\uC9C0"
-  - clueItemCode: 3
     displayName: "\uBD84\uC5F4 \uD604\uC0C1 \uBAA9\uACA9 \uBCF4\uACE0\uC11C"
-  - clueItemCode: 4
+    uiPrefab: {fileID: 1962757527568594360, guid: 35bf688a40a850b49aea5feeda2a4dd4, type: 3}
+  - clueItemCode: 3
     displayName: "\uBD84\uC5F4 \uD604\uC0C1 \uAC00\uC124 \uBCF4\uACE0\uC11C"
-  - clueItemCode: 5
+    uiPrefab: {fileID: 1962757527568594360, guid: 698b8013aad2aec4ca3541d4b3fc367e, type: 3}
+  - clueItemCode: 4
     displayName: "15\uBC88\uC9F8 \uC2E4\uD5D8 \uBCF4\uACE0\uC11C"
-  - clueItemCode: 6
+    uiPrefab: {fileID: 1962757527568594360, guid: dcd9dcee614091045a180b59aa799ca3, type: 3}
+  - clueItemCode: 5
     displayName: "13\uBC88\uC9F8 \uC2E4\uD5D8 \uBCF4\uACE0\uC11C"
-  - clueItemCode: 7
+    uiPrefab: {fileID: 1962757527568594360, guid: 71d5f318f2622ab409c369642f5aa4b1, type: 3}
+  - clueItemCode: 6
     displayName: "\uBA58\uD15C \uC2E4\uD5D8 \uBCF4\uACE0\uC11C"
-  - clueItemCode: 8
+    uiPrefab: {fileID: 1962757527568594360, guid: f213d15534fe6a540af1eb5b22336eb9, type: 3}
+  - clueItemCode: 7
     displayName: "\uC138\uB974\uBD80\uC2A4 \uC2E4\uD5D8 \uBCF4\uACE0\uC11C"
+    uiPrefab: {fileID: 1962757527568594360, guid: 9cec9bae0194395428478ff7b670a043, type: 3}

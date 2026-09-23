@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
         Normal,
         Hide,
         Script,
+        OpenUI,
         Dead,
     }
 
@@ -189,7 +190,7 @@ public class PlayerController : MonoBehaviour
 
     void Move()
     {
-        if (playerState == PlayerState.Script || ShouldIgnoreGameplayInput())
+        if (playerState == PlayerState.Script || playerState == PlayerState.OpenUI || ShouldIgnoreGameplayInput())
         {
             rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             return;
@@ -407,7 +408,7 @@ public class PlayerController : MonoBehaviour
         if (ShouldIgnoreGameplayInput())
             return;
 
-        if (playerState == PlayerState.Normal || playerState == PlayerState.Hide)
+        if (playerState == PlayerState.Normal || playerState == PlayerState.Hide || playerState == PlayerState.OpenUI)
         {
             clueInventory.Toggle(canvasTransform);
         }

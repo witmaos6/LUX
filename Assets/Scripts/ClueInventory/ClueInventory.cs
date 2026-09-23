@@ -32,13 +32,21 @@ public class ClueInventory : MonoBehaviour
     {
         if (inventoryPanel != null && inventoryPanel.gameObject.activeSelf == true)
         {
-            ClosePanel();
+            PlayerController playerController = gameObject.GetComponent<PlayerController>();
+            if (playerController != null && playerController.GetState() == PlayerController.PlayerState.OpenUI)
+            {
+                playerController.SetState(PlayerController.PlayerState.Normal);
+                ClosePanel();
+            }
         }
         else
         {
-            OpenPanel(canvasTransform);
-
-            // To do: Clue Inventory 조작 시스템 추가
+            PlayerController playerController = gameObject.GetComponent<PlayerController>();
+            if (playerController != null && playerController.GetState() == PlayerController.PlayerState.Normal)
+            {
+                playerController.SetState(PlayerController.PlayerState.OpenUI);
+                OpenPanel(canvasTransform);
+            }
         }
     }
 
@@ -65,6 +73,7 @@ public class ClueInventory : MonoBehaviour
                 }
             }
         }
+        
     }
 
     private void ClosePanel()
@@ -72,7 +81,11 @@ public class ClueInventory : MonoBehaviour
         inventoryPanel.gameObject.SetActive(false);
         inventoryCloseCoroutine = StartCoroutine(DestoryPanel());
 
-        // To do: 삭제 로직 수정 필요
+        PlayerController playerController = gameObject.GetComponent<PlayerController>();
+        if (playerController != null)
+        {
+            playerController.SetState(PlayerController.PlayerState.Normal);
+        }
     }
 
     IEnumerator DestoryPanel()
