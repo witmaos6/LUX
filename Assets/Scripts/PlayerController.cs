@@ -454,9 +454,6 @@ public class PlayerController : MonoBehaviour
         return inventory.Contains(itemCode);
     }
 
-    /// <summary>
-    /// Removes one owned item and persists the updated inventory.
-    /// </summary>
     public bool TryRemoveItem(ItemCode itemCode)
     {
         if (!inventory.Remove(itemCode))

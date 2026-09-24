@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 1999739815725725516}
   - component: {fileID: 3090410864335420082}
   - component: {fileID: -2899049893904200602}
+  - component: {fileID: -1142123605712743501}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -392,3 +393,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ClueInventory
   inventoryPanelUI: {fileID: 3602082374272755785, guid: 77a7051eaebd303418407b4161a35805, type: 3}
   DestroyTime: 5
+--- !u!114 &-1142123605712743501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120054277494988050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1644e19e0ce54e09b9c938366667d1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteOutlineHighlighter
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  alphaThreshold: 0.05
+  targetRenderers: []

@@ -8,11 +8,17 @@ public class AnimationComponent : MonoBehaviour
     private Vector3 prevPosition;
     private Animator animator;
     private Rigidbody2D rb;
+    private SpriteOutlineHighlighter spriteOutlineHighlighter;
 
     public bool dirRight = true;
     public bool idle = true;
     public float speed = 0f;
     public bool hide = false;
+
+    private void Awake()
+    {
+        spriteOutlineHighlighter = GetComponent<SpriteOutlineHighlighter>();
+    }
 
     private void Start()
     {
@@ -72,5 +78,10 @@ public class AnimationComponent : MonoBehaviour
         hide = inHide;
 
         animator.SetBool("Hide", hide);
+
+        if(spriteOutlineHighlighter != null)
+        {
+            spriteOutlineHighlighter.SetHighlighted(inHide);
+        }
     }
 }
