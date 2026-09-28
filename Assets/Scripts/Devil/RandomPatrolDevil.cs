@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver
+public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterface
 {
     private enum State
     {
@@ -155,5 +155,15 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver
                 controller.Dead();
             }
         }
+    }
+
+    public bool IsChase()
+    {
+        return state == State.Chase;
+    }
+
+    public Vector3 InvestigatePoint()
+    {
+        return playerTransform.position;
     }
 }

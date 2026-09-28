@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent (typeof(Rigidbody2D))]
-public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver
+public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInterface
 {
     private enum State
     {
@@ -229,5 +229,15 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver
     private void Stop()
     {
         rb.linearVelocity = Vector2.zero;
+    }
+
+    public bool IsChase()
+    {
+        return currentState == State.Chase;
+    }
+
+    public Vector3 InvestigatePoint()
+    {
+        return playerTransform.position;
     }
 }

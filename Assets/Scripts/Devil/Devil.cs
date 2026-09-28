@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class Devil : MonoBehaviour
+public class Devil : MonoBehaviour, IDevilInterface
 {
     public enum DevilState
     {
@@ -491,5 +491,15 @@ public class Devil : MonoBehaviour
     {
         if (!hasDestination) return false;
         return Vector3.Distance(transform.position, destination) <= stopDistance;
+    }
+
+    public bool IsChase()
+    {
+        return currentState == DevilState.Chase;
+    }
+
+    public Vector3 InvestigatePoint()
+    {
+        return lastDetectedPosition;
     }
 }

@@ -1,0 +1,25 @@
+using UnityEngine;
+
+[RequireComponent(typeof(BoxCollider2D))]
+public abstract class TriggerCollision : MonoBehaviour
+{
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            EnterTrigger(other.gameObject);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            ExitTrigger(collision.gameObject);
+        }
+    }
+
+    public virtual void EnterTrigger(GameObject collisionObject) { }
+
+    public virtual void ExitTrigger(GameObject collisionObject) { }
+}
