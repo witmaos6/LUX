@@ -106,16 +106,16 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.44444445
-    functionName: NotifySound
+    functionName: PlaySound
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 8300000, guid: 1855f91d1ac3ec345ab06a7e6e8ac3ed, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.44444445
-    functionName: PlaySound
+    functionName: NotifySound
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 1855f91d1ac3ec345ab06a7e6e8ac3ed, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

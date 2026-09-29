@@ -8,6 +8,8 @@ using UnityEngine.Audio;
 [DisallowMultipleComponent]
 public class PlaySoundAnimationEvent : MonoBehaviour
 {
+    public delegate void PlaySoundDelegate(AudioClip clip, float pitch, float volumeScale);
+    public PlaySoundDelegate playSoundDelegate;
     public enum PlaybackPosition
     {
         FollowTransform,
@@ -114,6 +116,8 @@ public class PlaySoundAnimationEvent : MonoBehaviour
             PlayAtEventPosition(clip, pitch, volumeScale);
         else
             PlayFollowingTransform(clip, pitch, volumeScale);
+
+        playSoundDelegate?.Invoke(clip, pitch, volumeScale);
     }
 
     private bool CanPlay()
