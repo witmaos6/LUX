@@ -62,3 +62,8 @@ MonoBehaviour:
     description: "\uCE74\uB4DC\uD0A4\uB85C \uC5F4 \uC218 \uC788\uB294 \uBB38\uB4E4\uC774
       \uC788\uC744 \uAC83 \uAC19\uB2E4."
     icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  - itemCode: 12
+    displayName: "\uC2E4\uD5D8\uC2E4 \uBE44\uBC00\uBC88\uD638"
+    description: "\uB204\uAD70\uAC00 \uB0A8\uACA8\uB454 \uCABD\uC9C0\uB2E4. \uD0D0\uC0C9
+      \uC21C\uC11C\uB97C \uC798 \uC0DD\uAC01\uD574\uBCF4\uC790."
+    icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}

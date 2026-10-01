@@ -179,7 +179,6 @@ MonoBehaviour:
   - {fileID: 4854856289707571860}
   - {fileID: 7432795809153049000}
   - {fileID: 1286556095842818989}
-  - {fileID: 0}
   clueInventoryItemDatabase: {fileID: 11400000, guid: 09223c7df46366049931ad27b38e314d, type: 2}
   outline: {fileID: 2727876378169207185}
   numberOfX: 4

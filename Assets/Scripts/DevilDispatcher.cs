@@ -147,7 +147,7 @@ public class DevilDispatcher : MonoBehaviour
 
         foreach (Devil devil in devils)
         {
-            if (devil == null) continue;
+            if (devil == null && !devil.gameObject.activeSelf) continue;
 
             FlashlightDetectionResult result =
                 FlashlightVisibilityService.Evaluate(

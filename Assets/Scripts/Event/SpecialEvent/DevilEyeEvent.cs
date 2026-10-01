@@ -9,6 +9,7 @@ public class DevilEyeEvent : MonoBehaviour // To do: 이벤트 저장상태 확인
     [SerializeField] private float destroyTime = 0.3f;
 
     private GameObject jumpScareInstance;
+    private bool activateOn = false;
 
     private void Start()
     {
@@ -17,9 +18,13 @@ public class DevilEyeEvent : MonoBehaviour // To do: 이벤트 저장상태 확인
 
     public void Activate()
     {
+        if (activateOn)
+            return;
+
+        activateOn = true;
         if (jumpScareSound != null)
         {
-            AudioSource.PlayClipAtPoint(jumpScareSound, transform.position);
+            AudioSource.PlayClipAtPoint(jumpScareSound, gameObject.transform.position);
         }
 
         if (jumpScareObject != null)

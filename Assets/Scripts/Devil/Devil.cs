@@ -55,6 +55,9 @@ public class Devil : MonoBehaviour, IDevilInterface
     [Header("Sound")]
     public AudioClip loopSound;
     public AudioClip investigateSound;
+    public AudioClip detectSound;
+
+    private Coroutine suspicionSoundCoroutine;
 
     private AudioSource audioSource;
     private AnimationComponent animationComponent;
@@ -131,6 +134,10 @@ public class Devil : MonoBehaviour, IDevilInterface
         if (distance > range) return;
 
         float weight = 1f - Mathf.Clamp01(distance / range);
+        if(suspicion <= 0f)
+        {
+            SuspicionSoundPlay(detectSound);
+        }
         suspicion = Mathf.Clamp(suspicion + strength * weight, 0f, maxSuspicion);
 
         lastDetectedPosition = sourcePosition;
@@ -254,7 +261,7 @@ public class Devil : MonoBehaviour, IDevilInterface
 
             case DevilState.Investigate:
 
-                StartCoroutine(InvestigateSoundPlay());
+                SuspicionSoundPlay(investigateSound);
 
                 currentSpeed = investigateSpeed;
                 zoneChangeDoor = null;
@@ -283,16 +290,24 @@ public class Devil : MonoBehaviour, IDevilInterface
         }
     }
 
-    IEnumerator InvestigateSoundPlay()
+    void SuspicionSoundPlay(AudioClip audioClip)
+    {
+        if(suspicionSoundCoroutine == null)
+        {
+            suspicionSoundCoroutine = StartCoroutine(SuspicionSoundPlayOn(audioClip));
+        }
+    }
+
+    IEnumerator SuspicionSoundPlayOn(AudioClip audioClip)
     {
         yield return new WaitForSeconds(1);
 
-        if (investigateSound != null)
+        if (audioClip != null)
         {
             audioSource.Stop();
-            audioSource.PlayOneShot(investigateSound);
+            audioSource.PlayOneShot(audioClip);
 
-            StartCoroutine(LoopSoundVolumeReset(investigateSound.length));
+            StartCoroutine(LoopSoundVolumeReset(audioClip.length));
         }
     }
 
@@ -300,6 +315,8 @@ public class Devil : MonoBehaviour, IDevilInterface
     {
         yield return new WaitForSeconds(delayTime);
         audioSource.Play();
+
+        suspicionSoundCoroutine = null;
     }
 
     private void RunStateMovement()

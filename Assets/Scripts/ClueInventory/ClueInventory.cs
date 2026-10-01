@@ -59,6 +59,7 @@ public class ClueInventory : MonoBehaviour
                 StopCoroutine(inventoryCloseCoroutine);
             }
             inventoryPanel.gameObject.SetActive(true);
+            inventoryPanel.Initialize(clueItemList);
         }
         else
         {

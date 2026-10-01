@@ -2963,7 +2963,7 @@ MonoBehaviour:
   uiPrefab: {fileID: 1962757527568594360, guid: f213d15534fe6a540af1eb5b22336eb9, type: 3}
   canvasTransform: {fileID: 0}
   viewEvent: {fileID: 11400000, guid: 5395c9552ea1d3a48b64772c6238acad, type: 2}
-  itemCode: 7
+  itemCode: 6
 --- !u!61 &233129308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7320,7 +7320,7 @@ MonoBehaviour:
   correctAnswer: 613
   passwordKeypad: {fileID: 5200237468158644041, guid: adad13e60f71d9146b9c21165f224bf1, type: 3}
   canvasTransform: {fileID: 0}
-  hintItemCodes: 070000000800000009000000
+  hintItemCodes: 0700000008000000090000000c000000
   passwordSuccessEvent: {fileID: 11400000, guid: 1e2324b4ff8e2604caad20958bfacf27, type: 2}
   dispatchSoundStrength: 70
   dispatchSoundRange: 30
@@ -7592,8 +7592,8 @@ GameObject:
   m_Component:
   - component: {fileID: 455052837}
   - component: {fileID: 455052840}
-  - component: {fileID: 455052839}
   - component: {fileID: 455052838}
+  - component: {fileID: 455052841}
   m_Layer: 7
   m_Name: SecurityNote
   m_TagString: Interaction
@@ -7662,27 +7662,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &455052839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455052836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b7883746515a0146a9d259033b836f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ViewImage
-  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
-  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  outlineWidth: 4
-  outlineAlphaThreshold: 0.05
-  interactionType: 0
-  uiPrefab: {fileID: 1962757527568594360, guid: 4a30e8ca6f95af449beebe0bf464b611, type: 3}
-  canvasTransform: {fileID: 0}
-  viewEvent: {fileID: 0}
-  itemCode: 0
 --- !u!212 &455052840
 SpriteRenderer:
   serializedVersion: 2
@@ -7742,6 +7721,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &455052841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455052836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1cd003b7939024d8fe0b7a0596ad15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropItem
+  arrowKeyOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+  interactionKeyOutlineColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  outlineWidth: 4
+  outlineAlphaThreshold: 0.05
+  interactionType: 0
+  uiPrefab: {fileID: 1962757527568594360, guid: 4a30e8ca6f95af449beebe0bf464b611, type: 3}
+  itemCode: 12
+  objectDestroy: 0
+  inputObjectDestroy: 0
+  gameEvent: {fileID: 0}
+  canvasTransform: {fileID: 0}
 --- !u!1 &468652143
 GameObject:
   m_ObjectHideFlags: 0
@@ -9441,7 +9443,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000319c04ab21a500242780acc8
@@ -9545,7 +9547,7 @@ MonoBehaviour:
   uiPrefab: {fileID: 1962757527568594360, guid: 9cec9bae0194395428478ff7b670a043, type: 3}
   canvasTransform: {fileID: 0}
   viewEvent: {fileID: 11400000, guid: d4558337fb231884196af05a497a4dec, type: 2}
-  itemCode: 8
+  itemCode: 7
 --- !u!61 &622700525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21152,7 +21154,7 @@ MonoBehaviour:
   uiPrefab: {fileID: 1962757527568594360, guid: 71d5f318f2622ab409c369642f5aa4b1, type: 3}
   canvasTransform: {fileID: 0}
   viewEvent: {fileID: 0}
-  itemCode: 6
+  itemCode: 5
 --- !u!212 &1368122697
 SpriteRenderer:
   serializedVersion: 2
@@ -31985,7 +31987,7 @@ MonoBehaviour:
   uiPrefab: {fileID: 1962757527568594360, guid: dcd9dcee614091045a180b59aa799ca3, type: 3}
   canvasTransform: {fileID: 0}
   viewEvent: {fileID: 0}
-  itemCode: 5
+  itemCode: 4
 --- !u!212 &2016048389
 SpriteRenderer:
   serializedVersion: 2

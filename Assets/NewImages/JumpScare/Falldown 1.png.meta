@@ -1,0 +1,497 @@
+fileFormatVersion: 2
+guid: de39880b83f8e21489ce99f6487f301c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7488365520116249465
+    second: Falldown 1_0
+  - first:
+      213: -3643848987547588855
+    second: Falldown 1_1
+  - first:
+      213: 6669567344558050759
+    second: Falldown 1_2
+  - first:
+      213: -6887647330056259876
+    second: Falldown 1_3
+  - first:
+      213: -6047495617258456703
+    second: Falldown 1_4
+  - first:
+      213: -5692705584395642308
+    second: Falldown 1_5
+  - first:
+      213: 7842202202758362529
+    second: Falldown 1_6
+  - first:
+      213: -305208569960896237
+    second: Falldown 1_7
+  - first:
+      213: -2361890051001960699
+    second: Falldown 1_8
+  - first:
+      213: -277820953754698959
+    second: Falldown 1_9
+  - first:
+      213: 1806550066060011446
+    second: Falldown 1_10
+  - first:
+      213: -995807613200574891
+    second: Falldown 1_11
+  - first:
+      213: 831418707433151252
+    second: Falldown 1_12
+  - first:
+      213: 3003462860956953025
+    second: Falldown 1_13
+  - first:
+      213: -6791006774420359715
+    second: Falldown 1_14
+  - first:
+      213: 5148439084677452226
+    second: Falldown 1_15
+  - first:
+      213: 4453527615493658192
+    second: Falldown 1_16
+  - first:
+      213: -5411244016220947912
+    second: Falldown 1_17
+  - first:
+      213: 4553004625752410956
+    second: Falldown 1_18
+  - first:
+      213: 182868458829346986
+    second: Falldown 1_19
+  - first:
+      213: 2142825470708699122
+    second: Falldown 1_20
+  - first:
+      213: -872708745462180012
+    second: Falldown 1_21
+  - first:
+      213: 8925062853479001504
+    second: Falldown 1_22
+  - first:
+      213: -6124464677965780213
+    second: Falldown 1_23
+  - first:
+      213: -7000928629867838188
+    second: Falldown 1_24
+  - first:
+      213: 4184954725956073379
+    second: Falldown 1_25
+  - first:
+      213: -4102032989978648841
+    second: Falldown 1_26
+  - first:
+      213: 2787844179432399549
+    second: Falldown 1_27
+  - first:
+      213: -7863145354116613887
+    second: Falldown 1_28
+  - first:
+      213: -6374216527614590344
+    second: Falldown 1_29
+  - first:
+      213: -5612203409995678328
+    second: Falldown 1_30
+  - first:
+      213: -3114144162390823007
+    second: Falldown 1_31
+  - first:
+      213: 8890945339468144722
+    second: Falldown 1_32
+  - first:
+      213: -3824066343115348159
+    second: Falldown 1_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Falldown 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c00390c3bf31890800000000000000
+      internalID: -7488365520116249465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 532
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9072f0ad6a27e6dc0800000000000000
+      internalID: -3643848987547588855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 532
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd8de9b9201f8c50800000000000000
+      internalID: 6669567344558050759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 532
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd634d1ee392a60a0800000000000000
+      internalID: -6887647330056259876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 532
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189f390f6caf21ca0800000000000000
+      internalID: -6047495617258456703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 532
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a1737ae627ff0b0800000000000000
+      internalID: -5692705584395642308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 215
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5b2388a5915dc60800000000000000
+      internalID: 7842202202758362529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 215
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31963153c6ea3cbf0800000000000000
+      internalID: -305208569960896237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_8
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 215
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507bf7f2381e83fd0800000000000000
+      internalID: -2361890051001960699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_9
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 215
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b7a44805bf42cf0800000000000000
+      internalID: -277820953754698959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_10
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 215
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7277ca6b7221910800000000000000
+      internalID: 1806550066060011446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Falldown 1_11
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 215
+        width: 256
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556dc86704e2e22f0800000000000000
+      internalID: -995807613200574891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 31a3033be5e036848b08a9abf5758926
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":2.0},"gridSpriteSize":{"x":256.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Falldown 1_0: -7488365520116249465
+      Falldown 1_1: -3643848987547588855
+      Falldown 1_10: 1806550066060011446
+      Falldown 1_11: -995807613200574891
+      Falldown 1_2: 6669567344558050759
+      Falldown 1_3: -6887647330056259876
+      Falldown 1_4: -6047495617258456703
+      Falldown 1_5: -5692705584395642308
+      Falldown 1_6: 7842202202758362529
+      Falldown 1_7: -305208569960896237
+      Falldown 1_8: -2361890051001960699
+      Falldown 1_9: -277820953754698959
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

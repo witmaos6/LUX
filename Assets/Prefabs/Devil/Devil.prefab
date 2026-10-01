@@ -132,7 +132,8 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   doorArriveDistance: 0.5
   loopSound: {fileID: 8300000, guid: 77cb8416a5b841f4e8e8846f56bf2560, type: 3}
-  investigateSound: {fileID: 0}
+  investigateSound: {fileID: 8300000, guid: 661c303f1374d764591a675ea2e81ef6, type: 3}
+  detectSound: {fileID: 8300000, guid: 9daaf1e4f07ee174ea9893d3f00809d8, type: 3}
 --- !u!61 &3280357710943042616
 BoxCollider2D:
   m_ObjectHideFlags: 0

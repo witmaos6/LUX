@@ -67,6 +67,8 @@ public class ClueInventoryPanel : MonoBehaviour
                 existClueItems[index] = true;
             }
         }
+        xCoord = 0;
+        yCoord = 0;
         FocusIcon(itemIcon[0].gameObject.transform);
     }
 
