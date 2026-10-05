@@ -16,7 +16,7 @@ MonoBehaviour:
   items:
   - itemCode: 0
     displayName: Flashlight
-    description: "\uC190\uC804\uB4F1\uC774\uB2E4. \uC774\uAC8C \uC5C6\uC73C\uBA74
+    description: "\uC190\uC804\uB4F1\uC774\uB2E4. \uC774\uAC83\uC774 \uC5C6\uC73C\uBA74
       \uC544\uBB34\uAC83\uB3C4 \uBCFC \uC218 \uC5C6\uB2E4."
     icon: {fileID: -2638390803197812687, guid: 916c406344a1b5145941e545c9405b77, type: 3}
   - itemCode: 1

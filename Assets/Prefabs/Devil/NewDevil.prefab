@@ -199,9 +199,9 @@ GameObject:
   - component: {fileID: 5791694104760394808}
   - component: {fileID: 2023596339122551734}
   - component: {fileID: 8342755592987594790}
-  - component: {fileID: 4134224809552758937}
   - component: {fileID: 2454495575821620796}
   - component: {fileID: 556935691717908833}
+  - component: {fileID: 5814357087875164959}
   m_Layer: 10
   m_Name: NewDevil
   m_TagString: Untagged
@@ -319,8 +319,6 @@ MonoBehaviour:
   isPlayerHidden: 0
   playerTransform: {fileID: 0}
   doorArriveDistance: 0.5
-  loopSound: {fileID: 8300000, guid: d390bb45f24d2de40b526d4c1eda3e3e, type: 3}
-  investigateSound: {fileID: 0}
 --- !u!61 &8342755592987594790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -367,28 +365,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.5, y: 2.5}
   m_EdgeRadius: 0
---- !u!95 &4134224809552758937
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7543210336789199677}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e86de8c26244b54b9ccfb6e23f77793, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!82 &2454495575821620796
 AudioSource:
   m_ObjectHideFlags: 0
@@ -499,3 +475,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeactivateOnEvent
   deactivateEvent: {fileID: 11400000, guid: f0ab13ea11efafc438b7e9c85dfe12c6, type: 2}
+--- !u!114 &5814357087875164959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7543210336789199677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58706b0d1eca0874baf6fb51d6e3b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DevilSound
+  basicSound: {fileID: 8300000, guid: 77cb8416a5b841f4e8e8846f56bf2560, type: 3}
+  detectSound: {fileID: 8300000, guid: 9daaf1e4f07ee174ea9893d3f00809d8, type: 3}
+  investigateSound: {fileID: 8300000, guid: 661c303f1374d764591a675ea2e81ef6, type: 3}

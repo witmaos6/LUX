@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4558131741427198186}
   - component: {fileID: 4730392957597914943}
   - component: {fileID: -1376679037154716780}
+  - component: {fileID: 7638533926585982843}
   m_Layer: 10
   m_Name: Devil
   m_TagString: Untagged
@@ -131,9 +132,6 @@ MonoBehaviour:
   isPlayerHidden: 0
   playerTransform: {fileID: 0}
   doorArriveDistance: 0.5
-  loopSound: {fileID: 8300000, guid: 77cb8416a5b841f4e8e8846f56bf2560, type: 3}
-  investigateSound: {fileID: 8300000, guid: 661c303f1374d764591a675ea2e81ef6, type: 3}
-  detectSound: {fileID: 8300000, guid: 9daaf1e4f07ee174ea9893d3f00809d8, type: 3}
 --- !u!61 &3280357710943042616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -312,6 +310,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DeactivateOnEvent
   deactivateEvent: {fileID: 11400000, guid: f0ab13ea11efafc438b7e9c85dfe12c6, type: 2}
+--- !u!114 &7638533926585982843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3174033232232634941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58706b0d1eca0874baf6fb51d6e3b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DevilSound
+  basicSound: {fileID: 8300000, guid: 77cb8416a5b841f4e8e8846f56bf2560, type: 3}
+  detectSound: {fileID: 8300000, guid: 9daaf1e4f07ee174ea9893d3f00809d8, type: 3}
+  investigateSound: {fileID: 8300000, guid: 661c303f1374d764591a675ea2e81ef6, type: 3}
 --- !u!1 &5470342647555015417
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +384,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

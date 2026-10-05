@@ -27,10 +27,7 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInter
     [SerializeField] private float suspicionDecayDelay = 1f;
     [SerializeField] private float suspicionDecayRate = 5f;
 
-    [Header("Sound")]
-    public AudioClip loopSound;
-
-    private AudioSource audioSource;
+    private DevilSound devilSound;
 
     [Header("Runtime Debug")]
     [SerializeField] private State currentState;
@@ -44,6 +41,7 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInter
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        devilSound = GetComponent<DevilSound>();
     }
 
     private void OnEnable()
@@ -71,7 +69,7 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInter
 
         if(currentState == State.Investigate && suspicion >= chaseSuspicionThreshold)
         {
-            currentState = State.Chase;
+            SetState(State.Chase);
         }
 
         lastSuspicionTime = Time.time;
@@ -91,15 +89,7 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInter
                 playerTransform = player.transform;
             }
         }
-
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = loopSound;
-        audioSource.loop = true;
-        audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 1;
-        audioSource.Play();
-
-        currentState = State.Investigate;
+        SetState(State.Investigate);
     }
 
     void Update()
@@ -108,7 +98,7 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInter
 
         if(currentState == State.Investigate && FlashlightVisibilityService.HasActiveFlashlight)
         {
-            currentState = State.Chase;
+            SetState(State.Chase);
         }
     }
 
@@ -125,14 +115,14 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInter
 
     public void SetPatrolLights()
     {
-        if(currentState != State.Chase)
-            currentState = State.PatrolLights;
+        if (currentState != State.Chase)
+            SetState(State.PatrolLights);
     }
 
     public void SetInvestigate()
     {
         if(currentState != State.Chase)
-            currentState = State.Investigate;
+            SetState(State.Investigate);
     }
 
     private void FixedUpdate()
@@ -239,5 +229,14 @@ public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInter
     public Vector3 InvestigatePoint()
     {
         return playerTransform.position;
+    }
+
+    private void SetState(State inState)
+    {
+        currentState = inState;
+        if(currentState == State.Chase)
+        {
+            devilSound.PlayDetectSound();
+        }
     }
 }

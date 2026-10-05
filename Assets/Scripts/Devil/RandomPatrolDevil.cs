@@ -8,7 +8,7 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterf
         Patrol,
         Chase
     }
-    private State state = State.Patrol;
+    private State currentState = State.Patrol;
 
     [Header("Targets")]
     [SerializeField] private Transform playerTransform;
@@ -18,10 +18,8 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterf
     [SerializeField] private float chaseSpeed = 10f;
     [SerializeField] private float arriveDistance = 0.2f;
 
-    [Header("Sound")]
-    public AudioClip loopSound;
+    private DevilSound devilSound;
 
-    private AudioSource audioSource;
     private Rigidbody2D rb;
 
     private Vector3 patrolPoint = Vector3.zero;
@@ -40,7 +38,6 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterf
 
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -55,14 +52,7 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterf
             }
         }
 
-        audioSource = GetComponent<AudioSource>();
-        audioSource.clip = loopSound;
-        audioSource.loop = true;
-        audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 1;
-        audioSource.Play();
-
-        state = State.Patrol;
+        SetState(State.Patrol);
     }
 
     public void SetModeManager(ServerModeManager inModeManager)
@@ -84,24 +74,24 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterf
         if (distance > range)
             return;
 
-        state = State.Chase;
+        SetState(State.Chase);
     }
 
     void Update()
     {
-        if (state == State.Patrol && FlashlightVisibilityService.HasActiveFlashlight)
+        if (currentState == State.Patrol && FlashlightVisibilityService.HasActiveFlashlight)
         {
-            state = State.Chase;
+            SetState(State.Chase);
         }
     }
 
     private void FixedUpdate()
     {
-        if(state == State.Patrol && patrolPoint != Vector3.zero)
+        if(currentState == State.Patrol && patrolPoint != Vector3.zero)
         {
             Patrol();
         }
-        else if(state == State.Chase && playerTransform != null)
+        else if(currentState == State.Chase && playerTransform != null)
         {
             Chase();
         }
@@ -159,11 +149,20 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterf
 
     public bool IsChase()
     {
-        return state == State.Chase;
+        return currentState == State.Chase;
     }
 
     public Vector3 InvestigatePoint()
     {
         return playerTransform.position;
+    }
+
+    void SetState(State inState)
+    {
+        currentState = inState;
+        if(currentState == State.Chase)
+        {
+            devilSound.PlayDetectSound();
+        }
     }
 }

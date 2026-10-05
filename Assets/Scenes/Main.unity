@@ -404,7 +404,7 @@ MonoBehaviour:
   spawnRaise: {fileID: 0}
   uiPrefab: {fileID: 1962757527568594360, guid: 7366a78273b03a549ab7f8fb9b9d9938, type: 3}
   canvasTransform: {fileID: 0}
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 2efe7015c39f81b4b96f7c8fad4aa05b, type: 3}
   itemCode: 11
   postUnlockDestroy: 0
 --- !u!212 &43824698
@@ -7456,6 +7456,7 @@ GameObject:
   - component: {fileID: 453003387}
   - component: {fileID: 453003389}
   - component: {fileID: 453003388}
+  - component: {fileID: 453003390}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7582,6 +7583,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453003386}
   m_CullTransparentMesh: 1
+--- !u!114 &453003390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453003386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &455052836
 GameObject:
   m_ObjectHideFlags: 0

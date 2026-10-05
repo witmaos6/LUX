@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3163615662513157026}
   - component: {fileID: 3989362511821872443}
   - component: {fileID: 2285054890850979480}
+  - component: {fileID: 6143116832818560485}
   m_Layer: 10
   m_Name: LightPatrolDevil
   m_TagString: Untagged
@@ -289,9 +290,23 @@ MonoBehaviour:
   chaseSuspicionThreshold: 50
   suspicionDecayDelay: 1
   suspicionDecayRate: 5
-  loopSound: {fileID: 8300000, guid: d390bb45f24d2de40b526d4c1eda3e3e, type: 3}
   currentState: 0
   suspicion: 0
+--- !u!114 &6143116832818560485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2860267500292542396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58706b0d1eca0874baf6fb51d6e3b4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DevilSound
+  basicSound: {fileID: 8300000, guid: 77cb8416a5b841f4e8e8846f56bf2560, type: 3}
+  detectSound: {fileID: 8300000, guid: 9daaf1e4f07ee174ea9893d3f00809d8, type: 3}
+  investigateSound: {fileID: 8300000, guid: 661c303f1374d764591a675ea2e81ef6, type: 3}
 --- !u!1 &6517636371721493263
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2959491707489150067}
   - component: {fileID: 7274577754485123614}
-  - component: {fileID: 6625277162624346123}
+  - component: {fileID: 4726774770797562759}
   m_Layer: 10
   m_Name: Eye
   m_TagString: Untagged
@@ -384,7 +399,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &6625277162624346123
+--- !u!114 &4726774770797562759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,9 +408,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6517636371721493263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb68ffd50822c5e40a74fa5c813c0c22, type: 3}
+  m_Script: {fileID: 11500000, guid: 982d3ddcd5a6b7b46b9488542a02a60d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RandomMoveInBoundary
+  m_EditorClassIdentifier: Assembly-CSharp::DevilEye
   setParent: 1
   boundary: 1
   speed: 1

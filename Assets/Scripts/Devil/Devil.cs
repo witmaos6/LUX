@@ -52,14 +52,7 @@ public class Devil : MonoBehaviour, IDevilInterface
     [Header("Door / Zone Transition")]
     public float doorArriveDistance = 0.5f;
 
-    [Header("Sound")]
-    public AudioClip loopSound;
-    public AudioClip investigateSound;
-    public AudioClip detectSound;
-
-    private Coroutine suspicionSoundCoroutine;
-
-    private AudioSource audioSource;
+    private DevilSound devilSound;
     private AnimationComponent animationComponent;
 
     public System.Action OnPlayerExecuted;
@@ -84,6 +77,12 @@ public class Devil : MonoBehaviour, IDevilInterface
     private List<Vector3> investigatePoints = new List<Vector3>();
     private int investigatePointIndex = -1;
 
+    private void Awake()
+    {
+        animationComponent = GetComponent<AnimationComponent>();
+        devilSound = GetComponent<DevilSound>();
+    }
+
     private void Start()
     {
         if (playerTransform == null)
@@ -96,14 +95,6 @@ public class Devil : MonoBehaviour, IDevilInterface
         DevilDispatcher.Instance.AddDevil(this);
 
         ChangeState(DevilState.Patrol);
-
-        audioSource = GetComponent<AudioSource>();
-        animationComponent = GetComponent<AnimationComponent>();
-        audioSource.clip = loopSound;
-        audioSource.loop = true;
-        audioSource.playOnAwake = false;
-        audioSource.spatialBlend = 1;
-        audioSource.Play();
     }
 
     private void Update()
@@ -127,8 +118,7 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     public void AddSuspicion(Vector3 sourcePosition, float range, float strength)
     {
-        if (hasExecuted) return;
-        if (range <= 0f) return;
+        if (hasExecuted || range <= 0f || !gameObject.activeSelf) return;
 
         float distance = Vector3.Distance(transform.position, sourcePosition);
         if (distance > range) return;
@@ -136,7 +126,7 @@ public class Devil : MonoBehaviour, IDevilInterface
         float weight = 1f - Mathf.Clamp01(distance / range);
         if(suspicion <= 0f)
         {
-            SuspicionSoundPlay(detectSound);
+            devilSound.PlayDetectSound();
         }
         suspicion = Mathf.Clamp(suspicion + strength * weight, 0f, maxSuspicion);
 
@@ -261,7 +251,7 @@ public class Devil : MonoBehaviour, IDevilInterface
 
             case DevilState.Investigate:
 
-                SuspicionSoundPlay(investigateSound);
+                devilSound.PlayInvestigateSound();
 
                 currentSpeed = investigateSpeed;
                 zoneChangeDoor = null;
@@ -288,35 +278,6 @@ public class Devil : MonoBehaviour, IDevilInterface
                 }
                 break;
         }
-    }
-
-    void SuspicionSoundPlay(AudioClip audioClip)
-    {
-        if(suspicionSoundCoroutine == null)
-        {
-            suspicionSoundCoroutine = StartCoroutine(SuspicionSoundPlayOn(audioClip));
-        }
-    }
-
-    IEnumerator SuspicionSoundPlayOn(AudioClip audioClip)
-    {
-        yield return new WaitForSeconds(1);
-
-        if (audioClip != null)
-        {
-            audioSource.Stop();
-            audioSource.PlayOneShot(audioClip);
-
-            StartCoroutine(LoopSoundVolumeReset(audioClip.length));
-        }
-    }
-
-    IEnumerator LoopSoundVolumeReset(float delayTime)
-    {
-        yield return new WaitForSeconds(delayTime);
-        audioSource.Play();
-
-        suspicionSoundCoroutine = null;
     }
 
     private void RunStateMovement()
