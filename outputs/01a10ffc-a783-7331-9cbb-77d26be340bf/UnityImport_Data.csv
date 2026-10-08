@@ -1,0 +1,96 @@
+﻿Key,Id,Shared Comments,Korean(ko),en,ja,zh-CN
+Item.Flashlight.DisplayName,,TextProfile=Item.DisplayName,손전등,,,
+Item.Flashlight.Description,,TextProfile=Item.Description,손전등이다. 이것이 없으면 아무것도 볼 수 없다.,,,
+Item.BoltCutter.DisplayName,,TextProfile=Item.DisplayName,볼트 커터,,,
+Item.BoltCutter.Description,,TextProfile=Item.Description,사슬을 끊을 수 있는 볼트 커터다.,,,
+Item.Password.DisplayName,,TextProfile=Item.DisplayName,스위치보드 비밀번호,,,
+Item.Password.Description,,TextProfile=Item.Description,비밀번호가 적혀있다. 1318,,,
+Item.DoorOpener.DisplayName,,TextProfile=Item.DisplayName,도어 오프너,,,
+Item.DoorOpener.Description,,TextProfile=Item.Description,문을 개방할 수 있는 도구다.,,,
+Item.USB.DisplayName,,TextProfile=Item.DisplayName,USB,,,
+Item.USB.Description,,TextProfile=Item.Description,실험내용이 담겨있다는 USB다. 전력이 복구되면 컴퓨터에 연결해보자.,,,
+Item.PasswordHint1.DisplayName,,TextProfile=Item.DisplayName,6,,,
+Item.PasswordHint1.Description,,TextProfile=Item.Description,전력 관리실에서 본 숫자 6이다. 어떤 의미일까?,,,
+Item.PasswordHint2.DisplayName,,TextProfile=Item.DisplayName,1,,,
+Item.PasswordHint2.Description,,TextProfile=Item.Description,난방 관리실에서 본 숫자 1이다. 더 있을까?,,,
+Item.PasswordHint3.DisplayName,,TextProfile=Item.DisplayName,3,,,
+Item.PasswordHint3.Description,,TextProfile=Item.Description,기숙사 문 너머로 본 숫자 3이다. 무슨 뜻일까?,,,
+Item.Ladder.DisplayName,,TextProfile=Item.DisplayName,사다리,,,
+Item.Ladder.Description,,TextProfile=Item.Description,이것이라면 환풍구에 올라갈 수 있겠지.,,,
+Item.CardKey.DisplayName,,TextProfile=Item.DisplayName,카드키,,,
+Item.CardKey.Description,,TextProfile=Item.Description,카드키로 열 수 있는 문들이 있을 것 같다.,,,
+Item.LaboratoryPasswordHint.DisplayName,,TextProfile=Item.DisplayName,실험실 비밀번호,,,
+Item.LaboratoryPasswordHint.Description,,TextProfile=Item.Description,누군가 남겨둔 쪽지다. 탐색 순서를 잘 생각해보자.,,,
+Clue.InitialExperimentLog.LabReport,,TextProfile=Clue.LabReport,"실험 일지
+실험체: DE5i1
+X-ray, CT, MRI, 카메라 등 모든 영상 장비를 사용하여 관찰을 시도했으나, 확인 가능한 내부 구조는 존재하지 않았다.
+그러나 외부 자극에 반응하는 등 생물과 유사한 반응을 보이는 것이 확인되었다.
+특히 빛과 소리에 민감하게 반응하는 특성이 관찰되었다.
+
+실험 일지
+실험체: DE5i1
+쥐, 토끼, 곰을 순차적으로 실험실에 투입하였다.
+투입일은 6월 X일, 7월 X일, 8월 X일이다.
+모든 피험 동물에게서 실험체를 발견한 직후 극도의 공포 반응이 관찰되었다.
+DE5i1은 피험 동물들을 일정 시간 관찰한 후 공격 행동을 보였다.
+공격 이후 동물의 신체는 형체를 식별할 수 없을 정도로 심하게 훼손되었으며, 얼마 지나지 않아 검은색 덩어리 형태로 변이하였다.
+해당 검은색 물질은 Fomes로 명명한다.",,,
+Clue.WitnessedTheDivision.LabReport,,TextProfile=Clue.LabReport,"실험 일지
+실험체: DE5i1
+연구원 A가 실험체 DE5i1이 분열한 후 다시 하나의 개체로 합쳐지는 모습을 목격하고 보고하였다.
+DE5i1은 CCTV에 영상이 기록되지 않는 특성이 있어 당시 상황에 대한 증거는 확보하지 못했다. 이에 이후 연구원들이 교대로 실험체를 감시하였다.
+이후 연구원 B 역시 DE5i1이 분열하는 모습을 확인하였다.
+동일한 현상이 반복적으로 관찰됨에 따라 DE5i1의 분열 현상을 사실로 간주하고 후속 실험을 진행한다.",,,
+Clue.FissionPhenomenonHypothesis.LabReport,,TextProfile=Clue.LabReport,"보고서
+기존 실험 기록을 종합하여 분석한 결과, 동물 투입 이후 DE5i1의 분열 현상이 발생하는 것으로 추정된다.
+해당 가설을 검증하기 위해 동물 투입 실험을 추가로 진행할 것을 제안한다.",,,
+Clue.ReportForExperiment15.LabReport,,TextProfile=Clue.LabReport,"15번째 실험 보고서
+실험체: Fomes
+15번째 실험 - 연소 반응 실험
+Fomes에 점화하여 연소 반응을 관찰하였다.
+동일 부피의 석탄과 비교한 결과, 약 80~100배 이상 장시간 연소가 지속되는 것이 확인되었다.
+
+감독관 의견: 유의미한 실험 결과가 확인되었다. 대체 연료로서의 활용 가능성이 있는 것으로 판단되며, 추가 실험을 진행할 것을 요청한다.",,,
+Clue.ReportForExperiment13.LabReport,,TextProfile=Clue.LabReport,"15번째 실험 보고서
+실험체: Fomes
+15번째 실험 - 연소 반응 실험
+Fomes에 점화하여 연소 반응을 관찰하였다.
+동일 부피의 석탄과 비교한 결과, 약 80~100배 이상 장시간 연소가 지속되는 것이 확인되었다.
+
+감독관 의견: 유의미한 실험 결과가 확인되었다. 대체 연료로서의 활용 가능성이 있는 것으로 판단되며, 추가 실험을 진행할 것을 요청한다.",,,
+Clue.MentemExperimentReport.LabReport,,TextProfile=Clue.LabReport,"극비 실험 보고서
+실험체: DE5i1
+멘템 레게레 실험 - 13번째 XX 자극 반응 실험 이후 추가 실험
+
+XX 자극을 가한 후 토끼를 투입하였다. 붉은 실에 접촉한 토끼에게서 이상 반응이 관찰되었다.
+이후 해당 자극을 가한 연구원이 명령을 내리자 토끼가 이에 따르는 모습이 확인되었다. 다른 연구원들의 명령에는 반응하지 않았다.
+
+두 번째 실험에서는 사형수를 투입한 후 XX 자극을 가하였다. 동일하게 자극을 가한 연구원의 명령에만 반응하는 현상이 관찰되었다.
+이상의 결과를 통해 XX 자극에 의해 피험체의 행동을 직접적으로 통제할 수 있는 것으로 판단된다.
+
+XX 자극을 통해 피험체의 정신 및 행동을 통제하는 과정을 Mentem Regere, 약칙 Mentem으로 명명한다.
+Mentem에 의해 통제되는 피험체는 Servus로 명명한다.",,,
+Clue.ServusExperimentReport.LabReport,,TextProfile=Clue.LabReport,"극비 실험 보고서
+실험체: Servus
+Servus는 멘템을 가한 연구원의 명령에만 반응하는 특성을 보이고 있다.
+Servus에게 '날아' 라는 명령을 내렸다. Servus는 높은 곳으로 이동한 후 뛰어내렸다.
+실행이 불가능한 명령에도 이행하려는 모습을 보인다.
+이후 Servus에게 XX이란 명령을 내렸다.
+명령 직후 Servus를 중심으로 반경 약 20m 범위에서 공간이 일그러지는 현상이 발생하였다. 잠시 후 해당 범위 내의 환경이 파괴된 것으로 관찰되었다.
+외형상 폭발에 의한 파괴와 유사하나, 정확한 발생 과정은 확인하지 못했다. 해당 현상은 카메라에도 정상적으로 기록되지 않았다.
+
+Mentem 및 Servus와 관련된 실험은 극비 사항으로 분류한다. 일부 용어 및 명령은 1급 기밀로 지정하여 열람을 제한한다.",,,
+RoomName.Room.001,,TextProfile=RoomName,연구소장 실,,,
+RoomName.Room.002,,TextProfile=RoomName,실험실,,,
+RoomName.Room.003,,TextProfile=RoomName,휴게실(경비원 전용이지만 휴게실),,,
+RoomName.Room.004,,TextProfile=RoomName,보안 관제실,,,
+RoomName.Room.005,,TextProfile=RoomName,장비실,,,
+RoomName.Room.006,,TextProfile=RoomName,서버실,,,
+RoomName.Room.007,,TextProfile=RoomName,현관(현재 두 곳에서 사용 중),,,
+RoomName.Room.008,,TextProfile=RoomName,실험동,,,
+RoomName.Room.009,,TextProfile=RoomName,생활동,,,
+RoomName.Room.010,,TextProfile=RoomName,중앙 통제실,,,
+RoomName.Room.011,,TextProfile=RoomName,휴게실(생활동에 있는 휴게실),,,
+RoomName.Room.012,,TextProfile=RoomName,연구 작업실,,,
+RoomName.Room.013,,TextProfile=RoomName,창고,,,
+RoomName.Room.014,,TextProfile=RoomName,기숙사,,,

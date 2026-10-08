@@ -14,7 +14,193 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
   m_TableCollectionName: UI
   m_TableCollectionNameGuidString: caf85678b747e0d4ea4d36881f4339bb
-  m_Entries: []
+  m_Entries:
+  - m_Id: 657340497825792
+    m_Key: PlayerUI.Intro line 1
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133391
+  - m_Id: 657340577517568
+    m_Key: PlayerUI.Intro line 2
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133392
+  - m_Id: 657340577517569
+    m_Key: PlayerUI.Intro line 3
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133393
+  - m_Id: 657340577517570
+    m_Key: PlayerUI.Ending1 line 1
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133394
+  - m_Id: 657340577517571
+    m_Key: PlayerUI.Ending1 line 2
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133395
+  - m_Id: 657340577517572
+    m_Key: PlayerUI.Ending1 line 3
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133396
+  - m_Id: 657340577517573
+    m_Key: PlayerUI.Ending Monitor1check line1
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133397
+  - m_Id: 657340581711872
+    m_Key: PlayerUI.Ending Monitor1check line2
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133398
+  - m_Id: 657340581711873
+    m_Key: PlayerUI.Ending Monitor1check line3
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133399
+  - m_Id: 657340581711874
+    m_Key: PlayerUI.Ending 2-6Check line1
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133400
+  - m_Id: 657340581711875
+    m_Key: PlayerUI.Ending 2-6Check line2
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133401
+  - m_Id: 657340581711876
+    m_Key: PlayerUI.Ending 2-6Check line3
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133402
+  - m_Id: 657340581711877
+    m_Key: "NormalNote.\uBCFC\uD2B8\uCEE4\uD130 \uD68D\uB4DD \uC2DC"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133403
+  - m_Id: 657340581711878
+    m_Key: "NormalNote.\uCE74\uB4DC\uD0A4 \uD68D\uB4DD \uC2DC"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133404
+  - m_Id: 657340581711879
+    m_Key: "NormalNote.\uB3C4\uC5B4 \uC624\uD504\uB108 \uD68D\uB4DD \uC2DC"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133405
+  - m_Id: 657340581711880
+    m_Key: "NormalNote.\uC0AC\uB2E4\uB9AC \uD68D\uB4DD \uC2DC"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133406
+  - m_Id: 657340581711881
+    m_Key: "NormalNote.\uC624\uD504\uB108\uAC00 \uC5C6\uB294 \uC0C1\uD0DC\uC5D0\uC11C
+      \uC815\uBB38\uC744 \uC5F4\uB824\uACE0 \uD560 \uB54C"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133407
+  - m_Id: 657340581711882
+    m_Key: "NormalNote.\uCE74\uB4DC\uD0A4\uAC00 \uD544\uC694\uD55C\uB370 \uC5C6\uC744
+      \uB54C"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133408
+  - m_Id: 657340581711883
+    m_Key: "NormalNote.\uC804\uB825\uC744 \uBCF5\uAD6C\uD558\uC9C0 \uC54A\uC740 \uC0C1\uD669\uC5D0\uC11C
+      \uC804\uB825\uC774 \uD544\uC694\uD55C \uC624\uBE0C\uC81D\uD2B8\uC640 \uC0C1\uD638\uC791\uC6A9
+      \uC2DC"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133409
+  - m_Id: 657340581711884
+    m_Key: "NormalNote.\uC8FD\uC5C8\uB2E4\uAC00 \uC7AC\uC2DC\uC791 \uD588\uC744 \uB54C"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133410
+  - m_Id: 657340581711885
+    m_Key: "NormalNote.\uBCFC\uD2B8 \uCEE4\uD130\uAC00 \uD544\uC694\uD55C\uB370 \uC5C6\uC744
+      \uB54C"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133411
+  - m_Id: 657340581711886
+    m_Key: "NormalNote.\uC0AC\uB2E4\uB9AC \uC5C6\uC774 \uD658\uD48D\uAD6C\uC640 \uC0C1\uD638\uC791\uC6A9
+      \uC2DC"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133412
+  - m_Id: 657340581711887
+    m_Key: "NormalNote.\uCC45\uAF42\uC774 \uC0C1\uD638\uC791\uC6A9"
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133413
+  - m_Id: 657340581711888
+    m_Key: SpecialNote.Special.002
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133414
+  - m_Id: 657340581711889
+    m_Key: SpecialNote.Special.003
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133415
+  - m_Id: 657340581711890
+    m_Key: SpecialNote.Special.004
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133416
+  - m_Id: 657340581711891
+    m_Key: SpecialNote.Special.005
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133417
+  - m_Id: 657340581711892
+    m_Key: SpecialNote.Special.006
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133418
+  - m_Id: 657340581711893
+    m_Key: SpecialNote.Special.007
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133419
+  - m_Id: 657340581711894
+    m_Key: SpecialNote.Special.008
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133420
+  - m_Id: 657340581711895
+    m_Key: SpecialNote.Special.009
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133421
+  - m_Id: 657340581711896
+    m_Key: SpecialNote.Special.010
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133422
+  - m_Id: 657340581711897
+    m_Key: SpecialNote.Special.011
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133423
+  - m_Id: 657340581711898
+    m_Key: SpecialNote.Special.012
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133424
+  - m_Id: 657340581711899
+    m_Key: SpecialNote.Special.013
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133425
+  - m_Id: 657340581711900
+    m_Key: SpecialNote.Special.014
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133426
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -26,3 +212,147 @@ MonoBehaviour:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1791204015728
+    - rid: 60981280053133391
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133392
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133393
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133394
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133395
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133396
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133397
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133398
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133399
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133400
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133401
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133402
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=PlayerUI.Dialogue
+    - rid: 60981280053133403
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133404
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133405
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133406
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133407
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133408
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133409
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133410
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133411
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133412
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133413
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Note.Normal
+    - rid: 60981280053133414
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.Monitor_2_6
+    - rid: 60981280053133415
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.DemonWarning
+    - rid: 60981280053133416
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.DoorOpenerStorage
+    - rid: 60981280053133417
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.MainGateWithOpener
+    - rid: 60981280053133418
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.MainGateHint
+    - rid: 60981280053133419
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.UnknownNote
+    - rid: 60981280053133420
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.PowerWarning
+    - rid: 60981280053133421
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.PowerOutage
+    - rid: 60981280053133422
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.DormEntrance
+    - rid: 60981280053133423
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.WorkshopBoard
+    - rid: 60981280053133424
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.ResearcherChat
+    - rid: 60981280053133425
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.SecurityNote
+    - rid: 60981280053133426
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Special.USB

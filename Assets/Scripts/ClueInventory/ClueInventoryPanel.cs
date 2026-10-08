@@ -11,11 +11,11 @@ public class ClueInventoryPanel : MonoBehaviour
 
     [Header("FocusOutline")]
     [SerializeField] private GameObject outline;
-    [SerializeField] private int numberOfX = 2;
-    [SerializeField] private int numberOfY = 4;
+    [SerializeField] private int numberOfCol = 4;
+    [SerializeField] private int numberOfRow = 2;
 
-    private int xCoord = 0;
-    private int yCoord = 0;
+    private int currCol = 0;
+    private int currRow = 0;
     private int currentIndex = 0;
 
     private InputSystem_Actions controls;
@@ -28,7 +28,7 @@ public class ClueInventoryPanel : MonoBehaviour
     private void Awake()
     {
         controls = new InputSystem_Actions();
-        numberOfClue = System.Enum.GetValues(typeof(ClueItemCode)).Length - 1;
+        numberOfClue = clueInventoryItemDatabase.GetItemCount();
 
         for (int i = 0; i < numberOfClue; i++)
         {
@@ -67,8 +67,8 @@ public class ClueInventoryPanel : MonoBehaviour
                 existClueItems[index] = true;
             }
         }
-        xCoord = 0;
-        yCoord = 0;
+        currCol = 0;
+        currRow = 0;
         FocusIcon(itemIcon[0].gameObject.transform);
     }
 
@@ -90,25 +90,25 @@ public class ClueInventoryPanel : MonoBehaviour
 
         if (direction.y > 0)
         {
-            yCoord--;
+            currRow--;
         }
         else if (direction.y < 0)
         {
-            yCoord++; 
+            currRow++; 
         }
         else if (direction.x > 0)
         {
-            xCoord++;
+            currCol++;
         }
         else if (direction.x < 0)
         {
-            xCoord--;
+            currCol--;
         }
 
-        xCoord = Mathf.Clamp(xCoord, 0, numberOfX - 1);
-        yCoord = Mathf.Clamp(yCoord, 0, numberOfY - 1);
+        currCol = Mathf.Clamp(currCol, 0, numberOfCol - 1);
+        currRow = Mathf.Clamp(currRow, 0, numberOfRow - 1);
 
-        currentIndex = Mathf.Clamp(yCoord * numberOfX + xCoord, 0, numberOfClue - 1);
+        currentIndex = Mathf.Clamp(currRow * numberOfCol + currCol, 0, numberOfClue - 1);
         FocusIcon(itemIcon[currentIndex].gameObject.transform);
     }
 

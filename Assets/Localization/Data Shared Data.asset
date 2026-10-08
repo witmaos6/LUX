@@ -14,7 +14,222 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
   m_TableCollectionName: Data
   m_TableCollectionNameGuidString: 569c1e44941ee2b46a9ff1377296c4cf
-  m_Entries: []
+  m_Entries:
+  - m_Id: 655119769047040
+    m_Key: Item.Flashlight.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133312
+  - m_Id: 655119777435648
+    m_Key: Item.Flashlight.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133313
+  - m_Id: 655119777435649
+    m_Key: Item.BoltCutter.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133314
+  - m_Id: 655119777435650
+    m_Key: Item.BoltCutter.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133315
+  - m_Id: 655119781629952
+    m_Key: Item.Password.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133316
+  - m_Id: 655119781629953
+    m_Key: Item.Password.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133317
+  - m_Id: 655119781629954
+    m_Key: Item.DoorOpener.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133318
+  - m_Id: 655119781629955
+    m_Key: Item.DoorOpener.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133319
+  - m_Id: 655119781629956
+    m_Key: Item.USB.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133320
+  - m_Id: 655119781629957
+    m_Key: Item.USB.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133321
+  - m_Id: 655119781629958
+    m_Key: Item.PasswordHint1.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133322
+  - m_Id: 655119781629959
+    m_Key: Item.PasswordHint1.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133323
+  - m_Id: 655119781629960
+    m_Key: Item.PasswordHint2.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133324
+  - m_Id: 655119781629961
+    m_Key: Item.PasswordHint2.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133325
+  - m_Id: 655119781629962
+    m_Key: Item.PasswordHint3.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133326
+  - m_Id: 655119781629963
+    m_Key: Item.PasswordHint3.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133327
+  - m_Id: 655119781629964
+    m_Key: Item.Ladder.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133328
+  - m_Id: 655119781629965
+    m_Key: Item.Ladder.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133329
+  - m_Id: 655119781629966
+    m_Key: Item.CardKey.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133330
+  - m_Id: 655119781629967
+    m_Key: Item.CardKey.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133331
+  - m_Id: 655119781629968
+    m_Key: Item.LaboratoryPasswordHint.DisplayName
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133332
+  - m_Id: 655119781629969
+    m_Key: Item.LaboratoryPasswordHint.Description
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133333
+  - m_Id: 655119781629970
+    m_Key: Clue.InitialExperimentLog.LabReport
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133334
+  - m_Id: 655119781629971
+    m_Key: Clue.WitnessedTheDivision.LabReport
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133335
+  - m_Id: 655119781629972
+    m_Key: Clue.FissionPhenomenonHypothesis.LabReport
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133336
+  - m_Id: 655119781629973
+    m_Key: Clue.ReportForExperiment15.LabReport
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133337
+  - m_Id: 655119781629974
+    m_Key: Clue.ReportForExperiment13.LabReport
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133338
+  - m_Id: 655119781629975
+    m_Key: Clue.MentemExperimentReport.LabReport
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133339
+  - m_Id: 655119781629976
+    m_Key: Clue.ServusExperimentReport.LabReport
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133340
+  - m_Id: 655119781629977
+    m_Key: RoomName.Room.001
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133341
+  - m_Id: 655119781629978
+    m_Key: RoomName.Room.002
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133342
+  - m_Id: 655119781629979
+    m_Key: RoomName.Room.003
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133343
+  - m_Id: 655119781629980
+    m_Key: RoomName.Room.004
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133344
+  - m_Id: 655119781629981
+    m_Key: RoomName.Room.005
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133345
+  - m_Id: 655119781629982
+    m_Key: RoomName.Room.006
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133346
+  - m_Id: 655119781629983
+    m_Key: RoomName.Room.007
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133347
+  - m_Id: 655119781629984
+    m_Key: RoomName.Room.008
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133348
+  - m_Id: 655119781629985
+    m_Key: RoomName.Room.009
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133349
+  - m_Id: 655119781629986
+    m_Key: RoomName.Room.010
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133350
+  - m_Id: 655119781629987
+    m_Key: RoomName.Room.011
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133351
+  - m_Id: 655119781629988
+    m_Key: RoomName.Room.012
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133352
+  - m_Id: 655119781629989
+    m_Key: RoomName.Room.013
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133353
+  - m_Id: 655119781629990
+    m_Key: RoomName.Room.014
+    m_Metadata:
+      m_Items:
+      - rid: 60981280053133354
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
@@ -26,3 +241,175 @@ MonoBehaviour:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1791204032955
+    - rid: 60981280053133312
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133313
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133314
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133315
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133316
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133317
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133318
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133319
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133320
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133321
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133322
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133323
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133324
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133325
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133326
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133327
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133328
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133329
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133330
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133331
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133332
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.DisplayName
+    - rid: 60981280053133333
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Item.Description
+    - rid: 60981280053133334
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Clue.LabReport
+    - rid: 60981280053133335
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Clue.LabReport
+    - rid: 60981280053133336
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Clue.LabReport
+    - rid: 60981280053133337
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Clue.LabReport
+    - rid: 60981280053133338
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Clue.LabReport
+    - rid: 60981280053133339
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Clue.LabReport
+    - rid: 60981280053133340
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=Clue.LabReport
+    - rid: 60981280053133341
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133342
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133343
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133344
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133345
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133346
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133347
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133348
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133349
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133350
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133351
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133352
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133353
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName
+    - rid: 60981280053133354
+      type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_CommentText: TextProfile=RoomName

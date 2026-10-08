@@ -29,6 +29,11 @@ public sealed class ClueInventoryItemDatabase : ScriptableObject
 
     [SerializeField] private List<ClueItemDefinition> items = new();
 
+    public int GetItemCount()
+    {
+        return items.Count;
+    }
+
     public string GetDisplayName(ClueItemCode clueItemCode)
     {
         ClueItemDefinition clueItemDefinition = items.Find(definition => definition.clueItemCode == clueItemCode);

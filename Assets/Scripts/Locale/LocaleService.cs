@@ -19,7 +19,7 @@ public class LocaleService : MonoBehaviour
         Apply(code, save: false);
     }
 
-    static string DetectDefault() => Application.systemLanguage == SystemLanguage.Korean ? "ko" : "en";
+    static string DetectDefault() =>Application.systemLanguage == SystemLanguage.Korean ? "ko" : "en";
 
     public static void Apply(string code, bool save = true)
     {

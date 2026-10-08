@@ -181,8 +181,8 @@ MonoBehaviour:
   - {fileID: 1286556095842818989}
   clueInventoryItemDatabase: {fileID: 11400000, guid: 09223c7df46366049931ad27b38e314d, type: 2}
   outline: {fileID: 2727876378169207185}
-  numberOfX: 4
-  numberOfY: 2
+  numberOfCol: 4
+  numberOfRow: 2
 --- !u!1001 &311414800365178449
 PrefabInstance:
   m_ObjectHideFlags: 0
