@@ -1,0 +1,602 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocaleTable_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: d1242a3087995484e9e4060056bbe48b, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16942796800
+    m_Localized: Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17077014528
+    m_Localized: It's a flashlight. Without it, I can't see a thing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17077014529
+    m_Localized: Bolt cutter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17077014530
+    m_Localized: These are bolt cutters that can cut through chains.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208832
+    m_Localized: Switchboard password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208833
+    m_Localized: 'The password is written here: 1318.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208834
+    m_Localized: Door opener
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208835
+    m_Localized: This is a tool that can open the door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208836
+    m_Localized: USB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208837
+    m_Localized: "This USB drive contains the experiment data. Once power is restored,
+      let\u2019s plug it into a computer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208838
+    m_Localized: 6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208839
+    m_Localized: This is the number 6 I saw in the power control room. What does
+      it mean?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208840
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208841
+    m_Localized: This is the number 1 I saw in the heating control room. Are there
+      any more?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208842
+    m_Localized: 3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208843
+    m_Localized: This is the number 3 I saw beyond the dormitory door. What does
+      it mean?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208844
+    m_Localized: Ladder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208845
+    m_Localized: With this, I should be able to climb up into the ventilation shaft.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208846
+    m_Localized: Key Card
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208847
+    m_Localized: There probably are doors that can be opened with a key card.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208848
+    m_Localized: Lab Password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208849
+    m_Localized: "This is a note someone left behind. Let\u2019s think carefully
+      about the order in which to search."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208850
+    m_Localized: 'Experiment Log
+
+      Test Subject: DE5i1
+
+      We attempted to
+      observe the subject using all available imaging equipment, including X-rays,
+      CT scans, MRIs, and cameras, but no discernible internal structure was found.
+
+      However,
+      it was confirmed that the subject exhibits behavior similar to that of living
+      organisms, such as reacting to external stimuli.
+
+      In particular, it was
+      observed to react sensitively to light and sound.
+
+
+      Experiment Log
+
+      Test
+      Subject: DE5i1
+
+      Mice, rabbits, and bears were introduced into the laboratory
+      sequentially.
+
+      The dates of introduction were June X, July X, and August
+      X.
+
+      Immediately after the test subject was discovered, all test animals
+      exhibited extreme fear reactions.
+
+      After observing the test animals for
+      a certain period of time, DE5i1 displayed aggressive behavior.
+
+      Following
+      the attack, the animals'' bodies were so severely mutilated that their forms
+      could no longer be identified, and shortly thereafter, they mutated into black
+      masses.
+
+      This black substance is designated as "Fomes."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208851
+    m_Localized: 'Experiment Log
+
+      Test Subject: DE5i1
+
+      Researcher A observed
+      and reported that test subject DE5i1 split into two parts and then merged back
+      into a single entity.
+
+      Since DE5i1 possesses the characteristic of not
+      being recorded by CCTV, no evidence of the incident was secured. Consequently,
+      researchers took turns monitoring the test subject thereafter.
+
+      Subsequently,
+      Researcher B also confirmed that DE5i1 split.
+
+      As the same phenomenon
+      has been repeatedly observed, the splitting of DE5i1 is now considered a confirmed
+      fact, and follow-up experiments will proceed.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208852
+    m_Localized: 'Report
+
+      Based on a comprehensive analysis of existing experimental
+      records, it is estimated that the division phenomenon of DE5i1 occurs after
+      administration to animals.
+
+      To verify this hypothesis, we propose conducting
+      additional animal administration experiments.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208853
+    m_Localized: '15th Experiment Report
+
+      Test Subject: Fomes
+
+      15th Experiment
+      - Combustion Reaction Experiment
+
+      We ignited Fomes to observe the combustion
+      reaction.
+
+      When compared to an equal volume of coal, it was confirmed
+      that combustion lasted approximately 80 to 100 times longer.
+
+
+      Supervisor''s
+      Comments: Significant experimental results were confirmed. It is judged to
+      have potential for use as an alternative fuel, and further experiments are
+      requested.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208854
+    m_Localized: '13th Experiment Report
+
+      Test Subject: DE5i1
+
+      13th Experiment
+      - XX Reaction Experiment
+
+      When an XX stimulus was applied to DE5i1, a
+      substance resembling a long, red thread appeared.
+
+      Although its appearance
+      was identical to the red threads typically observed, its length was confirmed
+      to be approximately 4 to 6 times longer than usual.
+
+
+      Supervisor''s Comments:
+      A new form of red thread has been identified. I request that additional observations
+      and experiments be conducted on this red thread.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208855
+    m_Localized: 'Top-Secret Experiment Report
+
+      Test Subject: DE5i1
+
+      Mentem
+      Regere Experiment-Follow-up Experiment Following the 13th XX Stimulus-Response
+      Experiment
+
+
+      A rabbit was introduced after the XX stimulus was applied.
+      An abnormal reaction was observed in the rabbit that came into contact with
+      the red thread.
+
+      Subsequently, when the researcher who had applied the
+      stimulus issued a command, the rabbit was observed to obey it. It did not respond
+      to commands from other researchers.
+
+
+      In the second experiment, a death
+      row inmate was introduced, and the XX stimulus was applied. Similarly, the
+      subject was observed to respond only to commands from the researcher who administered
+      the stimulus.
+
+      Based on these results, it is concluded that the XX stimulus
+      allows for direct control over the subject''s behavior.
+
+
+      The process
+      of controlling a subject''s mind and behavior through the XX stimulus is named
+      Mentem Regere, abbreviated as Mentem.
+
+      A subject controlled by Mentem
+      is designated as a Servus.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208856
+    m_Localized: 'Top-Secret Experiment Report
+
+      Test Subject: Servus
+
+      Servus
+      exhibits the characteristic of responding only to commands given by researchers
+      who have performed a "Mentem" on it.
+
+      I gave Servus the command "Fly."
+      Servus moved to a high place and then jumped down.
+
+      It appears to attempt
+      to carry out even commands that are impossible to execute.
+
+      Subsequently,
+      the command "XX" was issued to Servus.
+
+      Immediately after the command,
+      a phenomenon occurred in which space warped within a radius of approximately
+      20 meters centered on Servus. Shortly thereafter, it was observed that the
+      environment within that radius had been destroyed.
+
+      Although the destruction
+      resembled that caused by an explosion, the exact process of the event could
+      not be confirmed. This phenomenon was also not recorded normally by the camera.
+
+
+      Experiments
+      related to Mentem and Servus are classified as top secret. Certain terms and
+      commands are designated as Level 1 classified, and access to them is restricted.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208857
+    m_Localized: Director
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208858
+    m_Localized: Laboratory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208859
+    m_Localized: Lounge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208860
+    m_Localized: Security
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208861
+    m_Localized: Equipment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208862
+    m_Localized: Server
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208863
+    m_Localized: Lobby
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208864
+    m_Localized: Lab Hall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208865
+    m_Localized: Dorm Hall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208866
+    m_Localized: Central Control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208867
+    m_Localized: Research
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208868
+    m_Localized: Storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208869
+    m_Localized: Dormitory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208870
+    m_Localized: ...Where am I?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208871
+    m_Localized: Why am I here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208872
+    m_Localized: First of all... let me look around.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208873
+    m_Localized: What on earth was that?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208874
+    m_Localized: What kind of place was that over there?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208875
+    m_Localized: Why was I there?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208876
+    m_Localized: There's one thing that's really bothering me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208877
+    m_Localized: They say that monster crushes its victims beyond recognition,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208878
+    m_Localized: so what are all those bodies then?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208879
+    m_Localized: There's one thing I think I understand.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208880
+    m_Localized: Those people tried to use that monster, but ultimately failed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208881
+    m_Localized: Did that failure lead to this carnage?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208882
+    m_Localized: I found a bolt cutter.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208883
+    m_Localized: I found a key card.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208884
+    m_Localized: With this, I think I can dismantle the main gate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208885
+    m_Localized: I got a ladder. I should be able to climb up the ventilation shaft,
+      right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208886
+    m_Localized: I can't open the door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17081208887
+    m_Localized: I need a key card.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403136
+    m_Localized: I need to restore power.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403137
+    m_Localized: I'm coming to my senses. Let's turn on the lights.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403138
+    m_Localized: 'There''s a chain here.
+
+      Let''s find a bolt cutter.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403139
+    m_Localized: With a ladder, I think I can climb up.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403140
+    m_Localized: 'There''s a bookshelf.
+
+      There are science fiction novels,
+      magazines, and a Bible.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403141
+    m_Localized: 'Human greed knows no bounds,
+
+      it even encroaches upon the
+      realm of the divine.
+
+
+      But...
+
+
+      For the common good... yes, for
+      the greater good,
+
+      there are times when one must set aside one''s conscience.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403142
+    m_Localized: Chasing the light...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403143
+    m_Localized: Rapidly press the interaction key to break the glass.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403144
+    m_Localized: Rapidly press the interaction key to dismantle the door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403145
+    m_Localized: 'Researcher 1: Do you know how to manually disassemble a door?
+
+
+      Researcher
+      2: Why would you want to open a door manually?
+
+
+      Researcher 1: I saw
+      it in a movie-they used a hydraulic opener to open a broken steel door. And
+      I noticed we have the exact same opener in the warehouse.
+
+
+      Researcher
+      2: Are you trying to shoot *Mission: Impossible* or something?
+
+
+      Researcher
+      1: Why? Those bulletin boards have manuals explaining what to do if the power
+      goes out. Since this place has its own power generator, and those manuals are
+      posted repeatedly, I''m just thinking "just in case."
+
+
+      Researcher 2:
+      Stop talking nonsense and get back to writing your report. We have an experiment
+      tomorrow.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403146
+    m_Localized: 'To whoever is reading this:
+
+      I''m sorry. We failed.
+
+      No,
+      maybe we were arrogant from the start.
+
+      We thought we could control that
+      monster.
+
+      But it turned out to be the opposite.
+
+      I''m sorry. I''m
+      sorry. I''m so s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403147
+    m_Localized: '[In Case of a Power Problem]
+
+      If the power is unstable,
+
+      check
+      the distribution panel in the underground power
+
+      control room.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403148
+    m_Localized: '[In the Event of a Power Outage]
+
+      In the event of a power
+      outage, the emergency generator will start up.
+
+      Please calmly check the
+      power control room.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403149
+    m_Localized: I see the number 3.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403150
+    m_Localized: '[Research room Usage Guidelines]
+
+      This lab is a space designated
+      for writing reports and performing administrative tasks.
+
+      Please use
+      the computers for work purposes only.
+
+
+      *Do not play games on the computers.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403151
+    m_Localized: 'Researcher 1: What on earth is that test subject, DE5i1?
+
+
+      Researcher
+      2: I asked my senior about it briefly, and he said it seems like no one knows
+      what it really is-not even the head of the project. Just looking at its appearance,
+      it looks like a demon.
+
+
+      Researcher 1: Exactly. This is the first time
+      I''ve ever believed in demons or ghosts since I came here. Is it really a demon?
+
+
+      Researcher
+      2: Maybe figuring out its true nature is the whole point of the research.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403152
+    m_Localized: 'I will now restore power and search for survivors.
+
+      I received
+      a radio transmission from the basement of the living quarters, so I plan to
+      search there first before moving on to the dormitory.
+
+      I''ve changed
+      the access code for the lab entrance. I''ll leave the new code behind as I
+      search, so please take care of things after I''m gone.
+
+
+      P.S.: I took
+      this precaution because the test subject appears to be quite intelligent. I''m
+      not sure if it will make a difference, but please be extremely careful.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17085403153
+    m_Localized: This is a summary of the initial experiment. Please review it after
+      checking it over.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

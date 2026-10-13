@@ -13,6 +13,33 @@ MonoBehaviour:
   m_Name: Intro
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScriptSequence
   lines:
-  - text: "...\uC5EC\uAE34 \uC5B4\uB514\uC9C0?"
-  - text: "\uB0B4\uAC00 \uC65C \uC5EC\uAE30 \uC788\uB294 \uAC70\uC9C0?"
-  - text: "\uC6B0\uC120... \uC8FC\uBCC0\uC744 \uB458\uB7EC\uBCF4\uC790."
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208870
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208871
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208872
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

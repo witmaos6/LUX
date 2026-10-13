@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using static DropItem;
 
 [CreateAssetMenu(
@@ -13,8 +15,6 @@ public sealed class InventoryItemDatabase : ScriptableObject
     public class ItemDefinition
     {
         public ItemCode itemCode;
-        public string displayName;
-        [TextArea(2, 4)] public string description;
         public Sprite icon;
     }
 
@@ -25,10 +25,7 @@ public sealed class InventoryItemDatabase : ScriptableObject
 
     public string GetDisplayName(ItemCode itemCode)
     {
-        ItemDefinition item = items.Find(definition => definition.itemCode == itemCode);
-        return item != null && !string.IsNullOrWhiteSpace(item.displayName)
-            ? item.displayName
-            : itemCode.ToString();
+        return CreateLocalizedString(itemCode, "DisplayName");
     }
 
     public Sprite GetIcon(ItemCode itemCode)
@@ -39,7 +36,13 @@ public sealed class InventoryItemDatabase : ScriptableObject
 
     public string GetDescription(ItemCode itemCode)
     {
-        ItemDefinition item = items.Find(definition => definition.itemCode == itemCode);
-        return item != null ? item.description : string.Empty;
+        return CreateLocalizedString(itemCode, "Description");
+    }
+
+    string CreateLocalizedString(ItemCode itemCode, string fieldName)
+    {
+        string Key = $"Item.{itemCode}.{fieldName}";
+        string tableName = LocaleService.instance.GetTableName();
+        return LocalizationSettings.StringDatabase.GetLocalizedString(tableName, Key);
     }
 }

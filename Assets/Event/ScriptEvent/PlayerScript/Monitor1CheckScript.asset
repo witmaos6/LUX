@@ -13,7 +13,33 @@ MonoBehaviour:
   m_Name: Monitor1CheckScript
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScriptSequence
   lines:
-  - text: "\uD55C \uAC00\uC9C0 \uCC1D\uCC1D\uD55C \uAC83\uC774 \uC788\uB2E4."
-  - text: "\uADF8 \uAD34\uBB3C\uC740 \uD615\uCCB4\uB97C \uC54C\uC544\uBCFC \uC218
-      \uC5C6\uC744\uC815 \uB3C4\uB85C \uC9D3\uC774\uAE34\uB2E4\uB294\uB370"
-  - text: "\uADF8\uB807\uB2E4\uBA74 \uADF8 \uB9CE\uC740 \uC2DC\uCCB4\uB294 \uBB50\uC9C0?"
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208876
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208877
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208878
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

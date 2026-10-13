@@ -1,0 +1,266 @@
+Key,Id,TextProfile,Korean(ko),English(en)
+Item.Flashlight.DisplayName,,Item.DisplayName,손전등,Flashlight
+Item.Flashlight.Description,,Item.Description,손전등이다. 이것이 없으면 아무것도 볼 수 없다.,"It's a flashlight. Without it, I can't see a thing."
+Item.BoltCutter.DisplayName,,Item.DisplayName,볼트 커터,Bolt cutter
+Item.BoltCutter.Description,,Item.Description,사슬을 끊을 수 있는 볼트 커터다.,These are bolt cutters that can cut through chains.
+Item.Password.DisplayName,,Item.DisplayName,스위치보드 비밀번호,Switchboard password
+Item.Password.Description,,Item.Description,비밀번호가 적혀있다. 1318,The password is written here: 1318.
+Item.DoorOpener.DisplayName,,Item.DisplayName,도어 오프너,Door opener
+Item.DoorOpener.Description,,Item.Description,문을 개방할 수 있는 도구다.,This is a tool that can open the door.
+Item.USB.DisplayName,,Item.DisplayName,USB,USB
+Item.USB.Description,,Item.Description,실험내용이 담겨있다는 USB다. 전력이 복구되면 컴퓨터에 연결해보자.,"This USB drive contains the experiment data. Once power is restored, let’s plug it into a computer."
+Item.PasswordHint1.DisplayName,,Item.DisplayName,6,6
+Item.PasswordHint1.Description,,Item.Description,전력 관리실에서 본 숫자 6이다. 어떤 의미일까?,This is the number 6 I saw in the power control room. What does it mean?
+Item.PasswordHint2.DisplayName,,Item.DisplayName,1,1
+Item.PasswordHint2.Description,,Item.Description,난방 관리실에서 본 숫자 1이다. 더 있을까?,This is the number 1 I saw in the heating control room. Are there any more?
+Item.PasswordHint3.DisplayName,,Item.DisplayName,3,3
+Item.PasswordHint3.Description,,Item.Description,기숙사 문 너머로 본 숫자 3이다. 무슨 뜻일까?,This is the number 3 I saw beyond the dormitory door. What does it mean?
+Item.Ladder.DisplayName,,Item.DisplayName,사다리,Ladder
+Item.Ladder.Description,,Item.Description,이것이라면 환풍구에 올라갈 수 있겠지.,"With this, I should be able to climb up into the ventilation shaft."
+Item.CardKey.DisplayName,,Item.DisplayName,카드키,Key Card
+Item.CardKey.Description,,Item.Description,카드키로 열 수 있는 문들이 있을 것 같다.,There probably are doors that can be opened with a key card.
+Item.LaboratoryPasswordHint.DisplayName,,Item.DisplayName,실험실 비밀번호,Lab Password
+Item.LaboratoryPasswordHint.Description,,Item.Description,누군가 남겨둔 쪽지다. 탐색 순서를 잘 생각해보자.,This is a note someone left behind. Let’s think carefully about the order in which to search.
+Clue.InitialExperimentLog.LabReport,,Clue.LabReport,"실험 일지
+실험체: DE5i1
+X-ray, CT, MRI, 카메라 등 모든 영상 장비를 사용하여 관찰을 시도했으나, 확인 가능한 내부 구조는 존재하지 않았다.
+그러나 외부 자극에 반응하는 등 생물과 유사한 반응을 보이는 것이 확인되었다.
+특히 빛과 소리에 민감하게 반응하는 특성이 관찰되었다.
+
+실험 일지
+실험체: DE5i1
+쥐, 토끼, 곰을 순차적으로 실험실에 투입하였다.
+투입일은 6월 X일, 7월 X일, 8월 X일이다.
+모든 피험 동물에게서 실험체를 발견한 직후 극도의 공포 반응이 관찰되었다.
+DE5i1은 피험 동물들을 일정 시간 관찰한 후 공격 행동을 보였다.
+공격 이후 동물의 신체는 형체를 식별할 수 없을 정도로 심하게 훼손되었으며, 얼마 지나지 않아 검은색 덩어리 형태로 변이하였다.
+해당 검은색 물질은 Fomes로 명명한다.","Experiment Log
+Test Subject: DE5i1
+We attempted to observe the subject using all available imaging equipment, including X-rays, CT scans, MRIs, and cameras, but no discernible internal structure was found.
+However, it was confirmed that the subject exhibits behavior similar to that of living organisms, such as reacting to external stimuli.
+In particular, it was observed to react sensitively to light and sound.
+
+Experiment Log
+Test Subject: DE5i1
+Mice, rabbits, and bears were introduced into the laboratory sequentially.
+The dates of introduction were June X, July X, and August X.
+Immediately after the test subject was discovered, all test animals exhibited extreme fear reactions.
+After observing the test animals for a certain period of time, DE5i1 displayed aggressive behavior.
+Following the attack, the animals' bodies were so severely mutilated that their forms could no longer be identified, and shortly thereafter, they mutated into black masses.
+This black substance is designated as ""Fomes."""
+Clue.WitnessedTheDivision.LabReport,,Clue.LabReport,"실험 일지
+실험체: DE5i1
+연구원 A가 실험체 DE5i1이 분열한 후 다시 하나의 개체로 합쳐지는 모습을 목격하고 보고하였다.
+DE5i1은 CCTV에 영상이 기록되지 않는 특성이 있어 당시 상황에 대한 증거는 확보하지 못했다. 이에 이후 연구원들이 교대로 실험체를 감시하였다.
+이후 연구원 B 역시 DE5i1이 분열하는 모습을 확인하였다.
+동일한 현상이 반복적으로 관찰됨에 따라 DE5i1의 분열 현상을 사실로 간주하고 후속 실험을 진행한다.","Experiment Log
+Test Subject: DE5i1
+Researcher A observed and reported that test subject DE5i1 split into two parts and then merged back into a single entity.
+Since DE5i1 possesses the characteristic of not being recorded by CCTV, no evidence of the incident was secured. Consequently, researchers took turns monitoring the test subject thereafter.
+Subsequently, Researcher B also confirmed that DE5i1 split.
+As the same phenomenon has been repeatedly observed, the splitting of DE5i1 is now considered a confirmed fact, and follow-up experiments will proceed."
+Clue.FissionPhenomenonHypothesis.LabReport,,Clue.LabReport,"보고서
+기존 실험 기록을 종합하여 분석한 결과, 동물 투입 이후 DE5i1의 분열 현상이 발생하는 것으로 추정된다.
+해당 가설을 검증하기 위해 동물 투입 실험을 추가로 진행할 것을 제안한다.","Report
+Based on a comprehensive analysis of existing experimental records, it is estimated that the division phenomenon of DE5i1 occurs after administration to animals.
+To verify this hypothesis, we propose conducting additional animal administration experiments."
+Clue.ReportForExperiment15.LabReport,,Clue.LabReport,"15번째 실험 보고서
+실험체: Fomes
+15번째 실험 - 연소 반응 실험
+Fomes에 점화하여 연소 반응을 관찰하였다.
+동일 부피의 석탄과 비교한 결과, 약 80~100배 이상 장시간 연소가 지속되는 것이 확인되었다.
+
+감독관 의견: 유의미한 실험 결과가 확인되었다. 대체 연료로서의 활용 가능성이 있는 것으로 판단되며, 추가 실험을 진행할 것을 요청한다.","15th Experiment Report
+Test Subject: Fomes
+15th Experiment - Combustion Reaction Experiment
+We ignited Fomes to observe the combustion reaction.
+When compared to an equal volume of coal, it was confirmed that combustion lasted approximately 80 to 100 times longer.
+
+Supervisor's Comments: Significant experimental results were confirmed. It is judged to have potential for use as an alternative fuel, and further experiments are requested."
+Clue.ReportForExperiment13.LabReport,,Clue.LabReport,"13번째 실험 보고서
+실험체: DE5i1
+13번째 실험 -  XX 반응 실험
+DE5i1에 XX 자극을 가한 결과, 길게 뻗은 붉은 실 형태의 물질이 나타났다.
+외형은 평소에도 관찰되는 붉은 실과 동일하나, 길이는 기존보다 약 4~6배 긴 것으로 확인되었다.
+
+감독관 의견: 새로운 형태의 붉은 실이 확인되었다. 해당 붉은 실에 대한 추가적인 관찰 및 실험을 진행할 것을 요청한다.","13th Experiment Report
+Test Subject: DE5i1
+13th Experiment - XX Reaction Experiment
+When an XX stimulus was applied to DE5i1, a substance resembling a long, red thread appeared.
+Although its appearance was identical to the red threads typically observed, its length was confirmed to be approximately 4 to 6 times longer than usual.
+
+Supervisor's Comments: A new form of red thread has been identified. I request that additional observations and experiments be conducted on this red thread."
+Clue.MentemExperimentReport.LabReport,,Clue.LabReport,"극비 실험 보고서
+실험체: DE5i1
+멘템 레게레 실험 - 13번째 XX 자극 반응 실험 이후 추가 실험
+
+XX 자극을 가한 후 토끼를 투입하였다. 붉은 실에 접촉한 토끼에게서 이상 반응이 관찰되었다.
+이후 해당 자극을 가한 연구원이 명령을 내리자 토끼가 이에 따르는 모습이 확인되었다. 다른 연구원들의 명령에는 반응하지 않았다.
+
+두 번째 실험에서는 사형수를 투입한 후 XX 자극을 가하였다. 동일하게 자극을 가한 연구원의 명령에만 반응하는 현상이 관찰되었다.
+이상의 결과를 통해 XX 자극에 의해 피험체의 행동을 직접적으로 통제할 수 있는 것으로 판단된다.
+
+XX 자극을 통해 피험체의 정신 및 행동을 통제하는 과정을 Mentem Regere, 약칙 Mentem으로 명명한다.
+Mentem에 의해 통제되는 피험체는 Servus로 명명한다.","Top-Secret Experiment Report
+Test Subject: DE5i1
+Mentem Regere Experiment—Follow-up Experiment Following the 13th XX Stimulus-Response Experiment
+
+A rabbit was introduced after the XX stimulus was applied. An abnormal reaction was observed in the rabbit that came into contact with the red thread.
+Subsequently, when the researcher who had applied the stimulus issued a command, the rabbit was observed to obey it. It did not respond to commands from other researchers.
+
+In the second experiment, a death row inmate was introduced, and the XX stimulus was applied. Similarly, the subject was observed to respond only to commands from the researcher who administered the stimulus.
+Based on these results, it is concluded that the XX stimulus allows for direct control over the subject's behavior.
+
+The process of controlling a subject's mind and behavior through the XX stimulus is named Mentem Regere, abbreviated as Mentem.
+A subject controlled by Mentem is designated as a Servus."
+Clue.ServusExperimentReport.LabReport,,Clue.LabReport,"극비 실험 보고서
+실험체: Servus
+Servus는 멘템을 가한 연구원의 명령에만 반응하는 특성을 보이고 있다.
+Servus에게 '날아' 라는 명령을 내렸다. Servus는 높은 곳으로 이동한 후 뛰어내렸다.
+실행이 불가능한 명령에도 이행하려는 모습을 보인다.
+이후 Servus에게 XX이란 명령을 내렸다.
+명령 직후 Servus를 중심으로 반경 약 20m 범위에서 공간이 일그러지는 현상이 발생하였다. 잠시 후 해당 범위 내의 환경이 파괴된 것으로 관찰되었다.
+외형상 폭발에 의한 파괴와 유사하나, 정확한 발생 과정은 확인하지 못했다. 해당 현상은 카메라에도 정상적으로 기록되지 않았다.
+
+Mentem 및 Servus와 관련된 실험은 극비 사항으로 분류한다. 일부 용어 및 명령은 1급 기밀로 지정하여 열람을 제한한다.","Top-Secret Experiment Report
+Test Subject: Servus
+Servus exhibits the characteristic of responding only to commands given by researchers who have performed a ""Mentem"" on it.
+I gave Servus the command ""Fly."" Servus moved to a high place and then jumped down.
+It appears to attempt to carry out even commands that are impossible to execute.
+Subsequently, the command ""XX"" was issued to Servus.
+Immediately after the command, a phenomenon occurred in which space warped within a radius of approximately 20 meters centered on Servus. Shortly thereafter, it was observed that the environment within that radius had been destroyed.
+Although the destruction resembled that caused by an explosion, the exact process of the event could not be confirmed. This phenomenon was also not recorded normally by the camera.
+
+Experiments related to Mentem and Servus are classified as top secret. Certain terms and commands are designated as Level 1 classified, and access to them is restricted."
+ObjectText.RoomName.DirectorOffice,,ObjectText.RoomName,연구소장 실,Director
+ObjectText.RoomName.Lab,,ObjectText.RoomName,실험실,Laboratory
+ObjectText.RoomName.Lounge,,ObjectText.RoomName,휴게실,Lounge
+ObjectText.RoomName.Security,,ObjectText.RoomName,보안 관제실,Security
+ObjectText.RoomName.Equipment,,ObjectText.RoomName,장비실,Equipment
+ObjectText.RoomName.Server,,ObjectText.RoomName,서버실,Server
+ObjectText.RoomName.Lobby,,ObjectText.RoomName,현관,Lobby
+ObjectText.RoomName.LabHall,,ObjectText.RoomName,실험동,Lab Hall
+ObjectText.RoomName.DormHall,,ObjectText.RoomName,생활동,Dorm Hall
+ObjectText.RoomName.Control,,ObjectText.RoomName,중앙 통제실,Central Control
+ObjectText.RoomName.Research,,ObjectText.RoomName,연구 작업실,Research
+ObjectText.RoomName.Storage,,ObjectText.RoomName,창고,Storage
+ObjectText.RoomName.Dorm,,ObjectText.RoomName,기숙사,Dormitory
+PlayerUI.Intro line 1,,PlayerUI.Dialogue,...여긴 어디지?,...Where am I?
+PlayerUI.Intro line 2,,PlayerUI.Dialogue,내가 왜 여기 있는 거지?,Why am I here?
+PlayerUI.Intro line 3,,PlayerUI.Dialogue,우선... 주변을 둘러보자.,First of all... let me look around.
+PlayerUI.Ending1 line 1,,PlayerUI.Dialogue,그건 도대체 뭐였을까?,What on earth was that?
+PlayerUI.Ending1 line 2,,PlayerUI.Dialogue,저곳은 뭘 하는 곳이었을까?,What kind of place was that over there?
+PlayerUI.Ending1 line 3,,PlayerUI.Dialogue,나는 왜 저기 있었던 거지?,Why was I there?
+PlayerUI.Ending Monitor1check line1,,PlayerUI.Dialogue,한 가지 찝찝한 것이 있다.,There's one thing that's really bothering me.
+PlayerUI.Ending Monitor1check line2,,PlayerUI.Dialogue,그 괴물은 형체를 알아볼 수 없을정 도로 짓이긴다는데,"They say that monster crushes its victims beyond recognition,"
+PlayerUI.Ending Monitor1check line3,,PlayerUI.Dialogue,그렇다면 그 많은 시체는 뭐지?,so what are all those bodies then?
+PlayerUI.Ending 2-6Check line1,,PlayerUI.Dialogue,한 가지는 알 것 같다.,There's one thing I think I understand.
+PlayerUI.Ending 2-6Check line2,,PlayerUI.Dialogue,저 사람들은 그 괴물을 이용하려 했고 결국 실패했다.,"Those people tried to use that monster, but ultimately failed."
+PlayerUI.Ending 2-6Check line3,,PlayerUI.Dialogue,그 실패가 저 참상을 만들어낸 걸까?,Did that failure lead to this carnage?
+NormalNote.LootBoltCutter,,Note.Normal,볼트 커터를 주웠다.,I found a bolt cutter.
+NormalNote.LootCardkey,,Note.Normal,카드키를 주웠다.,I found a key card.
+NormalNote.LootDoorOpener,,Note.Normal,이거라면 정문을 해체할 수 있을 것 같다.,"With this, I think I can dismantle the main gate."
+NormalNote.LootLadder,,Note.Normal,사다리를 얻었다. 환풍구에 올라갈 수 있겠지?,"I got a ladder. I should be able to climb up the ventilation shaft, right?"
+NormalNote.FailedOpenMainGate,,Note.Normal,문을 열수가 없다.,I can't open the door.
+NormalNote.NeedCardkey,,Note.Normal,카드키가 필요하다.,I need a key card.
+NormalNote.NeedPower,,Note.Normal,전력을 공급해야 한다.,I need to restore power.
+NormalNote.Restart,,Note.Normal,정신이 든다. 불을 켜보자,I'm coming to my senses. Let's turn on the lights.
+NormalNote.NeedBoltCutter,,Note.Normal,"사슬이 걸려있다.
+볼트 커터를 찾아보자.","There's a chain here.
+Let's find a bolt cutter."
+NormalNote.NeedLadder,,Note.Normal,사다리가 있으면 올라갈 수 있을 것 같다.,"With a ladder, I think I can climb up."
+NormalNote.LookShelf,,Note.Normal,"책꽂이가 있다.
+SF 소설책, 잡지, 성경책이 있다.","There's a bookshelf.
+There are science fiction novels, magazines, and a Bible."
+SpecialNote.Special.Monitor_2_6,,Special.Monitor_2_6,"인간의 욕심은 끝이 없어,
+신의 영역까지 넘보고 있다.
+
+하지만...
+
+공익을 위해서... 그래, 대의를 위해서라면
+양심을 버려야할 때도 있는 거겠지.","Human greed knows no bounds,
+it even encroaches upon the realm of the divine.
+
+But...
+
+For the common good... yes, for the greater good,
+there are times when one must set aside one's conscience."
+SpecialNote.Special.DemonWarning,,Special.DemonWarning,빛을 쫓아오고 있,Chasing the light...
+SpecialNote.Special.DoorOpenerStorage,,Special.DoorOpenerStorage,상호작용 키를 연타해 유리를 깨세요.,Rapidly press the interaction key to break the glass.
+SpecialNote.Special.MainGateWithOpener,,Special.MainGateWithOpener,상호작용 키를 연타해 문을 해체하세요.,Rapidly press the interaction key to dismantle the door.
+SpecialNote.Special.MainGateHint,,Special.MainGateHint,"연구원1: 문을 수동으로 해체하는 방법 알아?
+
+연구원2: 문을 왜 수동으로 열어?
+
+연구원1: 내가 영화에서 봤는데 유압 오프너를 사용해서 고장난 철문을 열더라고. 그런데 창고에 똑같은 오프너가 있더라.
+
+연구원2: 무슨 미션임파서블 찍냐?
+
+연구원1: 왜, 그 게시판들에 전기가 끊기면 어떻게 대처하라고 메뉴얼이 나와 있잖아. 자가발전도 되는 곳인데 그런 메뉴얼이 반복적으로 써있으니 혹시나 하는 거지.
+
+연구원2: 쓸데없는 소리 말고 보고서나 작성해라. 내일도 실험 있다.","Researcher 1: Do you know how to manually disassemble a door?
+
+Researcher 2: Why would you want to open a door manually?
+
+Researcher 1: I saw it in a movie—they used a hydraulic opener to open a broken steel door. And I noticed we have the exact same opener in the warehouse.
+
+Researcher 2: Are you trying to shoot *Mission: Impossible* or something?
+
+Researcher 1: Why? Those bulletin boards have manuals explaining what to do if the power goes out. Since this place has its own power generator, and those manuals are posted repeatedly, I’m just thinking ""just in case.""
+
+Researcher 2: Stop talking nonsense and get back to writing your report. We have an experiment tomorrow."
+SpecialNote.Special.UnknownNote,,Special.UnknownNote,"이 글을 볼 누군가에게 
+미안하다. 우리는 실패했다.
+아니, 어쩌면 처음부터 오만했다.
+우리는 저 괴물을 이용할 수 있을 것이라 판단했다.
+하지만 반대였다.
+미안하다. 미안하다. 미안하","To whoever is reading this:
+I'm sorry. We failed.
+No, maybe we were arrogant from the start.
+We thought we could control that monster.
+But it turned out to be the opposite.
+I'm sorry. I'm sorry. I'm so s"
+SpecialNote.Special.PowerWarning,,Special.PowerWarning,"[전력 이상 발생 시]
+전력이 불안정할 경우 지하 전력 
+관리실의 배전반을 확인하십시오.","[In Case of a Power Problem]
+If the power is unstable,
+check the distribution panel in the underground power
+control room."
+SpecialNote.Special.PowerOutage,,Special.PowerOutage,"[정전 발생 시]
+정전 발생 시 비상 발전기가 가동됩니다.
+침착하게 전력 관리실을 확인하십시오.","[In the Event of a Power Outage]
+In the event of a power outage, the emergency generator will start up.
+Please calmly check the power control room."
+SpecialNote.Special.DormEntrance,,Special.DormEntrance,숫자 3이 보인다.,I see the number 3.
+SpecialNote.Special.WorkshopBoard,,Special.WorkshopBoard,"[연구 작업실 이용 안내]
+본 작업실은 보고서 작성 및 행정 업무를 위한 공간입니다.
+PC는 업무 목적으로만 사용하십시오.
+
+*컴퓨터로 게임하지 마십시오.","[Research room Usage Guidelines]
+This lab is a space designated for writing reports and performing administrative tasks.
+Please use the computers for work purposes only.
+
+*Do not play games on the computers."
+SpecialNote.Special.ResearcherChat,,Special.ResearcherChat,"연구원1: 그 실험체 DE5i1은 도대체 뭐야?
+
+연구원2: 나도 선배한테 살짝 물어봤는데 선배말로는 정체를 아는 사람은 없는 것 같다는데? 총책임자를 포함해서 말이야. 겉모습만 봤을때는 악마같은데 말이야.
+
+연구원1: 그러게. 내가 여기와서 처음으로 악마나 귀신을 믿게됐잖냐. 진짜 악마인가?
+
+연구원2: 어쩌면 정체를 알아내는 것이 연구 목적일수도 있고.","Researcher 1: What on earth is that test subject, DE5i1?
+
+Researcher 2: I asked my senior about it briefly, and he said it seems like no one knows what it really is—not even the head of the project. Just looking at its appearance, it looks like a demon.
+
+Researcher 1: Exactly. This is the first time I've ever believed in demons or ghosts since I came here. Is it really a demon?
+
+Researcher 2: Maybe figuring out its true nature is the whole point of the research."
+SpecialNote.Special.SecurityNote,,Special.SecurityNote,"나는 이제 전력을 복구한 뒤 생존자를 찾을 것이다.
+생활동 지하실에서 무전이 와서 그곳을 먼저 수색한 후 기숙사로 이동할 예정이다.
+실험실 출입구의 비밀번호를 바꿨다. 바꾼 번호는 수색하면서 남길 테니 뒤를 부탁한다.
+
+추신: 실험체의 지능이 상당히 높아 보여 이런 조치를 취했다. 의미가 있을지는 모르겠지만, 극도로 주의해라.","I will now restore power and search for survivors.
+I received a radio transmission from the basement of the living quarters, so I plan to search there first before moving on to the dormitory.
+I've changed the access code for the lab entrance. I'll leave the new code behind as I search, so please take care of things after I'm gone.
+
+P.S.: I took this precaution because the test subject appears to be quite intelligent. I'm not sure if it will make a difference, but please be extremely careful."
+SpecialNote.Special.USB,,Special.USB,초기 실험 내용 정리본입니다. 확인 후 검토 부탁드립니다.,This is a summary of the initial experiment. Please review it after checking it over.

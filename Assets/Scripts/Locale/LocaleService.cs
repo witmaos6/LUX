@@ -1,10 +1,24 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 
 public class LocaleService : MonoBehaviour
 {
+    static public LocaleService instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    public string GetTableName()
+    {
+        return TableName;
+    }
+
     const string PrefKey = "lux.locale";
+    private const string TableName = "LocaleTable";
 
     IEnumerator Start()
     {

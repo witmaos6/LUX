@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 [CreateAssetMenu(
     fileName = "PlayerScriptSequence",
@@ -9,8 +11,7 @@ public class PlayerScriptSequence : ScriptableObject
     [Serializable]
     public struct Line
     {
-        [TextArea(2, 5)]
-        public string text;
+        public LocalizedString messageRef;
     }
 
     [SerializeField] private Line[] lines;
@@ -22,6 +23,8 @@ public class PlayerScriptSequence : ScriptableObject
         if (index < 0 || index >= LineCount)
             throw new ArgumentOutOfRangeException(nameof(index));
 
-        return lines[index].text;
+        Line line = lines[index];
+        string result = line.messageRef.GetLocalizedString();
+        return result;
     }
 }

@@ -13,8 +13,33 @@ MonoBehaviour:
   m_Name: 2-6CheckScript
   m_EditorClassIdentifier: Assembly-CSharp::PlayerScriptSequence
   lines:
-  - text: "\uD55C \uAC00\uC9C0\uB294 \uC54C \uAC83 \uAC19\uB2E4."
-  - text: "\uC800 \uC0AC\uB78C\uB4E4\uC740 \uADF8 \uAD34\uBB3C\uC744 \uC774\uC6A9\uD558\uB824
-      \uD588\uACE0 \uACB0\uAD6D \uC2E4\uD328\uD588\uB2E4."
-  - text: "\uADF8 \uC2E4\uD328\uAC00 \uC800 \uCC38\uC0C1\uC744 \uB9CC\uB4E4\uC5B4\uB0B8
-      \uAC78\uAE4C?"
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208879
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208880
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  - messageRef:
+      m_TableReference:
+        m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+      m_TableEntryReference:
+        m_KeyId: 17081208881
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
