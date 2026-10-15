@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a0d01ed7efe46458807283b779a638, type: 3}
+  m_Name: TextProfileDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::TextProfileDatabase
+  entries:
+  - key: Item.Flashlight.DisplayName
+    profile: Item.DisplayName
+  - key: Item.Flashlight.Description
+    profile: Item.Description
+  - key: Item.BoltCutter.DisplayName
+    profile: Item.DisplayName
+  - key: Item.BoltCutter.Description
+    profile: Item.Description
+  - key: Item.Password.DisplayName
+    profile: Item.DisplayName
+  - key: Item.Password.Description
+    profile: Item.Description
+  - key: Item.DoorOpener.DisplayName
+    profile: Item.DisplayName
+  - key: Item.DoorOpener.Description
+    profile: Item.Description
+  - key: Item.USB.DisplayName
+    profile: Item.DisplayName
+  - key: Item.USB.Description
+    profile: Item.Description
+  - key: Item.PasswordHint1.DisplayName
+    profile: Item.DisplayName
+  - key: Item.PasswordHint1.Description
+    profile: Item.Description
+  - key: Item.PasswordHint2.DisplayName
+    profile: Item.DisplayName
+  - key: Item.PasswordHint2.Description
+    profile: Item.Description
+  - key: Item.PasswordHint3.DisplayName
+    profile: Item.DisplayName
+  - key: Item.PasswordHint3.Description
+    profile: Item.Description
+  - key: Item.Ladder.DisplayName
+    profile: Item.DisplayName
+  - key: Item.Ladder.Description
+    profile: Item.Description
+  - key: Item.CardKey.DisplayName
+    profile: Item.DisplayName
+  - key: Item.CardKey.Description
+    profile: Item.Description
+  - key: Item.LaboratoryPasswordHint.DisplayName
+    profile: Item.DisplayName
+  - key: Item.LaboratoryPasswordHint.Description
+    profile: Item.Description
+  - key: Clue.InitialExperimentLog.LabReport
+    profile: Clue.LabReport
+  - key: Clue.WitnessedTheDivision.LabReport
+    profile: Clue.LabReport
+  - key: Clue.FissionPhenomenonHypothesis.LabReport
+    profile: Clue.LabReport
+  - key: Clue.ReportForExperiment15.LabReport
+    profile: Clue.LabReport
+  - key: Clue.ReportForExperiment13.LabReport
+    profile: Clue.LabReport
+  - key: Clue.MentemExperimentReport.LabReport
+    profile: Clue.LabReport
+  - key: Clue.ServusExperimentReport.LabReport
+    profile: Clue.LabReport
+  - key: ObjectText.RoomName.DirectorOffice
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Lab
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Lounge
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Security
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Equipment
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Server
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Lobby
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.LabHall
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.DormHall
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Control
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Research
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Storage
+    profile: ObjectText.RoomName
+  - key: ObjectText.RoomName.Dorm
+    profile: ObjectText.RoomName
+  - key: PlayerUI.Intro line 1
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Intro line 2
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Intro line 3
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending1 line 1
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending1 line 2
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending1 line 3
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending Monitor1check line1
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending Monitor1check line2
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending Monitor1check line3
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending 2-6Check line1
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending 2-6Check line2
+    profile: PlayerUI.Dialogue
+  - key: PlayerUI.Ending 2-6Check line3
+    profile: PlayerUI.Dialogue
+  - key: NormalNote.LootBoltCutter
+    profile: Note.Normal
+  - key: NormalNote.LootCardkey
+    profile: Note.Normal
+  - key: NormalNote.LootDoorOpener
+    profile: Note.Normal
+  - key: NormalNote.LootLadder
+    profile: Note.Normal
+  - key: NormalNote.FailedOpenMainGate
+    profile: Note.Normal
+  - key: NormalNote.NeedCardkey
+    profile: Note.Normal
+  - key: NormalNote.NeedPower
+    profile: Note.Normal
+  - key: NormalNote.Restart
+    profile: Note.Normal
+  - key: NormalNote.NeedBoltCutter
+    profile: Note.Normal
+  - key: NormalNote.NeedLadder
+    profile: Note.Normal
+  - key: NormalNote.LookShelf
+    profile: Note.Normal
+  - key: SpecialNote.Special.Monitor_2_6
+    profile: Special.Monitor_2_6
+  - key: SpecialNote.Special.DemonWarning
+    profile: Special.DemonWarning
+  - key: SpecialNote.Special.DoorOpenerStorage
+    profile: Special.DoorOpenerStorage
+  - key: SpecialNote.Special.MainGateWithOpener
+    profile: Special.MainGateWithOpener
+  - key: SpecialNote.Special.MainGateHint
+    profile: Special.MainGateHint
+  - key: SpecialNote.Special.UnknownNote
+    profile: Special.UnknownNote
+  - key: SpecialNote.Special.PowerWarning
+    profile: Special.PowerWarning
+  - key: SpecialNote.Special.PowerOutage
+    profile: Special.PowerOutage
+  - key: SpecialNote.Special.DormEntrance
+    profile: Special.DormEntrance
+  - key: SpecialNote.Special.WorkshopBoard
+    profile: Special.WorkshopBoard
+  - key: SpecialNote.Special.ResearcherChat
+    profile: Special.ResearcherChat
+  - key: SpecialNote.Special.SecurityNote
+    profile: Special.SecurityNote
+  - key: SpecialNote.Special.USB
+    profile: Special.USB

@@ -16,6 +16,8 @@ public sealed class InventoryItemDatabase : ScriptableObject
     {
         public ItemCode itemCode;
         public Sprite icon;
+        public LocalizedString displayNameRef;
+        public LocalizedString descriptionTextRef;
     }
 
     [SerializeField] private TMP_FontAsset uiFont;
@@ -23,26 +25,29 @@ public sealed class InventoryItemDatabase : ScriptableObject
 
     public TMP_FontAsset UIFont => uiFont;
 
-    public string GetDisplayName(ItemCode itemCode)
+    public LocalizedString GetDisplayNameRef(ItemCode code)
     {
-        return CreateLocalizedString(itemCode, "DisplayName");
+        ItemDefinition item = items.Find(definition => definition.itemCode == code);
+        if(item != null)
+        {
+            return item.displayNameRef;
+        }
+        return null;
+    }
+
+    public LocalizedString GetDescriptionRef(ItemCode code)
+    {
+        ItemDefinition item = items.Find(definition => definition.itemCode == code);
+        if (item != null)
+        {
+            return item.descriptionTextRef;
+        }
+        return null;
     }
 
     public Sprite GetIcon(ItemCode itemCode)
     {
         ItemDefinition item = items.Find(definition => definition.itemCode == itemCode);
         return item != null ? item.icon : null;
-    }
-
-    public string GetDescription(ItemCode itemCode)
-    {
-        return CreateLocalizedString(itemCode, "Description");
-    }
-
-    string CreateLocalizedString(ItemCode itemCode, string fieldName)
-    {
-        string Key = $"Item.{itemCode}.{fieldName}";
-        string tableName = LocaleService.instance.GetTableName();
-        return LocalizationSettings.StringDatabase.GetLocalizedString(tableName, Key);
     }
 }

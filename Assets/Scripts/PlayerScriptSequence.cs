@@ -1,7 +1,7 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
 
 [CreateAssetMenu(
     fileName = "PlayerScriptSequence",
@@ -18,13 +18,12 @@ public class PlayerScriptSequence : ScriptableObject
 
     public int LineCount => lines?.Length ?? 0;
 
-    public string GetLine(int index)
+    public void SetText(TMP_Text text, int index)
     {
         if (index < 0 || index >= LineCount)
             throw new ArgumentOutOfRangeException(nameof(index));
 
         Line line = lines[index];
-        string result = line.messageRef.GetLocalizedString();
-        return result;
+        LocaleService.instance.SetLocaleText(text, line.messageRef);
     }
 }

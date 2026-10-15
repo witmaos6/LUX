@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
 using static DropItem;
 
-/// <summary>Creates and updates the inventory panel from UI prefabs.</summary>
 public sealed class InventoryUI : MonoBehaviour
 {
     private const float KeyboardScrollSpeed = 420f;
@@ -124,7 +124,7 @@ public sealed class InventoryUI : MonoBehaviour
         rowRect.anchoredPosition = new Vector2(0f, -index * panel.RowHeight);
         rowRect.sizeDelta = new Vector2(0f, panel.RowHeight - panel.RowSpacing);
 
-        row.SetItem(item, itemDatabase);
+        SetItem(row, item);
         itemRows.Add(row);
     }
 
@@ -133,6 +133,27 @@ public sealed class InventoryUI : MonoBehaviour
         foreach (InventoryItemRowView row in itemRows)
             if (row != null) Destroy(row.gameObject);
         itemRows.Clear();
+    }
+
+    void SetItem(InventoryItemRowView row, ItemCode itemCode)
+    {
+        Sprite itemIcon = itemDatabase.GetIcon(itemCode);
+        if(itemIcon != null)
+        {
+            row.SetIcon(itemIcon);
+        }
+
+        LocalizedString displayNameRef = itemDatabase.GetDisplayNameRef(itemCode);
+        if(displayNameRef != null)
+        {
+            row.SetNameText(displayNameRef);
+        }
+
+        LocalizedString descriptionRef = itemDatabase.GetDescriptionRef(itemCode);
+        if(descriptionRef != null)
+        {
+            row.SetDescriptionText(descriptionRef);
+        }
     }
 
     private void OnDestroy()

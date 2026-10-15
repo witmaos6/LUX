@@ -6503,6 +6503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83995ee7e81ee394b880c16408df9e07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LocaleService
+  textProfileDatabase: {fileID: 11400000, guid: 1c0aed35f0ed84148a96628421d275df, type: 2}
+  countryTextProfileTable: {fileID: 11400000, guid: 9577d463b4d08804a95374a2402ba015, type: 2}
 --- !u!1 &402885174
 GameObject:
   m_ObjectHideFlags: 0

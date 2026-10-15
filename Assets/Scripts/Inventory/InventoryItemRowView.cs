@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 using static DropItem;
 
@@ -9,25 +10,19 @@ public sealed class InventoryItemRowView : MonoBehaviour
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text descriptionText;
 
-    public void SetItem(ItemCode item, InventoryItemDatabase database)
+    public void SetIcon(Sprite icon)
     {
-        Sprite icon = database != null ? database.GetIcon(item) : null;
-        if (iconImage != null)
-        {
-            iconImage.sprite = icon;
-            iconImage.enabled = icon != null;
-        }
+        iconImage.sprite = icon;
+        iconImage.enabled = icon != null;
+    }
 
-        if (nameText != null)
-        {
-            nameText.text = database != null ? database.GetDisplayName(item) : item.ToString();
-            if (database != null && database.UIFont != null) nameText.font = database.UIFont;
-        }
+    public void SetNameText(LocalizedString localizedString)
+    {
+        LocaleService.instance.SetLocaleText(nameText, localizedString);
+    }
 
-        if (descriptionText != null)
-        {
-            descriptionText.text = database != null ? database.GetDescription(item) : string.Empty;
-            if (database != null && database.UIFont != null) descriptionText.font = database.UIFont;
-        }
+    public void SetDescriptionText(LocalizedString localizedString)
+    {
+        LocaleService.instance.SetLocaleText(descriptionText, localizedString);
     }
 }

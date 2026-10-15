@@ -112,7 +112,7 @@ public class PlayerScriptUI : MonoBehaviour
 
         playerController?.EnterScriptMode();
         scriptUI.SetActive(true);
-        scriptText.text = activeSequence.GetLine(currentLineIndex);
+        activeSequence.SetText(scriptText, currentLineIndex);
         nextLineAction.Enable();
         return true;
     }
@@ -145,7 +145,7 @@ public class PlayerScriptUI : MonoBehaviour
             return;
         }
 
-        scriptText.text = activeSequence.GetLine(currentLineIndex);
+        activeSequence.SetText(scriptText, currentLineIndex);
     }
 
     private void Complete()

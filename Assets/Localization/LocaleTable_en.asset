@@ -55,8 +55,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208837
-    m_Localized: "This USB drive contains the experiment data. Once power is restored,
-      let\u2019s plug it into a computer."
+    m_Localized: This USB drive contains the experiment data. Once power is restored,
+      let's plug it into a computer.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208838
