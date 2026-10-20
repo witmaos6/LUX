@@ -120,7 +120,7 @@ public sealed class InventoryUI : MonoBehaviour
         RectTransform rowRect = row.transform as RectTransform;
         rowRect.anchorMin = new Vector2(0f, 1f);
         rowRect.anchorMax = new Vector2(1f, 1f);
-        rowRect.pivot = new Vector2(0.5f, 1f);
+        rowRect.pivot = new Vector2(0f, 1f);
         rowRect.anchoredPosition = new Vector2(0f, -index * panel.RowHeight);
         rowRect.sizeDelta = new Vector2(0f, panel.RowHeight - panel.RowSpacing);
 

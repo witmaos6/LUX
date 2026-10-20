@@ -107,8 +107,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208849
-    m_Localized: "This is a note someone left behind. Let\u2019s think carefully
-      about the order in which to search."
+    m_Localized: This is a note someone left behind. Let's think carefully about
+      the order in which to search.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208850

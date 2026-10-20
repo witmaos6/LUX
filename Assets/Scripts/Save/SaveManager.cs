@@ -30,7 +30,9 @@ public class CheckpointData
 public static class SaveManager
 {
     private const string SaveFileName = "checkpoint.json";
+    private const string LanguageSaveFileName = "language.json";
     private static string SavePath => Path.Combine(Application.persistentDataPath, SaveFileName);
+    private static string LanguageSavePath => Path.Combine(Application.persistentDataPath, LanguageSaveFileName);
 
     private static CheckpointData data = new CheckpointData();
     private static readonly HashSet<string> destroyedLookup = new HashSet<string>();
@@ -218,5 +220,36 @@ public static class SaveManager
         {
             Debug.LogError($"[SaveManager] Failed to write save file: {e.Message}");
         }
+    }
+
+    public static void LanguageSave(string languageCode)
+    {
+        try
+        {
+            File.WriteAllText(LanguageSavePath, languageCode);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"[SaveManager] Failed to write save file: {e.Message}");
+        }
+    }
+
+    public static string LanguageSaveFileLoad()
+    {
+        string languageData = "en";
+        try
+        {
+            if(File.Exists(LanguageSavePath))
+            {
+                string text = File.ReadAllText(LanguageSavePath).Trim();
+                if (!string.IsNullOrEmpty(text))
+                    languageData = text;
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.LogError($"[SaveManager] Failed to read save file: {e.Message}");
+        }
+        return languageData;
     }
 }

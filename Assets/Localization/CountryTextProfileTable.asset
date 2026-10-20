@@ -23,7 +23,7 @@ MonoBehaviour:
         fontSize: 15
     - profileName: Clue.LabReport
       property:
-        fontSize: 30
+        fontSize: 25
     - profileName: ObjectText.RoomName
       property:
         fontSize: 3
@@ -47,7 +47,7 @@ MonoBehaviour:
         fontSize: 30
     - profileName: Special.MainGateHint
       property:
-        fontSize: 30
+        fontSize: 28
     - profileName: Special.UnknownNote
       property:
         fontSize: 36
@@ -65,7 +65,7 @@ MonoBehaviour:
         fontSize: 36
     - profileName: Special.ResearcherChat
       property:
-        fontSize: 30
+        fontSize: 28
     - profileName: Special.SecurityNote
       property:
         fontSize: 30
