@@ -39,6 +39,7 @@ public class RandomPatrolDevil : MonoBehaviour, ISuspicionReceiver, IDevilInterf
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        devilSound = GetComponent<DevilSound>();
     }
 
     private void Start()

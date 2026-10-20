@@ -473,7 +473,7 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     public bool IsChase()
     {
-        return currentState == DevilState.Chase;
+        return currentState == DevilState.Chase || currentState == DevilState.Investigate;
     }
 
     public Vector3 InvestigatePoint()
