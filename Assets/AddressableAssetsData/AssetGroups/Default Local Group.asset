@@ -14,7 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Default Local Group
   m_GUID: 73a110ed40b003949a410ca5f0ea65a0
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 09223c7df46366049931ad27b38e314d
+    m_Address: Assets/Database/ClueInventoryItemDatabase.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c0aed35f0ed84148a96628421d275df
+    m_Address: Assets/Localization/TextProfileDatabase.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 204e29e6412f93247a7a4012c1848e42
+    m_Address: Assets/Event/ScriptEvent/PlayerScript/Monitor1CheckScript.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b0829b09f118334780cb4d5875ca0e9
+    m_Address: Assets/Event/ScriptEvent/PlayerScript/EndingScript.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9577d463b4d08804a95374a2402ba015
+    m_Address: Assets/Localization/CountryTextProfileTable.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5167627e72c81e4180bed95f4ffef42
+    m_Address: Assets/Event/ScriptEvent/PlayerScript/Intro.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1280d5bb1324f2cb9ca2a1a21be0134
+    m_Address: Assets/Database/InventoryItemDatabase.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e874572a11105c74aa1d6ecefa805f3a
+    m_Address: Assets/Event/ScriptEvent/PlayerScript/2-6CheckScript.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 826c3a3d2483f2a47a4b6ac946e38150, type: 2}
   m_SchemaSet:

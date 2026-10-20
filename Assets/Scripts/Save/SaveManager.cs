@@ -236,7 +236,7 @@ public static class SaveManager
 
     public static string LanguageSaveFileLoad()
     {
-        string languageData = "en";
+        string languageData = "";
         try
         {
             if(File.Exists(LanguageSavePath))

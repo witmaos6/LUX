@@ -112,8 +112,8 @@ TextureImporter:
       name: Stair_0
       rect:
         serializedVersion: 2
-        x: 85
-        y: 161
+        x: 86
+        y: 164
         width: 1121
         height: 940
       alignment: 0
@@ -126,6 +126,28 @@ TextureImporter:
       bones: []
       spriteID: e737798a3ebc65510800000000000000
       internalID: 1537640501440115582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stair_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 166
+        width: 1121
+        height: 940
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2ac8f8bf467af4ebd91804354be18d
+      internalID: -679377689
       vertices: []
       indices: 
       edges: []
@@ -147,6 +169,7 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1254.0,"y":1254.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Stair_0: 1537640501440115582
+      Stair_1: -679377689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

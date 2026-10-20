@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4985661606998583940}
   - component: {fileID: 6769924925546423400}
   - component: {fileID: 2862018255064252424}
+  - component: {fileID: 1320689613706734808}
   m_Layer: 0
   m_Name: FallDown_0
   m_TagString: Untagged
@@ -114,3 +115,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1320689613706734808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14709514144312690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3891600d763bb774b83f1772f20a3b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaySoundAnimationEvent
+  outputAudioSource: {fileID: 0}
+  soundClips: []
+  outputMixerGroup: {fileID: 0}
+  playbackPosition: 0
+  spatialBlend: 0
+  volume: 1
+  randomVolumeMultiplier: {x: 0.95, y: 1}
+  randomPitch: {x: 0.97, y: 1.03}
+  minimumInterval: 0
+  requireMovement: 0
+  minimumSpeed: 0.05
