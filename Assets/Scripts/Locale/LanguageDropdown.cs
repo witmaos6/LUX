@@ -25,6 +25,7 @@ public class LanguageDropdown : MonoBehaviour
         if(!string.IsNullOrEmpty(saveCode))
         {
             current = saveCode;
+            LocaleService.Apply(current);
         }
 
         int Index = System.Array.FindIndex(Options, option => option.code == current);

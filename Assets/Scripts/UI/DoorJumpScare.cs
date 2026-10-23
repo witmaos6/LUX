@@ -4,14 +4,18 @@ using UnityEngine.UI;
 
 public class DoorJumpScare : MonoBehaviour
 {
-    [SerializeField] float rotationSpeed = 3.0f;
-    [SerializeField] float rotationAngle = -70.0f;
+    [SerializeField] float startAngle = 0f;
+    [SerializeField] float targetAngle = -70.0f;
     [SerializeField] float startDelay = 0.3f;
     [SerializeField] private AudioClip audioClip;
 
     private AudioSource audioSource;
-    private bool onScare = false;
     private Image childImage;
+
+    [Header("Timed")] // timedDuration 시간 동안 Update함수에 맞춰서 실행되는 헤더
+    [SerializeField] float timedDuration = 0.5f;
+    private bool timedRunning = false;
+    private float timedElapsed = 0f;
 
     private void Awake()
     {
@@ -34,31 +38,63 @@ public class DoorJumpScare : MonoBehaviour
     IEnumerator JumpScare()
     {
         yield return new WaitForSeconds(startDelay);
-        onScare = true;
+
+        BeginTimed();
+    }
+
+    void BeginTimed()
+    {
+        if (timedRunning)
+            return;
+
+        timedRunning = true;
+        timedElapsed = 0f;
+
+        OnTimedBegin();       
+    }
+
+    void OnTimedBegin()
+    {
         childImage.enabled = true;
+        startAngle = transform.eulerAngles.z;
+    }
+
+    void TickTimed(float deltaTime)
+    {
+        if (!timedRunning)
+            return;
+
+        timedElapsed += deltaTime;
+
+        float progress = timedDuration > 0f ? Mathf.Clamp01(timedElapsed / timedDuration) : 1f;
+        OnTimedTick(progress, deltaTime);
+
+        if(timedElapsed >= timedDuration)
+        {
+            OnTimedEnd();
+        }
+    }
+
+    void OnTimedTick(float progress, float deltaTime)
+    {
+        float z = Mathf.LerpAngle(startAngle, targetAngle, progress);
+        transform.rotation = Quaternion.Euler(0f, 0f, z);
+    }
+
+    void OnTimedEnd()
+    {
+        timedRunning = false;
+        if (audioSource && audioClip)
+        {
+            audioSource.Play();
+        }
     }
 
     void Update()
     {
-        if(onScare)
+        if(timedRunning)
         {
-            Quaternion targetRotation = Quaternion.Euler(0f, 0f, rotationAngle);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-            if(Quaternion.Angle(transform.rotation, targetRotation) < 0.1f)
-            {
-                Complete();
-            }
-        }
-    }
-
-    void Complete()
-    {
-        onScare = false;
-
-        if (audioSource && audioClip)
-        {
-            audioSource.Play();
+            TickTimed(Time.deltaTime);
         }
     }
 }

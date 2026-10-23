@@ -79,7 +79,7 @@ public class KeyBindingSettingsUI : MonoBehaviour
         if (settingsPanel != null)
             settingsPanel.SetActive(true);
 
-        SetHint("변경할 항목을 선택하세요.");
+        SetHint("Select the key to change.");
         Refresh();
     }
 
@@ -95,7 +95,7 @@ public class KeyBindingSettingsUI : MonoBehaviour
     {
         StopListening();
         KeyBindingSettings.ResetAll();
-        SetHint("기본 키 설정으로 복원했습니다.");
+        SetHint("Restored to default key settings.");
     }
 
     public void Refresh()
@@ -112,7 +112,7 @@ public class KeyBindingSettingsUI : MonoBehaviour
         StopListening();
         IsCapturingInput = true;
         ConsumedGameplayInputThisFrame = false;
-        SetHint("새 키를 누르세요. (ESC: 취소)");
+        SetHint("Press the new key (ESC: cancel)");
 
         listenOperation = InputSystem.onAnyButtonPress.CallOnce(control =>
         {
@@ -123,18 +123,18 @@ public class KeyBindingSettingsUI : MonoBehaviour
 
             if (control.device is not Keyboard)
             {
-                SetHint("키보드 키만 지정할 수 있습니다.");
+                SetHint("You can specify only the keyboard keys.");
                 return;
             }
 
             if (control == Keyboard.current.escapeKey)
             {
-                SetHint("키 변경을 취소했습니다.");
+                SetHint("The key change has been canceled.");
                 return;
             }
 
             KeyBindingSettings.Set(binding, control.path);
-            SetHint("키가 저장되었습니다.");
+            SetHint("The key has been saved.");
         });
     }
 

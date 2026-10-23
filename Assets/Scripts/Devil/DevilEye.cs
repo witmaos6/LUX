@@ -18,9 +18,9 @@ public class DevilEye : MonoBehaviour
     {
         if(devilInterface != null)
         {
-            bool currentState = devilInterface.IsChase();
+            bool isChase = devilInterface.IsChase();
 
-            if (currentState)
+            if (isChase)
             {
                 ChaseMove();
             }

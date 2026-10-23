@@ -43,7 +43,10 @@ public class LocaleService : MonoBehaviour
     {
         var locale = LocalizationSettings.AvailableLocales.GetLocale(code);
         if (locale == null)
+        {
+            Debug.Log($"{code} is invalid");
             return;
+        }
 
         LocalizationSettings.SelectedLocale = locale;
         if(save)

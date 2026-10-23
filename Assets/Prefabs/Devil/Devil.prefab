@@ -226,8 +226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Devil
   currentState: 0
   patrolSpeed: 2
-  investigateSpeed: 3
-  chaseSpeed: 5
+  investigateSpeed: 5
+  chaseSpeed: 7
   patrolWaypoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -241,11 +241,11 @@ MonoBehaviour:
   suspicionDecayDelay: 3
   suspicionDecayRate: 5
   suspicion: 0
-  distanceToPlayer: 0
   isCollidingWithPlayer: 0
   isPlayerHidden: 0
   playerTransform: {fileID: 0}
   doorArriveDistance: 0.5
+  jumpScareObject: {fileID: 5890865304205254169, guid: 1636949306f88d843b26b7f6a6eb0249, type: 3}
 --- !u!61 &3280357710943042616
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -3,24 +3,44 @@ using UnityEngine;
 
 public class TriggerSpawn : TriggerCollision
 {
+    enum SpawnPointSetting
+    {
+        CollisionObjectSpawn,
+        TriggerPointSpawn,
+        // 필요하면 스폰 지점을 수동으로 설정하는 것 추가
+    }
     [SerializeField] private GameObject spawnObject;
     [SerializeField] private float showDuration = 0.5f;
     [SerializeField] private float fadeOutDuration = 0.5f;
+    [SerializeField] SpawnPointSetting spawnPoint;
+    [SerializeField] bool setPrarent = false;
 
     private GameObject spawnInstance;
     private SpriteRenderer sr;
-    private Transform collisionTransform;
+    private Transform spawnTransform;
 
     public override void EnterTrigger(GameObject collisionObject)
     {
-        collisionTransform = collisionObject.transform;
+        SetSpawnTransform(collisionObject);
 
         if(spawnObject != null)
         {
-            spawnInstance = Instantiate(spawnObject, collisionTransform);
+            spawnInstance = Instantiate(spawnObject, spawnTransform, setPrarent);
             sr = spawnInstance.GetComponent<SpriteRenderer>();
 
             StartCoroutine(ShowTime());
+        }
+    }
+
+    void SetSpawnTransform(GameObject collisionObject)
+    {
+        if(spawnPoint == SpawnPointSetting.CollisionObjectSpawn)
+        {
+            spawnTransform = collisionObject.transform;
+        }
+        else if(spawnPoint == SpawnPointSetting.TriggerPointSpawn)
+        {
+            spawnTransform = transform;
         }
     }
 

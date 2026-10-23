@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,7 +24,6 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     [Header("Patrol Settings (Waypoints)")]
     public Transform[] patrolWaypoints;
-    private int currentWaypointIndex = 0;
 
     [Header("Target Arrival Settings")]
     public float targetWaitTime = 1f;
@@ -42,7 +42,6 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     [Header("Devil Info (Runtime, Debug)")]
     public float suspicion;
-    public float distanceToPlayer;
     public bool isCollidingWithPlayer;
     public bool isPlayerHidden;
 
@@ -52,30 +51,37 @@ public class Devil : MonoBehaviour, IDevilInterface
     [Header("Door / Zone Transition")]
     public float doorArriveDistance = 0.5f;
 
-    private DevilSound devilSound;
+    [Header("Jump Scare")]
+    [SerializeField] GameObject jumpScareObject;
+
+    public Action OnPlayerExecuted;
+
+    private const float StopDistance = 0.5f;
+
+    private readonly List<Vector3> investigatePoints = new List<Vector3>();
+
     private AnimationComponent animationComponent;
+    private DevilSound devilSound;
 
-    public System.Action OnPlayerExecuted;
-
-    private Vector3 lastDetectedPosition;
-    private Vector3 lastHiddenPosition;
+    private DevilState previousState;
     private GameObject zoneChangeDoor;
-    private Vector3 investigateOrigin;
-
-    private float lastDetectionTime = -999f;
-    private bool hasExecuted = false;
-    private bool isInDoorTransition = false;
 
     private Vector3 destination;
-    private bool hasDestination = false;
-    private float currentSpeed = 0f;
-    private const float stopDistance = 0.5f;
+    private Vector3 investigateOrigin;
+    private Vector3 lastDetectedPosition;
+    private Vector3 lastHiddenPosition;
 
-    private bool isWaiting = false;
-    private float waitTimer = 0f;
+    private float currentSpeed;
+    private float lastDetectionTime = -999f;
+    private float waitTimer;
 
-    private List<Vector3> investigatePoints = new List<Vector3>();
+    private int currentWaypointIndex;
     private int investigatePointIndex = -1;
+
+    private bool hasDestination;
+    private bool hasExecuted;
+    private bool isInDoorTransition;
+    private bool isWaiting;
 
     private void Awake()
     {
@@ -85,12 +91,7 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     private void Start()
     {
-        if (playerTransform == null)
-        {
-            GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-            if (playerObj != null)
-                playerTransform = playerObj.transform;
-        }
+        FindPlayerIfNeeded();
 
         DevilDispatcher.Instance.AddDevil(this);
 
@@ -99,17 +100,11 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     private void Update()
     {
-        if (hasExecuted) return;
-
-        if (playerTransform != null)
-            distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        if (hasExecuted)
+            return;
 
         UpdateSuspicionDecay();
-
-        DevilState newState = EvaluateBehavior();
-        if (newState != currentState)
-            ChangeState(newState);
-
+        UpdateState();
         RunStateMovement();
 
         if (hasDestination)
@@ -118,39 +113,30 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     public void AddSuspicion(Vector3 sourcePosition, float range, float strength)
     {
-        if (hasExecuted || range <= 0f || !gameObject.activeSelf) return;
+        if (hasExecuted || !gameObject.activeSelf || range <= 0f)
+            return;
 
         float distance = Vector3.Distance(transform.position, sourcePosition);
-        if (distance > range) return;
+        if (distance > range)
+            return;
 
-        float weight = 1f - Mathf.Clamp01(distance / range);
-        if(suspicion <= 0f)
-        {
+        float distanceWeight = 1f - Mathf.Clamp01(distance / range);
+
+        if (suspicion <= 0f)
             devilSound.PlayDetectSound();
-        }
-        suspicion = Mathf.Clamp(suspicion + strength * weight, 0f, maxSuspicion);
+
+        suspicion = Mathf.Clamp(suspicion + strength * distanceWeight, 0f, maxSuspicion);
 
         lastDetectedPosition = sourcePosition;
         lastDetectionTime = Time.time;
     }
 
-    private void UpdateSuspicionDecay()
-    {
-        if (suspicion <= 0f) return;
-
-        if (Time.time - lastDetectionTime >= suspicionDecayDelay)
-        {
-            suspicion = Mathf.Max(0f, suspicion - suspicionDecayRate * Time.deltaTime);
-        }
-    }
-
     public void SetPlayerHidden(bool hidden, Vector3 lastPositionBeforeHide)
     {
         isPlayerHidden = hidden;
+
         if (hidden)
-        {
             lastHiddenPosition = lastPositionBeforeHide;
-        }
     }
 
     public void NotifyZoneChange(GameObject doorObject)
@@ -158,34 +144,46 @@ public class Devil : MonoBehaviour, IDevilInterface
         zoneChangeDoor = doorObject;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public bool IsChase()
     {
-        if (other.CompareTag("Player"))
-            isCollidingWithPlayer = true;
+        return currentState == DevilState.Chase || currentState == DevilState.Investigate;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    public Vector3 InvestigatePoint()
     {
-        if (other.CompareTag("Player"))
-        {
-            isCollidingWithPlayer = true;
-
-            PlayerController controller = other.GetComponent<PlayerController>();
-            if (controller != null)
-            {
-                PlayerController.PlayerState playerState = controller.GetState();
-                if (playerState == PlayerController.PlayerState.Normal || (playerState == PlayerController.PlayerState.Hide && suspicion >= executeSuspicionThreshold))
-                {
-                    controller.Dead();
-                }
-            }
-        }
+        return lastDetectedPosition;
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void FindPlayerIfNeeded()
     {
-        if (other.CompareTag("Player"))
-            isCollidingWithPlayer = false;
+        if (playerTransform != null)
+            return;
+
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObject != null)
+            playerTransform = playerObject.transform;
+    }
+
+    private void UpdateSuspicionDecay()
+    {
+        if (suspicion <= 0f)
+            return;
+
+        if (Time.time - lastDetectionTime < suspicionDecayDelay)
+            return;
+
+        suspicion = Mathf.Max(
+            0f,
+            suspicion - suspicionDecayRate * Time.deltaTime);
+    }
+
+    private void UpdateState()
+    {
+        DevilState nextState = EvaluateBehavior();
+
+        if (nextState != currentState)
+            ChangeState(nextState);
     }
 
     private DevilState EvaluateBehavior()
@@ -202,82 +200,113 @@ public class Devil : MonoBehaviour, IDevilInterface
             return DevilState.Investigate;
         }
 
-        if (isCollidingWithPlayer)
-        {
-            if (isPlayerHidden)
-            {
-                if (suspicion >= executeSuspicionThreshold)
-                    return DevilState.Execute;
+        if (isPlayerHidden)
+            return EvaluateHiddenPlayerBehavior();
 
-                investigateOrigin = lastHiddenPosition;
-                return DevilState.Investigate;
-            }
-            else
-            {
-                return DevilState.Execute;
-            }
-        }
-        else
+        return isCollidingWithPlayer ? DevilState.Execute : DevilState.Chase;
+    }
+
+    private DevilState EvaluateHiddenPlayerBehavior()
+    {
+        if (suspicion >= executeSuspicionThreshold)
         {
-            return DevilState.Chase;
+            return isCollidingWithPlayer ? DevilState.Execute : DevilState.Chase;
         }
-    } 
+
+        investigateOrigin = lastHiddenPosition;
+        return DevilState.Investigate;
+    }
 
     private void ChangeState(DevilState newState)
     {
+        previousState = currentState;
         currentState = newState;
+
         isWaiting = false;
         waitTimer = 0f;
 
         switch (currentState)
         {
             case DevilState.Patrol:
-                currentSpeed = patrolSpeed;
-                zoneChangeDoor = null;
-                
-                investigatePoints.Clear();
-                investigatePointIndex = -1;
-
-                if (patrolWaypoints != null && patrolWaypoints.Length > 0)
-                {
-                    destination = patrolWaypoints[currentWaypointIndex].position;
-                    hasDestination = true;
-                }
-                else
-                {
-                    hasDestination = false;
-                }
+                EnterPatrolState();
                 break;
 
             case DevilState.Investigate:
-
-                devilSound.PlayInvestigateSound();
-
-                currentSpeed = investigateSpeed;
-                zoneChangeDoor = null;
-
-                destination = investigateOrigin;
-                hasDestination = true;
-
-                GenerateInvestigatePoints(investigateOrigin);
-                investigatePointIndex = -1;
+                if(previousState == DevilState.Chase)
+                {
+                    OnInvestigateJumpScare();
+                }
+                
+                EnterInvestigateState();
                 break;
 
             case DevilState.Chase:
-                currentSpeed = chaseSpeed;
-                UpdateChaseDestination();
+                EnterChaseState();
                 break;
 
             case DevilState.Execute:
-                if (!hasExecuted)
-                {
-                    hasExecuted = true;
-                    hasDestination = false;
-                    currentSpeed = 0f;
-                    OnPlayerExecuted?.Invoke();
-                }
+                EnterExecuteState();
                 break;
         }
+    }
+
+    private void EnterPatrolState()
+    {
+        currentSpeed = patrolSpeed;
+        zoneChangeDoor = null;
+
+        investigatePoints.Clear();
+        investigatePointIndex = -1;
+
+        if (patrolWaypoints == null || patrolWaypoints.Length == 0)
+        {
+            hasDestination = false;
+            return;
+        }
+
+        destination = patrolWaypoints[currentWaypointIndex].position;
+        hasDestination = true;
+    }
+
+    void OnInvestigateJumpScare()
+    {
+        if(playerTransform != null)
+        {
+            GameObject jumpScareInstance = Instantiate(jumpScareObject, playerTransform.position, playerTransform.rotation);
+            Destroy(jumpScareInstance, 3.0f);
+        }
+    }
+
+    private void EnterInvestigateState()
+    {
+        devilSound.PlayInvestigateSound();
+
+        currentSpeed = investigateSpeed;
+        zoneChangeDoor = null;
+
+        destination = investigateOrigin;
+        hasDestination = true;
+
+        GenerateInvestigatePoints(investigateOrigin);
+        investigatePointIndex = -1;
+    }
+
+    private void EnterChaseState()
+    {
+        currentSpeed = chaseSpeed;
+        UpdateChaseDestination();
+    }
+
+    private void EnterExecuteState()
+    {
+        if (hasExecuted)
+            return;
+
+        hasExecuted = true;
+        hasDestination = false;
+        currentSpeed = 0f;
+
+        OnPlayerExecuted?.Invoke();
     }
 
     private void RunStateMovement()
@@ -287,13 +316,13 @@ public class Devil : MonoBehaviour, IDevilInterface
             case DevilState.Patrol:
                 UpdatePatrolMovement();
                 break;
+
             case DevilState.Investigate:
                 UpdateInvestigateMovement();
                 break;
+
             case DevilState.Chase:
                 UpdateChaseMovement();
-                break;
-            case DevilState.Execute:
                 break;
         }
     }
@@ -310,62 +339,59 @@ public class Devil : MonoBehaviour, IDevilInterface
             return;
         }
 
-        if (HasReachedDestination())
-        {
-            if (!isWaiting)
-            {
-                isWaiting = true;
-                waitTimer = 0f;
-                return;
-            }
+        if (!HasReachedDestination())
+            return;
 
-            waitTimer += Time.deltaTime;
-            if (waitTimer >= targetWaitTime)
-            {
-                isWaiting = false;
-                MoveToNextWaypoint();
-            }
-        }
+        if (HasFinishedWaiting())
+            MoveToNextWaypoint();
     }
 
     private void MoveToNextWaypoint()
     {
         currentWaypointIndex = (currentWaypointIndex + 1) % patrolWaypoints.Length;
+
         destination = patrolWaypoints[currentWaypointIndex].position;
         hasDestination = true;
+    }
+
+    private void UpdateInvestigateMovement()
+    {
+        if (!hasDestination || !HasReachedDestination())
+            return;
+
+        if (HasFinishedWaiting())
+            AdvanceInvestigatePoint();
+    }
+
+    private bool HasFinishedWaiting()
+    {
+        if (!isWaiting)
+        {
+            isWaiting = true;
+            waitTimer = 0f;
+            return false;
+        }
+
+        waitTimer += Time.deltaTime;
+
+        if (waitTimer < targetWaitTime)
+            return false;
+
+        isWaiting = false;
+        return true;
     }
 
     private void GenerateInvestigatePoints(Vector3 center)
     {
         investigatePoints.Clear();
 
-        int count = Random.Range(investigateMinPoints, investigateMaxPoints + 1);
-        for (int i = 0; i < count; i++)
+        int pointCount = UnityEngine.Random.Range(investigateMinPoints, investigateMaxPoints + 1);
+
+        for (int i = 0; i < pointCount; i++)
         {
-            Vector2 offset = Random.insideUnitCircle * investigateWanderDistance;
+            Vector2 offset = UnityEngine.Random.insideUnitCircle * investigateWanderDistance;
+
             investigatePoints.Add(new Vector3(center.x + offset.x, center.y + offset.y, transform.position.z));
-        }
-    }
-
-    private void UpdateInvestigateMovement()
-    {
-        if (!hasDestination) return;
-
-        if (HasReachedDestination())
-        {
-            if (!isWaiting)
-            {
-                isWaiting = true;
-                waitTimer = 0f;
-                return;
-            }
-
-            waitTimer += Time.deltaTime;
-            if (waitTimer >= targetWaitTime)
-            {
-                isWaiting = false;
-                AdvanceInvestigatePoint();
-            }
         }
     }
 
@@ -383,52 +409,60 @@ public class Devil : MonoBehaviour, IDevilInterface
         hasDestination = true;
     }
 
+    private void UpdateChaseMovement()
+    {
+        if (zoneChangeDoor == null)
+        {
+            UpdateChaseDestination();
+            return;
+        }
+
+        UpdateDoorChaseMovement();
+    }
+
+    private void UpdateDoorChaseMovement()
+    {
+        if (isInDoorTransition)
+            return;
+
+        destination = zoneChangeDoor.transform.position;
+        hasDestination = true;
+
+        if (Vector3.Distance(transform.position, destination) > doorArriveDistance)
+        {
+            return;
+        }
+
+        Door door = zoneChangeDoor.GetComponent<Door>();
+        if (door != null)
+        {
+            StartCoroutine(DoorTransitionRoutine(zoneChangeDoor, door));
+            return;
+        }
+
+        ClearDoorTarget();
+        UpdateChaseDestination();
+    }
+
     private void UpdateChaseDestination()
     {
         if (zoneChangeDoor != null)
         {
             destination = zoneChangeDoor.transform.position;
             hasDestination = true;
+            return;
         }
-        else if (playerTransform != null)
+
+        if (playerTransform != null)
         {
             destination = playerTransform.position;
             hasDestination = true;
         }
     }
 
-    private void UpdateChaseMovement()
-    {
-        if (zoneChangeDoor != null)
-        {
-            if (isInDoorTransition)
-                return;
-
-            destination = zoneChangeDoor.transform.position;
-            hasDestination = true;
-
-            if (Vector3.Distance(transform.position, destination) <= doorArriveDistance)
-            {
-                Door door = zoneChangeDoor.GetComponent<Door>();
-                if (door != null)
-                {
-                    StartCoroutine(DoorTransitionRoutine(zoneChangeDoor, door));
-                }
-                else
-                {
-                    HandleDoorPassThrough(zoneChangeDoor, Vector3.zero, false);
-                    UpdateChaseDestination();
-                }
-            }
-        }
-        else if (playerTransform != null)
-        {
-            destination = playerTransform.position;
-            hasDestination = true;
-        }
-    }
-
-    private IEnumerator DoorTransitionRoutine(GameObject doorObject, Door door)
+    private IEnumerator DoorTransitionRoutine(
+        GameObject doorObject,
+        Door door)
     {
         isInDoorTransition = true;
         hasDestination = false;
@@ -441,43 +475,68 @@ public class Devil : MonoBehaviour, IDevilInterface
             yield break;
 
         Vector3 targetPosition = door.moveTarget != null ? door.moveTarget.transform.position : door.movePosition;
-        HandleDoorPassThrough(doorObject, targetPosition, true);
+
+        transform.position = new Vector3(targetPosition.x, targetPosition.y, transform.position.z);
+
+        animationComponent?.ResyncPosition();
+
+        ClearDoorTarget();
         UpdateChaseDestination();
     }
 
-    private void HandleDoorPassThrough(GameObject doorObject, Vector3 movePosition, bool teleport)
+    private void ClearDoorTarget()
     {
-        if (teleport)
-        {
-            transform.position = new Vector3(movePosition.x, movePosition.y, transform.position.z);
-
-            if (animationComponent != null)
-            {
-                animationComponent.ResyncPosition();
-            }
-        }
-
         zoneChangeDoor = null;
     }
 
     private void MoveTowardsDestination()
     {
-        transform.position = Vector3.MoveTowards(transform.position, destination, currentSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(
+            transform.position,
+            destination,
+            currentSpeed * Time.deltaTime);
     }
 
     private bool HasReachedDestination()
     {
-        if (!hasDestination) return false;
-        return Vector3.Distance(transform.position, destination) <= stopDistance;
+        return hasDestination
+            && Vector3.Distance(transform.position, destination)
+                <= StopDistance;
     }
 
-    public bool IsChase()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        return currentState == DevilState.Chase || currentState == DevilState.Investigate;
+        if (other.CompareTag("Player"))
+            isCollidingWithPlayer = true;
     }
 
-    public Vector3 InvestigatePoint()
+    private void OnTriggerStay2D(Collider2D other)
     {
-        return lastDetectedPosition;
+        if (!other.CompareTag("Player"))
+            return;
+
+        isCollidingWithPlayer = true;
+
+        PlayerController controller =
+            other.GetComponent<PlayerController>();
+
+        if (controller == null)
+            return;
+
+        PlayerController.PlayerState playerState =
+            controller.GetState();
+
+        bool isNormalPlayer = playerState == PlayerController.PlayerState.Normal;
+
+        bool canExecuteHiddenPlayer = playerState == PlayerController.PlayerState.Hide && suspicion >= executeSuspicionThreshold;
+
+        if (isNormalPlayer || canExecuteHiddenPlayer)
+            controller.Dead();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            isCollidingWithPlayer = false;
     }
 }
