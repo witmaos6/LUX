@@ -103,12 +103,12 @@ TextureImporter:
       name: Devil_Eye 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1254
-        height: 1254
+        x: 529
+        y: 543
+        width: 196
+        height: 179
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d779ebe12ab3f924881555e327ebae65
     internalID: 0
     vertices: []
     indices: 

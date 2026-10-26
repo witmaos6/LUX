@@ -272,8 +272,12 @@ public class Devil : MonoBehaviour, IDevilInterface
     {
         if(playerTransform != null)
         {
-            GameObject jumpScareInstance = Instantiate(jumpScareObject, playerTransform.position, playerTransform.rotation);
-            Destroy(jumpScareInstance, 3.0f);
+            Transform canvasTransform = GameObject.Find("Canvas").transform;
+            if(canvasTransform != null)
+            {
+                GameObject jumpScareInstance = Instantiate(jumpScareObject, canvasTransform);
+                Destroy(jumpScareInstance, 3.0f);
+            }
         }
     }
 

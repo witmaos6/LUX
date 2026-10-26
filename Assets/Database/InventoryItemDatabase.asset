@@ -35,7 +35,7 @@ MonoBehaviour:
       m_WaitForCompletion: 0
       m_LocalVariables: []
   - itemCode: 1
-    icon: {fileID: 4251333813383773966, guid: 395d663e7fca8c146a107084d68a64d0, type: 3}
+    icon: {fileID: -5355702295209642166, guid: 377b5f16a59de824d8ca9463dd116e1f, type: 3}
     displayNameRef:
       m_TableReference:
         m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b

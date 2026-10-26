@@ -245,7 +245,7 @@ MonoBehaviour:
   isPlayerHidden: 0
   playerTransform: {fileID: 0}
   doorArriveDistance: 0.5
-  jumpScareObject: {fileID: 5890865304205254169, guid: 1636949306f88d843b26b7f6a6eb0249, type: 3}
+  jumpScareObject: {fileID: 9136188388522215747, guid: fdbe7703bc5f49b4f969ddab44fc1fb6, type: 3}
 --- !u!61 &3280357710943042616
 BoxCollider2D:
   m_ObjectHideFlags: 0
