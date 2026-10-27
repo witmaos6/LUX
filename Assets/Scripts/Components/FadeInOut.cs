@@ -29,6 +29,7 @@ public class FadeInOut : MonoBehaviour
         Color color = sr.color;
         float elapsed = 0f;
 
+        // tick 진행
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
@@ -38,7 +39,9 @@ public class FadeInOut : MonoBehaviour
             yield return null;
         }
 
+        // 완료
         color.a = to;
         sr.color = color;
+        Destroy(gameObject);
     }
 }

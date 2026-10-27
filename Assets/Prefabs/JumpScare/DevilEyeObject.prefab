@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4972812522011146248}
   - component: {fileID: 5683525007934930050}
   m_Layer: 0
-  m_Name: Devil_Eye 1_0
+  m_Name: DevilEyeObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7362252471095451330}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 85.49, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -104,7 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22991a47964cd5642a2f575aed8484f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerCameraJumpScare
-  targetScaleOffset: 3
+  targetScaleOffset: 5
   restorationScaleOffset: 2
-  jumpScareProgress: 0.7
+  jumpScareProgress: 1
+  targetPositionOffset: -50
   timedDuration: 1

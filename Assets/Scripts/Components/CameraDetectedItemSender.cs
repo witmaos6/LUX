@@ -3,7 +3,7 @@ using static DropItem;
 
 [DisallowMultipleComponent]
 [RequireComponent(typeof(CameraVisibilityNotifier))]
-public sealed class CameraDetectedItemSender : MonoBehaviour
+public sealed class CameraDetectedItemSender : MonoBehaviour // 현재 프로젝트에서 사용 안함
 {
     [Header("Item")]
     [Tooltip("활성화하면 같은 오브젝트의 DropItem에서 아이템 코드를 읽습니다.")]

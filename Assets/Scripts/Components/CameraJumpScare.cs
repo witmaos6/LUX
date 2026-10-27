@@ -1,14 +1,18 @@
 using UnityEngine;
 
-public class TriggerCameraJumpScare : MonoBehaviour // To do: Components 파일로 이동 및 CameraJumpScare로 이름 변경
+public class CameraJumpScare : MonoBehaviour
 {
     [SerializeField] float targetScaleOffset = 5f;
     [SerializeField] float restorationScaleOffset = 3f;
     [SerializeField] float jumpScareProgress = 0.7f;
+    [SerializeField] float targetPositionOffset = 10f;
 
     float originScale = 1f;
     float targetScale;
     float restorationScale;
+
+    float originPosition = 0;
+    float targetPosition = 0f;
 
     [Header("Timed")]
     [SerializeField] float timedDuration = 1f;
@@ -63,9 +67,12 @@ public class TriggerCameraJumpScare : MonoBehaviour // To do: Components 파일로 
 
     void OnTimedBegin()
     {
-        originScale = transform.position.x;
+        originScale = transform.localScale.x;
         targetScale = originScale * targetScaleOffset;
         restorationScale = originScale * restorationScaleOffset;
+
+        originPosition = transform.position.x;
+        targetPosition = transform.position.x + targetPositionOffset;
     }
     void OnTimedTick(float progress, float deltaTime)
     {
@@ -81,6 +88,9 @@ public class TriggerCameraJumpScare : MonoBehaviour // To do: Components 파일로 
 
             transform.localScale = new Vector3(currentScale, currentScale, currentScale);
         }
+
+        float currentX = Mathf.Lerp(originPosition, targetPosition, progress);
+        transform.position = new Vector3(currentX, transform.position.y);
     }
     void OnTimedEnd()
     {

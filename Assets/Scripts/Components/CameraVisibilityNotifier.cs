@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [DisallowMultipleComponent]
-public class CameraVisibilityNotifier : MonoBehaviour
+public class CameraVisibilityNotifier : MonoBehaviour // 현재 프로젝트에서 사용 안함
 {
     [Header("Detection")]
     [SerializeField] private Camera targetCamera;

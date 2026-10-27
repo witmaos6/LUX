@@ -103,10 +103,10 @@ TextureImporter:
       name: Door_0
       rect:
         serializedVersion: 2
-        x: 475
+        x: 454
         y: 71
-        width: 588
-        height: 896
+        width: 621
+        height: 912
       alignment: 9
       pivot: {x: 0.5, y: 0.34}
       border: {x: 0, y: 0, z: 0, w: 0}

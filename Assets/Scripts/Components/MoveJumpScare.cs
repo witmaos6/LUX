@@ -83,5 +83,8 @@ public class MoveJumpScare : MonoBehaviour
 
         transform.position = new Vector3(x, y, z);
     }
-    void OnTimedEnd() { } // Timer가 종료될 때 실행할 작업
+    void OnTimedEnd()
+    {
+        Destroy(gameObject);
+    }
 }

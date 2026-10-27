@@ -13,8 +13,6 @@ public class TriggerSpawn : TriggerCollision
     
     [SerializeField] SpawnPointSetting spawnPoint;
     [SerializeField] bool setPrarent = false;
-
-    private GameObject spawnInstance;
     
     private Transform spawnTransform;
 
@@ -24,7 +22,7 @@ public class TriggerSpawn : TriggerCollision
 
         if(spawnObject != null)
         {
-            spawnInstance = Instantiate(spawnObject, spawnTransform, setPrarent);
+            Instantiate(spawnObject, spawnTransform, setPrarent);
         }
     }
 
@@ -42,9 +40,6 @@ public class TriggerSpawn : TriggerCollision
 
     public override void ExitTrigger(GameObject collisionObject)
     {
-        if(spawnInstance != null)
-            Destroy(spawnInstance);
-
         Destroy(gameObject);
     }
 }
