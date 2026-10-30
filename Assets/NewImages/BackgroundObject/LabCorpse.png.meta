@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 62ace13da61d8e14c9cf2cd87724c66d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -734624969577057220
+    second: LabCorpse_0
+  - first:
+      213: -1239016968205514983
+    second: LabCorpse_1
+  - first:
+      213: 7148505125601569194
+    second: LabCorpse_2
+  - first:
+      213: 333520922447977356
+    second: LabCorpse_3
+  - first:
+      213: 8596055769875414576
+    second: LabCorpse_4
+  - first:
+      213: -3011709924835636612
+    second: LabCorpse_5
+  - first:
+      213: 3139009352224598123
+    second: LabCorpse_6
+  - first:
+      213: -5141979753199882153
+    second: LabCorpse_7
+  - first:
+      213: -5288668331359253343
+    second: LabCorpse_8
+  - first:
+      213: -6380022610609856885
+    second: LabCorpse_9
+  - first:
+      213: -6900913044493778938
+    second: LabCorpse_10
+  - first:
+      213: 6546936409410502857
+    second: LabCorpse_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LabCorpse_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 740
+        width: 312
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c343a3d7b761ec5f0800000000000000
+      internalID: -734624969577057220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 746
+        width: 378
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917cd6bc1a02ecee0800000000000000
+      internalID: -1239016968205514983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_2
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 747
+        width: 269
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa96a8e8987943360800000000000000
+      internalID: 7148505125601569194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_3
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 749
+        width: 354
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b1cab0387e0a400800000000000000
+      internalID: 333520922447977356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 483
+        width: 357
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03efed8cd235b4770800000000000000
+      internalID: 8596055769875414576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_5
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 452
+        width: 414
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a47a3b7c14436d0800000000000000
+      internalID: -3011709924835636612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_6
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 467
+        width: 253
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68e9f9ef50009b20800000000000000
+      internalID: 3139009352224598123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_7
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 451
+        width: 291
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750354868a404a8b0800000000000000
+      internalID: -5141979753199882153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 346
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac49765c20ea96b0800000000000000
+      internalID: -5288668331359253343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_9
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 190
+        width: 329
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e93ab0d3b9577a0800000000000000
+      internalID: -6380022610609856885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_10
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 185
+        width: 391
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600c61d06280b30a0800000000000000
+      internalID: -6900913044493778938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LabCorpse_11
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 189
+        width: 303
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c00cf92af36bda50800000000000000
+      internalID: 6546936409410502857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e47fc1527c01909449dc8764351f4758
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LabCorpse_0: -734624969577057220
+      LabCorpse_1: -1239016968205514983
+      LabCorpse_10: -6900913044493778938
+      LabCorpse_11: 6546936409410502857
+      LabCorpse_2: 7148505125601569194
+      LabCorpse_3: 333520922447977356
+      LabCorpse_4: 8596055769875414576
+      LabCorpse_5: -3011709924835636612
+      LabCorpse_6: 3139009352224598123
+      LabCorpse_7: -5141979753199882153
+      LabCorpse_8: -5288668331359253343
+      LabCorpse_9: -6380022610609856885
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

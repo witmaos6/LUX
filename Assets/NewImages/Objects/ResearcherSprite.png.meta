@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: a4a11b70f34b02e478a1cc2bc3c0360e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8515451496813562226
+    second: ResearcherSprite_0
+  - first:
+      213: 90765921792772027
+    second: ResearcherSprite_1
+  - first:
+      213: 6545783011146005986
+    second: ResearcherSprite_2
+  - first:
+      213: 8411375223264100694
+    second: ResearcherSprite_3
+  - first:
+      213: -590891049034988293
+    second: ResearcherSprite_4
+  - first:
+      213: -4340831041989447114
+    second: ResearcherSprite_5
+  - first:
+      213: 4018776412852497681
+    second: ResearcherSprite_6
+  - first:
+      213: 4294388922433223525
+    second: ResearcherSprite_7
+  - first:
+      213: -8288964780549476079
+    second: ResearcherSprite_8
+  - first:
+      213: -8093333381541179287
+    second: ResearcherSprite_9
+  - first:
+      213: 303270251349454429
+    second: ResearcherSprite_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ResearcherSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 544
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86fb5efaf903d980800000000000000
+      internalID: -8515451496813562226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearcherSprite_1
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 117
+        width: 544
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb74b2eff17724100800000000000000
+      internalID: 90765921792772027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ResearcherSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 136
+        width: 544
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf4cf49b8bbbcc7f0800000000000000
+      internalID: -590891049034988293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bdd8a90617d36224a996069b004f16cc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ResearcherSprite_0: -8515451496813562226
+      ResearcherSprite_1: 90765921792772027
+      ResearcherSprite_10: 303270251349454429
+      ResearcherSprite_2: 6545783011146005986
+      ResearcherSprite_3: 8411375223264100694
+      ResearcherSprite_4: -590891049034988293
+      ResearcherSprite_5: -4340831041989447114
+      ResearcherSprite_6: 4018776412852497681
+      ResearcherSprite_7: 4294388922433223525
+      ResearcherSprite_8: -8288964780549476079
+      ResearcherSprite_9: -8093333381541179287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

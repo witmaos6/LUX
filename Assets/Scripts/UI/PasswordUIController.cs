@@ -26,7 +26,7 @@ public class PasswordUIController : MonoBehaviour
     {
         currentActiveLock = targetLock;
         currentInput = "";
-        displayText.color = Color.black;
+        displayText.color = Color.white;
 
         if (blurredHintObject != null && showHint == true)
         {

@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: 666884d124ae7344298f93fa85fe2f61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8186593587375617061
+    second: SecurityCorpse_0
+  - first:
+      213: 5992580195213379824
+    second: SecurityCorpse_1
+  - first:
+      213: -1192943833814892389
+    second: SecurityCorpse_2
+  - first:
+      213: 1366820308436700498
+    second: SecurityCorpse_3
+  - first:
+      213: -8022219483770781046
+    second: SecurityCorpse_4
+  - first:
+      213: -7443632276626818899
+    second: SecurityCorpse_5
+  - first:
+      213: -5237925556353883991
+    second: SecurityCorpse_6
+  - first:
+      213: -8212630172371202326
+    second: SecurityCorpse_7
+  - first:
+      213: -8358938701264118351
+    second: SecurityCorpse_8
+  - first:
+      213: -3330819447483712992
+    second: SecurityCorpse_9
+  - first:
+      213: -3485513511621137421
+    second: SecurityCorpse_10
+  - first:
+      213: 7168200487581342748
+    second: SecurityCorpse_11
+  - first:
+      213: -1868994850373023001
+    second: SecurityCorpse_12
+  - first:
+      213: 5953230578956314865
+    second: SecurityCorpse_13
+  - first:
+      213: 1206087445099878973
+    second: SecurityCorpse_14
+  - first:
+      213: -7889394691724123598
+    second: SecurityCorpse_15
+  - first:
+      213: 5995190553983532815
+    second: SecurityCorpse_16
+  - first:
+      213: 8174426065435672609
+    second: SecurityCorpse_17
+  - first:
+      213: 8743386901817273380
+    second: SecurityCorpse_18
+  - first:
+      213: -2885913078626550737
+    second: SecurityCorpse_19
+  - first:
+      213: 1529340093636092100
+    second: SecurityCorpse_20
+  - first:
+      213: -8594163942072395877
+    second: SecurityCorpse_21
+  - first:
+      213: 5329387878174694169
+    second: SecurityCorpse_22
+  - first:
+      213: 3671416915526742191
+    second: SecurityCorpse_23
+  - first:
+      213: 5248605900436327688
+    second: SecurityCorpse_24
+  - first:
+      213: -4868553068351409766
+    second: SecurityCorpse_25
+  - first:
+      213: 3483653189012722741
+    second: SecurityCorpse_26
+  - first:
+      213: -7510886749989414482
+    second: SecurityCorpse_27
+  - first:
+      213: -3913042949785667306
+    second: SecurityCorpse_28
+  - first:
+      213: -5373396628469909293
+    second: SecurityCorpse_29
+  - first:
+      213: -2117327489431841545
+    second: SecurityCorpse_30
+  - first:
+      213: 5898498741593865649
+    second: SecurityCorpse_31
+  - first:
+      213: -531774003031334331
+    second: SecurityCorpse_32
+  - first:
+      213: -3805019366141566545
+    second: SecurityCorpse_33
+  - first:
+      213: -8619113060687448183
+    second: SecurityCorpse_34
+  - first:
+      213: 1303114390733623874
+    second: SecurityCorpse_35
+  - first:
+      213: -3204940826816097334
+    second: SecurityCorpse_36
+  - first:
+      213: 3356756385412152387
+    second: SecurityCorpse_37
+  - first:
+      213: 6581692282680374308
+    second: SecurityCorpse_38
+  - first:
+      213: 6655515329529247062
+    second: SecurityCorpse_39
+  - first:
+      213: 5409752474342370680
+    second: SecurityCorpse_40
+  - first:
+      213: 2457158392151272698
+    second: SecurityCorpse_41
+  - first:
+      213: 6764088949487471892
+    second: SecurityCorpse_42
+  - first:
+      213: -3190842287942038148
+    second: SecurityCorpse_43
+  - first:
+      213: -8004100141365088276
+    second: SecurityCorpse_44
+  - first:
+      213: -1529924045744139197
+    second: SecurityCorpse_45
+  - first:
+      213: 6430896159284825768
+    second: SecurityCorpse_46
+  - first:
+      213: 1685409121224022652
+    second: SecurityCorpse_47
+  - first:
+      213: -7011579792172384670
+    second: SecurityCorpse_48
+  - first:
+      213: -6932552816225192993
+    second: SecurityCorpse_49
+  - first:
+      213: 3336433104503825286
+    second: SecurityCorpse_50
+  - first:
+      213: 2049203285769895060
+    second: SecurityCorpse_51
+  - first:
+      213: -3897773923224751694
+    second: SecurityCorpse_52
+  - first:
+      213: 2985203218554860482
+    second: SecurityCorpse_53
+  - first:
+      213: 7644987123435752510
+    second: SecurityCorpse_54
+  - first:
+      213: 4886202776868292545
+    second: SecurityCorpse_55
+  - first:
+      213: -6755835723602000878
+    second: SecurityCorpse_56
+  - first:
+      213: -1258681429234542189
+    second: SecurityCorpse_57
+  - first:
+      213: 1771388938609741703
+    second: SecurityCorpse_58
+  - first:
+      213: 2970010410732815434
+    second: SecurityCorpse_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SecurityCorpse_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 570
+        width: 443
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524b3084e7f9c9170800000000000000
+      internalID: 8186593587375617061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_1
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 592
+        width: 443
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f80cbfffebe92350800000000000000
+      internalID: 5992580195213379824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_2
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 592
+        width: 443
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90887457efc17fe0800000000000000
+      internalID: -1192943833814892389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_3
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 592
+        width: 443
+        height: 295
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dc82c24dbe7f210800000000000000
+      internalID: 1366820308436700498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 476
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8200af02e95ba090800000000000000
+      internalID: -8022219483770781046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 347
+        width: 495
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8b609e1e7e2b890800000000000000
+      internalID: -7443632276626818899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_6
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 341
+        width: 381
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0269d45762f47b0800000000000000
+      internalID: -5237925556353883991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_7
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 319
+        width: 343
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeec820ee50e60e80800000000000000
+      internalID: -8212630172371202326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 111
+        width: 443
+        height: 186
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd13ebe9851ffb80800000000000000
+      internalID: -8358938701264118351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 91
+        width: 364
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a35c52c5d86c1d0800000000000000
+      internalID: -3330819447483712992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_10
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 75
+        width: 443
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb6fff9de7f0afc0800000000000000
+      internalID: -3485513511621137421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SecurityCorpse_11
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 85
+        width: 512
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c511d5d509a7360800000000000000
+      internalID: 7168200487581342748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cb1750be108aa534083f1b57bf3a5633
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":443.0,"y":295.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SecurityCorpse_0: 8186593587375617061
+      SecurityCorpse_1: 5992580195213379824
+      SecurityCorpse_10: -3485513511621137421
+      SecurityCorpse_11: 7168200487581342748
+      SecurityCorpse_2: -1192943833814892389
+      SecurityCorpse_3: 1366820308436700498
+      SecurityCorpse_4: -8022219483770781046
+      SecurityCorpse_5: -7443632276626818899
+      SecurityCorpse_6: -5237925556353883991
+      SecurityCorpse_7: -8212630172371202326
+      SecurityCorpse_8: -8358938701264118351
+      SecurityCorpse_9: -3330819447483712992
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

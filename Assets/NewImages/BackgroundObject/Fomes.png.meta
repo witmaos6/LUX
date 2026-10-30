@@ -1,0 +1,634 @@
+fileFormatVersion: 2
+guid: bda48808b3dc09b4ea80d0ddaf249487
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 788002196337009841
+    second: Fomes_0
+  - first:
+      213: 1033533041469750389
+    second: Fomes_1
+  - first:
+      213: -7167069091041980663
+    second: Fomes_2
+  - first:
+      213: -8411272150692467285
+    second: Fomes_3
+  - first:
+      213: 7832153557270644689
+    second: Fomes_4
+  - first:
+      213: -4532299184581663252
+    second: Fomes_5
+  - first:
+      213: -4481932129206134450
+    second: Fomes_6
+  - first:
+      213: 7933461456837187709
+    second: Fomes_7
+  - first:
+      213: -6398018572704063897
+    second: Fomes_8
+  - first:
+      213: -8257056498183720207
+    second: Fomes_9
+  - first:
+      213: 8318083317964080654
+    second: Fomes_10
+  - first:
+      213: 5086934096029015999
+    second: Fomes_11
+  - first:
+      213: -459360134186369768
+    second: Fomes_12
+  - first:
+      213: 7183724886804150340
+    second: Fomes_13
+  - first:
+      213: -8850293754456025046
+    second: Fomes_14
+  - first:
+      213: -3705591266980998138
+    second: Fomes_15
+  - first:
+      213: 2938039247725029870
+    second: Fomes_16
+  - first:
+      213: -4877458244119798043
+    second: Fomes_17
+  - first:
+      213: -274205597018886849
+    second: Fomes_18
+  - first:
+      213: -894746530495901530
+    second: Fomes_19
+  - first:
+      213: 3667859105737710222
+    second: Fomes_20
+  - first:
+      213: 2370673415483718251
+    second: Fomes_21
+  - first:
+      213: -8835833964871868181
+    second: Fomes_22
+  - first:
+      213: -8479073968720879944
+    second: Fomes_23
+  - first:
+      213: 2352829552666147745
+    second: Fomes_24
+  - first:
+      213: 7637267029289424898
+    second: Fomes_25
+  - first:
+      213: 2933731372053693271
+    second: Fomes_26
+  - first:
+      213: -8419151062557455120
+    second: Fomes_27
+  - first:
+      213: 4216361936389328523
+    second: Fomes_28
+  - first:
+      213: -2504494417205905158
+    second: Fomes_29
+  - first:
+      213: 4757295529160931384
+    second: Fomes_30
+  - first:
+      213: -328705267144258157
+    second: Fomes_31
+  - first:
+      213: 6257413856694511024
+    second: Fomes_32
+  - first:
+      213: -2010402940347948772
+    second: Fomes_33
+  - first:
+      213: -8385382429414044830
+    second: Fomes_34
+  - first:
+      213: -1216309310557388128
+    second: Fomes_35
+  - first:
+      213: -5309622081569833718
+    second: Fomes_36
+  - first:
+      213: -1543959536407135612
+    second: Fomes_37
+  - first:
+      213: 5221076043496231541
+    second: Fomes_38
+  - first:
+      213: -1655028322724485305
+    second: Fomes_39
+  - first:
+      213: 9043009908466947188
+    second: Fomes_40
+  - first:
+      213: 3659892064748830168
+    second: Fomes_41
+  - first:
+      213: -4433142244264552021
+    second: Fomes_42
+  - first:
+      213: 7568509304636696935
+    second: Fomes_43
+  - first:
+      213: 4325708079223839800
+    second: Fomes_44
+  - first:
+      213: -1506416541624904219
+    second: Fomes_45
+  - first:
+      213: -4813311052068385008
+    second: Fomes_46
+  - first:
+      213: -8639139960887228287
+    second: Fomes_47
+  - first:
+      213: 5989744552726244981
+    second: Fomes_48
+  - first:
+      213: 3288669650887325645
+    second: Fomes_49
+  - first:
+      213: 8253429945059882542
+    second: Fomes_50
+  - first:
+      213: 3327003491003174598
+    second: Fomes_51
+  - first:
+      213: -6689117964711354331
+    second: Fomes_52
+  - first:
+      213: -8033488514169103999
+    second: Fomes_53
+  - first:
+      213: 5585974675045979081
+    second: Fomes_54
+  - first:
+      213: -6273545109075865808
+    second: Fomes_55
+  - first:
+      213: 1627297418866080711
+    second: Fomes_56
+  - first:
+      213: -2509879298397573483
+    second: Fomes_57
+  - first:
+      213: -9173084303019764189
+    second: Fomes_58
+  - first:
+      213: -6715255731638747523
+    second: Fomes_59
+  - first:
+      213: -8991904907261293518
+    second: Fomes_60
+  - first:
+      213: -867789857901973657
+    second: Fomes_61
+  - first:
+      213: -8051785156031131807
+    second: Fomes_62
+  - first:
+      213: -4379509051576246739
+    second: Fomes_63
+  - first:
+      213: -5195581147721389567
+    second: Fomes_64
+  - first:
+      213: -338761397967455989
+    second: Fomes_65
+  - first:
+      213: 5180906144828539711
+    second: Fomes_66
+  - first:
+      213: 9099099184841547703
+    second: Fomes_67
+  - first:
+      213: 6998108357710929515
+    second: Fomes_68
+  - first:
+      213: 6440599092372341721
+    second: Fomes_69
+  - first:
+      213: 4703350137360232322
+    second: Fomes_70
+  - first:
+      213: -6716597867537292777
+    second: Fomes_71
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fomes_0
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 649
+        width: 236
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b425e292db8fea00800000000000000
+      internalID: 788002196337009841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_1
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 649
+        width: 227
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cfe6843d8d75e00800000000000000
+      internalID: 1033533041469750389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_2
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 635
+        width: 249
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fc2cb62a4798c90800000000000000
+      internalID: -7167069091041980663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 426
+        width: 247
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bade6d43b88254b80800000000000000
+      internalID: -8411272150692467285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 425
+        width: 247
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7cd6fe92661bc60800000000000000
+      internalID: 7832153557270644689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_5
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 413
+        width: 241
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5a73f97e90a11c0800000000000000
+      internalID: -4532299184581663252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_6
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 414
+        width: 239
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49124b897afcc1c0800000000000000
+      internalID: -4481932129206134450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_7
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 415
+        width: 198
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7898066921591e60800000000000000
+      internalID: 7933461456837187709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_8
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 416
+        width: 262
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e5f9b910ca537a0800000000000000
+      internalID: -6398018572704063897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_9
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 414
+        width: 270
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2bd67dcda096d80800000000000000
+      internalID: -8257056498183720207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_10
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 96
+        width: 512
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e060a53e4b4cf6370800000000000000
+      internalID: 8318083317964080654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_11
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 94
+        width: 507
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfd1adcb9b689640800000000000000
+      internalID: 5086934096029015999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fomes_12
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 88
+        width: 518
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4391139b237731418002dbfcd9dd16c
+      internalID: -459360134186369768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 48c4d1795e07e194ea1c644d24694c04
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":3.0},"gridSpriteSize":{"x":443.0,"y":295.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Fomes_0: 788002196337009841
+      Fomes_1: 1033533041469750389
+      Fomes_10: 8318083317964080654
+      Fomes_11: 5086934096029015999
+      Fomes_12: -459360134186369768
+      Fomes_2: -7167069091041980663
+      Fomes_3: -8411272150692467285
+      Fomes_4: 7832153557270644689
+      Fomes_5: -4532299184581663252
+      Fomes_6: -4481932129206134450
+      Fomes_7: 7933461456837187709
+      Fomes_8: -6398018572704063897
+      Fomes_9: -8257056498183720207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,7 +4,7 @@ public class UnlockedDestroy : MonoBehaviour
 {
     public GameEvent unlockEvent;
 
-    public Vector3 soundPosition = Vector3.zero;
+    public Vector3 soundPosition = Vector3.zero; // 현재 사용 안함
     public float soundStrength = 1f;
     public float soundRange = 5f;
 

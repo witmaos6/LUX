@@ -1,0 +1,822 @@
+fileFormatVersion: 2
+guid: 6ff52f738299deb4f87cae6ecc490229
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6462863115994417506
+    second: BloodsDecal_0
+  - first:
+      213: 5703882782503005714
+    second: BloodsDecal_1
+  - first:
+      213: -1464919080590867937
+    second: BloodsDecal_2
+  - first:
+      213: -8708948304219893936
+    second: BloodsDecal_3
+  - first:
+      213: 6128051066214433550
+    second: BloodsDecal_4
+  - first:
+      213: 2823814390926729922
+    second: BloodsDecal_5
+  - first:
+      213: 5217754670661807577
+    second: BloodsDecal_6
+  - first:
+      213: 4195720269982149045
+    second: BloodsDecal_7
+  - first:
+      213: 487644394910493137
+    second: BloodsDecal_8
+  - first:
+      213: 8367345620355714341
+    second: BloodsDecal_9
+  - first:
+      213: 7032630536941972807
+    second: BloodsDecal_10
+  - first:
+      213: -4549958476045049208
+    second: BloodsDecal_11
+  - first:
+      213: -2237907018951623076
+    second: BloodsDecal_12
+  - first:
+      213: 370524565138344514
+    second: BloodsDecal_13
+  - first:
+      213: -4726355678442932709
+    second: BloodsDecal_14
+  - first:
+      213: 6223717569101697885
+    second: BloodsDecal_15
+  - first:
+      213: 724655377050364468
+    second: BloodsDecal_16
+  - first:
+      213: -5374809813843183248
+    second: BloodsDecal_17
+  - first:
+      213: 317576966537090409
+    second: BloodsDecal_18
+  - first:
+      213: -5324524971777180986
+    second: BloodsDecal_19
+  - first:
+      213: -4890062462741030497
+    second: BloodsDecal_20
+  - first:
+      213: 3078440405231255183
+    second: BloodsDecal_21
+  - first:
+      213: -5971726688058519714
+    second: BloodsDecal_22
+  - first:
+      213: 865079772642055179
+    second: BloodsDecal_23
+  - first:
+      213: -3387197099631815960
+    second: BloodsDecal_24
+  - first:
+      213: -2073829880236049428
+    second: BloodsDecal_25
+  - first:
+      213: -6029299698868684592
+    second: BloodsDecal_26
+  - first:
+      213: -8487981270195646753
+    second: BloodsDecal_27
+  - first:
+      213: -5579576012356807638
+    second: BloodsDecal_28
+  - first:
+      213: -7296325547730811004
+    second: BloodsDecal_29
+  - first:
+      213: -7766000825565092401
+    second: BloodsDecal_30
+  - first:
+      213: 6013709683468175952
+    second: BloodsDecal_31
+  - first:
+      213: 5151869528888976436
+    second: BloodsDecal_32
+  - first:
+      213: 2299055638418392712
+    second: BloodsDecal_33
+  - first:
+      213: -1588571395482240451
+    second: BloodsDecal_34
+  - first:
+      213: -7716895957667608425
+    second: BloodsDecal_35
+  - first:
+      213: 1723283627781712753
+    second: BloodsDecal_36
+  - first:
+      213: -1799278017132195639
+    second: BloodsDecal_37
+  - first:
+      213: -8602123255031718564
+    second: BloodsDecal_38
+  - first:
+      213: 3064269189306910395
+    second: BloodsDecal_39
+  - first:
+      213: 9022855682691926124
+    second: BloodsDecal_40
+  - first:
+      213: 7570486138323287116
+    second: BloodsDecal_41
+  - first:
+      213: -1978278345718495088
+    second: BloodsDecal_42
+  - first:
+      213: 7218411201356300388
+    second: BloodsDecal_43
+  - first:
+      213: 1644736003029870801
+    second: BloodsDecal_44
+  - first:
+      213: 9200067624250210316
+    second: BloodsDecal_45
+  - first:
+      213: -3024900662162084397
+    second: BloodsDecal_46
+  - first:
+      213: 2264660172745638283
+    second: BloodsDecal_47
+  - first:
+      213: 6458984123031413324
+    second: BloodsDecal_48
+  - first:
+      213: 4439614057373537334
+    second: BloodsDecal_49
+  - first:
+      213: -6105466844671354213
+    second: BloodsDecal_50
+  - first:
+      213: -4478361893617781661
+    second: BloodsDecal_51
+  - first:
+      213: 4951514467290896597
+    second: BloodsDecal_52
+  - first:
+      213: 8699550784738750910
+    second: BloodsDecal_53
+  - first:
+      213: -8305752610418888927
+    second: BloodsDecal_54
+  - first:
+      213: 3662803809903379698
+    second: BloodsDecal_55
+  - first:
+      213: 2236605478467432853
+    second: BloodsDecal_56
+  - first:
+      213: -8787362643063206740
+    second: BloodsDecal_57
+  - first:
+      213: 959841689270842778
+    second: BloodsDecal_58
+  - first:
+      213: -8489313896669894058
+    second: BloodsDecal_59
+  - first:
+      213: 414268633579974634
+    second: BloodsDecal_60
+  - first:
+      213: -280515634705806825
+    second: BloodsDecal_61
+  - first:
+      213: 4796353494642258081
+    second: BloodsDecal_62
+  - first:
+      213: 1882748659255603704
+    second: BloodsDecal_63
+  - first:
+      213: -5758139244298257509
+    second: BloodsDecal_64
+  - first:
+      213: 1708464468131166003
+    second: BloodsDecal_65
+  - first:
+      213: 8232291475664307089
+    second: BloodsDecal_66
+  - first:
+      213: -8845094679858583510
+    second: BloodsDecal_67
+  - first:
+      213: -6243106433756640537
+    second: BloodsDecal_68
+  - first:
+      213: -7078202293493535236
+    second: BloodsDecal_69
+  - first:
+      213: -7432773391079711444
+    second: BloodsDecal_70
+  - first:
+      213: 5744613105394189727
+    second: BloodsDecal_71
+  - first:
+      213: 6569516473340163727
+    second: BloodsDecal_72
+  - first:
+      213: 7113893553561047897
+    second: BloodsDecal_73
+  - first:
+      213: -5733324750965763113
+    second: BloodsDecal_74
+  - first:
+      213: 3035947916127323669
+    second: BloodsDecal_75
+  - first:
+      213: 8028882381665813386
+    second: BloodsDecal_76
+  - first:
+      213: 8360644253504121438
+    second: BloodsDecal_77
+  - first:
+      213: -6988931815070903821
+    second: BloodsDecal_78
+  - first:
+      213: 1627132220410386450
+    second: BloodsDecal_79
+  - first:
+      213: 1743407006608818566
+    second: BloodsDecal_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BloodsDecal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 307
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96bd2bdc3c4f46a0800000000000000
+      internalID: -6462863115994417506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 737
+        width: 307
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21eee839b23482f40800000000000000
+      internalID: 5703882782503005714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_2
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 735
+        width: 307
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1280b09bdf8babe0800000000000000
+      internalID: -1464919080590867937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_3
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 743
+        width: 307
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f8bb7c8a9932780800000000000000
+      internalID: -8708948304219893936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_4
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 745
+        width: 307
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e034a271af53b0550800000000000000
+      internalID: 6128051066214433550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 307
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2e2d23a34303720800000000000000
+      internalID: 2823814390926729922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 492
+        width: 307
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddaee56a30396840800000000000000
+      internalID: 5217754670661807577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_7
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 493
+        width: 307
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9213d0b513a3a30800000000000000
+      internalID: 4195720269982149045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_8
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 492
+        width: 307
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9a9575ef574c600800000000000000
+      internalID: 487644394910493137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_9
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 500
+        width: 307
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d09367288ce1470800000000000000
+      internalID: 8367345620355714341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 251
+        width: 268
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74dadfe763ce89160800000000000000
+      internalID: 7032630536941972807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_11
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 244
+        width: 307
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882ae8c6fdc4bd0c0800000000000000
+      internalID: -4549958476045049208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_12
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 245
+        width: 307
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ef8075c6b51f0e0800000000000000
+      internalID: -2237907018951623076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_13
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 244
+        width: 218
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a80adf02e542500800000000000000
+      internalID: 370524565138344514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_14
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 252
+        width: 307
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1632404d8c986eb0800000000000000
+      internalID: -4726355678442932709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 175
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d531aa887261f5650800000000000000
+      internalID: 6223717569101697885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_16
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 0
+        width: 206
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ae9add93e7e0a00800000000000000
+      internalID: 724655377050364468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_17
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 0
+        width: 243
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079f79683f6d865b0800000000000000
+      internalID: -5374809813843183248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_18
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 2
+        width: 251
+        height: 249
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9651a478192486400800000000000000
+      internalID: 317576966537090409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodsDecal_19
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 0
+        width: 265
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca368bafbc7b16b0800000000000000
+      internalID: -5324524971777180986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4093a08b7689f5345b26174e3e08e204
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":4.0},"gridSpriteSize":{"x":307.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      BloodsDecal_0: -6462863115994417506
+      BloodsDecal_1: 5703882782503005714
+      BloodsDecal_10: 7032630536941972807
+      BloodsDecal_11: -4549958476045049208
+      BloodsDecal_12: -2237907018951623076
+      BloodsDecal_13: 370524565138344514
+      BloodsDecal_14: -4726355678442932709
+      BloodsDecal_15: 6223717569101697885
+      BloodsDecal_16: 724655377050364468
+      BloodsDecal_17: -5374809813843183248
+      BloodsDecal_18: 317576966537090409
+      BloodsDecal_19: -5324524971777180986
+      BloodsDecal_2: -1464919080590867937
+      BloodsDecal_3: -8708948304219893936
+      BloodsDecal_4: 6128051066214433550
+      BloodsDecal_5: 2823814390926729922
+      BloodsDecal_6: 5217754670661807577
+      BloodsDecal_7: 4195720269982149045
+      BloodsDecal_8: 487644394910493137
+      BloodsDecal_9: 8367345620355714341
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

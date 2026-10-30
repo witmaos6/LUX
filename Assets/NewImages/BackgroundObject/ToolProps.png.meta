@@ -1,0 +1,1096 @@
+fileFormatVersion: 2
+guid: 6c9d778c6663d284194385b479f2c7c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7004519913902058493
+    second: ToolProps_0
+  - first:
+      213: -8115092632408840474
+    second: ToolProps_1
+  - first:
+      213: -1050327961403437600
+    second: ToolProps_2
+  - first:
+      213: 8664756050503206758
+    second: ToolProps_3
+  - first:
+      213: 5134980667295964086
+    second: ToolProps_4
+  - first:
+      213: 502276209497822831
+    second: ToolProps_5
+  - first:
+      213: -1487813653614942888
+    second: ToolProps_6
+  - first:
+      213: 182302320862852537
+    second: ToolProps_7
+  - first:
+      213: 7081789093881674052
+    second: ToolProps_8
+  - first:
+      213: 8339220504719938940
+    second: ToolProps_9
+  - first:
+      213: 6875465350556498725
+    second: ToolProps_10
+  - first:
+      213: -7246821841066596284
+    second: ToolProps_11
+  - first:
+      213: 6439173609441679972
+    second: ToolProps_12
+  - first:
+      213: 495638107180082896
+    second: ToolProps_13
+  - first:
+      213: -4729237866478430909
+    second: ToolProps_14
+  - first:
+      213: 1968615766603859979
+    second: ToolProps_15
+  - first:
+      213: -1272105283948582410
+    second: ToolProps_16
+  - first:
+      213: -1554261840540934164
+    second: ToolProps_17
+  - first:
+      213: -1586327368620110214
+    second: ToolProps_18
+  - first:
+      213: 3857620596461970043
+    second: ToolProps_19
+  - first:
+      213: -706382281643955164
+    second: ToolProps_20
+  - first:
+      213: 8882987554730345918
+    second: ToolProps_21
+  - first:
+      213: -936514762764168503
+    second: ToolProps_22
+  - first:
+      213: 3517053277912959566
+    second: ToolProps_23
+  - first:
+      213: 8849182165374817399
+    second: ToolProps_24
+  - first:
+      213: -7252861170483644828
+    second: ToolProps_25
+  - first:
+      213: -6078262210546270069
+    second: ToolProps_26
+  - first:
+      213: -7516557785752246440
+    second: ToolProps_27
+  - first:
+      213: -8581367530877681188
+    second: ToolProps_28
+  - first:
+      213: -5665611864249623269
+    second: ToolProps_29
+  - first:
+      213: 2612148172251547100
+    second: ToolProps_30
+  - first:
+      213: 9134571912752055432
+    second: ToolProps_31
+  - first:
+      213: 1042395049088560310
+    second: ToolProps_32
+  - first:
+      213: 787151293960476452
+    second: ToolProps_33
+  - first:
+      213: 8634832689024464983
+    second: ToolProps_34
+  - first:
+      213: -8221094408846765202
+    second: ToolProps_35
+  - first:
+      213: -5035878640091341860
+    second: ToolProps_36
+  - first:
+      213: -1644126288010134106
+    second: ToolProps_37
+  - first:
+      213: -4805631399459878735
+    second: ToolProps_38
+  - first:
+      213: 8382707261425760282
+    second: ToolProps_39
+  - first:
+      213: 8340663981511888573
+    second: ToolProps_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ToolProps_0
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 671
+        width: 283
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304d7b5ff32face90800000000000000
+      internalID: -7004519913902058493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_1
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 674
+        width: 187
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6a1e51f36616f80800000000000000
+      internalID: -8115092632408840474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_2
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 655
+        width: 137
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed43e2b84c7c61f0800000000000000
+      internalID: -1050327961403437600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 668
+        width: 450
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66709a758b56f3870800000000000000
+      internalID: 8664756050503206758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_4
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 676
+        width: 168
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb9caae5bd134740800000000000000
+      internalID: 5134980667295964086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_5
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 646
+        width: 81
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f665f362d8178f600800000000000000
+      internalID: 502276209497822831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_6
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 691
+        width: 137
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8552e446d593a5be0800000000000000
+      internalID: -1487813653614942888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_7
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 688
+        width: 138
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b572c4befaa78200800000000000000
+      internalID: 182302320862852537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_8
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 416
+        width: 124
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4497d03f8a1974260800000000000000
+      internalID: 7081789093881674052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_10
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 416
+        width: 139
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b3d6dfe4f8a6f50800000000000000
+      internalID: 6875465350556498725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 416
+        width: 134
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448eeac4eed1e6b90800000000000000
+      internalID: -7246821841066596284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 424
+        width: 133
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a57d5184a8c5950800000000000000
+      internalID: 6439173609441679972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_13
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 430
+        width: 96
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6ad938b3cd0e600800000000000000
+      internalID: 495638107180082896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_15
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 432
+        width: 68
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0808ab0c9de15b10800000000000000
+      internalID: 1968615766603859979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_16
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 432
+        width: 104
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9e851fbf2985ee0800000000000000
+      internalID: -1272105283948582410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_17
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 432
+        width: 54
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cefdc9247172e6ae0800000000000000
+      internalID: -1554261840540934164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_18
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 432
+        width: 102
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e0be7b9ab3cf9e0800000000000000
+      internalID: -1586327368620110214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_19
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 449
+        width: 108
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72a8527e75098530800000000000000
+      internalID: 3857620596461970043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_20
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 449
+        width: 66
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c6bf2be0d6236f0800000000000000
+      internalID: -706382281643955164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_21
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 446
+        width: 59
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb50befed16b64b70800000000000000
+      internalID: 8882987554730345918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 239
+        width: 182
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2588ef8c4d003f0800000000000000
+      internalID: -936514762764168503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 253
+        width: 167
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a002672551fc030800000000000000
+      internalID: 3517053277912959566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_24
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 249
+        width: 539
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77453ef5b4c9eca70800000000000000
+      internalID: 8849182165374817399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_25
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 272
+        width: 126
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46639185139a85b90800000000000000
+      internalID: -7252861170483644828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_26
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 261
+        width: 210
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8085b839bca5aba0800000000000000
+      internalID: -6078262210546270069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_28
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 271
+        width: 206
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd107fa52bbd8e880800000000000000
+      internalID: -8581367530877681188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_29
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 249
+        width: 137
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d9924f604bf51b0800000000000000
+      internalID: -5665611864249623269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 25
+        width: 180
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884c8d2f1c484ce70800000000000000
+      internalID: 9134571912752055432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_32
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 27
+        width: 268
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bcac8836c4577e00800000000000000
+      internalID: 1042395049088560310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_33
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 44
+        width: 203
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427d00d6ee58cea00800000000000000
+      internalID: 787151293960476452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_34
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 31
+        width: 140
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758fb34d49615d770800000000000000
+      internalID: 8634832689024464983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_35
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 27
+        width: 138
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e631dbf313ec8ed80800000000000000
+      internalID: -8221094408846765202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_36
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 28
+        width: 136
+        height: 168
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbd06dde07fc1ab0800000000000000
+      internalID: -5035878640091341860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_37
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 35
+        width: 120
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad364d1ad3ee29e0800000000000000
+      internalID: -1644126288010134106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_38
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 33
+        width: 142
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b80bb914b7fe4db0800000000000000
+      internalID: -4805631399459878735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_39
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 27
+        width: 130
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18be5d37db555470800000000000000
+      internalID: 8382707261425760282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ToolProps_40
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 31
+        width: 98
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe49e053bdffb370800000000000000
+      internalID: 8340663981511888573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 42cc3c0f51f3b5443b59fb744aad6c55
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ToolProps_0: -7004519913902058493
+      ToolProps_1: -8115092632408840474
+      ToolProps_10: 6875465350556498725
+      ToolProps_11: -7246821841066596284
+      ToolProps_12: 6439173609441679972
+      ToolProps_13: 495638107180082896
+      ToolProps_14: -4729237866478430909
+      ToolProps_15: 1968615766603859979
+      ToolProps_16: -1272105283948582410
+      ToolProps_17: -1554261840540934164
+      ToolProps_18: -1586327368620110214
+      ToolProps_19: 3857620596461970043
+      ToolProps_2: -1050327961403437600
+      ToolProps_20: -706382281643955164
+      ToolProps_21: 8882987554730345918
+      ToolProps_22: -936514762764168503
+      ToolProps_23: 3517053277912959566
+      ToolProps_24: 8849182165374817399
+      ToolProps_25: -7252861170483644828
+      ToolProps_26: -6078262210546270069
+      ToolProps_27: -7516557785752246440
+      ToolProps_28: -8581367530877681188
+      ToolProps_29: -5665611864249623269
+      ToolProps_3: 8664756050503206758
+      ToolProps_30: 2612148172251547100
+      ToolProps_31: 9134571912752055432
+      ToolProps_32: 1042395049088560310
+      ToolProps_33: 787151293960476452
+      ToolProps_34: 8634832689024464983
+      ToolProps_35: -8221094408846765202
+      ToolProps_36: -5035878640091341860
+      ToolProps_37: -1644126288010134106
+      ToolProps_38: -4805631399459878735
+      ToolProps_39: 8382707261425760282
+      ToolProps_4: 5134980667295964086
+      ToolProps_40: 8340663981511888573
+      ToolProps_41: -1020591622
+      ToolProps_5: 502276209497822831
+      ToolProps_6: -1487813653614942888
+      ToolProps_7: 182302320862852537
+      ToolProps_8: 7081789093881674052
+      ToolProps_9: 8339220504719938940
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

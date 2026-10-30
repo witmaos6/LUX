@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 956ef4566c910634c81dccba4eab7e05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6298774709296181733
+    second: GlassBreakSprite_0
+  - first:
+      213: 653767817679539646
+    second: GlassBreakSprite_1
+  - first:
+      213: -6081633461455960724
+    second: GlassBreakSprite_2
+  - first:
+      213: -5008142787159167252
+    second: GlassBreakSprite_3
+  - first:
+      213: -8555043964586257552
+    second: GlassBreakSprite_4
+  - first:
+      213: 8046447793915898048
+    second: GlassBreakSprite_5
+  - first:
+      213: 1392915879096226503
+    second: GlassBreakSprite_6
+  - first:
+      213: -2548798146119066953
+    second: GlassBreakSprite_7
+  - first:
+      213: 7594821692356305421
+    second: GlassBreakSprite_8
+  - first:
+      213: 3198133592608901840
+    second: GlassBreakSprite_9
+  - first:
+      213: 3745922166653649470
+    second: GlassBreakSprite_10
+  - first:
+      213: -3248412977056568988
+    second: GlassBreakSprite_11
+  - first:
+      213: 424823086038447096
+    second: GlassBreakSprite_12
+  - first:
+      213: 3471667632021706665
+    second: GlassBreakSprite_13
+  - first:
+      213: -3462999643539179879
+    second: GlassBreakSprite_14
+  - first:
+      213: -902864930828401733
+    second: GlassBreakSprite_15
+  - first:
+      213: -4309188967381601714
+    second: GlassBreakSprite_16
+  - first:
+      213: -4817913410211852028
+    second: GlassBreakSprite_17
+  - first:
+      213: 125141363946373798
+    second: GlassBreakSprite_18
+  - first:
+      213: -628754713401156861
+    second: GlassBreakSprite_19
+  - first:
+      213: -583374852994422993
+    second: GlassBreakSprite_20
+  - first:
+      213: 1883318576570307560
+    second: GlassBreakSprite_21
+  - first:
+      213: 3157729994018095716
+    second: GlassBreakSprite_22
+  - first:
+      213: 1881355557589136950
+    second: GlassBreakSprite_23
+  - first:
+      213: 7609862054097753927
+    second: GlassBreakSprite_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GlassBreakSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 257
+        width: 540
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e130dbc93eb96750800000000000000
+      internalID: 6298774709296181733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBreakSprite_1
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 257
+        width: 540
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd0f5acd56a21900800000000000000
+      internalID: 653767817679539646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBreakSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 257
+        width: 540
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65c9c3b692b99ba0800000000000000
+      internalID: -6081633461455960724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GlassBreakSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 257
+        width: 540
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee61fa5ba08f7ab0800000000000000
+      internalID: -5008142787159167252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 771d9faad27a90e4b9a1dcd5030efc0d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":543.0,"y":724.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      GlassBreakSprite_0: 6298774709296181733
+      GlassBreakSprite_1: 653767817679539646
+      GlassBreakSprite_2: -6081633461455960724
+      GlassBreakSprite_3: -5008142787159167252
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
