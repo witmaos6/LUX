@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: 36e991abff464b8488a9a3fded54e50c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3792298383815254958
+    second: Devil_Spider_0
+  - first:
+      213: 2807963778211288353
+    second: Devil_Spider_1
+  - first:
+      213: -746168629151338821
+    second: Devil_Spider_2
+  - first:
+      213: -6645126919563645363
+    second: Devil_Spider_3
+  - first:
+      213: -7220652415907775713
+    second: Devil_Spider_4
+  - first:
+      213: -1133326151450100330
+    second: Devil_Spider_5
+  - first:
+      213: 1086294448141439732
+    second: Devil_Spider_6
+  - first:
+      213: 1666927091844837669
+    second: Devil_Spider_7
+  - first:
+      213: 5315704206694572060
+    second: Devil_Spider_8
+  - first:
+      213: 428499697832303734
+    second: Devil_Spider_9
+  - first:
+      213: 5424685982776586032
+    second: Devil_Spider_10
+  - first:
+      213: -3082853161860763533
+    second: Devil_Spider_11
+  - first:
+      213: 6822951365795666027
+    second: Devil_Spider_12
+  - first:
+      213: 205319248195147545
+    second: Devil_Spider_13
+  - first:
+      213: -8165758419342743037
+    second: Devil_Spider_14
+  - first:
+      213: -4715622573830408171
+    second: Devil_Spider_15
+  - first:
+      213: 6221991157279938831
+    second: Devil_Spider_16
+  - first:
+      213: 7174933925044120500
+    second: Devil_Spider_17
+  - first:
+      213: -8704170723110980741
+    second: Devil_Spider_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Devil_Spider_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3a891a943f0a430800000000000000
+      internalID: 3792298383815254958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Spider_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 385
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1259276dd24e7f620800000000000000
+      internalID: 2807963778211288353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Spider_2
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 386
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbee4ecc59315a5f0800000000000000
+      internalID: -746168629151338821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Spider_3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 386
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ee5082644c7c3a0800000000000000
+      internalID: -6645126919563645363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Spider_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 386
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1b304762e61bcb90800000000000000
+      internalID: -7220652415907775713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Spider_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 386
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69df720bedd9540f0800000000000000
+      internalID: -1133326151450100330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Spider_6
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 386
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f213fe8b0b431f00800000000000000
+      internalID: 1086294448141439732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Spider_7
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 388
+        width: 209
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 521f2e7bb5d122710800000000000000
+      internalID: 1666927091844837669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: af5bb4c0b92970240a78c06c2d349406
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":1.0},"gridSpriteSize":{"x":209.0,"y":941.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Devil_Spider_0: 3792298383815254958
+      Devil_Spider_1: 2807963778211288353
+      Devil_Spider_2: -746168629151338821
+      Devil_Spider_3: -6645126919563645363
+      Devil_Spider_4: -7220652415907775713
+      Devil_Spider_5: -1133326151450100330
+      Devil_Spider_6: 1086294448141439732
+      Devil_Spider_7: 1666927091844837669
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

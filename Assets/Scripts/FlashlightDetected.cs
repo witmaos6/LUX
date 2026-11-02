@@ -9,6 +9,10 @@ public class FlashlightDetected : MonoBehaviour
 
     [SerializeField] GameObject moveObject;
     [SerializeField] float moveXOffset = 1f;
+    [Min(0f)]
+    [SerializeField] private float requiredIlluminationTime = 0.4f;
+
+    float illuminationTime = 0f;
 
     float originX;
     float targetX;
@@ -32,7 +36,11 @@ public class FlashlightDetected : MonoBehaviour
             FlashlightDetectionResult lightResult = FlashlightVisibilityService.Evaluate(transform.position, 0.8f);
             if (lightResult.IsIlluminated)
             {
-                BeginTimed();
+                illuminationTime += Time.deltaTime;
+                if(illuminationTime > requiredIlluminationTime)
+                {
+                    BeginTimed();
+                }
             }
         }
         
@@ -74,7 +82,7 @@ public class FlashlightDetected : MonoBehaviour
         
         if(moveObject)
         {
-            moveObject.transform.position = new Vector3(currentX, transform.position.y, transform.position.z);
+            moveObject.transform.position = new Vector3(currentX, moveObject.transform.position.y, moveObject.transform.position.z);
         }
     }
     void OnTimedEnd()

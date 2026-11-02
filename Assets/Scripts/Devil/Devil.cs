@@ -39,6 +39,7 @@ public class Devil : MonoBehaviour, IDevilInterface
     public float executeSuspicionThreshold = 100f;
     public float suspicionDecayDelay = 1f;
     public float suspicionDecayRate = 5f;
+    [SerializeField] float validSuspicionDistance = 100f;
 
     [Header("Devil Info (Runtime, Debug)")]
     public float suspicion;
@@ -117,7 +118,7 @@ public class Devil : MonoBehaviour, IDevilInterface
             return;
 
         float distance = Vector3.Distance(transform.position, sourcePosition);
-        if (distance > range)
+        if (distance > range || distance > validSuspicionDistance)
             return;
 
         float distanceWeight = 1f - Mathf.Clamp01(distance / range);
@@ -129,6 +130,12 @@ public class Devil : MonoBehaviour, IDevilInterface
 
         lastDetectedPosition = sourcePosition;
         lastDetectionTime = Time.time;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, validSuspicionDistance);
     }
 
     public void SetPlayerHidden(bool hidden, Vector3 lastPositionBeforeHide)

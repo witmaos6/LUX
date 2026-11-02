@@ -8,6 +8,7 @@ public class DoorJumpScare : MonoBehaviour
     [SerializeField] float targetAngle = -70.0f;
     [SerializeField] float startDelay = 0.3f;
     [SerializeField] private AudioClip audioClip;
+    [SerializeField] GameEvent completeEvent;
 
     private AudioSource audioSource;
     private Image childImage;
@@ -19,6 +20,12 @@ public class DoorJumpScare : MonoBehaviour
 
     private void Awake()
     {
+        if(completeEvent != null && SaveManager.HasEventFired(completeEvent.name))
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+
         childImage = GetComponentInChildren<Image>();
         if (childImage != null)
         {
@@ -87,6 +94,11 @@ public class DoorJumpScare : MonoBehaviour
         if (audioSource && audioClip)
         {
             audioSource.Play();
+        }
+
+        if (completeEvent != null)
+        {
+            SaveManager.MarkEventFired(completeEvent.name);
         }
     }
 

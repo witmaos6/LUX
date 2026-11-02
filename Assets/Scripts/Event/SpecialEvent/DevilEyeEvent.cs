@@ -12,6 +12,12 @@ public class DevilEyeEvent : MonoBehaviour // To do: 이벤트 저장상태 확인
     private GameObject jumpScareInstance;
     private bool activateOn = false;
 
+
+    private void OnDisable()
+    {
+        GameEventManager.Unsubscribe(gameEvent, Activate);
+    }
+
     private void Start()
     {
         GameEventManager.Subscribe(gameEvent, Activate);
@@ -29,7 +35,7 @@ public class DevilEyeEvent : MonoBehaviour // To do: 이벤트 저장상태 확인
         activateOn = true;
         if (jumpScareSound != null)
         {
-            AudioSource.PlayClipAtPoint(jumpScareSound, gameObject.transform.position);
+            AudioSource.PlayClipAtPoint(jumpScareSound, transform.position);
         }
 
         if (jumpScareObject != null)
