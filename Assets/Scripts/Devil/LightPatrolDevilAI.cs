@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent (typeof(Rigidbody2D))]
 public class LightPatrolDevilAI : MonoBehaviour, ISuspicionReceiver, IDevilInterface
 {
     private enum State

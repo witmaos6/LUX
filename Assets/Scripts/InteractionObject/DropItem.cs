@@ -52,14 +52,14 @@ public class DropItem : InteractionObject
         {
             controller.AddItem(itemCode);
 
-            if(gameEvent != null)
-            {
-                GameEventManager.Raise(gameEvent);
-            }
-
             if (uiPrefab != null)
             {
                 uiInstance = Instantiate(uiPrefab, canvasTransform);
+            }
+
+            if (gameEvent != null)
+            {
+                GameEventManager.Raise(gameEvent);
             }
 
             if (objectDestroy)

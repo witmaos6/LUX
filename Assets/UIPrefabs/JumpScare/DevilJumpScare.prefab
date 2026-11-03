@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3897719167020022180}
   - component: {fileID: 4413293482423346992}
   - component: {fileID: 378505733446667104}
+  - component: {fileID: 8595971030133585139}
   m_Layer: 5
   m_Name: DevilEye
   m_TagString: Untagged
@@ -28,8 +29,8 @@ RectTransform:
   m_GameObject: {fileID: 1989113241127594345}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7299935393365525944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5236743629001073752, guid: 65659e4f5ae516b458006c4739d40da4, type: 3}
+  m_Sprite: {fileID: 7484025938902693687, guid: d5dcc8196ff1f7541b6d3b1ef46a924a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,9 +89,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499b7d5d8095a504387c14556c0b7663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomMoveInBoundaryUI
-  boundary: 150
+  boundary: 250
   speed: 50
   useInitialPositionAsCenter: 1
+--- !u!95 &8595971030133585139
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989113241127594345}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb5ace51417c4474c860c89c23dbd4d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5719591116569113005
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,6 +125,7 @@ GameObject:
   - component: {fileID: 5784522883774082494}
   - component: {fileID: 997990118683579190}
   - component: {fileID: 6294858427236337195}
+  - component: {fileID: 4408436078716287736}
   m_Layer: 5
   m_Name: DevilBody
   m_TagString: Untagged
@@ -118,8 +142,8 @@ RectTransform:
   m_GameObject: {fileID: 5719591116569113005}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7299935393365525944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -156,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -679788760139546079, guid: d1841e1c4d21e3e468296072fe4b5fd0, type: 3}
+  m_Sprite: {fileID: 9147202671854047932, guid: e89d98e1cd04710478911c4c91dc06f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -166,6 +190,28 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &4408436078716287736
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719591116569113005}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7657c1a938d6db14ba0ef340d9175268, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9136188388522215747
 GameObject:
   m_ObjectHideFlags: 0

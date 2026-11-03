@@ -43,7 +43,6 @@ public class Devil : MonoBehaviour, IDevilInterface
 
     [Header("Devil Info (Runtime, Debug)")]
     public float suspicion;
-    public bool isCollidingWithPlayer;
     public bool isPlayerHidden;
 
     [Header("Player Reference")]
@@ -130,6 +129,26 @@ public class Devil : MonoBehaviour, IDevilInterface
 
         lastDetectedPosition = sourcePosition;
         lastDetectionTime = Time.time;
+
+        if (currentState == DevilState.Investigate
+        && suspicion < chaseSuspicionThreshold)
+        {
+            RestartInvestigationAt(sourcePosition);
+        }
+    }
+
+    private void RestartInvestigationAt(Vector3 sourcePosition)
+    {
+        investigateOrigin = sourcePosition;
+
+        destination = investigateOrigin;
+        hasDestination = true;
+
+        isWaiting = false;
+        waitTimer = 0f;
+
+        GenerateInvestigatePoints(investigateOrigin);
+        investigatePointIndex = -1;
     }
 
     private void OnDrawGizmosSelected()
@@ -210,15 +229,13 @@ public class Devil : MonoBehaviour, IDevilInterface
         if (isPlayerHidden)
             return EvaluateHiddenPlayerBehavior();
 
-        return isCollidingWithPlayer ? DevilState.Execute : DevilState.Chase;
+        return DevilState.Chase;
     }
 
     private DevilState EvaluateHiddenPlayerBehavior()
     {
         if (suspicion >= executeSuspicionThreshold)
-        {
-            return isCollidingWithPlayer ? DevilState.Execute : DevilState.Chase;
-        }
+            return DevilState.Chase;
 
         investigateOrigin = lastHiddenPosition;
         return DevilState.Investigate;
@@ -515,18 +532,10 @@ public class Devil : MonoBehaviour, IDevilInterface
                 <= StopDistance;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-            isCollidingWithPlayer = true;
-    }
-
     private void OnTriggerStay2D(Collider2D other)
     {
         if (!other.CompareTag("Player"))
             return;
-
-        isCollidingWithPlayer = true;
 
         PlayerController controller =
             other.GetComponent<PlayerController>();
@@ -542,12 +551,11 @@ public class Devil : MonoBehaviour, IDevilInterface
         bool canExecuteHiddenPlayer = playerState == PlayerController.PlayerState.Hide && suspicion >= executeSuspicionThreshold;
 
         if (isNormalPlayer || canExecuteHiddenPlayer)
+        {
             controller.Dead();
-    }
 
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-            isCollidingWithPlayer = false;
+            if (controller.GetState() == PlayerController.PlayerState.Dead)
+                ChangeState(DevilState.Execute);
+        }
     }
 }

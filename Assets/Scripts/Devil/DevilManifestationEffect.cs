@@ -10,6 +10,7 @@ public class DevilManifestationEffect : MonoBehaviour
     [SerializeField] private float boundary = 1.0f;
     [SerializeField] private float showDuration = 0.5f;
     [SerializeField] private float hideDuration = 0.5f;
+    [SerializeField] int sortingOrder = 15;
 
     private SpriteRenderer[] pool;
     private Coroutine loopCoroutine;
@@ -25,7 +26,7 @@ public class DevilManifestationEffect : MonoBehaviour
             GameObject go = new GameObject($"ManifestSlot_{i}");
             go.transform.SetParent(transform, false);
             var sr = go.AddComponent<SpriteRenderer>();
-            sr.sortingOrder = 6;
+            sr.sortingOrder = sortingOrder;
             go.SetActive(false);
             pool[i] = sr;
         }

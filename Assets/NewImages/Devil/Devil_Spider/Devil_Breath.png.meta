@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: 12319c24649634e4ebaf9c97aaeac4b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -166162829940458313
+    second: Devil_Breath_0
+  - first:
+      213: 1786968873742808816
+    second: Devil_Breath_1
+  - first:
+      213: 821959060126128300
+    second: Devil_Breath_2
+  - first:
+      213: -5161154213075939408
+    second: Devil_Breath_3
+  - first:
+      213: 459118495458780148
+    second: Devil_Breath_4
+  - first:
+      213: 5833927403558872528
+    second: Devil_Breath_5
+  - first:
+      213: 8745389695827787755
+    second: Devil_Breath_6
+  - first:
+      213: 5034948347754925343
+    second: Devil_Breath_7
+  - first:
+      213: 3093569735480195790
+    second: Devil_Breath_8
+  - first:
+      213: 4377072711422959677
+    second: Devil_Breath_9
+  - first:
+      213: 8998416423536786599
+    second: Devil_Breath_10
+  - first:
+      213: 5407357160515336318
+    second: Devil_Breath_11
+  - first:
+      213: -5378396944144601337
+    second: Devil_Breath_12
+  - first:
+      213: -6573155084300900279
+    second: Devil_Breath_13
+  - first:
+      213: -6570201627331887933
+    second: Devil_Breath_14
+  - first:
+      213: 3634467144748551686
+    second: Devil_Breath_15
+  - first:
+      213: 7315832389616734758
+    second: Devil_Breath_16
+  - first:
+      213: 5618583417770537583
+    second: Devil_Breath_17
+  - first:
+      213: -2219358181546918032
+    second: Devil_Breath_18
+  - first:
+      213: 4792072696596919819
+    second: Devil_Breath_19
+  - first:
+      213: 3490135273767664627
+    second: Devil_Breath_20
+  - first:
+      213: 6651353010229502162
+    second: Devil_Breath_21
+  - first:
+      213: 660263062056859456
+    second: Devil_Breath_22
+  - first:
+      213: 1316950223351257160
+    second: Devil_Breath_23
+  - first:
+      213: 5291483748640509892
+    second: Devil_Breath_24
+  - first:
+      213: 3668473152625225134
+    second: Devil_Breath_25
+  - first:
+      213: 2357132624104016407
+    second: Devil_Breath_26
+  - first:
+      213: 9174644407934898299
+    second: Devil_Breath_27
+  - first:
+      213: -2976960029987199733
+    second: Devil_Breath_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Devil_Breath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc768a59cba1bdf0800000000000000
+      internalID: -166162829940458313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6be1019b69cc810800000000000000
+      internalID: 1786968873742808816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca85bb6096f286b00800000000000000
+      internalID: 821959060126128300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf09929695ef58b0800000000000000
+      internalID: -5161154213075939408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3e1afc6dd1f5600800000000000000
+      internalID: 459118495458780148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d52b86601646f050800000000000000
+      internalID: 5833927403558872528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_6
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef3d22e79ddd5970800000000000000
+      internalID: 8745389695827787755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_7
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 471
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d4f5298dabfd540800000000000000
+      internalID: 5034948347754925343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca3233b8419eea20800000000000000
+      internalID: 3093569735480195790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_9
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30eb68b07c7ebc30800000000000000
+      internalID: 4377072711422959677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_10
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac73f1cf0cc0ec70800000000000000
+      internalID: 8998416423536786599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_11
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e787e2620baca0b40800000000000000
+      internalID: 5407357160515336318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_12
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70fe63ba9781c55b0800000000000000
+      internalID: -5378396944144601337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_13
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94821b2e64677c4a0800000000000000
+      internalID: -6573155084300900279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_14
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cc703c2e64f1d4a0800000000000000
+      internalID: -6570201627331887933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_Breath_15
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 245
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ec096ac98307230800000000000000
+      internalID: 3634467144748551686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 882b573d72f6564419ca3f5e7259f137
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":2.0},"gridSpriteSize":{"x":209.0,"y":470.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Devil_Breath_0: -166162829940458313
+      Devil_Breath_1: 1786968873742808816
+      Devil_Breath_10: 8998416423536786599
+      Devil_Breath_11: 5407357160515336318
+      Devil_Breath_12: -5378396944144601337
+      Devil_Breath_13: -6573155084300900279
+      Devil_Breath_14: -6570201627331887933
+      Devil_Breath_15: 3634467144748551686
+      Devil_Breath_2: 821959060126128300
+      Devil_Breath_3: -5161154213075939408
+      Devil_Breath_4: 459118495458780148
+      Devil_Breath_5: 5833927403558872528
+      Devil_Breath_6: 8745389695827787755
+      Devil_Breath_7: 5034948347754925343
+      Devil_Breath_8: 3093569735480195790
+      Devil_Breath_9: 4377072711422959677
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

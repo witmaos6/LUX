@@ -78,6 +78,8 @@ public class PlayerController : MonoBehaviour
         clueInventory = GetComponent<ClueInventory>();
 
         inventoryUI = GetComponent<InventoryUI>();
+
+        UnityEngine.AudioListener.volume = 0f;
     }
 
     private void Start()
@@ -95,6 +97,10 @@ public class PlayerController : MonoBehaviour
         if(cameraFader != null)
         {
             cameraFader.StartFade(0f, 1f);
+            cameraFader.cameraFadeOutComplete += () =>
+            {
+                UnityEngine.AudioListener.volume = 1f;
+            };
         }
 
         PlayIntroScriptIfNeeded();
