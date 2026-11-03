@@ -27,15 +27,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17077014529
-    m_Localized: Bolt cutter
+    m_Localized: Bolt Cutters
     m_Metadata:
       m_Items: []
   - m_Id: 17077014530
-    m_Localized: These are bolt cutters that can cut through chains.
+    m_Localized: These bolt cutters can cut through chains.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208832
-    m_Localized: Switchboard password
+    m_Localized: Switchboard Password
     m_Metadata:
       m_Items: []
   - m_Id: 17081208833
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208834
-    m_Localized: Door opener
+    m_Localized: Door Opener
     m_Metadata:
       m_Items: []
   - m_Id: 17081208835
@@ -55,8 +55,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208837
-    m_Localized: This USB drive contains the experiment data. Once power is restored,
-      let's plug it into a computer.
+    m_Localized: This USB drive supposedly contains the experiment data. Once power
+      is restored, I'll plug it into a computer.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208838
@@ -64,7 +64,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208839
-    m_Localized: This is the number 6 I saw in the power control room. What does
+    m_Localized: This is the number 6 I saw in the power control area. What does
       it mean?
     m_Metadata:
       m_Items: []
@@ -91,7 +91,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208845
-    m_Localized: With this, I should be able to climb up into the ventilation shaft.
+    m_Localized: With this, I should be able to climb up to the vent.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208846
@@ -99,7 +99,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208847
-    m_Localized: There probably are doors that can be opened with a key card.
+    m_Localized: This key card should open some doors.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208848
@@ -107,8 +107,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208849
-    m_Localized: This is a note someone left behind. Let's think carefully about
-      the order in which to search.
+    m_Localized: Someone left this note behind. I should think carefully about the
+      order I search in.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208850
@@ -125,32 +125,32 @@ MonoBehaviour:
       organisms, such as reacting to external stimuli.
 
       In particular, it was
-      observed to react sensitively to light and sound.
+      observed to exhibit heightened sensitivity to light and sound.
 
 
-      Experiment Log
+      Experiment
+      Log
 
-      Test
-      Subject: DE5i1
+      Test Subject: DE5i1
 
-      Mice, rabbits, and bears were introduced into the laboratory
-      sequentially.
+      Mice, rabbits, and bears were introduced
+      into the laboratory sequentially.
 
-      The dates of introduction were June X, July X, and August
-      X.
+      The dates of introduction were June
+      X, July X, and August X.
 
-      Immediately after the test subject was discovered, all test animals
-      exhibited extreme fear reactions.
+      All test animals exhibited extreme fear responses
+      immediately upon encountering DE5i1.
 
-      After observing the test animals for
-      a certain period of time, DE5i1 displayed aggressive behavior.
+      After observing the test animals
+      for a certain period of time, DE5i1 displayed aggressive behavior.
 
       Following
       the attack, the animals'' bodies were so severely mutilated that their forms
       could no longer be identified, and shortly thereafter, they mutated into black
       masses.
 
-      This black substance is designated as "Fomes."'
+      This black substance is designated as ''Fomes.'''
     m_Metadata:
       m_Items: []
   - m_Id: 17081208851
@@ -159,30 +159,30 @@ MonoBehaviour:
       Test Subject: DE5i1
 
       Researcher A observed
-      and reported that test subject DE5i1 split into two parts and then merged back
-      into a single entity.
+      and reported that test subject DE5i1 split apart and then merged back into
+      a single entity.
 
-      Since DE5i1 possesses the characteristic of not
-      being recorded by CCTV, no evidence of the incident was secured. Consequently,
-      researchers took turns monitoring the test subject thereafter.
+      Since DE5i1 does not appear in CCTV footage, no evidence
+      of the incident was secured. Consequently, researchers took turns monitoring
+      the test subject thereafter.
 
-      Subsequently,
-      Researcher B also confirmed that DE5i1 split.
+      Subsequently, Researcher B also confirmed
+      that DE5i1 split.
 
-      As the same phenomenon
-      has been repeatedly observed, the splitting of DE5i1 is now considered a confirmed
-      fact, and follow-up experiments will proceed.'
+      As the same phenomenon has been repeatedly observed,
+      the splitting of DE5i1 is now considered a confirmed fact, and follow-up experiments
+      will proceed.'
     m_Metadata:
       m_Items: []
   - m_Id: 17081208852
     m_Localized: 'Report
 
       Based on a comprehensive analysis of existing experimental
-      records, it is estimated that the division phenomenon of DE5i1 occurs after
-      administration to animals.
+      records, it is hypothesized that DE5i1 undergoes division after animals are
+      introduced.
 
-      To verify this hypothesis, we propose conducting
-      additional animal administration experiments.'
+      To verify this hypothesis, we propose conducting additional
+      animal introduction experiments.'
     m_Metadata:
       m_Items: []
   - m_Id: 17081208853
@@ -196,14 +196,13 @@ MonoBehaviour:
       We ignited Fomes to observe the combustion
       reaction.
 
-      When compared to an equal volume of coal, it was confirmed
-      that combustion lasted approximately 80 to 100 times longer.
+      Compared with an equal volume of coal, Fomes burned for approximately
+      80-100 times as long.
 
 
-      Supervisor''s
-      Comments: Significant experimental results were confirmed. It is judged to
-      have potential for use as an alternative fuel, and further experiments are
-      requested.'
+      Supervisor''s Comments: Significant experimental
+      results were confirmed. It is judged to have potential for use as an alternative
+      fuel, and further experiments are requested.'
     m_Metadata:
       m_Items: []
   - m_Id: 17081208854
@@ -217,14 +216,13 @@ MonoBehaviour:
       When an XX stimulus was applied to DE5i1, a
       substance resembling a long, red thread appeared.
 
-      Although its appearance
-      was identical to the red threads typically observed, its length was confirmed
-      to be approximately 4 to 6 times longer than usual.
+      It resembled the red
+      threads intermittently observed on DE5i1, but was approximately 4-6 times as
+      long.
 
 
-      Supervisor''s Comments:
-      A new form of red thread has been identified. I request that additional observations
-      and experiments be conducted on this red thread.'
+      Supervisor''s Comments: A new form of red thread has been identified.
+      Further observation and experimentation on this red thread are requested.'
     m_Metadata:
       m_Items: []
   - m_Id: 17081208855
@@ -233,34 +231,36 @@ MonoBehaviour:
       Test Subject: DE5i1
 
       Mentem
-      Regere Experiment-Follow-up Experiment Following the 13th XX Stimulus-Response
-      Experiment
+      Regere Experiment - Follow-up to the 13th XX Stimulus-Response Experiment
 
+      
 
-      A rabbit was introduced after the XX stimulus was applied.
-      An abnormal reaction was observed in the rabbit that came into contact with
-      the red thread.
+      A
+      rabbit was introduced after the XX stimulus was applied. An abnormal reaction
+      was observed in the rabbit that came into contact with the red thread.
 
-      Subsequently, when the researcher who had applied the
-      stimulus issued a command, the rabbit was observed to obey it. It did not respond
-      to commands from other researchers.
+      Subsequently,
+      when the researcher who had applied the stimulus issued a command, the rabbit
+      was observed to obey it. It did not respond to commands from other researchers.
 
+      
 
-      In the second experiment, a death
-      row inmate was introduced, and the XX stimulus was applied. Similarly, the
-      subject was observed to respond only to commands from the researcher who administered
-      the stimulus.
+      In
+      the second experiment, a death row inmate was introduced, and the XX stimulus
+      was applied. Similarly, the subject was observed to respond only to commands
+      from the researcher who administered the stimulus.
 
-      Based on these results, it is concluded that the XX stimulus
-      allows for direct control over the subject''s behavior.
+      Based on these results,
+      it is concluded that the XX stimulus allows for direct control over the subject''s
+      behavior.
 
+      
 
-      The process
-      of controlling a subject''s mind and behavior through the XX stimulus is named
-      Mentem Regere, abbreviated as Mentem.
+      The process of controlling a subject''s mind and
+      behavior through the XX stimulus is named Mentem Regere, abbreviated as Mentem.
 
-      A subject controlled by Mentem
-      is designated as a Servus.'
+      A
+      subject controlled by Mentem is designated as a Servus.'
     m_Metadata:
       m_Items: []
   - m_Id: 17081208856
@@ -269,17 +269,17 @@ MonoBehaviour:
       Test Subject: Servus
 
       Servus
-      exhibits the characteristic of responding only to commands given by researchers
-      who have performed a "Mentem" on it.
+      exhibits the characteristic of responding only to commands given by the researcher
+      who subjected it to Mentem.
 
-      I gave Servus the command "Fly."
-      Servus moved to a high place and then jumped down.
+      Servus was given the command ''Fly.'' Servus
+      moved to a high place and then jumped down.
 
-      It appears to attempt
-      to carry out even commands that are impossible to execute.
+      The subject appears to attempt
+      to obey even commands that it cannot physically carry out.
 
       Subsequently,
-      the command "XX" was issued to Servus.
+      the command ''XX'' was issued to Servus.
 
       Immediately after the command,
       a phenomenon occurred in which space warped within a radius of approximately
@@ -288,16 +288,16 @@ MonoBehaviour:
 
       Although the destruction
       resembled that caused by an explosion, the exact process of the event could
-      not be confirmed. This phenomenon was also not recorded normally by the camera.
+      not be confirmed. The phenomenon could not be properly captured on camera either.
 
 
       Experiments
       related to Mentem and Servus are classified as top secret. Certain terms and
-      commands are designated as Level 1 classified, and access to them is restricted.'
+      commands are classified as Level 1 secrets, and access to them is restricted.'
     m_Metadata:
       m_Items: []
   - m_Id: 17081208857
-    m_Localized: Director
+    m_Localized: Director's Office
     m_Metadata:
       m_Items: []
   - m_Id: 17081208858
@@ -325,11 +325,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208864
-    m_Localized: Lab Hall
+    m_Localized: Lab Wing
     m_Metadata:
       m_Items: []
   - m_Id: 17081208865
-    m_Localized: Dorm Hall
+    m_Localized: Residential Wing
     m_Metadata:
       m_Items: []
   - m_Id: 17081208866
@@ -337,7 +337,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208867
-    m_Localized: Research
+    m_Localized: Research Office
     m_Metadata:
       m_Items: []
   - m_Id: 17081208868
@@ -357,7 +357,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208872
-    m_Localized: First of all... let me look around.
+    m_Localized: For now... let's look around.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208873
@@ -365,7 +365,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208874
-    m_Localized: What kind of place was that over there?
+    m_Localized: What was that place used for?
     m_Metadata:
       m_Items: []
   - m_Id: 17081208875
@@ -397,20 +397,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17081208882
-    m_Localized: I found a bolt cutter.
+    m_Localized: I picked up a pair of bolt cutters.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208883
-    m_Localized: I found a key card.
+    m_Localized: I picked up a key card.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208884
-    m_Localized: With this, I think I can dismantle the main gate.
+    m_Localized: With this, I think I can force the main gate open.
     m_Metadata:
       m_Items: []
   - m_Id: 17081208885
-    m_Localized: I got a ladder. I should be able to climb up the ventilation shaft,
-      right?
+    m_Localized: I got a ladder. I should be able to climb up to the vent now, right?
     m_Metadata:
       m_Items: []
   - m_Id: 17081208886
@@ -426,13 +425,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17085403137
-    m_Localized: I'm coming to my senses. Let's turn on the lights.
+    m_Localized: I'm coming to. I should turn on my flashlight.
     m_Metadata:
       m_Items: []
   - m_Id: 17085403138
     m_Localized: 'There''s a chain here.
 
-      Let''s find a bolt cutter.'
+      I need to find some bolt cutters.'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403139
@@ -447,9 +446,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17085403141
-    m_Localized: 'Human greed knows no bounds,
+    m_Localized: 'Human greed knows no bounds.
 
-      it even encroaches upon the
+      It even encroaches upon the
       realm of the divine.
 
 
@@ -459,11 +458,12 @@ MonoBehaviour:
       For the common good... yes, for
       the greater good,
 
-      there are times when one must set aside one''s conscience.'
+      perhaps there are times when one must abandon one''s
+      conscience.'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403142
-    m_Localized: Chasing the light...
+    m_Localized: It's following the li
     m_Metadata:
       m_Items: []
   - m_Id: 17085403143
@@ -471,11 +471,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17085403144
-    m_Localized: Rapidly press the interaction key to dismantle the door.
+    m_Localized: Rapidly press the interaction key to force the door open.
     m_Metadata:
       m_Items: []
   - m_Id: 17085403145
-    m_Localized: 'Researcher 1: Do you know how to manually disassemble a door?
+    m_Localized: 'Researcher 1: Hey, do you know how to open a door manually?
 
 
       Researcher
@@ -483,23 +483,22 @@ MonoBehaviour:
 
 
       Researcher 1: I saw
-      it in a movie-they used a hydraulic opener to open a broken steel door. And
-      I noticed we have the exact same opener in the warehouse.
+      it in a movie. They used a hydraulic opener to force a jammed steel door open.
+      And I noticed we have the exact same opener in the warehouse.
 
 
       Researcher
-      2: Are you trying to shoot *Mission: Impossible* or something?
+      2: What is this, Mission: Impossible?
 
 
-      Researcher
-      1: Why? Those bulletin boards have manuals explaining what to do if the power
-      goes out. Since this place has its own power generator, and those manuals are
-      posted repeatedly, I''m just thinking "just in case."
+      Researcher 1: Why? Those bulletin
+      boards have manuals explaining what to do if the power goes out. This place
+      has its own generator, but they still keep posting instructions for power outages.
+      I''m just saying, you never know.
 
 
-      Researcher 2:
-      Stop talking nonsense and get back to writing your report. We have an experiment
-      tomorrow.'
+      Researcher 2: Stop talking nonsense
+      and get back to writing your report. We have an experiment tomorrow.'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403146
@@ -510,24 +509,24 @@ MonoBehaviour:
       No,
       maybe we were arrogant from the start.
 
-      We thought we could control that
+      We thought we could use that
       monster.
 
       But it turned out to be the opposite.
 
       I''m sorry. I''m
-      sorry. I''m so s'
+      sorry. I''m sor'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403147
-    m_Localized: '[In Case of a Power Problem]
+    m_Localized: '[In Case of Power Issues]
 
       If the power is unstable,
 
       check
-      the distribution panel in the underground power
+      the distribution panel
 
-      control room.'
+      in the basement power control area.'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403148
@@ -536,8 +535,8 @@ MonoBehaviour:
       In the event of a power
       outage, the emergency generator will start up.
 
-      Please calmly check the
-      power control room.'
+      Please remain calm and
+      check the power control area.'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403149
@@ -545,13 +544,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 17085403150
-    m_Localized: '[Research room Usage Guidelines]
+    m_Localized: '[Research Office Guidelines]
 
-      This lab is a space designated
-      for writing reports and performing administrative tasks.
+      This room is designated for
+      report writing and administrative work.
 
-      Please use
-      the computers for work purposes only.
+      Please use the computers for
+      work purposes only.
 
 
       *Do not play games on the computers.'
@@ -562,39 +561,39 @@ MonoBehaviour:
 
 
       Researcher
-      2: I asked my senior about it briefly, and he said it seems like no one knows
-      what it really is-not even the head of the project. Just looking at its appearance,
-      it looks like a demon.
-
-
-      Researcher 1: Exactly. This is the first time
-      I''ve ever believed in demons or ghosts since I came here. Is it really a demon?
+      2: I asked a senior colleague, and they said it seems like no one knows what
+      it really is, not even the project lead. It sure looks like a demon, though.
 
 
       Researcher
-      2: Maybe figuring out its true nature is the whole point of the research.'
+      1: Exactly. I never believed in demons or ghosts until I came here. Is it really
+      a demon?
+
+
+      Researcher 2: Maybe figuring out its true nature is the whole
+      point of the research.'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403152
-    m_Localized: 'I will now restore power and search for survivors.
+    m_Localized: 'I''ll restore power first, then search for survivors.
 
-      I received
-      a radio transmission from the basement of the living quarters, so I plan to
-      search there first before moving on to the dormitory.
+      I
+      received a radio transmission from the basement of the residential wing, so
+      I plan to search there first before moving on to the dormitory.
 
-      I''ve changed
-      the access code for the lab entrance. I''ll leave the new code behind as I
-      search, so please take care of things after I''m gone.
+      I''ve
+      changed the lab entrance password. I''ll leave the new password behind as I
+      search, so I''m counting on whoever follows to carry on the search.
 
 
-      P.S.: I took
-      this precaution because the test subject appears to be quite intelligent. I''m
-      not sure if it will make a difference, but please be extremely careful.'
+      P.S.:
+      I took this precaution because the test subject appears to be quite intelligent.
+      I''m not sure if it will make a difference, but please be extremely careful.'
     m_Metadata:
       m_Items: []
   - m_Id: 17085403153
-    m_Localized: This is a summary of the initial experiment. Please review it after
-      checking it over.
+    m_Localized: This is a summary of the initial experimental work. Please review
+      it.
     m_Metadata:
       m_Items: []
   references:
