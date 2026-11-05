@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 90e9c39dbc393a14bbfdf54dbb893d13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4822945841072250016
+    second: DevilManifest1_0
+  - first:
+      213: 4667457242267247884
+    second: DevilManifest1_1
+  - first:
+      213: -5245568982656420775
+    second: DevilManifest1_2
+  - first:
+      213: -1992884474403742580
+    second: DevilManifest1_3
+  - first:
+      213: -8970128877434195348
+    second: DevilManifest1_4
+  - first:
+      213: -2401119308745266710
+    second: DevilManifest1_5
+  - first:
+      213: -820675013001833712
+    second: DevilManifest1_6
+  - first:
+      213: -3130188004045308681
+    second: DevilManifest1_7
+  - first:
+      213: -8855970551775069498
+    second: DevilManifest1_8
+  - first:
+      213: -3182350995485080480
+    second: DevilManifest1_9
+  - first:
+      213: 463240490306181599
+    second: DevilManifest1_10
+  - first:
+      213: 5626914525539348336
+    second: DevilManifest1_11
+  - first:
+      213: -5249243522385997748
+    second: DevilManifest1_12
+  - first:
+      213: -4257857453198002268
+    second: DevilManifest1_13
+  - first:
+      213: 2527058732955183864
+    second: DevilManifest1_14
+  - first:
+      213: 1389567079789581587
+    second: DevilManifest1_15
+  - first:
+      213: -8411024643385541483
+    second: DevilManifest1_16
+  - first:
+      213: -4249681236759668247
+    second: DevilManifest1_17
+  - first:
+      213: -3137421640807043259
+    second: DevilManifest1_18
+  - first:
+      213: -3906605400882135349
+    second: DevilManifest1_19
+  - first:
+      213: -4975569613743326776
+    second: DevilManifest1_20
+  - first:
+      213: -5144211288066440117
+    second: DevilManifest1_21
+  - first:
+      213: -2491791695758160863
+    second: DevilManifest1_22
+  - first:
+      213: -1525363511923361013
+    second: DevilManifest1_23
+  - first:
+      213: -6095151874871622358
+    second: DevilManifest1_24
+  - first:
+      213: -3677569651104470494
+    second: DevilManifest1_25
+  - first:
+      213: -5235172017091824247
+    second: DevilManifest1_26
+  - first:
+      213: -4948695761171698223
+    second: DevilManifest1_27
+  - first:
+      213: -7818578847039110424
+    second: DevilManifest1_28
+  - first:
+      213: -2931201750657045997
+    second: DevilManifest1_29
+  - first:
+      213: -3748923095868863956
+    second: DevilManifest1_30
+  - first:
+      213: -524621273180482593
+    second: DevilManifest1_31
+  - first:
+      213: -376056175063429902
+    second: DevilManifest1_32
+  - first:
+      213: 3288579582432513520
+    second: DevilManifest1_33
+  - first:
+      213: -8244509156572417007
+    second: DevilManifest1_34
+  - first:
+      213: 6548991531503060995
+    second: DevilManifest1_35
+  - first:
+      213: -8977699941143269945
+    second: DevilManifest1_36
+  - first:
+      213: -1297968399754823911
+    second: DevilManifest1_37
+  - first:
+      213: 9080923313387370451
+    second: DevilManifest1_38
+  - first:
+      213: -4356819428435260522
+    second: DevilManifest1_39
+  - first:
+      213: 5384796356201518844
+    second: DevilManifest1_40
+  - first:
+      213: -8601802803788355460
+    second: DevilManifest1_41
+  - first:
+      213: 9093617369173274929
+    second: DevilManifest1_42
+  - first:
+      213: -5774713068424422599
+    second: DevilManifest1_43
+  - first:
+      213: -7563223175043865959
+    second: DevilManifest1_44
+  - first:
+      213: -1083371294161087736
+    second: DevilManifest1_45
+  - first:
+      213: -459180688310917191
+    second: DevilManifest1_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DevilManifest1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 730
+        width: 1536
+        height: 294
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063e0f38f44711db0800000000000000
+      internalID: -4822945841072250016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevilManifest1_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 1536
+        height: 219
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05e9a1f1a326c040800000000000000
+      internalID: 4667457242267247884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevilManifest1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 298
+        width: 1536
+        height: 214
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954f4ff6dcef337b0800000000000000
+      internalID: -5245568982656420775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DevilManifest1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 1536
+        height: 221
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c16c8112ad754e0800000000000000
+      internalID: -1992884474403742580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4299efcfa2a1c904e9f2743893b2c3bf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":4.0},"gridSpriteSize":{"x":1536.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      DevilManifest1_0: -4822945841072250016
+      DevilManifest1_1: 4667457242267247884
+      DevilManifest1_2: -5245568982656420775
+      DevilManifest1_3: -1992884474403742580
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Devil : MonoBehaviour, IDevilInterface
 {
+    public delegate void ChangeStateDelegate(DevilState prevState, DevilState newState);
+    public ChangeStateDelegate changeStateDelegate;
     public enum DevilState
     {
         Patrol,
@@ -245,6 +247,8 @@ public class Devil : MonoBehaviour, IDevilInterface
     {
         previousState = currentState;
         currentState = newState;
+
+        changeStateDelegate?.Invoke(previousState, currentState);
 
         isWaiting = false;
         waitTimer = 0f;

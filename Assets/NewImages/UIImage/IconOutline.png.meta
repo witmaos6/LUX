@@ -121,6 +121,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: IconOutline_1
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 336
+        width: 617
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8227e2ea6f985d243b53b71f1cc005dd
+      internalID: 1765099024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -136,6 +158,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       IconOutline_0: 7967913920101716650
+      IconOutline_1: 1765099024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
