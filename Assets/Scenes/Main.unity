@@ -7854,6 +7854,7 @@ GameObject:
   - component: {fileID: 308696963}
   - component: {fileID: 308696962}
   - component: {fileID: 308696961}
+  - component: {fileID: 308696964}
   m_Layer: 0
   m_Name: FollowWalkSound
   m_TagString: Untagged
@@ -7936,6 +7937,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 26784554}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &308696964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308696960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9a8137e45fdf248badeb84a29826db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivateOnEvent
+  activateEvent: {fileID: 11400000, guid: 0483eb03f125ea74f88a25621db723e8, type: 2}
+  savedEvent: 1
 --- !u!1 &311092436
 GameObject:
   m_ObjectHideFlags: 0
@@ -9411,14 +9426,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: KeyBindingUI
       objectReference: {fileID: 0}
-    - target: {fileID: 5573670181951297934, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555569952262700104, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Reset
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10488,6 +10495,7 @@ Transform:
   - {fileID: 817267711}
   - {fileID: 140244264}
   - {fileID: 204771053}
+  - {fileID: 423204221}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &402885174
@@ -11206,6 +11214,97 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.98, y: 1.36}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!1 &423204220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423204221}
+  - component: {fileID: 423204222}
+  m_Layer: 6
+  m_Name: LabCorpse_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423204221
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423204220}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 48.687183, y: 0.64088714, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 400351113}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &423204222
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423204220}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -734624969577057220, guid: 62ace13da61d8e14c9cf2cd87724c66d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.08, y: 1.5533333}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -12106,8 +12205,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -15081,6 +15180,7 @@ GameObject:
   - component: {fileID: 616035897}
   - component: {fileID: 616035899}
   - component: {fileID: 616035898}
+  - component: {fileID: 616035900}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -15207,6 +15307,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616035896}
   m_CullTransparentMesh: 1
+--- !u!114 &616035900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616035896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466195
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -20561,6 +20686,7 @@ GameObject:
   - component: {fileID: 847394446}
   - component: {fileID: 847394448}
   - component: {fileID: 847394447}
+  - component: {fileID: 847394449}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -20607,7 +20733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC7AC\uC2DC\uC791"
+  m_text: Restart
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
   m_sharedMaterial: {fileID: 4162020459208145223, guid: e48c0b5ac0e4ba04e89a8601b313ce1d, type: 2}
@@ -20687,6 +20813,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847394445}
   m_CullTransparentMesh: 1
+--- !u!114 &847394449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847394445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466190
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &854796432
 GameObject:
   m_ObjectHideFlags: 0
@@ -21413,6 +21564,7 @@ GameObject:
   - component: {fileID: 878029049}
   - component: {fileID: 878029051}
   - component: {fileID: 878029050}
+  - component: {fileID: 878029052}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -21539,6 +21691,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878029048}
   m_CullTransparentMesh: 1
+--- !u!114 &878029052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878029048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466194
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &878469003
 GameObject:
   m_ObjectHideFlags: 0
@@ -24862,7 +25039,7 @@ Transform:
   m_GameObject: {fileID: 1014458053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 48, y: 1, z: 0}
+  m_LocalPosition: {x: 149.87, y: 20.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -25079,9 +25256,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyBindingText
   binding: 6
-  format: '{0} Inventory'
+  format: '{0}'
   tmpText: {fileID: 1015366360}
-  legacyText: {fileID: 0}
+  keyMessageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10889834212003840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1023466351
 GameObject:
   m_ObjectHideFlags: 0
@@ -28501,9 +28689,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyBindingText
   binding: 7
-  format: '{0} Menu'
+  format: '{0}'
   tmpText: {fileID: 1135431589}
-  legacyText: {fileID: 0}
+  keyMessageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466193
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1158539734
 GameObject:
   m_ObjectHideFlags: 0
@@ -34602,9 +34801,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 302356193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 400, y: 25}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 60, y: 25}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384266828
@@ -34620,9 +34819,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyBindingText
   binding: 8
-  format: '{0} Clue'
+  format: '{0}'
   tmpText: {fileID: 1384266829}
-  legacyText: {fileID: 0}
+  keyMessageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466192
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1384266829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42883,11 +43093,11 @@ PrefabInstance:
     - target: {fileID: 20299826049589847, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: 'patrolWaypoints.Array.data[0]'
       value: 
-      objectReference: {fileID: 1120740376}
+      objectReference: {fileID: 141191850}
     - target: {fileID: 20299826049589847, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: 'patrolWaypoints.Array.data[1]'
       value: 
-      objectReference: {fileID: 141191850}
+      objectReference: {fileID: 1120740376}
     - target: {fileID: 3174033232232634941, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: m_Name
       value: ChaseDevil4
@@ -42902,7 +43112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3786030719071124333, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 119.36
+      value: 171.1
       objectReference: {fileID: 0}
     - target: {fileID: 3786030719071124333, guid: 20f3c2a511c198f489741e6c65ed9228, type: 3}
       propertyPath: m_LocalPosition.y
@@ -46450,6 +46660,7 @@ GameObject:
   - component: {fileID: 1903559336}
   - component: {fileID: 1903559338}
   - component: {fileID: 1903559337}
+  - component: {fileID: 1903559339}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -46576,6 +46787,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903559335}
   m_CullTransparentMesh: 1
+--- !u!114 &1903559339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903559335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466196
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1906554695
 GameObject:
   m_ObjectHideFlags: 0
@@ -53128,6 +53364,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 398561360}
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1174469139}
@@ -53136,7 +53373,6 @@ SceneRoots:
   - {fileID: 1939908543}
   - {fileID: 1612310535}
   - {fileID: 278944867}
-  - {fileID: 398561360}
   - {fileID: 653874714}
   - {fileID: 2109012995}
   - {fileID: 2102876971}

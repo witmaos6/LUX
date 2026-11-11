@@ -120,6 +120,7 @@ MonoBehaviour:
   dirRight: 1
   flashlightPrefab: {fileID: 223673838234225482, guid: 86fb4bb16bdbbb94c968a31822a5360f, type: 3}
   deadSound: {fileID: 8300000, guid: 2481c76c7b5b66a4594b4b73fa2c46f4, type: 3}
+  flashlightOnSound: {fileID: 8300000, guid: d0dc4d187b75a5f479cc222750b7749e, type: 3}
   moveSoundRangeWeight: 2
   moveSoundStrength: 20
   canvasTransform: {fileID: 0}
@@ -191,7 +192,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97499996, y: 2.0910206}
+    oldSize: {x: 0.73, y: 2.0910206}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

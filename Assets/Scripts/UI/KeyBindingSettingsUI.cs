@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class KeyBindingSettingsUI : MonoBehaviour
@@ -22,6 +23,9 @@ public class KeyBindingSettingsUI : MonoBehaviour
     [SerializeField] private Button closeButton;
     [SerializeField] private Button resetButton;
     [SerializeField] private TMP_Text hintText;
+
+    [SerializeField] LocalizedString hintTextMessageRef;
+    [SerializeField] LocalizedString hintErrorMessageRef;
 
     [Header("Binding Rows")]
     [SerializeField] private List<BindingRow> bindingRows = new();
@@ -79,7 +83,7 @@ public class KeyBindingSettingsUI : MonoBehaviour
         if (settingsPanel != null)
             settingsPanel.SetActive(true);
 
-        SetHint("Select the key to change.");
+        SetHint(hintTextMessageRef); // LocaleService 참조로 변경
         Refresh();
     }
 
@@ -95,7 +99,7 @@ public class KeyBindingSettingsUI : MonoBehaviour
     {
         StopListening();
         KeyBindingSettings.ResetAll();
-        SetHint("Restored to default key settings.");
+        SetHint(hintTextMessageRef);
     }
 
     public void Refresh()
@@ -112,7 +116,7 @@ public class KeyBindingSettingsUI : MonoBehaviour
         StopListening();
         IsCapturingInput = true;
         ConsumedGameplayInputThisFrame = false;
-        SetHint("Press the new key (ESC: cancel)");
+        SetHint(hintTextMessageRef);
 
         listenOperation = InputSystem.onAnyButtonPress.CallOnce(control =>
         {
@@ -123,25 +127,27 @@ public class KeyBindingSettingsUI : MonoBehaviour
 
             if (control.device is not Keyboard)
             {
-                SetHint("You can specify only the keyboard keys.");
+                SetHint(hintErrorMessageRef);
                 return;
             }
 
             if (control == Keyboard.current.escapeKey)
             {
-                SetHint("The key change has been canceled.");
+                SetHint(hintTextMessageRef);
                 return;
             }
 
             KeyBindingSettings.Set(binding, control.path);
-            SetHint("The key has been saved.");
+            SetHint(hintTextMessageRef);
         });
     }
 
-    private void SetHint(string message)
+    private void SetHint(LocalizedString messageRef)
     {
         if (hintText != null)
-            hintText.text = message;
+        {
+            LocaleService.instance.SetLocaleText(hintText, messageRef);
+        }
     }
 
     private void StopListening()

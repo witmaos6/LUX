@@ -596,6 +596,130 @@ MonoBehaviour:
       it.
     m_Metadata:
       m_Items: []
+  - m_Id: 10802572832968704
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466176
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466177
+    m_Localized: Key Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466178
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466179
+    m_Localized: 'Press the new key (ESC: cancel)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466180
+    m_Localized: You can specify only the keyboard keys.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466181
+    m_Localized: Run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466182
+    m_Localized: Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466183
+    m_Localized: Interaction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466184
+    m_Localized: Hide/Enter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466185
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466186
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466187
+    m_Localized: Clue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466188
+    m_Localized: Default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466189
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466190
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10889834212003840
+    m_Localized: Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466192
+    m_Localized: Clue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466193
+    m_Localized: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466194
+    m_Localized: Key Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466195
+    m_Localized: To Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466196
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466197
+    m_Localized: Thanks for playing!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466198
+    m_Localized: To Home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298858991616
+    m_Localized: Early Experiment Log
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489088
+    m_Localized: Division Observation Report
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489089
+    m_Localized: Report on the Division Hypothesis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489090
+    m_Localized: Experiment 15 Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489091
+    m_Localized: Experiment 13 Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489092
+    m_Localized: Mentem Experiment Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489093
+    m_Localized: Servus Experiment Record
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

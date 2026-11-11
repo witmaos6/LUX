@@ -65,43 +65,51 @@ public class LocaleService : MonoBehaviour
 
     public void SetLocaleText(TMP_Text setText, LocalizedString messageRef)
     {
-        string Key = GetKey(messageRef);
-        if(string.IsNullOrEmpty(Key))
-        {
-            Debug.LogWarning("Key is null");
-            return;
-        }
-
-        string profileName = textProfileDatabase.GetProfile(Key);
-        if(string.IsNullOrEmpty(profileName))
-        {
-            Debug.LogWarning("ProfileId is null");
-            return;
-        }
-
-        string localeCode = GetSelectedLocale();
-        if(string.IsNullOrEmpty(localeCode))
-        {
-            Debug.LogWarning("selected Locale is null");
-            return;
-        }
-
-        CountryTextProfileTable.Property property = countryTextProfileTable.GetProperty(localeCode, profileName);   
-        if(property == null)
-        {
-            Debug.LogWarning("property is null");
-            return;
-        }
-
         string localizedString = messageRef.GetLocalizedString();
         if(string.IsNullOrEmpty(localizedString))
         {
             Debug.LogWarning("locale string is null");
             return;
         }
-
         setText.text = localizedString;
-        setText.fontSize = property.fontSize;
+
+        CountryTextProfileTable.Property property = GetProperty(messageRef);
+        if (property != null)
+        {
+            setText.fontSize = property.fontSize;
+        }
+    }
+
+    CountryTextProfileTable.Property GetProperty(LocalizedString messageRef)
+    {
+        string Key = GetKey(messageRef);
+        if (string.IsNullOrEmpty(Key))
+        {
+            Debug.LogWarning("Key is null");
+            return null;
+        }
+
+        string profileName = textProfileDatabase.GetProfile(Key);
+        if (string.IsNullOrEmpty(profileName))
+        {
+            Debug.LogWarning("ProfileId is null");
+            return null;
+        }
+
+        string localeCode = GetSelectedLocale();
+        if (string.IsNullOrEmpty(localeCode))
+        {
+            Debug.LogWarning("selected Locale is null");
+            return null;
+        }
+
+        CountryTextProfileTable.Property property = countryTextProfileTable.GetProperty(localeCode, profileName);
+        if (property == null)
+        {
+            Debug.LogWarning("property is null");
+            return null;
+        }
+        return property;
     }
 
     string GetKey(LocalizedString messageRef)
@@ -118,6 +126,17 @@ public class LocaleService : MonoBehaviour
             return currentLocale.Identifier.Code;
         }
         return null;
+    }
+
+    public string GetLocaleText(LocalizedString messageRef)
+    {
+        string localizedString = messageRef.GetLocalizedString();
+        if (string.IsNullOrEmpty(localizedString))
+        {
+            Debug.LogWarning("locale string is null");
+            return null;
+        }
+        return localizedString;
     }
 
     /* 코드로 텍스트를 넣을 때 추가할 코드

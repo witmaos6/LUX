@@ -215,12 +215,12 @@ RectTransform:
   m_Children:
   - {fileID: 626601005}
   - {fileID: 453789980}
+  - {fileID: 201526004}
   - {fileID: 474674590}
   - {fileID: 1190786698}
   - {fileID: 328869015}
   - {fileID: 1532449393}
   - {fileID: 740091612}
-  - {fileID: 201526004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 328869016}
   - component: {fileID: 328869018}
   m_Layer: 5
-  m_Name: OpenButton
+  m_Name: KeySettingOpenButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1517,6 +1517,7 @@ GameObject:
   - component: {fileID: 680687596}
   - component: {fileID: 680687598}
   - component: {fileID: 680687597}
+  - component: {fileID: 680687599}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1643,6 +1644,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 680687595}
   m_CullTransparentMesh: 1
+--- !u!114 &680687599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680687595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466178
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!224 &740091612 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4735294412893408397, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
@@ -2602,6 +2628,7 @@ GameObject:
   - component: {fileID: 1555352298}
   - component: {fileID: 1555352300}
   - component: {fileID: 1555352299}
+  - component: {fileID: 1555352301}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2728,6 +2755,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555352297}
   m_CullTransparentMesh: 1
+--- !u!114 &1555352301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555352297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466177
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1916627047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,6 +2791,7 @@ GameObject:
   - component: {fileID: 1916627048}
   - component: {fileID: 1916627050}
   - component: {fileID: 1916627049}
+  - component: {fileID: 1916627051}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2865,6 +2918,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916627047}
   m_CullTransparentMesh: 1
+--- !u!114 &1916627051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916627047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572908466176
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1937602752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,6 +3029,7 @@ GameObject:
   - component: {fileID: 2104487059}
   - component: {fileID: 2104487061}
   - component: {fileID: 2104487060}
+  - component: {fileID: 2104487062}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3077,6 +3156,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104487058}
   m_CullTransparentMesh: 1
+--- !u!114 &2104487062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104487058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7871ed7013d776e4bbfbd56b1ce538de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocaleText
+  messageRef:
+    m_TableReference:
+      m_TableCollectionName: GUID:d1242a3087995484e9e4060056bbe48b
+    m_TableEntryReference:
+      m_KeyId: 10802572832968704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  label: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &2806784248932043630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3089,42 +3193,6 @@ PrefabInstance:
       propertyPath: openButton
       value: 
       objectReference: {fileID: 328869018}
-    - target: {fileID: 1208165919440165013, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: 'Press the new key (ESC: cancel)'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1208165919440165013, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_fontSize
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 1208165919440165013, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 1208165919440165013, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 1208165919440165013, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229225851975553691, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Inventory
-      objectReference: {fileID: 0}
-    - target: {fileID: 2107253773787760920, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Clue
-      objectReference: {fileID: 0}
-    - target: {fileID: 3052993020560010812, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Interaction
-      objectReference: {fileID: 0}
-    - target: {fileID: 4699616868395852786, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Hide/Enter
-      objectReference: {fileID: 0}
     - target: {fileID: 4735294412893408397, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3208,30 +3276,6 @@ PrefabInstance:
     - target: {fileID: 5573670181951297934, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
       propertyPath: m_Name
       value: KeyBindingUI
-      objectReference: {fileID: 0}
-    - target: {fileID: 5573670181951297934, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5608928988924541278, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 6190623407079105086, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Run
-      objectReference: {fileID: 0}
-    - target: {fileID: 6653204557173355831, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Flashlight
-      objectReference: {fileID: 0}
-    - target: {fileID: 7555569952262700104, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: Default
-      objectReference: {fileID: 0}
-    - target: {fileID: 8410380068522587546, guid: 7aa57734ec1699e43a4e0bd22bf843e8, type: 3}
-      propertyPath: m_text
-      value: close
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

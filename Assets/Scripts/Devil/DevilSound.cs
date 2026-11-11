@@ -30,19 +30,23 @@ public class DevilSound : MonoBehaviour
     {
         if(playingEffectSound == false)
         {
-            audioSource.Stop();
-            audioSource.PlayOneShot(detectSound);
-
             StartCoroutine(SetPlayEffectSound(detectSound.length));
         }
     }
 
     IEnumerator SetPlayEffectSound(float soundLength)
     {
+        audioSource.Stop();
         playingEffectSound = true;
+
+        float prevDistance = audioSource.maxDistance;
+        audioSource.maxDistance = prevDistance * 2;
+        audioSource.PlayOneShot(detectSound);
+
         yield return new WaitForSeconds(soundLength);
 
         playingEffectSound = false;
+        audioSource.maxDistance = prevDistance;
         audioSource.Play();
     }
 

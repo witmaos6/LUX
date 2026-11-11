@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class ClueInventoryIcon : MonoBehaviour
@@ -8,10 +9,10 @@ public class ClueInventoryIcon : MonoBehaviour
     [SerializeField] private TMP_Text displayName;
     [SerializeField] private Color existColor;
 
-    public void SetExist(string inDisplayName)
+    public void SetExist(LocalizedString displayNameRef)
     {        
         image.color = existColor;
-        displayName.text = inDisplayName;
+        LocaleService.instance.SetLocaleText(displayName, displayNameRef);
     }
 
     public bool IsExist()

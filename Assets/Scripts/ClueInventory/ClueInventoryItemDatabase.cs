@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
-using static DropItem;
+using UnityEngine.Localization;
 
 public enum ClueItemCode
 {
@@ -25,7 +24,7 @@ public sealed class ClueInventoryItemDatabase : ScriptableObject
     public class ClueItemDefinition
     {
         public ClueItemCode clueItemCode;
-        public string displayName;
+        public LocalizedString displayNameRef;
         public GameObject uiPrefab;
     }
 
@@ -36,14 +35,14 @@ public sealed class ClueInventoryItemDatabase : ScriptableObject
         return items.Count;
     }
 
-    public string GetDisplayName(ClueItemCode clueItemCode)
+    public LocalizedString GetDisplayName(ClueItemCode clueItemCode)
     {
         ClueItemDefinition clueItemDefinition = items.Find(definition => definition.clueItemCode == clueItemCode);
-        if(clueItemDefinition != null && !string.IsNullOrWhiteSpace(clueItemDefinition.displayName))
+        if(clueItemDefinition != null)
         {
-            return clueItemDefinition.displayName;
+            return clueItemDefinition.displayNameRef;
         }
-        return clueItemDefinition != null ? clueItemDefinition.displayName : clueItemDefinition.clueItemCode.ToString();
+        return null;
     }
 
     public GameObject GetUI(ClueItemCode clueItemCode)

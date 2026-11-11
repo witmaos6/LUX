@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     [Header("Sound")]
     private AudioSource audioSource;
     public AudioClip deadSound;
+    [SerializeField] AudioClip flashlightOnSound;
 
     public float moveSoundRangeWeight = 2f;
     public float moveSoundStrength = 30f;
@@ -397,6 +398,7 @@ public class PlayerController : MonoBehaviour
 
                 FlashlightVisibilityService.Register(flashlightInstance);
             }
+            audioSource.PlayOneShot(flashlightOnSound);
         }
     }
 

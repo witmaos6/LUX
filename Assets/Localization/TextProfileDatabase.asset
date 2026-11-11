@@ -71,6 +71,20 @@ MonoBehaviour:
     profile: Clue.LabReport
   - key: Clue.ServusExperimentReport.LabReport
     profile: Clue.LabReport
+  - key: Clue.Inventory.EarlyExperimentLog
+    profile: Clue.Inventory
+  - key: Clue.Inventory.DivisionObservationReport
+    profile: Clue.Inventory
+  - key: Clue.Inventory.ReportOnTheDivisionHypothesis
+    profile: Clue.Inventory
+  - key: Clue.Inventory.Experiment15Record
+    profile: Clue.Inventory
+  - key: Clue.Inventory.Experiment13Record
+    profile: Clue.Inventory
+  - key: Clue.Inventory.MentemExperimentRecord
+    profile: Clue.Inventory
+  - key: Clue.Inventory.ServusExperimentRecord
+    profile: Clue.Inventory
   - key: ObjectText.RoomName.DirectorOffice
     profile: ObjectText.RoomName
   - key: ObjectText.RoomName.Lab
@@ -169,3 +183,51 @@ MonoBehaviour:
     profile: Special.SecurityNote
   - key: SpecialNote.Special.USB
     profile: Special.USB
+  - key: Interface.Menu.NewStart
+    profile: Interface.Menu.Button
+  - key: Interface.Menu.Continue
+    profile: Interface.Menu.Button
+  - key: Interface.Menu.KeySetting
+    profile: Interface.Menu.Button
+  - key: Interface.Menu.Exit
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Description
+    profile: Interface.Menu.Description
+  - key: Interface.KeyBinding.Error
+    profile: Interface.Menu.Description
+  - key: Interface.KeyBinding.Run
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Flashlight
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Interaction
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.HideEnter
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Inventory
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Menu
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Clue
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Default
+    profile: Interface.Menu.Button
+  - key: Interface.KeyBinding.Close
+    profile: Interface.Menu.Button
+  - key: Interface.Game.Restart
+    profile: Interface.Menu.Button
+  - key: Interface.Game.InventoryKey
+    profile: Interface.Menu.Description
+  - key: Interface.Game.ClueKey
+    profile: Interface.Menu.Description
+  - key: Interface.Game.Menu
+    profile: Interface.Menu.Description
+  - key: Interface.EscapeMenu.KeySetting
+    profile: Interface.Menu.Button
+  - key: Interface.EscapeMenu.ToHome
+    profile: Interface.Menu.Button
+  - key: Interface.EscapeMenu.Resume
+    profile: Interface.Menu.Button
+  - key: Interface.Ending.Thanks
+    profile: Interface.Menu.Description
+  - key: Interface.Ending.ToHome
+    profile: Interface.Menu.Button

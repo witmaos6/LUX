@@ -10,7 +10,7 @@ using UnityEngine;
 public static class CountryTextProfileImporter
 {
     private const string FilePrefix =
-        "CountryTextProfileTable_";
+        "CountryTextProfileTable - ";
 
     private const string RequiredProfileHeader =
         "TextProfile";

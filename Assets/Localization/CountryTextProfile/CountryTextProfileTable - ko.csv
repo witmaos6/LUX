@@ -18,3 +18,6 @@ Special.WorkshopBoard,36
 Special.ResearcherChat,30
 Special.SecurityNote,30
 Special.USB,36
+Interface.Menu.Button,24
+Interface.Menu.Description,36
+Clue.Inventory,12

@@ -2,7 +2,6 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.UI;
 
 [DisallowMultipleComponent]
 public class KeyBindingText : MonoBehaviour
@@ -10,7 +9,7 @@ public class KeyBindingText : MonoBehaviour
     [SerializeField] private GameBinding binding = GameBinding.Interaction;
     [SerializeField] private string format = "{0}";
     [SerializeField] private TMP_Text tmpText;
-    [SerializeField] private Text legacyText;
+    [SerializeField] LocalizedString keyMessageRef;
 
     private void Reset()
     {
@@ -18,7 +17,7 @@ public class KeyBindingText : MonoBehaviour
         Refresh();
     }
 
-    private void Awake()
+    private void Start()
     {
         FindTextComponent();
         Refresh();
@@ -60,10 +59,15 @@ public class KeyBindingText : MonoBehaviour
         }
 
         if (tmpText != null)
+        {
             tmpText.text = value;
+            if (LocaleService.instance != null && keyMessageRef != null)
+            {
+                string keyString = LocaleService.instance.GetLocaleText(keyMessageRef);
 
-        if (legacyText != null)
-            legacyText.text = value;
+                tmpText.text += keyString;
+            }
+        }
     }
 
     public void SetBinding(GameBinding newBinding)
@@ -76,8 +80,5 @@ public class KeyBindingText : MonoBehaviour
     {
         if (tmpText == null)
             tmpText = GetComponent<TMP_Text>();
-
-        if (legacyText == null)
-            legacyText = GetComponent<Text>();
     }
 }

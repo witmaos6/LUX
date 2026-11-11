@@ -131,6 +131,34 @@ MonoBehaviour:
     m_Key: Clue.ServusExperimentReport.LabReport
     m_Metadata:
       m_Items: []
+  - m_Id: 10884298858991616
+    m_Key: Clue.Inventory.EarlyExperimentLog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489088
+    m_Key: Clue.Inventory.DivisionObservationReport
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489089
+    m_Key: Clue.Inventory.ReportOnTheDivisionHypothesis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489090
+    m_Key: Clue.Inventory.Experiment15Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489091
+    m_Key: Clue.Inventory.Experiment13Record
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489092
+    m_Key: Clue.Inventory.MentemExperimentRecord
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10884298934489093
+    m_Key: Clue.Inventory.ServusExperimentRecord
+    m_Metadata:
+      m_Items: []
   - m_Id: 17081208857
     m_Key: ObjectText.RoomName.DirectorOffice
     m_Metadata:
@@ -325,6 +353,102 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 17085403153
     m_Key: SpecialNote.Special.USB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572832968704
+    m_Key: Interface.Menu.NewStart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466176
+    m_Key: Interface.Menu.Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466177
+    m_Key: Interface.Menu.KeySetting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466178
+    m_Key: Interface.Menu.Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466179
+    m_Key: Interface.KeyBinding.Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466180
+    m_Key: Interface.KeyBinding.Error
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466181
+    m_Key: Interface.KeyBinding.Run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466182
+    m_Key: Interface.KeyBinding.Flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466183
+    m_Key: Interface.KeyBinding.Interaction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466184
+    m_Key: Interface.KeyBinding.HideEnter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466185
+    m_Key: Interface.KeyBinding.Inventory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466186
+    m_Key: Interface.KeyBinding.Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466187
+    m_Key: Interface.KeyBinding.Clue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466188
+    m_Key: Interface.KeyBinding.Default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466189
+    m_Key: Interface.KeyBinding.Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466190
+    m_Key: Interface.Game.Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10889834212003840
+    m_Key: Interface.Game.InventoryKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466192
+    m_Key: Interface.Game.ClueKey
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466193
+    m_Key: Interface.Game.Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466194
+    m_Key: Interface.EscapeMenu.KeySetting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466195
+    m_Key: Interface.EscapeMenu.ToHome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466196
+    m_Key: Interface.EscapeMenu.Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466197
+    m_Key: Interface.Ending.Thanks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10802572908466198
+    m_Key: Interface.Ending.ToHome
     m_Metadata:
       m_Items: []
   m_Metadata:
