@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -214,7 +215,7 @@ public static class SaveManager
     {
         try
         {
-            File.WriteAllText(SavePath, JsonUtility.ToJson(data, true));
+            WriteSaveFile(SavePath, JsonUtility.ToJson(data, true));
         }
         catch (Exception e)
         {
@@ -226,11 +227,43 @@ public static class SaveManager
     {
         try
         {
-            File.WriteAllText(LanguageSavePath, languageCode);
+            WriteSaveFile(LanguageSavePath, languageCode);
         }
         catch (Exception e)
         {
             Debug.LogError($"[SaveManager] Failed to write save file: {e.Message}");
+        }
+    }
+
+    private static void WriteSaveFile(string path, string contents)
+    {
+        Directory.CreateDirectory(Path.GetDirectoryName(path));
+        string temporaryPath = $"{path}.{Guid.NewGuid():N}.tmp";
+
+        try
+        {
+            byte[] bytes = Encoding.UTF8.GetBytes(contents ?? string.Empty);
+            using (var stream = new FileStream(temporaryPath, FileMode.CreateNew, FileAccess.Write, FileShare.None))
+            {
+                stream.Write(bytes, 0, bytes.Length);
+                stream.Flush(flushToDisk: true);
+            }
+
+            if (File.Exists(path))
+                File.Replace(temporaryPath, path, null);
+            else
+                File.Move(temporaryPath, path);
+        }
+        finally
+        {
+            try
+            {
+                File.Delete(temporaryPath);
+            }
+            catch (Exception e) when (e is IOException || e is UnauthorizedAccessException)
+            {
+                Debug.LogWarning($"[SaveManager] Failed to delete temporary save file: {e.Message}");
+            }
         }
     }
 
